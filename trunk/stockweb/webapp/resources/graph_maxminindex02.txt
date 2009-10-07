@@ -1,0 +1,22 @@
+
+		<type>line</type>
+		<width>2</width>
+    <color>gray</color>
+    <alpha>30</alpha>
+    
+    <fill_alpha>0</fill_alpha>
+    <cursor_color>000000</cursor_color>
+    <bullet>round</bullet>
+    <bullet_size>0</bullet_size>
+    <bullet_alpha>28</bullet_alpha>
+    <column_width>1</column_width>
+    <width>1</width>
+          
+    <data_sources>
+    	<close>mmi02</close>
+    </data_sources>
+    <legend>
+    	<date title="false" key="false"><![CDATA[mmi02<br><b>{close}</b>]]></date>
+     	<period title="false" key="false"><![CDATA[mmi02<br><b>{close}</b>]]></period>
+    </legend>
+		

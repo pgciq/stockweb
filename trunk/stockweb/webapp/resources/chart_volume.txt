@@ -1,0 +1,14 @@
+			<height>25</height>
+			<title>Volume</title>
+			<border_color>#CCCCCC</border_color>
+			<border_alpha>0</border_alpha>
+
+
+			<legend>
+				<show_date>true</show_date>
+				<positive_color>7f8da9</positive_color>
+				<negative_color>db4c3c</negative_color>
+			</legend>
+
+			<column_width>80</column_width>
+

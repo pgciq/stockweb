@@ -1,0 +1,21 @@
+          <type>column</type>
+          <axis>right</axis>
+          <period_value>average</period_value>
+          <color>FF9933</color>
+          <alpha>1</alpha>
+          <fill_alpha>100</fill_alpha>
+          <cursor_color>000000</cursor_color>
+          <bullet>round</bullet>
+          <bullet_size>0</bullet_size>
+          <bullet_alpha>28</bullet_alpha>
+          <column_width>9</column_width>
+          <width>8</width>
+          
+          <data_sources>
+            <close>dMM</close>
+          </data_sources>
+          <legend>
+            <date title="false" key="false"><![CDATA[dMM: <b>{close}</b>]]></date>
+            <period title="false" key="false"><![CDATA[dMM: <b>{close}</b>]]></period>
+          </legend>
+		

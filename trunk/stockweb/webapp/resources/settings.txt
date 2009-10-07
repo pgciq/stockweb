@@ -1,0 +1,208 @@
+		<margins>0</margins>		
+		<max_series>0</max_series>
+		<redraw>true</redraw>
+		<max_grid_count>40</max_grid_count>
+
+<!--  Para nao visualizar o combo com cada indicador (dataset) -->
+	<data_set_selector>
+		<enabled>false</enabled>
+	</data_set_selector>
+
+	<period_selector>
+
+		<button>
+			<bg_color_hover>FEC514</bg_color_hover>
+			<bg_color_selected>DB4C3C</bg_color_selected>
+			<text_color_selected>FFFFFF</text_color_selected>
+		</button>
+
+		<periods>
+			<period type="DD" count="6">5D</period>
+			<period type="MM" count="1">1M</period>
+			<period selected="true" type="MM" count="3">3M</period>
+			<period selected="false" type="MM" count="5">5M</period>
+			<period type="YYYY" count="1">1Y</period>
+			<period type="YYYY" count="3">3Y</period>
+			<period type="MAX">MAX</period>
+		</periods>
+
+		<periods_title>Zoom:</periods_title>
+		<custom_period_title>Custom period:</custom_period_title>
+	</period_selector>
+
+
+	<date_formats>
+		<!--
+			[24] (12 / 24) The time in the legend and x axis might be displayed
+			using 12 or 24 hour format
+		-->
+		<legend>
+			<minutes>DD month, YYYY</minutes>
+			<hours>DD month, YYYY</hours>
+			<days>DD month, YYYY</days>
+			<months>DD month, YYYY</months>
+			<years>DD month, YYYY</years>
+		</legend>
+	</date_formats>
+
+	<header>
+		<enabled>false</enabled>
+	</header>
+
+	<plot_area>
+		<border_color>b6bece</border_color>
+	</plot_area>
+
+	<scroller>
+		<graph_data_source>close</graph_data_source>
+		<graph_selected_fill_alpha>100</graph_selected_fill_alpha>
+		<resize_button_color>002b6d</resize_button_color>
+
+		<playback>
+			<enabled>true</enabled>
+			<color>002b6d</color>
+			<color_hover>db4c3c</color_hover>
+			<speed>3</speed>
+			<max_speed>10</max_speed>
+			<speed_indicator>
+				<color>002b6d</color>
+			</speed_indicator>
+		</playback>
+	</scroller>
+		
+		<data_sets>
+
+			<data_set did="0">
+			  
+				<title>_STOCK_</title>
+				<short>_STOCK_</short>
+				<color>7f8da9</color>
+				<file_name>http://localhost:8080/aiweb/RequestAgents?stock=_STOCK_&agent=history_bollinger_variationvolume_variationpriceindex__maxminindex</file_name>
+				<csv>
+					<reverse>true</reverse>
+					<separator>,</separator>
+					<date_format>YYYYMMDD</date_format>
+					<decimal_separator>.</decimal_separator>
+					<columns>
+						<column>date</column>
+						<column>open</column>
+						<column>high</column>
+						<column>low</column>
+						<column>close</column>
+						<column>volume</column>
+
+						<column>date_bb</column>
+						<column>BU</column>
+						<column>BM</column>
+						<column>BL</column>
+
+						<column>date_vv</column>
+						<column>dMM</column>
+						<column>dOC</column>
+						<column>mMax</column>
+						<column>mMin</column>
+						<column>pMI</column>
+						
+						<column>date_vpi</column>
+						<column>dMM_vpi</column>
+						<column>mMax_vpi</column>
+						<column>mMin_vpi</column>
+
+						<column>date_mmi</column>
+						<column>mmi01</column>
+						<column>mmi02</column>
+						<column>mmi03</column>
+						<column>mmi04</column>
+						<column>mmi05</column>
+
+
+					</columns>
+				</csv>
+			</data_set>
+
+			<!-- data_set did="1">
+				<compare_list_box selected="true"></compare_list_box>
+			
+				<title>Bollinger Upper</title>
+				<short>BW</short>
+				<color>7f8da9</color>
+				<file_name>http://localhost:8080/aiweb/RequestAgents?stock=_STOCK_&agent=bollinger&type=upper
+				</file_name>
+				<csv>
+					<reverse>false</reverse>
+					<separator>,</separator>
+					<date_format>YYYYMMDD</date_format>
+					<decimal_separator>.</decimal_separator>
+					<columns>
+						<column>date</column>
+						<column>close</column>
+					</columns>
+				</csv>
+			</data_set>
+
+			<data_set did="2">
+ 	      <compare_list_box selected="true"></compare_list_box>
+			
+				<title>Bollinger Middle</title>
+				<short>BM</short>
+				<color>7f8da9</color>
+				<file_name>http://localhost:8080/aiweb/RequestAgents?stock=_STOCK_&agent=bollinger&type=middle
+				</file_name>
+				<csv>
+					<reverse>false</reverse>
+					<separator>,</separator>
+					<date_format>YYYYMMDD</date_format>
+					<decimal_separator>.</decimal_separator>
+					<columns>
+						<column>date</column>
+						<column>close</column>
+					</columns>
+				</csv>
+			</data_set>
+
+			<data_set did="3">
+	      <compare_list_box selected="true"></compare_list_box>
+			
+				<title>Bollinger Lower</title>
+				<short>BL</short>
+				<color>7f8da9</color>
+				<file_name>http://localhost:8080/aiweb/RequestAgents?stock=_STOCK_&agent=bollinger&type=lower
+				</file_name>
+				<csv>
+					<reverse>false</reverse>
+					<separator>,</separator>
+					<date_format>YYYYMMDD</date_format>
+					<decimal_separator>.</decimal_separator>
+					<columns>
+						<column>date</column>
+						<column>close</column>
+					</columns>
+				</csv>
+			</data_set>
+
+
+			 <data_set did="5">
+	      <compare_list_box selected="true"></compare_list_box>
+			
+				<title>Max&Min Index</title>
+				<short>M&MI</short>
+				<color>7f8da9</color>
+				<file_name>http://localhost:8080/aiweb/RequestAgents?stock=_STOCK_&agent=maxminindex
+				</file_name>
+				<csv>
+					<reverse>false</reverse>
+					<separator>,</separator>
+					<date_format>YYYYMMDD</date_format>
+					<decimal_separator>.</decimal_separator>
+					<columns>
+						<column>date</column>
+						<column>mmi01</column>
+						<column>mmi02</column>
+						<column>mmi03</column>
+						<column>mmi04</column>
+					</columns>
+				</csv>
+			</data_set-->
+
+		</data_sets>
+		
