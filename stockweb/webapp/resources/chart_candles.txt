@@ -1,0 +1,26 @@
+			<!-- Esse parametro serve para NAO calcular a diferença percentual entre unir mais de um grafico (dataset) no mesmo chart -->
+			<!--comparing>
+         <recalculate>false</recalculate>
+      </comparing-->
+      
+      <height>70</height>
+			<title></title>
+			<border_color>#CCCCCC</border_color>
+			<border_alpha>0</border_alpha>
+
+			<values>
+				<y_left>
+					<bg_alpha>70</bg_alpha>
+					<bg_color>000000</bg_color>
+					<text_color>FFFFFF</text_color>
+				</y_left>
+			</values>
+
+			<legend>
+				<show_date>true</show_date>
+				<positive_color>7f8da9</positive_color>
+				<negative_color>db4c3c</negative_color>
+			</legend>
+
+			<column_width>80</column_width>
+

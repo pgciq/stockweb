@@ -1,0 +1,14 @@
+		<type>column</type>
+		<width>5</width>
+		<data_labels_always_on>true</data_labels_always_on>
+		<data_sources>
+			<close>volume</close>
+		</data_sources>
+		<cursor_color>002b6d</cursor_color>
+		<positive_color>7f8da9</positive_color>
+		<negative_color>db4c3c</negative_color>
+		<fill_alpha>100</fill_alpha>
+		<legend>
+			<date key="false" title="false"><![CDATA[{close}]]></date>
+			<period key="false" title="false"><![CDATA[total:{sum}]]></period>
+		</legend>

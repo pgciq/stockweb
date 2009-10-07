@@ -1,0 +1,56 @@
+ 
+<html>
+<head><title>Simple jsp page</title></head>
+<body> 
+
+<script src="../js/indent/formatterJS.js" type="text/javascript" language="javascript"></script>
+
+<script src='/aiweb/dwr/engine.js'></script>
+<script src='/aiweb/dwr/util.js'></script>
+<script src='/aiweb/dwr/interface/ScriptEngineImpl.js'></script>
+<script src='/aiweb/js/schema.js'></script>
+ 
+ 
+<link rel="stylesheet" type="text/css" href="/aiweb/css/admin.css">
+<input type="hidden" id="id_script" name="name" class="edit" value=""/>
+
+<table>
+	<tr><td>
+  <table  cellspacing="0" cellpadding="0">
+  	<tr><td class="label">Name:</td><td>&nbsp;</td></tr>
+  	<tr><td><input type="text" id="name_script" name="name" class="edit" value=""/></td></tr>
+  	<tr><td class="label">Return:</td><td>&nbsp;</td></tr>
+  	<tr><td><input type="text" id="param_script" class="edit" value=""/></td></tr>
+  	<tr><td class="label">Descr:</td><td>&nbsp;</td></tr>
+  	<tr><td><textarea id="descr_script" class="edit2" style="height:140px; width:150px"></textarea></td></tr>
+  </table>
+  </td><td>
+  <table>
+  	<tr><td class="label">Script:</td></tr>
+  	<tr><td><textarea id="script_script" class="edit2" style="height:220px; width:320px" onkeypress="applyFormatter(event, this.id)">function applyScript(candles, json) {
+    return json;
+}
+</textarea></td></tr>
+  	
+  </table>
+  </td></tr>
+
+  <table>
+  	<tr style="cursor:pointer">
+	  <td width="50px"></td>
+      <td width="50px"><img src="/aiweb/img/new.png" width="40" height="40" type="button" onClick="$script.clear()"/></td>
+      <td width="50px"><img src="/aiweb/img/save.png" width="40" height="40" type="button" onClick="$script.save()"/></td>
+      <td width="50px"><img src="/aiweb/img/list.png" width="40" height="40" value="LIST" type="button" onClick="$script.list()"/></td>
+      <td width="50px"><img src="/aiweb/img/get.png" width="36" height="36"  value="GET"   type="button" onClick="$script.get()"/></td>
+      <td width="50px"><img src="/aiweb/img/delete.png" width="40" height="40" type="button" onClick="$script.rm()"/></td>
+  	</tr>
+  </table>
+
+  </table>
+
+	<div id="rsTableScript"></div>
+	<div id="rsTableDataScript" style="height:80px; width:490px; overflow:auto"></div>
+
+</body>
+
+</html> 

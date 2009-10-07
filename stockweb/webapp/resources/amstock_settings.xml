@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<settings filename="settings.txt">
+		<charts>
+		
+			<chart id="0" filename="chart_candles.txt" type="candles">
+				<graphs>
+					<graph filename="graph_candles.txt"></graph>
+					<graph filename="graph_bollinger_upper.txt"></graph>
+					<graph filename="graph_bollinger_middle.txt"></graph>
+					<graph filename="graph_bollinger_lower.txt"></graph>
+					<graph filename="graph_maxminindex01.txt"></graph>
+					<graph filename="graph_maxminindex02.txt"></graph>
+					<graph filename="graph_maxminindex03.txt"></graph>
+					<graph filename="graph_maxminindex04.txt"></graph>
+					<graph filename="graph_maxminindex05.txt"></graph>
+				</graphs>
+			</chart>
+			
+			<chart id="1" filename="chart_volume.txt" type="volume">
+				<graphs>
+					<graph filename="graph_volume.txt">
+					</graph>
+				</graphs>
+			</chart>
+
+			<chart id="2" filename="chart_variationvolume.txt" type="volume">
+				<graphs>
+					<graph id="0" filename="graph_variationvolume.txt"></graph>
+					<graph id="1" filename="graph_variationvolume2.txt"></graph>
+					<graph id="2" filename="graph_variationvolume3.txt"></graph>
+					<graph id="3" filename="graph_variationvolume4.txt"></graph>
+				</graphs>
+			</chart>
+			
+			<chart id="3" filename="chart_variationpriceindex.txt" type="volume">
+				<graphs>
+					<graph id="0" filename="graph_variationpriceindex_dMM.txt"></graph>
+					<graph id="1" filename="graph_variationpriceindex_mMax.txt"></graph>
+					<graph id="2" filename="graph_variationpriceindex_mMin.txt"></graph>
+				</graphs>
+			</chart>
+			
+		</charts>
+	</settings>

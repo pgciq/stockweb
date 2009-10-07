@@ -1,0 +1,169 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <base href="">
+    
+    <title>My JSP 'index.jsp' starting page</title>
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="expires" content="0">    
+	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+	<meta http-equiv="description" content="This is my page">
+	<!--
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	-->
+  </head>
+  
+  
+         <style>
+            .treeview li.submenu { /* Style for LI that contains sub lists (other ULs). */
+                cursor: hand !important;
+                cursor: pointer !important;
+            }
+            
+            .treeview ul {
+                margin: 0;
+                padding: 0;
+            }
+            
+            .treeview li {
+                list-style-type: none;
+                padding-left: 10px;
+                margin-bottom: 2px;
+                color: #466F93;
+                font-weight: bold;
+                font-family: verdana, arial, sans serif;
+                line-height: 16px;
+                font-size: 13px;
+            }
+            
+            .title-blue {
+                color: #466F93;
+                font-weight: bold;
+                font-family: verdana, arial, sans serif;
+                line-height: 16px;
+                font-size: 12px;
+            }
+            
+            div {
+                position: absolute;
+            }
+            
+            .itemselect {
+                cursor: pointer;
+            }
+            
+            .toolbox-item {
+                color: #466F93;
+                font-weight: bold;
+                font-family: verdana, arial, sans serif;
+                line-height: 16px;
+                font-size: 13px;
+                width: 180px;
+                cursor: pointer;
+            }
+            
+            .caption {
+                color: #466F93;
+                font-weight: bold;
+                font-family: verdana, arial, sans serif;
+                line-height: 16px;
+                font-size: 11px;
+            }
+            
+        </style>
+		
+		
+        <div id="schema">
+            <span id="result"></span>
+	      </div>
+
+  
+	<script type="text/javascript" src="lib/utils.js"></script>
+	<script type="text/javascript" src="lib/observer.js"></script>
+	<script type="text/javascript" src="lib/dragdrop.js"></script>
+	<script type="text/javascript" src="lib/framework.js"></script>
+	<script type="text/javascript" src="structure.js"> </script>
+
+
+  <body style="background-color: gray">&nbsp;&nbsp;&nbsp; <map id="mapareaimg" name="imgmap" ></map>
+			
+			<div id="contentStockDetail" style="visibility: hidden;">
+			<div style="background-color: #76BBDE; top:-10px; width:270px"><center><b><span id="stockcaption">PETR4</span></b></center></div>
+			<br>
+			
+			<div style="width:270px"><center>
+			<font style="font-size:12px; font-family: Courier New;">Selecione um tipo de Candler</font>
+			<br>
+			<select id="tipocandler" style="width:200px; font-size:12px; font-family: Courier New">
+				<option></option>
+			</select>
+			<br><br>
+			<input type="button" value="OK" style="width:75px" onclick="breakIndicator=false; applyTrainning();">&nbsp;&nbsp;&nbsp;
+			
+			<input type="button" value="Cancela" style="width:75px" onclick="breakIndicator=false;">
+			</center>
+			<br>
+			<hr width="270px">
+			<font style="font-size:12px; font-family: Courier New;">&nbsp;<b>Preço:</b><br> 
+			&nbsp;&nbsp;Ultimo: <input type="text" id="preult" style="width:50px; background-color:#E2E3E5;" readonly/>
+			&nbsp;&nbsp;&nbsp;Abertura: <input type="text" id="preabe" style="width:50px; background-color:#E2E3E5;" readonly/><br>
+			&nbsp;&nbsp;Maximo: <input type="text" id="premax" style="width:50px; background-color:#E2E3E5;" readonly/>
+			&nbsp;&nbsp;&nbsp;Minimo: &nbsp;&nbsp;<input type="text" id="premin" style="width:50px; background-color:#E2E3E5;" readonly value=""/>
+			&nbsp;&nbsp;Data: &nbsp;&nbsp;<input type="text" id="datapregao" style="width:70px; background-color:#E2E3E5;" readonly/>
+			<input type="hidden" id="stockid_selected" style="width:70px; background-color:#E2E3E5;"/>
+			</font>
+			</div>
+			
+			
+			</div>
+
+  </body>
+  
+  <script>
+  
+  	function createWindow(){
+  		buildDesign.create(eval(jsonStock));
+  		buildDesign.create(eval(jsonStockDetails));
+  	}
+/*		
+		function handleGetDataCandleType(result) {
+		    mapCandle = new Map();
+		    var chars = "ABCDEFGHIJKLMNOPQRSTUVXZKYW";
+		    for(var x=0; x < chars.length; x++){
+			    for (var i = 0; i < result.length; i++) {
+				      candletype = result[i];
+				      if(chars[x]==candletype.tipo.substring(0,1))
+								addOption(document.getElementById("tipocandler"), candletype.tipo, candletype.id);			      
+//				      mapCandle.put(candletype.id, candletype);
+			    }
+			  }
+		    createComboCandles();
+
+				//alert("keys: " + map.listKeys());
+				//alert("codneg: " + map.get("20080612").codneg);
+					  
+		}
+*/
+	  function changeChart(){
+		  document.getElementById('frameChart').src='intraday_data2/index.html?stock=' + document.getElementById('stock').value;
+	  }
+	  
+		function init(){
+				createWindow();
+				document.getElementById("contentwindow0").innerHTML = "&nbsp;&nbsp;<input type='text' id='stock' name='stock' value='F.MI'/>	<input type='button' value='click' onclick='changeChart()'/><iframe id='frameChart' style=' border: 0px; width: 620px; height: 620px;' scrolling='no' src='intraday_data2/index.html?stock=F.MI'></iframe>";
+				document.getElementById("contentwindow01").innerHTML = "<iframe id='frameScriptEngine' style=' border: 0px; width: 500px; height: 500px;' scrolling='no' src='teste/dwrScriptEngine.html'></iframe>";
+			
+		
+				//CandleTypeBean.getListData(handleGetDataCandleType); 	
+
+		}
+		
+
+	  init();
+				
+				
+				
+  </script>
+</html>

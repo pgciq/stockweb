@@ -1,0 +1,26 @@
+		<type>candlestick</type>
+		<data_sources>
+			<open>open</open>
+			<high>high</high>
+			<low>low</low>
+			<close>close</close>
+		</data_sources>
+		<cursor_color>002b6d</cursor_color>
+		<positive_color>green</positive_color>
+		<negative_color>red</negative_color>
+		<fill_alpha>70</fill_alpha>
+		
+		<legend>
+			
+			<date key="false" title="false"><![CDATA[open:<b>{open}</b> close:<b>{close}</b><br>high: <b>{high}</b>   low:<b> {low}</b>]]></date>
+ 		  <period key="false" title="false"><![CDATA[open:<b>{open}</b> close:<b>{close}</b><br>high: <b>{high}</b>   low:<b> {low}</b>]]></period>
+      <date_comparing key="true" title="true"><![CDATA[open:<b>{open}</b> close:<b>{close}</b><br>high:<b>{high}</b> low:<b>{low}</b>]]></date_comparing>
+      <!-- period_comparing key="true" title="true"><![CDATA[<b>{close}]]></period_comparing -->
+      
+      <!-- date_comparing key="true" title="true"><![CDATA[<b>{close}</b> {open} <b>{high}</b> {low}</b>]]></date_comparing>
+      -->
+		</legend>
+
+     <!-- Esse parametro serve para unir mais de um grafico (dataset) no mesmo chart -->
+         	<!-- compare_source>close</compare_source -->
+         	
