@@ -5,28 +5,26 @@ import java.util.HashMap;
 import javax.script.Invocable;
 import javax.script.ScriptEngine;
 import javax.script.ScriptEngineManager;
-import javax.script.ScriptException;
 
 import org.json.JSONObject;
-
-import com.twolattes.json.Json;
 
 import chart.study.indicator.utils.CandlestickUtils;
 
 public class ScriptStrategy {
-	
+
 	private ScriptEngine jsEngine = null;
 	private Invocable invocableEngine = null;
 
 	public ScriptStrategy() {
 		ScriptEngineManager mgr = new ScriptEngineManager();
 		jsEngine = mgr.getEngineByName("JavaScript");
-		invocableEngine = (Invocable)jsEngine;
+		invocableEngine = (Invocable) jsEngine;
 	}
-	
-	public String applyScript(String scriptName, String script, String date, CandlestickUtils candles){
+
+	public String applyScript(String scriptName, String script, String date,
+			CandlestickUtils candles) {
 		JSONObject jsonResult = new JSONObject();
-		HashMap<String,String> mapResult = new HashMap<String,String>(); 
+		HashMap<String, String> mapResult = new HashMap<String, String>();
 		try {
 			mapResult.put("scriptname", scriptName);
 			mapResult.put("type", "scriptengine");
@@ -34,7 +32,7 @@ public class ScriptStrategy {
 			jsEngine.eval(script);
 			invocableEngine.invokeFunction("applyScript", candles, mapResult);
 			System.out.println(mapResult.toString());
-			for(String key: mapResult.keySet()){
+			for (String key : mapResult.keySet()) {
 				jsonResult.put(key, mapResult.get(key));
 			}
 		} catch (Exception e) {
@@ -42,7 +40,5 @@ public class ScriptStrategy {
 		}
 		return jsonResult.toString();
 	}
-	
-	
 
 }

@@ -1,13 +1,8 @@
 package ai.agent;
 
 
-import java.util.StringTokenizer;
-
-import org.json.JSONObject;
-
 import ai.Agent;
 import ai.Percept;
-import ai.agent.program.BandsBollingerAP;
 import ai.agent.program.VariationVolumeAP;
 
 public class VariationVolumeAgent extends Agent{

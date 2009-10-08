@@ -1,6 +1,5 @@
 package chart.study.indicator.candles;
 
-import chart.study.QuoteHistory;
 import chart.study.indicator.Indicator;
 import chart.study.indicator.utils.CandlestickUtils;
 
@@ -11,7 +10,7 @@ public class BullishMorningDojiStar extends Indicator {
 
 	@Override
 	public double calculate() {
-		// Doji Estrela da manhã (Bullish Morning Doji Star)
+		// Doji Estrela da manhï¿½ (Bullish Morning Doji Star)
 		CandlestickUtils candle = new CandlestickUtils(qh);
 
 		double result = 0;
@@ -20,27 +19,42 @@ public class BullishMorningDojiStar extends Indicator {
 
 		double CorpoCandle2 = candle.getCandleSize(1, 1, 0);
 
-		double CorpoCandle3 = candle.getCandleSize(2 ,1 ,0);
-		double SombraSup3 = candle.getCandleSize(2 ,2 ,1);
-		double SombraInf3 = candle.getCandleSize(2 ,2 ,2);
+		double CorpoCandle3 = candle.getCandleSize(2, 1, 0);
+		double SombraSup3 = candle.getCandleSize(2, 2, 1);
+		double SombraInf3 = candle.getCandleSize(2, 2, 2);
 
-		double rangePercCandle3 = ((Math.abs(candle.Open(2) - candle.Close(2)) / 100) * 40); //Retorna o valor do preço que
+		double rangePercCandle3 = Math.abs(candle.Open(2) - candle.Close(2)) / 100 * 40; // Retorna
+																							// o
+																							// valor
+																							// do
+																							// preï¿½o
+																							// que
 
-		double TendenciaUltimosCandles = candle.getTendencia(2,4);
+		double TendenciaUltimosCandles = candle.getTendencia(2, 4);
 
-		boolean TerceiroCandleBaixa = (candle.Close(2) < candle.Open(2)) && (CorpoCandle3 > (SombraSup3+SombraInf3));
+		boolean TerceiroCandleBaixa = candle.Close(2) < candle.Open(2)
+				&& CorpoCandle3 > SombraSup3 + SombraInf3;
 
 		boolean CandleDoji = candle.Doji(1);
 
-		boolean SegundoCandleGAP = CandleDoji && ((candle.Open(1) < candle.Close(2)) && (candle.Close(1) < candle.Close(2))) && ((candle.Open(1) < candle.Open(0)) && (candle.Close(1) < candle.Open(0))); 
+		boolean SegundoCandleGAP = CandleDoji
+				&& candle.Open(1) < candle.Close(2)
+				&& candle.Close(1) < candle.Close(2)
+				&& candle.Open(1) < candle.Open(0)
+				&& candle.Close(1) < candle.Open(0);
 
-		boolean PrimeiroCandleAlta = (candle.Close(0) >= candle.Close(2)) && (candle.Open(0) < candle.Close(2)) && (CorpoCandle1 > CorpoCandle2) && (candle.Close(0) > (rangePercCandle3 + candle.Close(2)));  
+		boolean PrimeiroCandleAlta = candle.Close(0) >= candle.Close(2)
+				&& candle.Open(0) < candle.Close(2)
+				&& CorpoCandle1 > CorpoCandle2
+				&& candle.Close(0) > rangePercCandle3 + candle.Close(2);
 
-		boolean DojiEstrelaDaManha = TerceiroCandleBaixa && SegundoCandleGAP && PrimeiroCandleAlta && (TendenciaUltimosCandles==0);
+		boolean DojiEstrelaDaManha = TerceiroCandleBaixa && SegundoCandleGAP
+				&& PrimeiroCandleAlta && TendenciaUltimosCandles == 0;
 
-		if (DojiEstrelaDaManha) 
+		if (DojiEstrelaDaManha) {
 			result = 8;
-		
+		}
+
 		return result;
 	}
 }

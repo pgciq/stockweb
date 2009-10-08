@@ -4,7 +4,6 @@ package ai.agent;
 import ai.Agent;
 import ai.Percept;
 import ai.agent.program.ExecuteScriptAP;
-import ai.agent.program.VariationPriceIndexAP;
 
 public class ExecuteScriptAgent extends Agent{
 

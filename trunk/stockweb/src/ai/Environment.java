@@ -5,7 +5,6 @@ import java.util.HashMap;
 import java.util.List;
 
 import ai.environment.EnvironmentView;
-import ai.environment.YahooEnvironmentView;
 
 /**
  * Artificial Intelligence A Modern Approach (2nd Edition): page 32.
@@ -87,10 +86,10 @@ public class Environment {
 					for (Agent agent : agents) {
 						String anAction = agent.execute(this.getPerceptSeenBy(view), modal);
 //						updateViews(anAction);
-						//Este metodo representa o ambiente que responde (reflete) devido a açao do Agente
+						//Este metodo representa o ambiente que responde (reflete) devido a aï¿½ao do Agente
 						this.executeAction(agent, anAction);
-						/* Sendo que o Agente nao interfere no ambiente (agente=candlestick e ambiente=cotaçao dos preços)
-						 * O ambiente pode ficar como responsavel em manter os resultados das açoes dos Agentes
+						/* Sendo que o Agente nao interfere no ambiente (agente=candlestick e ambiente=cotaï¿½ao dos preï¿½os)
+						 * O ambiente pode ficar como responsavel em manter os resultados das aï¿½oes dos Agentes
 						 */
 						
 					}
@@ -114,7 +113,7 @@ public class Environment {
 		}
 	}
 */
-	public ArrayList getAgents() {
+	public ArrayList<Agent> getAgents() {
 		return agents;
 	}
 
@@ -182,12 +181,12 @@ public class Environment {
 }
 
 /*
- NOTE 01: Cada ambiente possui uma percepçao, como o ser humano, a visao quando percebe uma mudança no seu ambiente, é registrado 
- na memoria que como a "visao percebeu determinada mudança de ambiente", quando nos queimamos, "nosso tato percebeu que naquele lugar é quente"
- O mesmo é aplicado para EnvironmentView, para cada vez que ocorre uma mudança em qualquer ambiente, sua percepçao é registrado na memoria do mesmo.
+ NOTE 01: Cada ambiente possui uma percepï¿½ao, como o ser humano, a visao quando percebe uma mudanï¿½a no seu ambiente, ï¿½ registrado 
+ na memoria que como a "visao percebeu determinada mudanï¿½a de ambiente", quando nos queimamos, "nosso tato percebeu que naquele lugar ï¿½ quente"
+ O mesmo ï¿½ aplicado para EnvironmentView, para cada vez que ocorre uma mudanï¿½a em qualquer ambiente, sua percepï¿½ao ï¿½ registrado na memoria do mesmo.
  
- NOTE 02: E' necessario verificar se houve ou nao mudança no ambiente antes de acionar os Agentes. 
- Foi criado um atributo "change" que cada Environment seta se houve ou nao mudança no ambiente.
+ NOTE 02: E' necessario verificar se houve ou nao mudanï¿½a no ambiente antes de acionar os Agentes. 
+ Foi criado um atributo "change" que cada Environment seta se houve ou nao mudanï¿½a no ambiente.
  
   
  */

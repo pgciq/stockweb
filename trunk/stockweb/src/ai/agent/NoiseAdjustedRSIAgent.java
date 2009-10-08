@@ -1,13 +1,9 @@
 package ai.agent;
 
-import chart.study.QuoteHistory;
-
 import ai.Agent;
 import ai.Percept;
-import ai.agent.program.EMAAP;
-import ai.agent.program.HMAAP;
-import ai.agent.program.MACDTriggerAP;
 import ai.agent.program.NoiseAdjustedRSIAP;
+import chart.study.QuoteHistory;
 
 public class NoiseAdjustedRSIAgent extends Agent{
 
