@@ -1,5 +1,5 @@
-DROP TABLE IF EXISTS `aiweb`.`indicator`;
-CREATE TABLE  `aiweb`.`indicator` (
+DROP TABLE IF EXISTS `stockweb`.`indicator`;
+CREATE TABLE  `stockweb`.`indicator` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(45) NOT NULL,
   `descr` varchar(255) NOT NULL,
@@ -7,8 +7,8 @@ CREATE TABLE  `aiweb`.`indicator` (
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 
 
-DROP TABLE IF EXISTS `aiweb`.`scripts`;
-CREATE TABLE  `aiweb`.`scripts` (
+DROP TABLE IF EXISTS `stockweb`.`scripts`;
+CREATE TABLE  `stockweb`.`scripts` (
   `id` int(10) unsigned NOT NULL auto_increment,
   `script` text NOT NULL,
   `name` varchar(45) NOT NULL,
