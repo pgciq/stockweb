@@ -1,114 +1,117 @@
 package chart.study;
 
-import java.text.*;
-import java.util.*;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 /**
  * Encapsulates the price bar information.
  */
 public class PriceBar {
 
-    private static final SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+	private static final SimpleDateFormat dateFormat = new SimpleDateFormat(
+			"dd/MM/yyyy HH:mm:ss");
 
-    private long date;
-    private double open, high, low, close;
-    private long volume;
+	private long date;
+	private double open, high, low, close;
+	private long volume;
 
-    /**
-     * This constructor is used to create a new historical bar
-     */
-    public PriceBar(long date, double open, double high, double low, double close, long volume) {
-        this.date = date;
-        this.open = open;
-        this.high = high;
-        this.low = low;
-        this.close = close;
-        this.volume = volume;
-    }
+	/**
+	 * This constructor used to create a new real time bar whose OHLC values are
+	 * the same as the last completed bar.
+	 */
+	public PriceBar(double price) {
+		this(0, price, price, price, price, 0);
+	}
 
-    /**
-     * This constructor used to create a new real time bar
-     */
-    public PriceBar(double open, double high, double low, double close, long volume) {
-        this(0, open, high, low, close, volume);
-    }
+	/**
+	 * This constructor used to create a new real time bar
+	 */
+	public PriceBar(double open, double high, double low, double close,
+			long volume) {
+		this(0, open, high, low, close, volume);
+	}
 
-    /**
-     * This constructor used to create a new real time bar whose OHLC values
-     * are the same as the last completed bar.
-     */
-    public PriceBar(double price) {
-        this(0, price, price, price, price, 0);
-    }
+	/**
+	 * This constructor is used to create a new historical bar
+	 */
+	public PriceBar(long date, double open, double high, double low,
+			double close, long volume) {
+		this.date = date;
+		this.open = open;
+		this.high = high;
+		this.low = low;
+		this.close = close;
+		this.volume = volume;
+	}
 
-    @Override
-    public String toString() {
-        StringBuilder sb = new StringBuilder();
-        sb.append(" date: ").append(getShortDate());
-        sb.append(" open: ").append(open);
-        sb.append(" high: ").append(high);
-        sb.append(" low: ").append(low);
-        sb.append(" close: ").append(close);
-        sb.append(" volume: ").append(volume);
+	public double getClose() {
+		return close;
+	}
 
-        return sb.toString();
-    }
+	public long getDate() {
+		return date;
+	}
 
-    public double getOpen() {
-        return open;
-    }
+	public double getHigh() {
+		return high;
+	}
 
-    public double getHigh() {
-        return high;
-    }
+	public double getLow() {
+		return low;
+	}
 
-    public double getLow() {
-        return low;
-    }
+	public double getMidpoint() {
+		return (low + high) / 2;
+	}
 
-    public double getClose() {
-        return close;
-    }
+	public double getOpen() {
+		return open;
+	}
 
-    public double getMidpoint() {
-        return (low + high) / 2;
-    }
+	public String getShortDate() {
+		synchronized (dateFormat) {
+			return dateFormat.format(new Date(date));
+		}
+	}
 
-    public void setOpen(double open) {
-        this.open = open;
-    }
+	public long getVolume() {
+		return volume;
+	}
 
-    public void setHigh(double high) {
-        this.high = high;
-    }
+	public void setClose(double close) {
+		this.close = close;
+	}
 
-    public void setLow(double low) {
-        this.low = low;
-    }
+	public void setDate(long date) {
+		this.date = date;
+	}
 
-    public void setClose(double close) {
-        this.close = close;
-    }
+	public void setHigh(double high) {
+		this.high = high;
+	}
 
-    public void setDate(long date) {
-        this.date = date;
-    }
+	public void setLow(double low) {
+		this.low = low;
+	}
 
-    public void setVolume(long volume) {
-        this.volume = volume;
-    }
+	public void setOpen(double open) {
+		this.open = open;
+	}
 
-    public long getVolume() {
-        return volume;
-    }
+	public void setVolume(long volume) {
+		this.volume = volume;
+	}
 
-    public long getDate() {
-        return date;
-    }
+	@Override
+	public String toString() {
+		StringBuilder sb = new StringBuilder();
+		sb.append(" date: ").append(getShortDate());
+		sb.append(" open: ").append(open);
+		sb.append(" high: ").append(high);
+		sb.append(" low: ").append(low);
+		sb.append(" close: ").append(close);
+		sb.append(" volume: ").append(volume);
 
-    public String getShortDate() {
-        synchronized (dateFormat) {
-            return dateFormat.format(new Date(date));
-        }
-    }
+		return sb.toString();
+	}
 }

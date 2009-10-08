@@ -21,13 +21,16 @@ public class Candlestick extends Indicator {
 		double lastResult = 0;
 		try {
 			for (int x = 0; x < lsCandle.size(); x++) {
-				
-				Object obj = Class.forName("chart.study.indicator.candles." + lsCandle.get(x)).newInstance();
+
+				Object obj = Class.forName(
+						"chart.study.indicator.candles." + lsCandle.get(x))
+						.newInstance();
 				((Indicator) obj).init(qh);
 				result = ((Indicator) obj).calculate();
-				if(result != 0){
+				if (result != 0) {
 					lastResult = result;
-					System.out.println(qh.getStrategyName() + " --> " + lsCandle.get(x) + " = " + result);
+					System.out.println(qh.getStrategyName() + " --> "
+							+ lsCandle.get(x) + " = " + result);
 				}
 			}
 		} catch (Exception ex) {

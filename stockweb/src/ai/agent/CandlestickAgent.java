@@ -1,10 +1,6 @@
 package ai.agent;
 
 
-import java.util.StringTokenizer;
-
-import org.json.JSONObject;
-
 import ai.Agent;
 import ai.Percept;
 import ai.agent.program.CandlestickAP;
@@ -38,9 +34,9 @@ public class CandlestickAgent extends Agent{
 			return "";
 		// Lista todos os possiveis tipos de candles 
 
+/*		
 		String bands = ((CandlestickAP)super.program).getIdCandlestick();
 
-/*		
 		double upper, lower, middle;
 		JSONObject json = new JSONObject(bands);
 
@@ -81,6 +77,4 @@ public class CandlestickAgent extends Agent{
 		return "";
 	}
 
-	private CandlestickAP candlestickAP;
-	
 }

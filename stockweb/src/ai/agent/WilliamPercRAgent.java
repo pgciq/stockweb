@@ -1,13 +1,9 @@
 package ai.agent;
 
-import chart.study.QuoteHistory;
-
 import ai.Agent;
 import ai.Percept;
-import ai.agent.program.BandsBollingerAP;
-import ai.agent.program.EMAAP;
-import ai.agent.program.NoiseAdjustedRSIAP;
 import ai.agent.program.WilliamPercRAP;
+import chart.study.QuoteHistory;
 
 public class WilliamPercRAgent extends Agent{
 
@@ -40,7 +36,7 @@ public class WilliamPercRAgent extends Agent{
 		percRLast = ((WilliamPercRAP)super.program).getPercRLast();
 		percRPrev = ((WilliamPercRAP)super.program).getPercRPreview();
 		
-		QuoteHistory history = ((WilliamPercRAP)super.program).history;
+//		QuoteHistory history = ((WilliamPercRAP)super.program).history;
 
 		String status = applyRole(percRPrev, percRLast);
 		int count = 1;

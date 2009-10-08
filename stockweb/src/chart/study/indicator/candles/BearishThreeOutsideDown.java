@@ -11,7 +11,7 @@ public class BearishThreeOutsideDown extends Indicator {
 
 	@Override
 	public double calculate() {
-		
+
 		CandlestickUtils candle = new CandlestickUtils(qh);
 
 		double result = 0;
@@ -24,18 +24,25 @@ public class BearishThreeOutsideDown extends Indicator {
 
 		int TendenciaCandles = candle.getTendencia(1, 3);
 
-		boolean AlturaCandle = (CorpoCandle2 > CorpoCandle3);
+		boolean AlturaCandle = CorpoCandle2 > CorpoCandle3;
 
-		boolean TerceiroCandle = ((candle.Close(2) > candle.Open(2)) || (candle.Doji(2)));
+		boolean TerceiroCandle = candle.Close(2) > candle.Open(2)
+				|| candle.Doji(2);
 
-		boolean SegundoCandleBaixa = AlturaCandle && ((candle.Close(2) < candle.Open(1)) && (candle.Close(2) > candle.Close(1)))
-		&& ((candle.Open(2) < candle.Open(1)) && (candle.Open(2) > candle.Close(1)));
+		boolean SegundoCandleBaixa = AlturaCandle
+				&& candle.Close(2) < candle.Open(1)
+				&& candle.Close(2) > candle.Close(1)
+				&& candle.Open(2) < candle.Open(1)
+				&& candle.Open(2) > candle.Close(1);
 
-		boolean PrimeiroCandleBaixa = (candle.Open(0) > candle.Close(0)) && (candle.Close(0) < candle.Close(1)) && (CorpoCandle1 > (SombraSup1 + SombraInf1));
-		
-		boolean BearishThreeOutsideDown = TerceiroCandle && SegundoCandleBaixa && PrimeiroCandleBaixa && (TendenciaCandles == 1);
-		
-		if(BearishThreeOutsideDown){
+		boolean PrimeiroCandleBaixa = candle.Open(0) > candle.Close(0)
+				&& candle.Close(0) < candle.Close(1)
+				&& CorpoCandle1 > SombraSup1 + SombraInf1;
+
+		boolean BearishThreeOutsideDown = TerceiroCandle && SegundoCandleBaixa
+				&& PrimeiroCandleBaixa && TendenciaCandles == 1;
+
+		if (BearishThreeOutsideDown) {
 			result = -15;
 		}
 

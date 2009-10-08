@@ -1,8 +1,6 @@
 package ai.agent;
 
 
-import java.util.StringTokenizer;
-
 import org.json.JSONObject;
 
 import ai.Agent;
@@ -38,12 +36,11 @@ public class BollingerAgent extends Agent{
 			return "";
 
 		String bands = ((BandsBollingerAP)super.program).getBandsBollinger();
-		double upper, lower, middle;
 		JSONObject json = new JSONObject(bands);
 
-		lower = json.getDouble("lower");
-		middle = json.getDouble("middle");
-		upper = json.getDouble("upper");
+		double lower = json.getDouble("lower");
+//		double middle = json.getDouble("middle");
+		double upper = json.getDouble("upper");
 		
 /*		lower = Double.parseDouble(token.nextToken());
 		middle = Double.parseDouble(token.nextToken());
@@ -81,6 +78,4 @@ public class BollingerAgent extends Agent{
 
 	}
 
-	private BandsBollingerAP bollingerAP;
-	
 }

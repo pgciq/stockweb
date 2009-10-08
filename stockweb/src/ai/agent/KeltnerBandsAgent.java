@@ -4,7 +4,6 @@ import org.json.JSONObject;
 
 import ai.Agent;
 import ai.Percept;
-import ai.agent.program.ADXAP;
 import ai.agent.program.KeltnerBandsAP;
 
 public class KeltnerBandsAgent extends Agent{

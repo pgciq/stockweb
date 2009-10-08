@@ -1,11 +1,7 @@
 package ai.agent;
 
-import chart.study.QuoteHistory;
-
 import ai.Agent;
 import ai.Percept;
-import ai.agent.program.ADXAP;
-import ai.agent.program.EMAAP;
 import ai.agent.program.HistoryStocksAP;
 
 public class HistoryStocksAgent extends Agent{

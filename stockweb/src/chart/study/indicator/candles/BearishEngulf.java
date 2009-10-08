@@ -1,6 +1,5 @@
 package chart.study.indicator.candles;
 
-import chart.study.QuoteHistory;
 import chart.study.indicator.Indicator;
 import chart.study.indicator.utils.CandlestickUtils;
 
@@ -24,13 +23,17 @@ public class BearishEngulf extends Indicator {
 		int TendenciaCandlesMedia = candle.getTendencia(1, 5);
 		int TendenciaCandlesForte = candle.getTendencia(1, 7);
 
-		boolean AlturaCandle = (CorpoCandle1 > CorpoCandle2);
+		boolean AlturaCandle = CorpoCandle1 > CorpoCandle2;
 
 		// EngulfingFull = 0
-		boolean SegundoCandle = ((candle.Close(1) > candle.Open(1)) || (candle.Doji(1)));
+		boolean SegundoCandle = candle.Close(1) > candle.Open(1)
+				|| candle.Doji(1);
 
-		boolean PrimeiroCandle = AlturaCandle && ((candle.Close(1) < candle.Open(0)) && (candle.Close(1) > candle.Close(0)))
-		&& ((candle.Open(1) < candle.Open(0)) && (candle.Open(1) > candle.Close(0)));
+		boolean PrimeiroCandle = AlturaCandle
+				&& candle.Close(1) < candle.Open(0)
+				&& candle.Close(1) > candle.Close(0)
+				&& candle.Open(1) < candle.Open(0)
+				&& candle.Open(1) > candle.Close(0);
 
 		if (SegundoCandle && PrimeiroCandle) {
 			result = -2;

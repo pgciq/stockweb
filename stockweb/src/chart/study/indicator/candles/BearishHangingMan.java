@@ -15,10 +15,10 @@ public class BearishHangingMan extends Indicator {
 
 		double result = 0;
 
-		double TendenciaUltimosCandles = candle.getTendencia(0,1);
+		double TendenciaUltimosCandles = candle.getTendencia(0, 1);
 
 		boolean HangingMan = candle.isHangingManORHammer(qh);
-		if ((HangingMan) && (TendenciaUltimosCandles > 0)) {
+		if (HangingMan && TendenciaUltimosCandles > 0) {
 			result = 3;
 		}
 

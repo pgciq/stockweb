@@ -1,22 +1,20 @@
 package chart.study.indicator;
 
-
 public class IndicatorValue {
-    private final long date;
-    private final double value;
+	private final long date;
+	private final double value;
 
-    public IndicatorValue(long date, double value) {
-        this.date = date;
-        this.value = value;
-    }
+	public IndicatorValue(long date, double value) {
+		this.date = date;
+		this.value = value;
+	}
 
-    public long getDate() {
-        return date;
-    }
+	public long getDate() {
+		return date;
+	}
 
-    public double getValue() {
-        return value;
-    }
-
+	public double getValue() {
+		return value;
+	}
 
 }

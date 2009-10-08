@@ -1,8 +1,5 @@
 package chart.study.indicator;
 
-import java.util.*;
-
-import chart.study.PriceBar;
 import chart.study.QuoteHistory;
 
 /*
@@ -14,29 +11,28 @@ import chart.study.QuoteHistory;
  *    NAO E'COMPLETO, DEVO APLICAR ESSAS FORMULAS
  */
 public class KeltnerBands extends Indicator {
-    private final int length;
-    //private final double multiplier;
+	private final int length;
 
-    public KeltnerBands(QuoteHistory qh, int length) {
-        super(qh);
-        this.length = length;
-//        multiplier = 2. / (length + 1.);
-    }
+	// private final double multiplier;
 
-    @Override
-    public double calculate() {
-/*        List<PriceBar> priceBars = qh.getAll();
-        int lastBar = priceBars.size() - 1;
-        int firstBar = lastBar - 2 * length + 1;
-        double ema = priceBars.get(firstBar).getClose();
+	public KeltnerBands(QuoteHistory qh, int length) {
+		super(qh);
+		this.length = length;
+		// multiplier = 2. / (length + 1.);
+	}
 
-        for (int bar = firstBar; bar <= lastBar; bar++) {
-            double barClose = priceBars.get(bar).getClose();
-            ema += (barClose - ema) * multiplier;
-        }
-
-        value = ema;
-*/
-        return value;
-    }
+	@Override
+	public double calculate() {
+		/*
+		 * List<PriceBar> priceBars = qh.getAll(); int lastBar =
+		 * priceBars.size() - 1; int firstBar = lastBar - 2 length + 1; double
+		 * ema = priceBars.get(firstBar).getClose();
+		 * 
+		 * for (int bar = firstBar; bar <= lastBar; bar++) { double barClose =
+		 * priceBars.get(bar).getClose(); ema += (barClose - ema) multiplier; }
+		 * 
+		 * value = ema;
+		 */
+		return value;
+	}
 }

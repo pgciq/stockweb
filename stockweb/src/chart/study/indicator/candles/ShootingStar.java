@@ -18,22 +18,31 @@ public class ShootingStar extends Indicator {
 		double SombraSup1 = candle.getCandleSize(0, 2, 1);
 		double SombraInf1 = candle.getCandleSize(0, 2, 2);
 
-		double TendenciaUltimosCandles = candle.getTendencia(1,3);
+		double TendenciaUltimosCandles = candle.getTendencia(1, 3);
 
-		boolean SegundoCandle = (candle.Open(1) < candle.Close(1)); //AND ( CorpoCandle2 > (SombraSup2+SombraInf2) )
+		boolean SegundoCandle = candle.Open(1) < candle.Close(1); // AND (
+																	// CorpoCandle2
+																	// >
+																	// (SombraSup2+SombraInf2)
+																	// )
 
-		boolean PrimeiroCandleGAPAlta= (candle.Close(0) > candle.Close(1)) && (candle.Open(0) > candle.Close(1)) && (SombraSup1 > (SombraInf1*2.5)) && (CorpoCandle1 < (SombraSup1+SombraInf1));
+		boolean PrimeiroCandleGAPAlta = candle.Close(0) > candle.Close(1)
+				&& candle.Open(0) > candle.Close(1)
+				&& SombraSup1 > SombraInf1 * 2.5
+				&& CorpoCandle1 < SombraSup1 + SombraInf1;
 
-		boolean PrimeiroCandleLungaSombra= (SombraSup1 > ((CorpoCandle1 + SombraInf1)*4));
+		boolean PrimeiroCandleLungaSombra = SombraSup1 > (CorpoCandle1 + SombraInf1) * 4;
 
-		boolean ShootingStar = SegundoCandle && PrimeiroCandleGAPAlta; //(TendenciaUltimosCandles=1)
+		boolean ShootingStar = SegundoCandle && PrimeiroCandleGAPAlta; // (TendenciaUltimosCandles=1)
 
 		if (ShootingStar) {
 			result = 1;
-			if (PrimeiroCandleLungaSombra) 
+			if (PrimeiroCandleLungaSombra) {
 				result = 1.5;
-			if(TendenciaUltimosCandles != 0) 
+			}
+			if (TendenciaUltimosCandles != 0) {
 				result = -result;
+			}
 		}
 
 		return result;

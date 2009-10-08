@@ -3,23 +3,26 @@ package ai.environment;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
-import java.io.InputStream;
-import java.io.InputStreamReader;
 import java.util.ArrayList;
+
 import org.json.JSONObject;
+
 import persistence.Stock;
 import ai.Percept;
 
 public class ReadFileEnvironmentView implements EnvironmentView {
 
 	private String pathname = "";
-	
-	public ReadFileEnvironmentView(String pathname){
+
+	private String filename = "";
+
+	public ReadFileEnvironmentView(String pathname) {
 		this.pathname = pathname;
 	}
-	
+
 	public Percept envChanged(String command) {
-		System.out.println("Class: " + this.getClass() + " - param: " + command);
+		System.out
+				.println("Class: " + this.getClass() + " - param: " + command);
 		int index = 0;
 		boolean register = false;
 		ArrayList<Stock> lsStocks = new ArrayList();
@@ -29,27 +32,35 @@ public class ReadFileEnvironmentView implements EnvironmentView {
 		JSONObject json = new JSONObject(command);
 		try {
 			Stock stock = null;
-			FileReader file = new FileReader(new File(this.pathname + json.getString("filename")));
+			FileReader file = new FileReader(new File(this.pathname
+					+ json.getString("filename")));
 			buffer = new BufferedReader(file);
 			buffer.readLine();
 			while (buffer.ready()) {
 				String line = buffer.readLine();
-				
+
 				stock = getObject(line);
-				
-				if (stock.getCodneg().trim().equalsIgnoreCase((String)json.get("symbol"))) {
-					if((!json.getString("filterDI").equals("")) && (json.getString("filterDI").equals(stock.getDataPregao())))
+
+				if (stock.getCodneg().trim().equalsIgnoreCase(
+						(String) json.get("symbol"))) {
+					if (!json.getString("filterDI").equals("")
+							&& json.getString("filterDI").equals(
+									stock.getDataPregao())) {
 						register = true;
-					if(register)
+					}
+					if (register) {
 						lsStocks.add(stock);
-					//System.out.println(stock.getDataPregao());
-					if(json.getString("filterDF").equals(stock.getDataPregao()))
+					}
+					// System.out.println(stock.getDataPregao());
+					if (json.getString("filterDF")
+							.equals(stock.getDataPregao())) {
 						break;
+					}
 
 				}
 
 			}
-			
+
 			buffer.close();
 
 			percept.setAttribute("change", "true");
@@ -96,6 +107,4 @@ public class ReadFileEnvironmentView implements EnvironmentView {
 		return stock;
 
 	}
-
-	private String filename = "";
 }

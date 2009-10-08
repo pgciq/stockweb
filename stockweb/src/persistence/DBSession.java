@@ -2,7 +2,6 @@ package persistence;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.SQLException;
 
 public class DBSession {
 
@@ -11,20 +10,17 @@ public class DBSession {
 	private Connection conn = null;
 	public static DBSession istance = null;
 
-	public DBSession() {
-		connect("root", "root");
-	}
-
 	public static DBSession getIstance() {
-		if (istance == null)
+		if (istance == null) {
 			istance = new DBSession();
+		}
 
 		return istance;
 
 	}
 
-	public Connection getConnection() {
-		return conn;
+	public DBSession() {
+		connect("root", "root");
 	}
 
 	/*
@@ -53,6 +49,10 @@ public class DBSession {
 				e.printStackTrace();
 			}
 		}
+	}
+
+	public Connection getConnection() {
+		return conn;
 	}
 
 }
