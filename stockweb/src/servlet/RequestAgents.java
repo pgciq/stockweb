@@ -72,9 +72,9 @@ public class RequestAgents extends HttpServlet {
 		//interval = d(diario), w(semanal), m(mensal)
 		
 		if(request.getParameter("stock") != null)
-			testAI.executeAgent(request.getParameter("stock"), "w", "20070101", "20101213", "HistoryStocksAgent,CandlestickAgent,BollingerAgent,MaxMinIndexAgent,VariationVolumeAgent,VariationPriceIndexAgent,ExecuteScriptAgent");
+			testAI.executeAgent(request.getParameter("stock"), "d", "20080101", "20101213", "HistoryStocksAgent,CandlestickAgent,BollingerAgent,MaxMinIndexAgent,VariationVolumeAgent,VariationPriceIndexAgent,ExecuteScriptAgent");
 		else	
-			testAI.executeAgents(prop, "w", "20070501", "20101213", "HistoryStocksAgent,CandlestickAgent,BollingerAgent,MaxMinIndexAgent,VariationVolumeAgent,VariationPriceIndexAgent,ExecuteScriptAgent");
+			testAI.executeAgents(prop, "d", "20080501", "20101213", "HistoryStocksAgent,CandlestickAgent,BollingerAgent,MaxMinIndexAgent,VariationVolumeAgent,VariationPriceIndexAgent,ExecuteScriptAgent");
 
 		//testAI.getResponseAgents(getAgentName(request.getParameter("agent")) + "Agent")
 		formatterResult(testAI,request,response);

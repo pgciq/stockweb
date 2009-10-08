@@ -31,7 +31,7 @@ public class DBSession {
 	 * CONNECT mysql
 	 */
 	synchronized public Connection connect(String login, String pws) {
-		String dbURL = "jdbc:mysql://localhost:3306/aiweb?useServerPrepStmts=true";
+		String dbURL = "jdbc:mysql://localhost:3306/stockweb?useServerPrepStmts=true";
 		try {
 			Class.forName(JDBC_driver);
 			conn = DriverManager.getConnection(dbURL, login, pws);
