@@ -1,0 +1,185 @@
+<html><head>
+
+<link href="css/html_color_codes.css" rel="stylesheet" type="text/css">
+<script language="javascript">
+	function Barva(koda)
+	{
+		document.getElementById("vzorec").bgColor=koda;
+		document.hcc.barva.value=koda.toUpperCase();
+		document.hcc.barva.select();
+	}
+	function BarvaDruga(koda)
+	{
+		document.getElementById("vzorec2").bgColor=koda;
+		document.hcc.Barva2.value=koda.toUpperCase();
+		document.hcc.Barva2.select();
+	}
+</script>
+<link rel="stylesheet" type="text/css" href="css/screennew.css">
+<script type="text/javascript" src="js/ddcolorposter.js"></script>
+<script type="text/javascript" src="js/YAHOO.js"></script>
+<script type="text/javascript" src="js/color.js"></script>
+<script type="text/javascript" src="js/event.js"></script>
+<script type="text/javascript" src="js/dom.js"></script>
+<script type="text/javascript" src="js/dragdrop.js"></script>
+<script type="text/javascript" src="js/slider.js"></script>
+<script type="text/javascript" src="js/startcolor.js"></script>
+<script type="text/javascript">
+
+	var hue;
+	var picker;
+	//var gLogger;
+	var dd1, dd2;
+	var r, g, b;
+
+	function init() {
+		if (typeof(ygLogger) != "undefined")
+			ygLogger.init(document.getElementById("logDiv"));
+		pickerInit();
+    }
+
+    // Picker ---------------------------------------------------------
+
+    function pickerInit() {
+		hue = YAHOO.widget.Slider.getVertSlider("hueBg", "hueThumb", 0, 180);
+		hue.onChange = function(newVal) { hueUpdate(newVal); };
+
+		picker = YAHOO.widget.Slider.getSliderRegion("pickerDiv", "selector", 0, 180, 0, 180);
+		picker.onChange = function(newX, newY) { pickerUpdate(newX, newY); };
+
+		hueUpdate();
+
+		dd1 = new YAHOO.util.DD("pickerPanel");
+		dd1.setHandleElId("pickerHandle");
+		dd1.endDrag = function(e) {
+			// picker.thumb.resetConstraints();
+			// hue.thumb.resetConstraints();
+        };
+	}
+
+	executeonload(init);
+
+	function pickerUpdate(newX, newY) {
+		pickerSwatchUpdate();
+	}
+
+
+	function hueUpdate(newVal) {
+
+		var h = (180 - hue.getValue()) / 180;
+		if (h == 1) { h = 0; }
+
+		var a = YAHOO.util.Color.hsv2rgb( h, 1, 1);
+
+		document.getElementById("pickerDiv").style.backgroundColor =
+			"rgb(" + a[0] + ", " + a[1] + ", " + a[2] + ")";
+
+		pickerSwatchUpdate();
+	}
+
+	function pickerSwatchUpdate() {
+		var h = (180 - hue.getValue());
+		if (h == 180) { h = 0; }
+		//document.getElementById("pickerhval").value = (h*2);
+
+		h = h / 180;
+
+		var s = picker.getXValue() / 180;
+		//document.getElementById("pickersval").value = Math.round(s * 100);
+
+		var v = (180 - picker.getYValue()) / 180;
+		//document.getElementById("pickervval").value = Math.round(v * 100);
+
+		var a = YAHOO.util.Color.hsv2rgb( h, s, v );
+
+		document.getElementById("pickerSwatch").style.backgroundColor =
+			"rgb(" + a[0] + ", " + a[1] + ", " + a[2] + ")";
+
+		document.getElementById("pickerrval").value = a[0];
+		document.getElementById("pickergval").value = a[1];
+		document.getElementById("pickerbval").value = a[2];
+		var hexvalue = document.getElementById("pickerhexval").value ='#'+
+			YAHOO.util.Color.rgb2hex(a[0], a[1], a[2]);
+			ddcolorposter.initialize(a[0], a[1], a[2], hexvalue)
+		if (hexvalue!="#FFFFFF") document.getElementById("pickerhexval").select();
+	}
+
+</script>
+
+<script type="text/javascript">
+
+function correctPNG() 
+   {
+   for(var i=0; i<document.images.length; i++)
+      {
+	  var img = document.images[i]
+	  var imgName = img.src.toUpperCase()
+	  if (imgName.substring(imgName.length-3, imgName.length) == "PNG")
+	     {
+		 var imgID = (img.id) ? "id='" + img.id + "' " : ""
+		 var imgClass = (img.className) ? "class='" + img.className + "' " : ""
+		 var imgTitle = (img.title) ? "title='" + img.title + "' " : "title='" + img.alt + "' "
+		 var imgStyle = "display:inline-block;" + img.style.cssText
+		 if (img.align == "left") imgStyle = "float:left;" + imgStyle
+		 if (img.align == "right") imgStyle = "float:right;" + imgStyle
+		 if (img.parentElement.href) imgStyle = "cursor:hand;" + imgStyle
+		 var strNewHTML = "<span " + imgID + imgClass + imgTitle
+		 + " style=\"" + "width:" + img.width + "px; height:" + img.height + "px;" + imgStyle + ";"
+	     + "filter:progid:DXImageTransform.Microsoft.AlphaImageLoader"
+		 + "(src=\'" + img.src + "\', sizingMethod='scale');\"></span>"
+		 img.outerHTML = strNewHTML
+		 i = i-1
+	     }
+      }
+   }
+
+YAHOO.util.Event.addListener(window, "load", correctPNG);
+
+</script>
+</head>
+
+
+<div>
+<div id="pickerPanel" class="dragPanel">
+
+
+  <div id="pickerDiv" style="margin-left: 0px; margin-right: 0px; background-color: rgb(255, 0, 0);"> 
+	<img id="pickerbg" src="img/pickerbg.png" alt="">
+	<div id="selector" style="margin-left: 0px; margin-right: 0px; left: 0px; top: 0px;"><img src="img/select.gif"></div>
+  </div>
+  <div id="hueBg" style="margin-left: 0px; margin-right: 0px;">
+	<div id="hueThumb" style="margin-left: 0px; margin-right: 0px; left: 0px; top: 0px;"><img src="img/hline.png"></div>
+  </div>
+  <div id="pickervaldiv" style="margin-left: 0px; margin-right: 0px;">
+	<form name="pickerform" onsubmit="return pickerUpdate()">
+	  <b>Insertar codigo:</b>
+	   <input name="startcolor" id="startcolor" value="#FFFFFF" size="8" maxlength="7" onkeypress="PritisnjenEnter(event,this.form)" style="font-weight: bold; font-family: Verdana; font-size: 12px; margin-left: 0px;" type="text">
+	   <input name="GO" id="GO" value="GO" onclick="javascript:checkcolor()" style="width: 30px;" type="button">
+	   &nbsp;&nbsp;
+	   <br><br><br><br>
+	  R
+	  <input name="pickerrval" id="pickerrval" value="255" size="3" maxlength="3" type="text">
+	  H
+	  <input name="pickerhval" id="pickerhval" value="0" size="3" maxlength="3" type="text">&nbsp;
+	  <br>
+	  G
+	  <input name="pickergval" id="pickergval" value="255" size="3" maxlength="3" type="text">
+	  S
+	  <input name="pickersval" id="pickersval" value="0" size="3" maxlength="3" type="text">&nbsp;
+	  <br>
+	  B
+	  <input name="pickerbval" id="pickerbval" value="255" size="3" maxlength="3" type="text">
+	  V
+	  <input name="pickervval" id="pickervval" value="0" size="3" maxlength="3" type="text">&nbsp;
+	  <br>
+	  <b>Codigo de color:</b><br>
+	  <input name="pickerhexval" id="pickerhexval" value="#FFFFFF" size="8" maxlength="7" style="font-family: Verdana; height: 30px; width: 100px; font-size: 19px;" type="text">&nbsp;&nbsp;&nbsp;&nbsp;
+	  
+	</form>
+  </div>
+  <div id="pickerSwatch" style="margin-left: 0px; margin-right: 0px; background-color: rgb(255, 255, 255);">&nbsp;</div>
+</div>
+</div>
+
+
+</body></html>
