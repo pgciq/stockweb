@@ -124,8 +124,10 @@
   <script>
   
   	function createWindow(){
+  		buildDesign.create(eval(jsonMenuDesktop));
   		buildDesign.create(eval(jsonStock));
-  		buildDesign.create(eval(jsonStockDetails));
+  		buildDesign.create(eval(jsonScript));
+  		buildDesign.create(eval(jsonWidgetColor));
   	}
 /*		
 		function handleGetDataCandleType(result) {
@@ -154,8 +156,11 @@
 				createWindow();
 				document.getElementById("contentwindow0").innerHTML = "&nbsp;&nbsp;<input type='text' id='stock' name='stock' value='F.MI'/>	<input type='button' value='click' onclick='changeChart()'/><iframe id='frameChart' style=' border: 0px; width: 620px; height: 620px;' scrolling='no' src='intraday_data2/index.html?stock=F.MI'></iframe>";
 				document.getElementById("contentwindow01").innerHTML = "<iframe id='frameScriptEngine' style=' border: 0px; width: 500px; height: 500px;' scrolling='no' src='teste/dwrScriptEngine.html'></iframe>";
+				document.getElementById("contentwindow02").innerHTML = "<iframe src='widget/selectcolor.htm' width='370' height='260' scrolling='no' frameborder='0'></iframe>";
 			
-		
+				document.getElementById("window0").style.visibility = "hidden"; 
+				document.getElementById("window01").style.visibility = "hidden"; 
+				document.getElementById("window02").style.visibility = "hidden"; 
 				//CandleTypeBean.getListData(handleGetDataCandleType); 	
 
 		}

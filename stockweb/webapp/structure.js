@@ -179,6 +179,20 @@ var jsonStock = {
     }, {
         "layout": [{
             "tag": "div",
+            "id": "close0",
+            "params": [],
+            "nodeRifer": "window0",
+            "innerHTML": "<img id='resize' src='img/close.gif'/>",
+            "style": ["position:absolute", "top:-7px", "left:600px", "cursor:pointer"],
+            "events": [{
+                "onclick": function(){
+                    document.getElementById('window0').style.visibility = 'hidden';
+                }
+            }]
+        }]        
+    }, {
+        "layout": [{
+            "tag": "div",
             "id": "resize0",
             "params": [],
             "nodeRifer": "window0",
@@ -194,7 +208,7 @@ var jsonStock = {
 
 
 
-var jsonStockDetails = {
+var jsonScript = {
     'main': [{
         "layout": [{
             "tag": "div",
@@ -259,5 +273,170 @@ var jsonStockDetails = {
         }]
 
     }    
+    ]
+}
+
+var jsonWidgetColor = {
+    'main': [{
+        "layout": [{
+            "tag": "div",
+            "id": "window02",
+            "params": [],
+            "nodeRifer": "schema",
+            "innerHTML": "&nbsp;<div id='contentwindow02'/>",
+            "style": ["top:30px", "width:375px", "height:280px", "left:630px", "position:absolute", "backgroundColor:#100C72"],
+            "events": [{
+                "onmousemove": eventMouseMove
+            }]
+        }]
+    }, {
+        "layout": [{
+            "tag": "div",
+            "id": "menubar02",
+            "params": [],
+            "nodeRifer": "window02",
+            "innerHTML": "",
+            "style": ["top:0px", "left:0px", "height:20px", "width:375px", "backgroundImage:url(img/white-top-bottom.gif)"],
+            "events": [{
+                "onmousedown": function(){
+                    dragdrop.addEvent(document.getElementById('window02'), 'move');
+                    listener.fire(['mousedown', 'window02']);
+                }
+            }]
+        }]
+    }, {
+        "layout": [{
+            "tag": "span",
+            "id": "title02",
+            "params": [],
+            "nodeRifer": "window02",
+            "innerHTML": "",
+            "style": ["position:absolute", "top:-8px", "left:10px", "color:#466F93", "fontWeight:bold", "fontFamily:verdana, arial, sans serif", "lineHeight:16px", "fontSize:12px"],
+            "events": [{}]
+        }]
+    }, {
+        "layout": [{
+            "tag": "div",
+            "id": "close01",
+            "params": [],
+            "nodeRifer": "window01",
+            "innerHTML": "<img id='resize' src='img/close.gif'/>",
+            "style": ["position:absolute", "top:-7px", "left:480px", "cursor:pointer"],
+            "events": [{
+                "onclick": function(){
+                    document.getElementById('window01').style.visibility = 'hidden';
+                }
+            }]
+        }]
+        
+    }, {
+        "layout": [{
+            "tag": "div",
+            "id": "statusbar02",
+            "params": [],
+            "nodeRifer": "window02",
+            "innerHTML": "",
+            "style": ["top:280px", "left:0px", "height:15px", "width:375px", "backgroundImage:url(img/white-top-bottom.gif)"],
+            "events": [{
+                "onmousedown": function(){
+                    //dragdrop.addEvent(document.getElementById('window0'), 'resize');
+                    //listener.fire(['resize', this.parentNode.id]);
+                }
+            }]
+        }]
+    }, {
+        "layout": [{
+            "tag": "div",
+            "id": "close02",
+            "params": [],
+            "nodeRifer": "window02",
+            "innerHTML": "<img id='resize' src='img/close.gif'/>",
+            "style": ["position:absolute", "top:4px", "left:355px", "cursor:pointer"],
+            "events": [{
+                "onclick": function(){
+                    document.getElementById('window02').style.visibility = 'hidden';
+                }
+            }]
+        }]
+    }, {
+        "layout": [{
+            "tag": "div",
+            "id": "resize02",
+            "params": [],
+            "nodeRifer": "window02",
+            "innerHTML": "<img id='resize' src='img/resizediv.gif'/>",
+            "style": ["position:absolute", "top:280px", "left:360px"],
+            "events": [{}]
+        }]
+
+    }    
+    ]
+}
+
+var jsonMenuDesktop = {
+    'main': [{
+        "layout": [{
+            "tag": "div",
+            "id": "menuicon01",
+            "params": [],
+            "nodeRifer": "schema",
+            "innerHTML": "<img id='resize' src='img/icon_chart.png'/>",
+            "style": ["top:50px", "width:128px", "height:128px", "left:10px", "position:absolute", "cursor:pointer"],
+            "events": [{
+                "onmousemove": eventMouseMove,
+                "onmousedown": function(){
+                    dragdrop.addEvent(document.getElementById('menuicon01'), 'move');
+                    listener.fire(['mousedown', 'menuicon01']);
+                },
+                "onclick": function(){
+                    document.getElementById('window0').style.visibility = 'visible';
+                }
+                
+            }]
+        }]
+    
+    },{
+        "layout": [{
+            "tag": "div",
+            "id": "menuicon02",
+            "params": [],
+            "nodeRifer": "schema",
+            "innerHTML": "<img id='resize' src='img/icon_script.png'/>",
+            "style": ["top:200px", "width:128px", "height:128px", "left:10px", "position:absolute", "cursor:pointer"],
+            "events": [{
+                "onmousemove": eventMouseMove,
+                "onmousedown": function(){
+                    dragdrop.addEvent(document.getElementById('menuicon02'), 'move');
+                    listener.fire(['mousedown', 'menuicon02']);
+                },
+                "onclick": function(){
+                    document.getElementById('window01').style.visibility = 'visible';
+                }
+            }]
+        }]
+        
+    },{
+        "layout": [{
+            "tag": "div",
+            "id": "menuicon03",
+            "params": [],
+            "nodeRifer": "schema",
+            "innerHTML": "<img id='resize' src='img/icon_search.png'/>",
+            "style": ["top:350px", "width:128px", "height:128px", "left:10px", "position:absolute", "cursor:pointer"],
+            "events": [{
+                "onmousemove": eventMouseMove,
+                "onmousedown": function(){
+                    dragdrop.addEvent(document.getElementById('menuicon03'), 'move');
+                    listener.fire(['mousedown', 'menuicon03']);
+                },
+                "onclick": function(){
+                    document.getElementById('window02').style.visibility = 'visible';
+                }
+
+            }]
+        }]
+    
+    }    
+        
     ]
 }
