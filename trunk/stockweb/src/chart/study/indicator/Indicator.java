@@ -6,6 +6,11 @@ import java.util.List;
 import chart.study.QuoteHistory;
 
 /**
+ * @author: Humberto Rocha Loureiro (humbertorocha@gmail.com)
+ * @modify: 
+ */
+
+/**
  * Base class for all classes implementing technical indicators.
  */
 public abstract class Indicator {

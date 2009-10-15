@@ -6,8 +6,14 @@ import chart.study.PriceBar;
 import chart.study.QuoteHistory;
 
 /**
+ * @author: Humberto Rocha Loureiro (humbertorocha@gmail.com)
+ * @modify: 
+ */
+
+/**
  * Exponential Moving Average.
  */
+
 public class WilliamPercR extends Indicator {
 	private final int length;
 	private int lastPreview = 1;

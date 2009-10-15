@@ -1,5 +1,10 @@
 package chart.study.indicator;
 
+/**
+ * @author: Humberto Rocha Loureiro (humbertorocha@gmail.com)
+ * @modify: 
+ */
+
 public class IndicatorValue {
 	private final long date;
 	private final double value;

@@ -3,6 +3,11 @@ package chart.study.indicator;
 import java.util.List;
 
 /**
+ * @author: Humberto Rocha Loureiro (humbertorocha@gmail.com)
+ * @modify: 
+ */
+
+/**
  * Slope of any indicator
  */
 public class Slope extends Indicator {

@@ -3,6 +3,11 @@ package chart.study;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * @author: Humberto Rocha Loureiro (humbertorocha@gmail.com)
+ * @modify: 
+ */
+
 public class History {
 
 	private static Map<String, QuoteHistory> mapQuoteHistory = new HashMap<String, QuoteHistory>();

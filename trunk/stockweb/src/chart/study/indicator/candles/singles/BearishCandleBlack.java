@@ -4,6 +4,11 @@ import chart.study.indicator.Indicator;
 import chart.study.indicator.utils.CandlestickUtils;
 
 /**
+ * @author: Humberto Rocha Loureiro (humbertorocha@gmail.com)
+ * @modify: 
+ */
+
+/**
  * Single Candle Black - Continuation
  */
 public class BearishCandleBlack extends Indicator {

@@ -4,6 +4,10 @@ package ai.agent;
 import ai.Agent;
 import ai.Percept;
 import ai.agent.program.ExecuteScriptAP;
+/**
+ * @author: Humberto Rocha Loureiro (humbertorocha@gmail.com)
+ * @modify: 
+ */
 
 public class ExecuteScriptAgent extends Agent{
 

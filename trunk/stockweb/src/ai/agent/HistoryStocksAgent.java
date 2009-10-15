@@ -4,6 +4,11 @@ import ai.Agent;
 import ai.Percept;
 import ai.agent.program.HistoryStocksAP;
 
+/**
+ * @author: Humberto Rocha Loureiro (humbertorocha@gmail.com)
+ * @modify: 
+ */
+
 public class HistoryStocksAgent extends Agent{
 
 	public HistoryStocksAgent() {

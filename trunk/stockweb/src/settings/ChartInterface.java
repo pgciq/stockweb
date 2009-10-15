@@ -25,6 +25,11 @@ import org.xml.sax.InputSource;
 
 import com.sun.org.apache.xpath.internal.XPathAPI;
 
+/**
+ * @author: Humberto Rocha Loureiro (humbertorocha@gmail.com)
+ * @modify: 
+ */
+
 public class ChartInterface {
 	private String pathname = "";
 	private Map<String, String> mapSetting = new HashMap<String, String>();

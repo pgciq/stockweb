@@ -1,3 +1,7 @@
+// ----------------------------------------------------------
+// @author: Humberto Rocha Loureiro (humbertorocha@gmail.com)
+// @modify: 
+// ----------------------------------------------------------
 
 var jsRegion3 = {
     "main": [{

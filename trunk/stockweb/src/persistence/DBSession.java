@@ -3,6 +3,11 @@ package persistence;
 import java.sql.Connection;
 import java.sql.DriverManager;
 
+/**
+ * @author: Humberto Rocha Loureiro (humbertorocha@gmail.com)
+ * @modify: 
+ */
+
 public class DBSession {
 
 	private String JDBC_driver = "com.mysql.jdbc.Driver";

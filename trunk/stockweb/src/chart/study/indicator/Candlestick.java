@@ -5,6 +5,11 @@ import java.util.List;
 import chart.study.QuoteHistory;
 
 /**
+ * @author: Humberto Rocha Loureiro (humbertorocha@gmail.com)
+ * @modify: 
+ */
+
+/**
  * Lower Bollinger Band
  */
 public class Candlestick extends Indicator {

@@ -10,6 +10,11 @@ import org.json.JSONObject;
 
 import chart.study.indicator.utils.CandlestickUtils;
 
+/**
+ * @author: Humberto Rocha Loureiro (humbertorocha@gmail.com)
+ * @modify: 
+ */
+
 public class ScriptStrategy {
 
 	private ScriptEngine jsEngine = null;

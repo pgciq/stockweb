@@ -2,9 +2,10 @@ package ai;
 import java.util.Iterator;
 
 /**
- * @author Ravi Mohan
- * 
+ * @author: Ravi Mohan
+ * @modify: Humberto Rocha Loureiro (humbertorocha@gmail.com)
  */
+
 public class Percept extends ObjectWithDynamicAttributes {
 	public Percept() {
 

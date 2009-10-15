@@ -9,6 +9,11 @@ import chart.study.History;
 import chart.study.PriceBar;
 import chart.study.QuoteHistory;
 
+/**
+ * @author: Humberto Rocha Loureiro (humbertorocha@gmail.com)
+ * @modify: 
+ */
+
 public class HistoryStocksAP extends AgentProgram {
 
 	private PriceBar priceBar = null;

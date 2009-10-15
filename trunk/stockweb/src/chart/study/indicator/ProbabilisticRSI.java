@@ -4,6 +4,11 @@ import chart.study.PriceBar;
 import chart.study.QuoteHistory;
 
 /**
+ * @author: Humberto Rocha Loureiro (humbertorocha@gmail.com)
+ * @modify: 
+ */
+
+/**
  * Experimental, under development
  */
 public class ProbabilisticRSI extends Indicator {

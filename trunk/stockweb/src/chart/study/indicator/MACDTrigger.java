@@ -1,6 +1,11 @@
 package chart.study.indicator;
 
 /**
+ * @author: Humberto Rocha Loureiro (humbertorocha@gmail.com)
+ * @modify: 
+ */
+
+/**
  * MACD Trigger
  */
 public class MACDTrigger extends Indicator {

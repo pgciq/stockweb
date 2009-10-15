@@ -1,5 +1,10 @@
 package ai.agent;
 
+/**
+ * @author: Humberto Rocha Loureiro (humbertorocha@gmail.com)
+ * @modify: 
+ */
+
 public enum StatusAgent {
 	Buy("buy"),
 	Hold("hold"),

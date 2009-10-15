@@ -3,6 +3,11 @@ package chart.study.indicator;
 import chart.study.QuoteHistory;
 
 /**
+ * @author: Humberto Rocha Loureiro (humbertorocha@gmail.com)
+ * @modify: 
+ */
+
+/**
  * Relative Strength Index. Implemented up to this specification:
  * http://en.wikipedia.org/wiki/Relative_strength
  */

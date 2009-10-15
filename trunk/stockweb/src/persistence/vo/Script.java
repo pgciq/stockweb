@@ -1,5 +1,10 @@
 package persistence.vo;
 
+/**
+ * @author: Humberto Rocha Loureiro (humbertorocha@gmail.com)
+ * @modify: 
+ */
+
 public class Script {
 	private long id = 0;
 	private String name = "";

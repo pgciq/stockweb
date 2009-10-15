@@ -12,6 +12,11 @@ import chart.study.PriceBar;
 import chart.study.QuoteHistory;
 import chart.study.indicator.MaxMinPivot;
 
+/**
+ * @author: Humberto Rocha Loureiro (humbertorocha@gmail.com)
+ * @modify: 
+ */
+
 public class MaxMinAP extends AgentProgram {
 
 	private PriceBar priceBar = null;

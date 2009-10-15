@@ -18,6 +18,11 @@ import org.json.JSONObject;
 import ai.TestAI;
 
 /**
+ * @author: Humberto Rocha Loureiro (humbertorocha@gmail.com)
+ * @modify: 
+ */
+
+/**
  * Servlet implementation class RequestAgents
  */
 public class RequestAgents extends HttpServlet {

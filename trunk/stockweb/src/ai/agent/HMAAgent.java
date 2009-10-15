@@ -5,6 +5,11 @@ import ai.Percept;
 import ai.agent.program.HMAAP;
 import chart.study.QuoteHistory;
 
+/**
+ * @author: Humberto Rocha Loureiro (humbertorocha@gmail.com)
+ * @modify: 
+ */
+
 public class HMAAgent extends Agent{
 
 	public HMAAgent() {

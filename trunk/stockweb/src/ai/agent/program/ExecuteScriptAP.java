@@ -15,6 +15,11 @@ import chart.study.PriceBar;
 import chart.study.QuoteHistory;
 import chart.study.indicator.utils.CandlestickUtils;
 
+/**
+ * @author: Humberto Rocha Loureiro (humbertorocha@gmail.com)
+ * @modify: 
+ */
+
 public class ExecuteScriptAP extends AgentProgram {
 
 	private PriceBar priceBar = null;

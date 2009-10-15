@@ -5,6 +5,11 @@ import ai.Percept;
 import ai.agent.program.NoiseAdjustedRSIAP;
 import chart.study.QuoteHistory;
 
+/**
+ * @author: Humberto Rocha Loureiro (humbertorocha@gmail.com)
+ * @modify: 
+ */
+
 public class NoiseAdjustedRSIAgent extends Agent{
 
 	public NoiseAdjustedRSIAgent() {

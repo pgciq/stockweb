@@ -10,6 +10,11 @@ import chart.study.indicator.BollingerLower;
 import chart.study.indicator.BollingerMiddle;
 import chart.study.indicator.BollingerUpper;
 
+/**
+ * @author: Humberto Rocha Loureiro (humbertorocha@gmail.com)
+ * @modify: 
+ */
+
 public class Test {
 
 	public static void main(String[] args) {

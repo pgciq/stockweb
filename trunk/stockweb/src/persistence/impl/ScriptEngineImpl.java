@@ -6,9 +6,10 @@ import persistence.session.ScriptEngineSession;
 import persistence.vo.Script;
 
 /**
- * Created by IntelliJ IDEA. User: Administrator Date: 11-apr-2008 Time:
- * 14.55.40 To change this template use File | Settings | File Templates.
+ * @author: Humberto Rocha Loureiro (humbertorocha@gmail.com)
+ * @modify: 
  */
+
 public class ScriptEngineImpl {
 
 	public Script get(Script script) {

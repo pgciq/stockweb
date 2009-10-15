@@ -4,9 +4,12 @@ import java.io.Serializable;
 
 public class Stock implements Serializable {
 
+
 	/**
-	 * 
+	 * @author: Humberto Rocha Loureiro (humbertorocha@gmail.com)
+	 * @modify: 
 	 */
+
 	private static final long serialVersionUID = -3511585483221896173L;
 
 	private long idCandleType = 0;
