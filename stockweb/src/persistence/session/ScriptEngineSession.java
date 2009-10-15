@@ -5,6 +5,11 @@ import java.util.Set;
 import persistence.dao.ScriptEngineDAO;
 import persistence.vo.Script;
 
+/**
+ * @author: Humberto Rocha Loureiro (humbertorocha@gmail.com)
+ * @modify: 
+ */
+
 public class ScriptEngineSession {
 		private ScriptEngineDAO scriptEngineDAO = new ScriptEngineDAO();
 		

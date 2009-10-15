@@ -9,6 +9,11 @@ import ai.agent.program.HMAAP;
 import ai.agent.program.MACDAP;
 import ai.agent.program.MACDTriggerAP;
 
+/**
+ * @author: Humberto Rocha Loureiro (humbertorocha@gmail.com)
+ * @modify: 
+ */
+
 public class MACDTriggerAgent extends Agent{
 
 	public MACDTriggerAgent() {

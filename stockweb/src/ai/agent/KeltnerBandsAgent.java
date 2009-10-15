@@ -6,6 +6,11 @@ import ai.Agent;
 import ai.Percept;
 import ai.agent.program.KeltnerBandsAP;
 
+/**
+ * @author: Humberto Rocha Loureiro (humbertorocha@gmail.com)
+ * @modify: 
+ */
+
 public class KeltnerBandsAgent extends Agent{
 
 	public KeltnerBandsAgent() {

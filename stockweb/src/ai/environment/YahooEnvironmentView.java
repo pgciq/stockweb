@@ -14,6 +14,11 @@ import org.json.JSONObject;
 import persistence.Stock;
 import ai.Percept;
 
+/**
+ * @author: Humberto Rocha Loureiro (humbertorocha@gmail.com)
+ * @modify: 
+ */
+
 public class YahooEnvironmentView implements EnvironmentView {
 
 	private String hosting = "http://ichart.yahoo.com/table.csv?s=${symbol}&a=${monthDI}&b=${dayDI}&c=${yearDI}&d=${monthDF}&e=${dayDF}&f=${yearDF}&g=${interval}&ignore=.csv";

@@ -3,6 +3,11 @@ package chart.study.indicator;
 import chart.study.QuoteHistory;
 
 /**
+ * @author: Humberto Rocha Loureiro (humbertorocha@gmail.com)
+ * @modify: 
+ */
+
+/**
  * Trend divergence indicator
  */
 public class TrendDivergence extends Indicator {

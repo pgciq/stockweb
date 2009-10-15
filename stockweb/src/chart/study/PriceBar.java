@@ -4,6 +4,11 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
+ * @author: Humberto Rocha Loureiro (humbertorocha@gmail.com)
+ * @modify: 
+ */
+
+/**
  * Encapsulates the price bar information.
  */
 public class PriceBar {

@@ -12,6 +12,11 @@ import javax.servlet.http.HttpServletResponse;
 
 import settings.ChartInterface;
 
+/**
+ * @author: Humberto Rocha Loureiro (humbertorocha@gmail.com)
+ * @modify: 
+ */
+
 public class SettingsServlet extends HttpServlet {
 
 	/**

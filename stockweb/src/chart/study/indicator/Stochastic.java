@@ -3,6 +3,11 @@ package chart.study.indicator;
 import chart.study.QuoteHistory;
 
 /**
+ * @author: Humberto Rocha Loureiro (humbertorocha@gmail.com)
+ * @modify: 
+ */
+
+/**
  * Stochastic oscillator %K About:
  * http://en.wikipedia.org/wiki/Stochastic_oscillator
  */

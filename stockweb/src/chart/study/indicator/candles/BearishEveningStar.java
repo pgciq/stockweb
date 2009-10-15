@@ -4,6 +4,11 @@ import chart.study.indicator.Indicator;
 import chart.study.indicator.utils.CandlestickUtils;
 
 /**
+ * @author: Humberto Rocha Loureiro (humbertorocha@gmail.com)
+ * @modify: 
+ */
+
+/**
  * Bullish Morning Star
  */
 public class BearishEveningStar extends Indicator {

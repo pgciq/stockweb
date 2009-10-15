@@ -9,6 +9,10 @@ import ai.agent.*;
 import ai.environment.ReadFileEnvironmentView;
 import ai.environment.YahooEnvironmentView;
 
+/**
+ * @author: Humberto Rocha Loureiro (humbertorocha@gmail.com)
+ * @modify: 
+ */
 
 public class TestAI {
 

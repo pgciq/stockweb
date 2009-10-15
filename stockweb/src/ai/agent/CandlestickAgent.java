@@ -5,6 +5,11 @@ import ai.Agent;
 import ai.Percept;
 import ai.agent.program.CandlestickAP;
 
+/**
+ * @author: Humberto Rocha Loureiro (humbertorocha@gmail.com)
+ * @modify: 
+ */
+
 public class CandlestickAgent extends Agent{
 
 	public CandlestickAgent() {

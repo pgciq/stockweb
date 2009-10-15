@@ -10,6 +10,11 @@ import org.json.JSONObject;
 import persistence.Stock;
 import ai.Percept;
 
+/**
+ * @author: Humberto Rocha Loureiro (humbertorocha@gmail.com)
+ * @modify: 
+ */
+
 public class ReadFileEnvironmentView implements EnvironmentView {
 
 	private String pathname = "";
@@ -21,8 +26,7 @@ public class ReadFileEnvironmentView implements EnvironmentView {
 	}
 
 	public Percept envChanged(String command) {
-		System.out
-				.println("Class: " + this.getClass() + " - param: " + command);
+		System.out.println("Class: " + this.getClass() + " - param: " + command);
 		int index = 0;
 		boolean register = false;
 		ArrayList<Stock> lsStocks = new ArrayList();
@@ -44,8 +48,7 @@ public class ReadFileEnvironmentView implements EnvironmentView {
 				if (stock.getCodneg().trim().equalsIgnoreCase(
 						(String) json.get("symbol"))) {
 					if (!json.getString("filterDI").equals("")
-							&& json.getString("filterDI").equals(
-									stock.getDataPregao())) {
+							&& json.getString("filterDI").equals(stock.getDataPregao())) {
 						register = true;
 					}
 					if (register) {

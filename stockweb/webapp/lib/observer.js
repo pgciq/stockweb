@@ -1,3 +1,8 @@
+// ----------------------------------------------------------
+// @author: Humberto Rocha Loureiro (humbertorocha@gmail.com)
+// @modify: 
+// ----------------------------------------------------------
+
 // ---------------------- New version --------------------------
 // JavaScript Document
 this.Observer = function(){

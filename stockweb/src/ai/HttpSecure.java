@@ -11,6 +11,11 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * @author: Humberto Rocha Loureiro (humbertorocha@gmail.com)
+ * @modify: 
+ */
+
 public class HttpSecure implements javax.net.ssl.X509TrustManager {
 
 	//LA COSTANTE DEL TIMEOUT DI CONNESSIONE PER LE RICHIESTE HTTP IN SECONDI

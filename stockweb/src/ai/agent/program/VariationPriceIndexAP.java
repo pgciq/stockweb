@@ -11,6 +11,11 @@ import chart.study.PriceBar;
 import chart.study.QuoteHistory;
 import chart.study.indicator.VariationPriceIndex;
 
+/**
+ * @author: Humberto Rocha Loureiro (humbertorocha@gmail.com)
+ * @modify: 
+ */
+
 public class VariationPriceIndexAP extends AgentProgram {
 
 	private PriceBar priceBar = null;

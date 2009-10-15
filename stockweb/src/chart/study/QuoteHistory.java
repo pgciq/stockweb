@@ -4,6 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * @author: Humberto Rocha Loureiro (humbertorocha@gmail.com)
+ * @modify: 
+ */
+
+/**
  * Holds and validates the priceBar history for a strategy.
  */
 public class QuoteHistory {

@@ -5,6 +5,11 @@ import ai.Percept;
 import ai.agent.program.EMAAP;
 import chart.study.QuoteHistory;
 
+/**
+ * @author: Humberto Rocha Loureiro (humbertorocha@gmail.com)
+ * @modify: 
+ */
+
 public class EMAAgent extends Agent{
 
 	public EMAAgent() {

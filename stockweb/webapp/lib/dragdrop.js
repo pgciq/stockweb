@@ -1,3 +1,7 @@
+// ----------------------------------------------------------
+// @author: Humberto Rocha Loureiro (humbertorocha@gmail.com)
+// @modify: 
+// ----------------------------------------------------------
 
 DragDrop = function(){
 	var mousex = 0;

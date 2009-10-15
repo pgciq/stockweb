@@ -3,6 +3,11 @@ package chart.study.indicator;
 import chart.study.QuoteHistory;
 
 /**
+ * @author: Humberto Rocha Loureiro (humbertorocha@gmail.com)
+ * @modify: 
+ */
+
+/**
  * Average Directional Index. Based on
  * http://technical.traders.com/tradersonline/display.asp?art=278
  * 

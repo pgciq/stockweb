@@ -11,6 +11,11 @@ import chart.study.PriceBar;
 import chart.study.QuoteHistory;
 import chart.study.indicator.VariationVolume;
 
+/**
+ * @author: Humberto Rocha Loureiro (humbertorocha@gmail.com)
+ * @modify: 
+ */
+
 public class VariationVolumeAP extends AgentProgram {
 
 	private PriceBar priceBar = null;

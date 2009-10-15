@@ -5,6 +5,11 @@ import java.util.Stack;
 import chart.study.QuoteHistory;
 
 /**
+ * @author: Humberto Rocha Loureiro (humbertorocha@gmail.com)
+ * @modify: 
+ */
+
+/**
  * Relative Strength Index. Implemented up to this specification:
  * 
  * The RSI calculation appears in its original and derived form. Average Up and

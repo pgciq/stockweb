@@ -1,3 +1,8 @@
+// ----------------------------------------------------------
+// @author: Humberto Rocha Loureiro (humbertorocha@gmail.com)
+// @modify: 
+// ----------------------------------------------------------
+
 	var widgetFocus = "";
 	// ========================= Object Inspector =================================
 	function log(text){

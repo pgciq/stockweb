@@ -3,6 +3,11 @@ package chart.study.indicator.utils;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+/**
+ * @author: Humberto Rocha Loureiro (humbertorocha@gmail.com)
+ * @modify: 
+ */
+
 public class Utils {
 
 	public static int differDays(String date1, String date2) {

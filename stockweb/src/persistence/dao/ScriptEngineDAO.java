@@ -11,6 +11,11 @@ import java.util.Set;
 import persistence.DBSession;
 import persistence.vo.Script;
 
+/**
+ * @author: Humberto Rocha Loureiro (humbertorocha@gmail.com)
+ * @modify: 
+ */
+
 public class ScriptEngineDAO { // implements PersistenceDAO{
 
 	private Connection conn = null;

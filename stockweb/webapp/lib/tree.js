@@ -1,3 +1,7 @@
+// ----------------------------------------------------------
+// @author: Humberto Rocha Loureiro (humbertorocha@gmail.com)
+// @modify: 
+// ----------------------------------------------------------
 			
             function flatten(treeid, action){ 
                 var ultags = document.getElementById(treeid).getElementsByTagName("ul");

@@ -1,3 +1,8 @@
+// ----------------------------------------------------------
+// @author: Humberto Rocha Loureiro (humbertorocha@gmail.com)
+// @modify: 
+// ----------------------------------------------------------
+
 // Precisa importar o framework para usar a classe de MAP			
 			this.properties = function(){
 				this.id = "";

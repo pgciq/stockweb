@@ -5,6 +5,11 @@ import ai.Agent;
 import ai.Percept;
 import ai.agent.program.VariationPriceIndexAP;
 
+/**
+ * @author: Humberto Rocha Loureiro (humbertorocha@gmail.com)
+ * @modify: 
+ */
+
 public class VariationPriceIndexAgent extends Agent{
 
 	public VariationPriceIndexAgent() {

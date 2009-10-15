@@ -10,9 +10,10 @@ import java.util.Hashtable;
  */
 
 /**
- * @author Ravi Mohan
- * 
+ * @author: Ravi Mohan
+ * @modify: Humberto Rocha Loureiro (humbertorocha@gmail.com)
  */
+
 public abstract class Agent extends ObjectWithDynamicAttributes {
 
 	// Used to define No Operations/Action is to be performed.

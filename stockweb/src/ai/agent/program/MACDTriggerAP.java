@@ -11,6 +11,11 @@ import chart.study.QuoteHistory;
 import chart.study.indicator.MACD;
 import chart.study.indicator.MACDTrigger;
 
+/**
+ * @author: Humberto Rocha Loureiro (humbertorocha@gmail.com)
+ * @modify: 
+ */
+
 public class MACDTriggerAP extends AgentProgram {
 
 	private PriceBar priceBar = null;

@@ -8,6 +8,11 @@ import chart.study.indicator.utils.CandlestickUtils;
 import chart.study.indicator.utils.Utils;
 
 /**
+ * @author: Humberto Rocha Loureiro (humbertorocha@gmail.com)
+ * @modify: 
+ */
+
+/**
  * Lower Bollinger Band
  */
 public class MaxMinIndex extends Indicator {

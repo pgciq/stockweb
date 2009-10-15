@@ -3,7 +3,10 @@ package chart.study.indicator;
 import chart.study.QuoteHistory;
 
 /**
+ * @author: Humberto Rocha Loureiro (humbertorocha@gmail.com)
+ * @modify: 
  */
+
 public class VolumeRSI extends Indicator {
 	private final int periodLength;
 

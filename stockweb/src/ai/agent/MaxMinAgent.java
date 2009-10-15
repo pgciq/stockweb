@@ -4,6 +4,11 @@ import ai.Agent;
 import ai.Percept;
 import ai.agent.program.MaxMinAP;
 
+/**
+ * @author: Humberto Rocha Loureiro (humbertorocha@gmail.com)
+ * @modify: 
+ */
+
 public class MaxMinAgent extends Agent{
 
 	public MaxMinAgent() {

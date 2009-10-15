@@ -5,6 +5,11 @@ import ai.Agent;
 import ai.Percept;
 import ai.agent.program.VariationVolumeAP;
 
+/**
+ * @author: Humberto Rocha Loureiro (humbertorocha@gmail.com)
+ * @modify: 
+ */
+
 public class VariationVolumeAgent extends Agent{
 
 	public VariationVolumeAgent() {

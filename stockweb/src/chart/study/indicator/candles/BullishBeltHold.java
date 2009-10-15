@@ -4,6 +4,11 @@ import chart.study.indicator.Indicator;
 import chart.study.indicator.utils.CandlestickUtils;
 
 /**
+ * @author: Humberto Rocha Loureiro (humbertorocha@gmail.com)
+ * @modify: 
+ */
+
+/**
  * Bearish Belt Hold
  * 
  * PS: Fiz uma varia�ao desse tipo de candle como documentado no site

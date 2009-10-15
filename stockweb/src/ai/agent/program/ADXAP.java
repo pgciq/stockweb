@@ -10,6 +10,11 @@ import chart.study.PriceBar;
 import chart.study.QuoteHistory;
 import chart.study.indicator.ADX;
 
+/**
+ * @author: Humberto Rocha Loureiro (humbertorocha@gmail.com)
+ * @modify: 
+ */
+
 public class ADXAP extends AgentProgram {
 
 	private ADX adx = null;

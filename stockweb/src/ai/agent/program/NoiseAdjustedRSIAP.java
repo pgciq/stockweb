@@ -10,6 +10,11 @@ import chart.study.PriceBar;
 import chart.study.QuoteHistory;
 import chart.study.indicator.NoiseAdjustedRSI;
 
+/**
+ * @author: Humberto Rocha Loureiro (humbertorocha@gmail.com)
+ * @modify: 
+ */
+
 public class NoiseAdjustedRSIAP extends AgentProgram {
 
 	private PriceBar priceBar = null;

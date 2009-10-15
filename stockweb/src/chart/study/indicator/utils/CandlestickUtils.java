@@ -2,6 +2,11 @@ package chart.study.indicator.utils;
 
 import chart.study.QuoteHistory;
 
+/**
+ * @author: Humberto Rocha Loureiro (humbertorocha@gmail.com)
+ * @modify: 
+ */
+
 public class CandlestickUtils {
 	private QuoteHistory history;
 

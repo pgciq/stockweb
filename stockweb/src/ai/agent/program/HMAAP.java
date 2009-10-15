@@ -10,6 +10,11 @@ import chart.study.PriceBar;
 import chart.study.QuoteHistory;
 import chart.study.indicator.HMA;
 
+/**
+ * @author: Humberto Rocha Loureiro (humbertorocha@gmail.com)
+ * @modify: 
+ */
+
 public class HMAAP extends AgentProgram {
 
 	private PriceBar priceBar = null;

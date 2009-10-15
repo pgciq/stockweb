@@ -1,3 +1,8 @@
+// ----------------------------------------------------------
+// @author: Humberto Rocha Loureiro (humbertorocha@gmail.com)
+// @modify: 
+// ----------------------------------------------------------
+
 // Simula a funcionalidade do HashMap em Java
 Map = function(){
     var keys = new Array();

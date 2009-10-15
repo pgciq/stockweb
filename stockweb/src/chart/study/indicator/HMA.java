@@ -3,6 +3,11 @@ package chart.study.indicator;
 import chart.study.QuoteHistory;
 
 /**
+ * @author: Humberto Rocha Loureiro (humbertorocha@gmail.com)
+ * @modify: 
+ */
+
+/**
  * Hull Moving Average. as defined at http://www.alanhull.com.au/hma/hma.html
  */
 public class HMA extends Indicator {

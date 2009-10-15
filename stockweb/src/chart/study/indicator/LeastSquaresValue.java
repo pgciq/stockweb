@@ -3,6 +3,11 @@ package chart.study.indicator;
 import chart.study.QuoteHistory;
 
 /**
+ * @author: Humberto Rocha Loureiro (humbertorocha@gmail.com)
+ * @modify: 
+ */
+
+/**
  * Regressed value Reference: http://en.wikipedia.org/wiki/Least_squares
  */
 public class LeastSquaresValue extends Indicator {

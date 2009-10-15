@@ -4,6 +4,11 @@ import chart.study.PriceBar;
 import chart.study.QuoteHistory;
 
 /**
+ * @author: Humberto Rocha Loureiro (humbertorocha@gmail.com)
+ * @modify: 
+ */
+
+/**
  * Implementation reference: http://en.wikipedia.org/wiki/Force_Index
  * 
  * @author Florent Guiliani

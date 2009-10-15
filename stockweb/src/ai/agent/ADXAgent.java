@@ -6,6 +6,11 @@ import ai.Agent;
 import ai.Percept;
 import ai.agent.program.ADXAP;
 
+/**
+ * @author: Humberto Rocha Loureiro (humbertorocha@gmail.com)
+ * @modify: 
+ */
+
 public class ADXAgent extends Agent{
 
 	public ADXAgent() {

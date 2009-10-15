@@ -4,6 +4,11 @@ import chart.study.QuoteHistory;
 import chart.study.indicator.utils.CandlestickUtils;
 
 /**
+ * @author: Humberto Rocha Loureiro (humbertorocha@gmail.com)
+ * @modify: 
+ */
+
+/**
  * Upper Bollinger Band
  */
 public class VariationPriceIndex extends Indicator {
