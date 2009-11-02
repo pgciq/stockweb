@@ -1,0 +1,103 @@
+<html>
+
+<style>
+	.font01{
+		font-family:Courier New; 
+		font-size:13;
+		height:20px;
+		width:110px;
+	}
+	.font02{
+		font-family:Arial; 
+		font-size:14;
+		height:20px;
+		width:110px;
+	}
+</style>	
+
+<table border="1">
+<tr>
+		<td>
+			<select id="results" multiple style="width:130px; height:250px;" onchange="loadAttributesFromResult(this)">
+		  </select>	
+		</td>
+
+<td>
+	<table width="150px">		
+		<tr align="center"><td>
+				<a class="font01">Color Up:</a><br>	
+				<input type="text" id="colorUp" class="font01" onchange="showWindowColor();" onkeyup="applyColorSelected(this)">
+				<br>
+		</td></tr>
+
+		<tr align="center"><td>
+			<a class="font01">Color Down:</a><br>	
+			<input type="text" id="colorDown" class="font01" onchange="showWindowColor()"  onkeyup="applyColorSelected(this)">
+			<br><br>
+		</td></tr>
+			
+		<tr align="center"><td>
+			<a class="font01">Type Result:</a><br>	
+			<select id="typeResult" class="font01" onchange="activeCombo()">
+				<option id="histograma">Histograma</option>
+				<option id="line" selected>Line</option>
+			</select>
+			<br><br>
+		</td></tr>
+	
+		<tr align="center"><td>
+			<div id="divTypeLine" style="visibility:visible">
+			<a class="font01">Type Line:</a><br>	
+				<select id="typeLine" class="font02">
+					<option id="0">- - - - - - - - - - - -</option>
+					<option id="01">---------------------</option>
+				</select>	
+			</div>
+		</td></tr>
+	</table>
+</td>
+</tr>
+<tr>
+<td colspan="2" align="center"><input type="button" value="          OK          "></td>	
+</tr>
+
+
+</table>
+
+<script>
+	var result = "mmi01,mmi02,mmi03,mmi04";
+	var params = "#DF4D45,#000000,Line,1|#F45675,#FFFFFF,Histograma,0|#FFFFFF,#000000,line,1|#FFFFFF,#000000,line,1";
+  // Adiciona os nomes dos tipos de resultados
+	function addResult(){
+		rs = result.split(',');
+		 for(var x=0; x<rs.length; x++){
+		 	document.getElementById('results').options[x] = new Option(rs[x],x);
+		 }
+	}
+	addResult();
+
+  function loadAttributesFromResult(obj){
+		rsAttributes = params.split("|")[obj.options[obj.selectedIndex].value];
+		document.getElementById("colorUp").value = rsAttributes.split(",")[0];    applyColorSelected(document.getElementById("colorUp"));
+		document.getElementById("colorDown").value = rsAttributes.split(",")[1];  applyColorSelected(document.getElementById("colorDown"));
+		document.getElementById("typeResult").value = rsAttributes.split(",")[2]; activeCombo();
+		document.getElementById("typeLine").options[rsAttributes.split(",")[3]].selected = true;
+//		mapAttributes.get(obj.options[obj.selectedIndex].value);
+//  	alert(obj.options[obj.selectedIndex].value);
+  }
+  
+	
+	function applyColorSelected(obj){
+		obj.style.backgroundColor = obj.value;
+	}
+	
+	function activeCombo(){
+		obj = document.getElementById('typeResult');
+		if(obj.options[obj.selectedIndex].value == "Histograma")
+			document.getElementById('divTypeLine').style.visibility = "hidden";
+		else
+			document.getElementById('divTypeLine').style.visibility = "visible";
+	}
+</script>
+
+</html>
