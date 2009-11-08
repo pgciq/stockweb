@@ -82,19 +82,14 @@ public class ExecuteScriptAP extends AgentProgram {
 
 			ScriptStrategy strategy = new ScriptStrategy();
 			ScriptEngineDAO engineDAO = new ScriptEngineDAO();
-			List<Script> lsObject = new ArrayList<Script>(engineDAO
-					.getListObject());
+			List<Script> lsObject = new ArrayList<Script>(engineDAO.getListObject());
 
 			for (int candle = 0; candle < history.size() - 10; candle++) {
 
-				String date = String.valueOf(history.getPriceBar(candle)
-						.getDate());
+				String date = String.valueOf(history.getPriceBar(candle).getDate());
 
 				for (int x = 0; x < lsObject.size(); x++) {
-					lsResult.add(strategy.applyScript(
-							lsObject.get(x).getName(), lsObject.get(x)
-									.getScript(), date, new CandlestickUtils(
-									history)));
+					lsResult.add(strategy.applyScript(lsObject.get(x).getName(), lsObject.get(x).getScript(), date, new CandlestickUtils(history)));
 				}
 
 				String token = "";

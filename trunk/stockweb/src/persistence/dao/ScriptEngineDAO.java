@@ -63,7 +63,7 @@ public class ScriptEngineDAO { // implements PersistenceDAO{
 		Set<Script> list = new HashSet();
 		Script accountUser = null;
 		conn = DBSession.getIstance().getConnection();
-		String sql = "SELECT id, name, script, descr, param FROM scripts ORDER BY name";
+		String sql = "SELECT id, name, script, descr, param, settingchart FROM scripts ORDER BY name";
 
 		stat = conn.createStatement();
 		rs = stat.executeQuery(sql);
@@ -79,7 +79,7 @@ public class ScriptEngineDAO { // implements PersistenceDAO{
 
 	public Script getObjectByKey(String key) throws Exception {
 		conn = DBSession.getIstance().getConnection();
-		String sql = "select id, name, script, descr, param from scripts where id = "
+		String sql = "select id, name, script, descr, param, settingchart from scripts where id = "
 				+ key;
 
 		Statement stat = conn.createStatement();
@@ -91,7 +91,7 @@ public class ScriptEngineDAO { // implements PersistenceDAO{
 
 	public Script getObjectByName(String key) throws Exception {
 		conn = DBSession.getIstance().getConnection();
-		String sql = "select id, name, script, descr, param from scripts where name like '"
+		String sql = "select id, name, script, descr, param, settingchart from scripts where name like '"
 				+ key + "%'";
 
 		Statement stat = conn.createStatement();
@@ -109,6 +109,7 @@ public class ScriptEngineDAO { // implements PersistenceDAO{
 		script.setScript(rs.getString("script"));
 		script.setDescr(rs.getString("descr"));
 		script.setParam(rs.getString("param"));
+		script.setSettingchart(rs.getString("settingchart"));
 		return script;
 	}
 
@@ -123,9 +124,14 @@ public class ScriptEngineDAO { // implements PersistenceDAO{
 			System.out.println(">>>>>>> LOG: script.getId() = "
 					+ script.getId());
 
-			sql = "update scripts set " + "		name = ?,    " + " 	script = ?,  "
-					+ " 	descr = ?,   " + " 	param = ?    " + " where "
-					+ "		id = " + String.valueOf(script.getId());
+			sql = " update scripts set 	 " + 
+				  "		name = ?,    	 "  + 
+				  " 	script = ?,  	 "  + 
+				  " 	descr = ?,   	 "  + 
+				  " 	param = ?,    	 "  + 
+				  " 	settingchart = ? "  + 
+				  "  where " + 
+				  "		id = " + String.valueOf(script.getId());
 		}
 
 		PreparedStatement stat = conn.prepareStatement(sql);
@@ -133,6 +139,25 @@ public class ScriptEngineDAO { // implements PersistenceDAO{
 		stat.setString(2, script.getScript());
 		stat.setString(3, script.getDescr());
 		stat.setString(4, script.getParam());
+		stat.setString(5, script.getSettingchart());
+		stat.execute();
+
+	}
+
+	public void saveSettingChart(Script script) throws Exception {
+
+		conn = DBSession.getIstance().getConnection();
+		// String sql =
+		// "insert into t02_accountuser (firstname, lastname, date, email, icon, login, password, reajust, notes, sim, telcontact) values (?,?,?,?,?,?,?,?,?,?,?)";
+		System.out.println(">>>>>>> LOG: script.getId() = " + script.getId());
+
+		String sql = " update scripts set 	 " + 
+					 " 	settingchart = ? "  + 
+					 "  where " + 
+					 "		id = " + String.valueOf(script.getId());
+
+		PreparedStatement stat = conn.prepareStatement(sql);
+		stat.setString(1, script.getSettingchart());
 		stat.execute();
 
 	}

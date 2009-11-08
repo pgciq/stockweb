@@ -11,9 +11,10 @@ var $script = {
   script:"",
   descr:"",
   param:"",
+  settingchart:"",
 
   load: function(type, object) {
-  	var field = ["id","name","script","descr","param"];
+  	var field = ["id","name","script","descr","param","settingchart"];
   	
   	for(var x=0; x<field.length; x++){
 	  	if(type == "input=object")
@@ -24,12 +25,17 @@ var $script = {
   	}
   },
 
-
   clear: function() {
-  	var field = ["id","name","script","descr","param"];
+  	var field = ["id","name","script","descr","param","settingchart"];
   	for(var i=0; i<field.length; i++)
 			this[field[i]+"_script"] = "";
 		dwr.util.setValues(this, this);
+  },
+
+  saveSettingChart: function() {
+		//dwr.util.getValues(this);
+ 		this.load("object=input"); 		
+		ScriptEngineImpl.saveSettingChart(this, null);
   },
 
   save: function() {
@@ -85,31 +91,8 @@ var $script = {
 					$script.load("input=object", script);    
 	    });
 	  }
-	  
-	  
-  },   
-   
+  }   
     
-  getx: function(key, func) {
-
-  	if(key == null){
-  		key = dwr.util.getValue("name");
-  		name = key;
-  	}else{
-  		dwr.util.setValue("id",key);
-	  }
-	  
-    dwr.util.getValues(this);
- 		if(func!=null){
-			  ScriptEngineImpl.get(this, func);
-		 }else{
-			    ScriptEngineImpl.getById(this, function(script) {
-							dwr.util.setValues(script);
-			    });
-	    }
-  }
-    
-
   };
 
 

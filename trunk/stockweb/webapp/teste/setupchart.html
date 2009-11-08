@@ -15,32 +15,38 @@
 	}
 </style>	
 
-<table border="1">
+<table>
 <tr>
 		<td>
-			<select id="results" multiple style="width:130px; height:250px;" onchange="loadAttributesFromResult(this)">
+			<select id="results" multiple style="width:130px; height:250px;" onchange="changeListResult(this)">
 		  </select>	
 		</td>
 
 <td>
 	<table width="150px">		
 		<tr align="center"><td>
-				<a class="font01">Color Up:</a><br>	
-				<input type="text" id="colorUp" class="font01" onchange="showWindowColor();" onkeyup="applyColorSelected(this)">
+				<a class="font01">Color Up:</a><br>
+				<input type="text" id="colorUp" class="font01" onchange="applyColorSelected();" onkeyup="applyColorSelected(this)">
+					<div style="position:absolute; left:280px; top:55px">
+						<img src="/stockweb/img/colors.png" width="25px" heigth="25px;" style="cursor:pointer;" onclick="parent.document.getElementById('window02').style.visibility = 'visible'">
+					</div>
 				<br>
 		</td></tr>
 
 		<tr align="center"><td>
 			<a class="font01">Color Down:</a><br>	
-			<input type="text" id="colorDown" class="font01" onchange="showWindowColor()"  onkeyup="applyColorSelected(this)">
+			<input type="text" id="colorDown" class="font01" onchange="applyColorSelected()"  onkeyup="applyColorSelected(this)">
+					<div style="position:absolute; left:280px; top:95px">
+						<img src="/stockweb/img/colors.png" width="25px" heigth="25px" style="cursor:pointer;" onclick="parent.document.getElementById('window02').style.visibility = 'visible'">
+					</div>
 			<br><br>
 		</td></tr>
 			
 		<tr align="center"><td>
 			<a class="font01">Type Result:</a><br>	
 			<select id="typeResult" class="font01" onchange="activeCombo()">
-				<option id="histograma">Histograma</option>
-				<option id="line" selected>Line</option>
+				<option value="histograma">Histograma</option>
+				<option value="line" selected>Line</option>
 			</select>
 			<br><br>
 		</td></tr>
@@ -49,8 +55,8 @@
 			<div id="divTypeLine" style="visibility:visible">
 			<a class="font01">Type Line:</a><br>	
 				<select id="typeLine" class="font02">
-					<option id="0">- - - - - - - - - - - -</option>
-					<option id="01">---------------------</option>
+					<option value="0">- - - - - - - - - - - -</option>
+					<option value="1">---------------------</option>
 				</select>	
 			</div>
 		</td></tr>
@@ -58,32 +64,88 @@
 </td>
 </tr>
 <tr>
-<td colspan="2" align="center"><input type="button" value="          OK          "></td>	
+<td colspan="2" align="center"><br><input type="button" value="          OK          " onclick="save()"></td>	
 </tr>
 
 
 </table>
 
 <script>
-	var result = "mmi01,mmi02,mmi03,mmi04";
-	var params = "#DF4D45,#000000,Line,1|#F45675,#FFFFFF,Histograma,0|#FFFFFF,#000000,line,1|#FFFFFF,#000000,line,1";
+//	var result = "mmi01,mmi02,mmi03,mmi04";
+//	var params = "#DF4D45,#000000,Line,1|#F45675,#FFFFFF,Histograma,0|#FFFFFF,#000000,line,1|#FFFFFF,#000000,line,1";
+	var result = "";
+	var params = "";
+	var mapResult = new parent.Map();
+	
+	
+	function save(){
+		var params = "";
+		var token = "";
+		for(x=0;x<mapResult.size();x++){
+			params = token + mapResult.get(result.split(",")[x]);
+			token = "|";
+		}
+		top.frames.frameScriptEngine.document.getElementById('settingchart_script').value = params; 
+		top.frames.frameScriptEngine.$script.saveSettingChart();	
+	}
+	
+	
   // Adiciona os nomes dos tipos de resultados
-	function addResult(){
-		rs = result.split(',');
+	function addResult( typeResult, typeParams ){
+		 token = "";
+		 result = typeResult;
+		 params = typeParams;
+		  
+		 rs = result.split(',');
 		 for(var x=0; x<rs.length; x++){
-		 	document.getElementById('results').options[x] = new Option(rs[x],x);
+		 	document.getElementById('results').options[x] = new Option(rs[x],rs[x]);
+		 	if(params != null){
+		 		mapResult.put(rs[x],params.split("|")[x]);
+		 	}else{
+		 		mapResult.put(rs[x], token + "#000000,#000000,Histograma,0");
+		 		token = "";
+		 	}
+		 	
 		 }
 	}
-	addResult();
 
+	//addResult();
+
+  function changeListResult(obj){
+  	saveChangeValues(obj.options[obj.selectedIndex].value);
+
+  	if(mapResult.get(obj.options[obj.selectedIndex].value) != null)
+  		loadAttributesFromResult(obj)
+  	
+	}
+	
+	var lastResultSelected = null;
+	function saveChangeValues(rsName){
+			if(lastResultSelected != null){
+				colorUp = document.getElementById('colorUp').value;
+				colorDown = document.getElementById('colorDown').value;
+				typeResult = document.getElementById('typeResult').options[document.getElementById('typeResult').selectedIndex].value;
+				typeLine = document.getElementById('typeLine').options[document.getElementById('typeLine').selectedIndex].value;
+				
+				mapResult.put(lastResultSelected, colorUp + "," + colorDown + "," + typeResult + "," + typeLine + "," + lastResultSelected);
+			}
+			lastResultSelected = rsName; 
+
+	}
+	
   function loadAttributesFromResult(obj){
-		rsAttributes = params.split("|")[obj.options[obj.selectedIndex].value];
-		document.getElementById("colorUp").value = rsAttributes.split(",")[0];    applyColorSelected(document.getElementById("colorUp"));
-		document.getElementById("colorDown").value = rsAttributes.split(",")[1];  applyColorSelected(document.getElementById("colorDown"));
-		document.getElementById("typeResult").value = rsAttributes.split(",")[2]; activeCombo();
-		document.getElementById("typeLine").options[rsAttributes.split(",")[3]].selected = true;
+	  var params = mapResult.get(obj.options[obj.selectedIndex].value);
+  	if(params == null) return;
+  	
+		rsAttributes = params.split(",");
+		document.getElementById("colorUp").value = rsAttributes[0];    applyColorSelected(document.getElementById("colorUp"));
+		document.getElementById("colorDown").value = rsAttributes[1];  applyColorSelected(document.getElementById("colorDown"));
+		document.getElementById("typeResult").value = rsAttributes[2]; activeCombo();
+		document.getElementById("typeLine").options[rsAttributes[3]].defaultSelected = true;
 //		mapAttributes.get(obj.options[obj.selectedIndex].value);
 //  	alert(obj.options[obj.selectedIndex].value);
+
+		
   }
   
 	
@@ -93,11 +155,12 @@
 	
 	function activeCombo(){
 		obj = document.getElementById('typeResult');
-		if(obj.options[obj.selectedIndex].value == "Histograma")
+		if(obj.options[obj.selectedIndex].value == "histograma")
 			document.getElementById('divTypeLine').style.visibility = "hidden";
 		else
 			document.getElementById('divTypeLine').style.visibility = "visible";
 	}
+	
 </script>
 
 </html>
