@@ -11,6 +11,7 @@ public class Script {
 	private String script = "";
 	private String param = "";
 	private String descr = "";
+	private String settingchart = "";
 
 	public long getId() {
 		return id;
@@ -41,6 +42,12 @@ public class Script {
 	}
 	public void setDescr(String descr) {
 		this.descr = descr;
+	}
+	public String getSettingchart() {
+		return settingchart;
+	}
+	public void setSettingchart(String settingchart) {
+		this.settingchart = settingchart;
 	}
 
 	

@@ -13,8 +13,12 @@ import persistence.vo.Script;
 public class ScriptEngineSession {
 		private ScriptEngineDAO scriptEngineDAO = new ScriptEngineDAO();
 		
-        public void add(Script accountUser) throws Exception{
-        	scriptEngineDAO.persist(accountUser);
+        public void saveSettingChart(Script script) throws Exception{
+        	scriptEngineDAO.saveSettingChart(script);
+        }
+
+        public void add(Script script) throws Exception{
+        	scriptEngineDAO.persist(script);
         }
 
         public Set<Script> list() throws Exception{

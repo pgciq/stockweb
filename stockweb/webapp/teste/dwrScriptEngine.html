@@ -14,9 +14,9 @@
 <script src='/stockweb/dwr/interface/ScriptEngineImpl.js'></script>
 <script src='/stockweb/js/schema.js'></script>
  
- 
 <link rel="stylesheet" type="text/css" href="/stockweb/css/admin.css">
 <input type="hidden" id="id_script" name="name" class="edit" value=""/>
+<input type="hidden" id="settingchart_script" name="settingchart" class="edit" value=""/>
 
 <table>
 	<tr><td>
@@ -47,6 +47,9 @@
       <td width="50px"><img src="/stockweb/img/list.png" width="40" height="40" value="LIST" type="button" onClick="$script.list()"/></td>
       <td width="50px"><img src="/stockweb/img/get.png" width="36" height="36"  value="GET"   type="button" onClick="$script.get()"/></td>
       <td width="50px"><img src="/stockweb/img/delete.png" width="40" height="40" type="button" onClick="$script.rm()"/></td>
+      <td width="50px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      <td width="50px"><img src="/stockweb/img/chart-add.png" width="40" height="40" type="button" onClick="showSetupChart()"/></td>
+      <td width="50px"><img src="/stockweb/img/chart-remove.png" width="40" height="40" type="button" onClick="parent.document.getElementById('window03').style.visibility = 'visible'"/></td>
   	</tr>
   </table>
 
@@ -58,3 +61,13 @@
 </body>
 
 </html> 
+
+<script>
+
+	function showSetupChart(){
+		//top.frames.frameSetupChart.show();
+	  top.frames.frameSetupChart.addResult(document.getElementById('param_script').value, document.getElementById('settingchart_script').value);
+		parent.document.getElementById('window03').style.visibility = 'visible';
+	}
+
+</script>

@@ -64,40 +64,28 @@ public class RequestAgents extends HttpServlet {
 		String agent = request.getParameter("agent");
 
 		if (agent.indexOf("history") >= 0) {
-			sbResultHistory = formatterResultCandle(object
-					.getResponseAgents("HistoryStocksAgent"), request, response);
-			tkResultHistory = new StringTokenizer(sbResultHistory.toString(),
-					"\n");
+			sbResultHistory = formatterResultCandle(object.getResponseAgents("HistoryStocksAgent"), request, response);
+			tkResultHistory = new StringTokenizer(sbResultHistory.toString(), "\n");
 		}
 
 		if (agent.indexOf("bollinger") >= 0) {
-			sbResultBollinger = formatterResultBollinger(object
-					.getResponseAgents("BollingerAgent"), request, response);
-			tkResultBollinger = new StringTokenizer(sbResultBollinger
-					.toString(), "\n");
+			sbResultBollinger = formatterResultBollinger(object.getResponseAgents("BollingerAgent"), request, response);
+			tkResultBollinger = new StringTokenizer(sbResultBollinger.toString(), "\n");
 		}
 
 		if (agent.indexOf("maxminindex") >= 0) {
-			sbResultMaxMinIndex = formatterResultMaxMinIndex(object
-					.getResponseAgents("MaxMinIndexAgent"), request, response);
-			tkResultMaxMinIndex = new StringTokenizer(sbResultMaxMinIndex
-					.toString(), "\n");
+			sbResultMaxMinIndex = formatterResultMaxMinIndex(object.getResponseAgents("MaxMinIndexAgent"), request, response);
+			tkResultMaxMinIndex = new StringTokenizer(sbResultMaxMinIndex.toString(), "\n");
 		}
 
 		if (agent.indexOf("variationvolume") >= 0) {
-			sbResultVarVolume = formatterResultVariationVolume(object
-					.getResponseAgents("VariationVolumeAgent"), request,
-					response);
-			tkResultVarVolume = new StringTokenizer(sbResultVarVolume
-					.toString(), "\n");
+			sbResultVarVolume = formatterResultVariationVolume(object.getResponseAgents("VariationVolumeAgent"), request, response);
+			tkResultVarVolume = new StringTokenizer(sbResultVarVolume.toString(), "\n");
 		}
 
 		if (agent.indexOf("variationpriceindex") >= 0) {
-			sbResultVarPriceIndex = formatterResultVariationPriceIndex(object
-					.getResponseAgents("VariationPriceIndexAgent"), request,
-					response);
-			tkResultVarPriceIndex = new StringTokenizer(sbResultVarPriceIndex
-					.toString(), "\n");
+			sbResultVarPriceIndex = formatterResultVariationPriceIndex(object.getResponseAgents("VariationPriceIndexAgent"), request, response);
+			tkResultVarPriceIndex = new StringTokenizer(sbResultVarPriceIndex.toString(), "\n");
 		}
 
 		try {
@@ -177,8 +165,7 @@ public class RequestAgents extends HttpServlet {
 		return sbResult;
 	}
 
-	private void formatterResultCandle2(String history,
-			HttpServletRequest request, HttpServletResponse response) {
+	private void formatterResultCandle2(String history, HttpServletRequest request, HttpServletResponse response) {
 		try {
 			PrintWriter out = response.getWriter();
 			StringTokenizer tokens = new StringTokenizer(history, "|");
@@ -189,8 +176,7 @@ public class RequestAgents extends HttpServlet {
 
 				if (tmp.equals("")) {
 					tmp = String.valueOf(json.get("close"));
-					System.out.println(">>>>>>> "
-							+ getLastData(String.valueOf(json.get("date"))));
+					System.out.println(">>>>>>> "+ getLastData(String.valueOf(json.get("date"))));
 					out.print(getLastData(String.valueOf(json.get("date"))));
 					out.print("," + tmp);
 					out.print("," + tmp);
@@ -286,12 +272,9 @@ public class RequestAgents extends HttpServlet {
 
 	private String getLastData(String data) {
 		String dateFormat = "yyyyMMdd";
-		java.text.SimpleDateFormat sdf = new java.text.SimpleDateFormat(
-				dateFormat);
+		java.text.SimpleDateFormat sdf = new java.text.SimpleDateFormat(dateFormat);
 		Calendar calendar = Calendar.getInstance();
-		calendar.set(Integer.parseInt(data.substring(0, 4)), Integer
-				.parseInt(data.substring(4, 6)) - 1, Integer.parseInt(data
-				.substring(6, 8)));
+		calendar.set(Integer.parseInt(data.substring(0, 4)), Integer.parseInt(data.substring(4, 6)) - 1, Integer.parseInt(data.substring(6, 8)));
 		calendar.add(Calendar.DAY_OF_MONTH, +1);
 		return sdf.format(calendar.getTime());
 	}
@@ -317,7 +300,7 @@ public class RequestAgents extends HttpServlet {
 		System.setProperty("http.proxyHost", "proxypac.sisal.it");
 		System.setProperty("http.proxyPort", "80");
 		System.setProperty("http.proxyUsername", "rocha");
-		System.setProperty("http.proxyPassword", "987654321");
+		System.setProperty("http.proxyPassword", "9876543210");
 
 		loadStockName();
 
@@ -330,7 +313,7 @@ public class RequestAgents extends HttpServlet {
 			testAI
 					.executeAgent(
 							request.getParameter("stock"),
-							"d",
+							"w",
 							"20080101",
 							"20101213",
 							"HistoryStocksAgent,CandlestickAgent,BollingerAgent,MaxMinIndexAgent,VariationVolumeAgent,VariationPriceIndexAgent,ExecuteScriptAgent");
@@ -338,7 +321,7 @@ public class RequestAgents extends HttpServlet {
 			testAI
 					.executeAgents(
 							prop,
-							"d",
+							"w",
 							"20080501",
 							"20101213",
 							"HistoryStocksAgent,CandlestickAgent,BollingerAgent,MaxMinIndexAgent,VariationVolumeAgent,VariationPriceIndexAgent,ExecuteScriptAgent");
@@ -350,18 +333,12 @@ public class RequestAgents extends HttpServlet {
 
 		// formatterResultCandle(testAI.getResponseAgents("BollingerAgent"),request,response);
 
-		System.out.println(">>>>>>> "
-				+ testAI.getResponseAgents("HistoryStocksAgent"));
-		System.out.println(">>>>>>> "
-				+ testAI.getResponseAgents("BollingerAgent"));
-		System.out.println(">>>>>>> "
-				+ testAI.getResponseAgents("MaxMinIndexAgent"));
-		System.out.println(">>>>>>> "
-				+ testAI.getResponseAgents("VariationVolumeAgent"));
-		System.out.println(">>>>>>> "
-				+ testAI.getResponseAgents("VariationPriceIndexAgent"));
-		System.out.println(">>>>>>> "
-				+ testAI.getResponseAgents("ExecuteScriptAgent"));
+		System.out.println(">>>>>>> " + testAI.getResponseAgents("HistoryStocksAgent"));
+		System.out.println(">>>>>>> " + testAI.getResponseAgents("BollingerAgent"));
+		System.out.println(">>>>>>> " + testAI.getResponseAgents("MaxMinIndexAgent"));
+		System.out.println(">>>>>>> " + testAI.getResponseAgents("VariationVolumeAgent"));
+		System.out.println(">>>>>>> " + testAI.getResponseAgents("VariationPriceIndexAgent"));
+		System.out.println(">>>>>>> " + testAI.getResponseAgents("ExecuteScriptAgent"));
 		System.out.println("Pathname = " + pathname);
 	}
 }

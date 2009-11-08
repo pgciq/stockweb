@@ -444,3 +444,86 @@ var jsonMenuDesktop = {
         
     ]
 }
+
+
+var jsonSetupChart = {
+    'main': [{
+        "layout": [{
+            "tag": "div",
+            "id": "window03",
+            "params": [],
+            "nodeRifer": "schema",
+            "innerHTML": "&nbsp;<div id='contentwindow03'/>",
+            "style": ["top:30px", "width:310px", "height:330px", "left:630px", "position:absolute", "backgroundColor:#f0f2f4"],
+            "events": [{
+                "onmousemove": eventMouseMove
+            }]
+        }]
+    }, {
+        "layout": [{
+            "tag": "div",
+            "id": "menubar03",
+            "params": [],
+            "nodeRifer": "window03",
+            "innerHTML": "",
+            "style": ["top:0px", "left:0px", "height:20px", "width:310px", "backgroundImage:url(img/white-top-bottom.gif)"],
+            "events": [{
+                "onmousedown": function(){
+                    dragdrop.addEvent(document.getElementById('window03'), 'move');
+                    listener.fire(['mousedown', 'window02']);
+                }
+            }]
+        }]
+    }, {
+        "layout": [{
+            "tag": "span",
+            "id": "title03",
+            "params": [],
+            "nodeRifer": "window03",
+            "innerHTML": "",
+            "style": ["position:absolute", "top:-8px", "left:10px", "color:#466F93", "fontWeight:bold", "fontFamily:verdana, arial, sans serif", "lineHeight:16px", "fontSize:12px"],
+            "events": [{}]
+        }]
+    }, {
+        "layout": [{
+            "tag": "div",
+            "id": "statusbar03",
+            "params": [],
+            "nodeRifer": "window03",
+            "innerHTML": "",
+            "style": ["top:330px", "left:0px", "height:15px", "width:310px", "backgroundImage:url(img/white-top-bottom.gif)"],
+            "events": [{
+                "onmousedown": function(){
+                    //dragdrop.addEvent(document.getElementById('window0'), 'resize');
+                    //listener.fire(['resize', this.parentNode.id]);
+                }
+            }]
+        }]
+    }, {
+        "layout": [{
+            "tag": "div",
+            "id": "close03",
+            "params": [],
+            "nodeRifer": "window03",
+            "innerHTML": "<img id='resize' src='img/close.gif'/>",
+            "style": ["position:absolute", "top:4px", "left:290px", "cursor:pointer"],
+            "events": [{
+                "onclick": function(){
+                    document.getElementById('window03').style.visibility = 'hidden';
+                }
+            }]
+        }]
+    }, {
+        "layout": [{
+            "tag": "div",
+            "id": "resize03",
+            "params": [],
+            "nodeRifer": "window03",
+            "innerHTML": "<img id='resize' src='img/resizediv.gif'/>",
+            "style": ["position:absolute", "top:330px", "left:295px"],
+            "events": [{}]
+        }]
+
+    }    
+    ]
+}

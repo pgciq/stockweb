@@ -14,5 +14,6 @@ CREATE TABLE  `stockweb`.`scripts` (
   `name` varchar(45) NOT NULL,
   `descr` text,
   `param` varchar(45) NOT NULL,
+   `settingchart` varchar(255) default ' ',
   PRIMARY KEY  (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
