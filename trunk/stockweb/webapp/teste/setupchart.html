@@ -82,7 +82,7 @@
 		var params = "";
 		var token = "";
 		for(x=0;x<mapResult.size();x++){
-			params = token + mapResult.get(result.split(",")[x]);
+			params += token + mapResult.get(result.split(",")[x]);
 			token = "|";
 		}
 		top.frames.frameScriptEngine.document.getElementById('settingchart_script').value = params; 
@@ -99,7 +99,7 @@
 		 rs = result.split(',');
 		 for(var x=0; x<rs.length; x++){
 		 	document.getElementById('results').options[x] = new Option(rs[x],rs[x]);
-		 	if(params != null){
+		 	if((params != null) && (params != "")){
 		 		mapResult.put(rs[x],params.split("|")[x]);
 		 	}else{
 		 		mapResult.put(rs[x], token + "#000000,#000000,Histograma,0");
