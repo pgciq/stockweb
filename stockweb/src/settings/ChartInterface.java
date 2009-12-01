@@ -33,8 +33,7 @@ import com.sun.org.apache.xpath.internal.XPathAPI;
 public class ChartInterface {
 	private String pathname = "";
 	private Map<String, String> mapSetting = new HashMap<String, String>();
-	private StringBuffer sb = new StringBuffer(
-			"<?xml version=\"1.0\" encoding=\"UTF-8\"?>");
+	private StringBuffer sb = new StringBuffer("<?xml version=\"1.0\" encoding=\"UTF-8\"?>");
 
 	public ChartInterface(String pathname, Map<String, String> mapParameters) {
 		this.pathname = pathname;
@@ -45,18 +44,14 @@ public class ChartInterface {
 		NodeList nodeList = node.getChildNodes();
 		for (int i = 0; i < nodeList.getLength(); i++) {
 			node = nodeList.item(i);
-			if (node.getNodeName().equals("#document")
-					|| node.getNodeName().equals("#text")) {
+			if (node.getNodeName().equals("#document") || node.getNodeName().equals("#text")) {
 				continue;
 			}
 
-			String paramId = !((Element) node).getAttribute("id").equals("") ? " id='"
-					+ ((Element) node).getAttribute("id") + "' "
-					: "";
+			String paramId = !((Element) node).getAttribute("id").equals("") ? " id='" + ((Element) node).getAttribute("id") + "' " : "";
 			sb.append("<" + node.getNodeName() + paramId + ">");
 			if (!((Element) node).getAttribute("filename").equals("")) {
-				sb.append(getContentFile(((Element) node)
-						.getAttribute("filename")));
+				sb.append(getContentFile(((Element) node).getAttribute("filename")));
 			}
 			checkNodes(node);
 			sb.append("</" + node.getNodeName() + ">");
@@ -97,26 +92,21 @@ public class ChartInterface {
 		try {
 
 			Document doc = getDoc(getContentFile("amstock_settings.xml"));
-			Element elem = (Element) XPathAPI.selectSingleNode(doc,
-					"//settings");
+			Element elem = (Element) XPathAPI.selectSingleNode(doc,"//settings");
 			sb.append("<" + elem.getNodeName() + ">");
 			sb.append(getContentFile(elem.getAttribute("filename")));
 
 			NodeList nodeList = elem.getChildNodes();
 			for (int i = 0; i < nodeList.getLength(); i++) {
 				Node node = nodeList.item(i);
-				if (node.getNodeName().equals("#document")
-						|| node.getNodeName().equals("#text")) {
+				if (node.getNodeName().equals("#document") || node.getNodeName().equals("#text")) {
 					continue;
 				}
 
-				String paramId = !((Element) node).getAttribute("id")
-						.equals("") ? " id='"
-						+ ((Element) node).getAttribute("id") + "' " : "";
+				String paramId = !((Element) node).getAttribute("id").equals("") ? " id='" + ((Element) node).getAttribute("id") + "' " : "";
 				sb.append("<" + node.getNodeName() + paramId + ">");
 				if (!((Element) node).getAttribute("filename").equals("")) {
-					sb.append(getContentFile(((Element) node)
-							.getAttribute("filename")));
+					sb.append(getContentFile(((Element) node).getAttribute("filename")));
 				}
 
 				checkNodes(node);

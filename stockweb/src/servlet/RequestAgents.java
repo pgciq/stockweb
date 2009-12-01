@@ -42,13 +42,12 @@ public class RequestAgents extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
 	 *      response)
 	 */
-	protected void doPost(HttpServletRequest request,
-			HttpServletResponse response) throws ServletException, IOException {
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		processRequest(request, response);
 	}
 
-	private void formatterResult(TestAI object, HttpServletRequest request,
-			HttpServletResponse response) {
+	private void formatterResult(TestAI object, HttpServletRequest request, HttpServletResponse response) {
+		
 		StringBuffer sbResultHistory = null;
 		StringBuffer sbResultBollinger = null;
 		StringBuffer sbResultVarVolume = null;
@@ -313,7 +312,7 @@ public class RequestAgents extends HttpServlet {
 			testAI
 					.executeAgent(
 							request.getParameter("stock"),
-							"w",
+							"d",
 							"20080101",
 							"20101213",
 							"HistoryStocksAgent,CandlestickAgent,BollingerAgent,MaxMinIndexAgent,VariationVolumeAgent,VariationPriceIndexAgent,ExecuteScriptAgent");
@@ -321,8 +320,8 @@ public class RequestAgents extends HttpServlet {
 			testAI
 					.executeAgents(
 							prop,
-							"w",
-							"20080501",
+							"d",
+							"20080101",
 							"20101213",
 							"HistoryStocksAgent,CandlestickAgent,BollingerAgent,MaxMinIndexAgent,VariationVolumeAgent,VariationPriceIndexAgent,ExecuteScriptAgent");
 		}

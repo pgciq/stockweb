@@ -527,3 +527,86 @@ var jsonSetupChart = {
     }    
     ]
 }
+
+
+var jsonChartSetting = {
+    'main': [{
+        "layout": [{
+            "tag": "div",
+            "id": "window04",
+            "params": [],
+            "nodeRifer": "schema",
+            "innerHTML": "&nbsp;<div id='contentwindow04'/>",
+            "style": ["top:50px", "width:620px", "height:670px", "left:2px", "position:absolute", "backgroundColor:#f0f2f4"],
+            "events": [{
+                "onmousemove": eventMouseMove
+            }]
+        }]
+    }, {
+        "layout": [{
+            "tag": "div",
+            "id": "menubar04",
+            "params": [],
+            "nodeRifer": "window04",
+            "innerHTML": "",
+            "style": ["top:-10px", "left:0px", "height:20px", "width:620px", "backgroundImage:url(img/white-top-bottom.gif)"],
+            "events": [{
+                "onmousedown": function(){
+                    dragdrop.addEvent(document.getElementById('window04'), 'move');
+                    listener.fire(['mousedown', 'window04']);
+                }
+            }]
+        }]
+    }, {
+        "layout": [{
+            "tag": "span",
+            "id": "title04",
+            "params": [],
+            "nodeRifer": "window04",
+            "innerHTML": "<div id='loadchart' style='visibility:hidden'><img src='img/loading.gif'/></div>&nbsp;&nbsp;Stocks",
+            "style": ["position:absolute", "top:-8px", "left:10px", "color:#466F93", "fontWeight:bold", "fontFamily:verdana, arial, sans serif", "lineHeight:16px", "fontSize:12px"],
+            "events": [{}]
+        }]
+    }, {
+        "layout": [{
+            "tag": "div",
+            "id": "statusbar04",
+            "params": [],
+            "nodeRifer": "window04",
+            "innerHTML": "",
+            "style": ["top:655px", "left:0px", "height:15px", "width:620px", "backgroundImage:url(img/white-top-bottom.gif)"],
+            "events": [{
+                "onmousedown": function(){
+                    //dragdrop.addEvent(document.getElementById('window04'), 'resize');
+                    //listener.fire(['resize', this.parentNode.id]);
+                }
+            }]
+        }]
+    }, {
+        "layout": [{
+            "tag": "div",
+            "id": "close04",
+            "params": [],
+            "nodeRifer": "window04",
+            "innerHTML": "<img id='resize' src='img/close.gif'/>",
+            "style": ["position:absolute", "top:-7px", "left:600px", "cursor:pointer"],
+            "events": [{
+                "onclick": function(){
+                    document.getElementById('window04').style.visibility = 'hidden';
+                }
+            }]
+        }]        
+    }, {
+        "layout": [{
+            "tag": "div",
+            "id": "resize0",
+            "params": [],
+            "nodeRifer": "window04",
+            "innerHTML": "<img id='resize' src='img/resizediv.gif'/>",
+            "style": ["position:absolute", "top:655px", "left:605px"],
+            "events": [{}]
+        }]
+
+    }    
+    ]
+}
