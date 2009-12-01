@@ -7,7 +7,7 @@
 <!-- saved from url=(0013)about:internet -->
 <!-- amstock script-->
 
-  <script type="text/javascript" src="../amstock/swfobject.js"></script>
+  <script type="text/javascript" src="amstock/swfobject.js"></script>
 	<div id="flashcontent">
 		<strong>You need to upgrade your Flash Player</strong>
 	</div>
@@ -17,7 +17,7 @@
 		//alert(path.substring(path.indexOf("stock=")+6));
 	
 		// <![CDATA[		
-		var so = new SWFObject("../amstock/amstock.swf", "amstock", "100%", "100%", "8", "#FFFFFF");
+		var so = new SWFObject("amstock/amstock.swf", "amstock", "100%", "100%", "8", "#FFFFFF");
 		so.addVariable("path", "");
 		so.addVariable("settings_file", encodeURIComponent("http://localhost:8080/stockweb/servlet/SettingsServlet?stock="+path.substring(path.indexOf("stock=")+6)));
 		so.write("flashcontent");

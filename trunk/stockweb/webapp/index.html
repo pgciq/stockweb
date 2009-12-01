@@ -12,13 +12,13 @@
 <body>
 <script>
 	function changeChart(){
-		document.getElementById('frameChart').src='intraday_data2/index.html?stock=' + document.getElementById('stock').value;
+		document.getElementById('frameChart').src='frameChartStock.html?stock=' + document.getElementById('stock').value;
 	}
 </script>
 	<input type='text' id='stock' name='stock' value='F.MI'/>	<input type='button' value='click' onclick='changeChart()'/>
 	
 <br>
-	<iframe id="frameChart" style="width: 700px; height: 600px; border: 0px;" scrolling="no" src="intraday_data2/index.html?stock=F.MI"></iframe>
+	<iframe id="frameChart" style="width: 700px; height: 600px; border: 0px;" scrolling="no" src="frameChartStock.html?stock=F.MI"></iframe>
 </body>
 
 </html>

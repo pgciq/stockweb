@@ -17,3 +17,12 @@ CREATE TABLE  `stockweb`.`scripts` (
    `settingchart` varchar(255) default ' ',
   PRIMARY KEY  (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+DROP TABLE IF EXISTS `stockweb`.`chartsetting`;
+CREATE TABLE  `stockweb`.`chartsetting` (
+  `id` int(10) unsigned NOT NULL auto_increment,
+  `idscript` int(10) unsigned NOT NULL,
+  `name` varchar(45) NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
