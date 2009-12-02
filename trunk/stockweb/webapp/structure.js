@@ -440,8 +440,29 @@ var jsonMenuDesktop = {
             }]
         }]
     
-    }    
-        
+    },{    
+        "layout": [{
+            "tag": "div",
+            "id": "menuicon04",
+            "params": [],
+            "nodeRifer": "schema",
+            "innerHTML": "<img id='resize' src='img/icon_chart.png'/>",
+            "style": ["top:500px", "width:128px", "height:128px", "left:10px", "position:absolute", "cursor:pointer"],
+            "events": [{
+                "onmousemove": eventMouseMove,
+                "onmousedown": function(){
+                    dragdrop.addEvent(document.getElementById('menuicon04'), 'move');
+                    listener.fire(['mousedown', 'menuicon04']);
+                },
+                "onclick": function(){
+                    document.getElementById('window04').style.visibility = 'visible';
+                }
+
+            }]
+        }]
+    
+    }
+            
     ]
 }
 
