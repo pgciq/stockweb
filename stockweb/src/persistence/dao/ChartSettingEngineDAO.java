@@ -66,7 +66,7 @@ public class ChartSettingEngineDAO { // implements PersistenceDAO{
 		Set<Script> list = new HashSet();
 		conn = DBSession.getIstance().getConnection();
 		String sql = " SELECT s.id, s.name, s.script, s.descr, s.param, s.settingchart " +
-					 " FROM chartsetting ch, script s" +
+					 " FROM chartsetting ch, scripts s" +
 					 " WHERE " +
 					 "		s.id = ch.idscript " +
 					 " ORDER BY s.name, ch.id";
@@ -101,7 +101,7 @@ public class ChartSettingEngineDAO { // implements PersistenceDAO{
 	public Script getObjectByName(String key) throws Exception {
 		conn = DBSession.getIstance().getConnection();
 		String sql = " SELECT s.id, s.name, s.script, s.descr, s.param, s.settingchart " +
-					 " FROM chartsetting ch, script s " +
+					 " FROM chartsetting ch, scripts s " +
 					 " WHERE " +
 					 "		s.id = ch.idscript " +
 					 "		ch.name = '" + key + "'";

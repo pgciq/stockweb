@@ -7,8 +7,10 @@ import java.io.StringReader;
 import java.io.StringWriter;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.StringTokenizer;
 
 import javax.xml.parsers.DocumentBuilder;
@@ -50,7 +52,9 @@ public class ChartInterfaceDynamic {
 		this.pathname = pathname;
 		this.mapSetting = mapParameters;
 		this.chartName = chartName;
-		chartImpl = new ChartSettingEngineImpl();		
+		chartImpl = new ChartSettingEngineImpl();
+		mapSetting.put("column_setup", "date,open,high,low,close,volume");
+
 	}
 
 	private void checkNodes(Node node) throws Exception {
@@ -88,7 +92,7 @@ public class ChartInterfaceDynamic {
 		if(elem.getAttribute("filename").equals("graph.txt")){
 			String params = elem.getAttribute("graphsetting");
 			
-			content = content.replace("_COLOR_", params.substring(1,params.indexOf(",")));
+			content = content.replace("_COLOR_", (params.length()==0) ? "" : params.substring(1,params.indexOf(",")));
 			content = content.replaceAll("_PARAMETER_", elem.getAttribute("graphname"));
 		}
 		return content;
@@ -131,7 +135,16 @@ public class ChartInterfaceDynamic {
 
 	public String loadSettings() {
 		String xml = getXmlSettings();
+
+		String columns = "";
+		StringTokenizer tokens = new StringTokenizer(mapSetting.get("column_setup"),",");
+		while(tokens.hasMoreTokens()){
+			columns += "<column>"+tokens.nextToken()+"</column>";
+		}
+		
+		xml = xml.replaceAll("_COLUMN_", columns);
 		xml = xml.replaceAll("_STOCK_", mapSetting.get("stock"));
+		
 		return xml;
 	}
 
@@ -140,7 +153,7 @@ public class ChartInterfaceDynamic {
 	}
 	
 	private Document createAmstocksSettings(){
-		List<Script> lsResult = (ArrayList<Script>)chartImpl.list();
+		List<Script> lsResult = new ArrayList<Script>(chartImpl.list());
 		int totCharts = lsResult.size();
 		String scriptname = "", token = "";
 		Document doc = null; 
@@ -169,16 +182,18 @@ public class ChartInterfaceDynamic {
 		        Element graphs = doc.createElement("graphs");
 		        chart.appendChild(graphs);
 
+				int nGraph=0; 
 				while(tkParams.hasMoreTokens()){
 					StringTokenizer tkSettingChart = new StringTokenizer(settingChart,"|");
-					int nGraph=0; 
-			        
+			        String graphname = tkParams.nextToken(); 
 					Element graph = doc.createElement("graph");
 			        graph.setAttribute("id", String.valueOf(nGraph));
 			        graph.setAttribute("filename", "graph.txt");
 			        chart.setAttribute("graphname", tkParams.nextToken());
 			        chart.setAttribute("graphsetting", tkSettingChart.nextToken());
 			        graphs.appendChild(graph);
+
+			        mapSetting.put("column_setup", mapSetting.get("column_setup") + "," + graphname);
 
 			        nGraph++;
 				}

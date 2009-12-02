@@ -84,13 +84,7 @@
 					<date_format>YYYYMMDD</date_format>
 					<decimal_separator>.</decimal_separator>
 					<columns>
-						<column>date</column>
-						<column>open</column>
-						<column>high</column>
-						<column>low</column>
-						<column>close</column>
-						<column>volume</column>
-
+								_COLUMN_
 					</columns>
 				</csv>
 			</data_set>
