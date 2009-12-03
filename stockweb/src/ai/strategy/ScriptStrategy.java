@@ -26,8 +26,7 @@ public class ScriptStrategy {
 		invocableEngine = (Invocable) jsEngine;
 	}
 
-	public String applyScript(String scriptName, String script, String date,
-			CandlestickUtils candles) {
+	public String applyScript(String scriptName, String script, String date, CandlestickUtils candles) {
 		JSONObject jsonResult = new JSONObject();
 		HashMap<String, String> mapResult = new HashMap<String, String>();
 		try {
