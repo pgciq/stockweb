@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import persistence.Stock;
+import persistence.dao.ChartSettingEngineDAO;
 import persistence.dao.ScriptEngineDAO;
 import persistence.vo.Script;
 import ai.AgentProgram;
@@ -61,8 +62,7 @@ public class ExecuteScriptAP extends AgentProgram {
 		}
 
 		if (type.equals("StockList")) {
-			ArrayList lsSotck = (ArrayList) percept
-					.getAttribute("ArrayStockObject");
+			ArrayList lsSotck = (ArrayList) percept.getAttribute("ArrayStockObject");
 			for (int i = 0; i < lsSotck.size(); i++) {
 				apply((Stock) lsSotck.get(i));
 			}
@@ -81,8 +81,9 @@ public class ExecuteScriptAP extends AgentProgram {
 		try {
 
 			ScriptStrategy strategy = new ScriptStrategy();
-			ScriptEngineDAO engineDAO = new ScriptEngineDAO();
-			List<Script> lsObject = new ArrayList<Script>(engineDAO.getListObject());
+//			ScriptEngineDAO engineDAO = new ScriptEngineDAO();
+//			List<Script> lsObject = new ArrayList<Script>(engineDAO.getListObject());
+			List<Script> lsObject = new ArrayList<Script>((new ChartSettingEngineDAO()).getListObject());
 
 			for (int candle = 0; candle < history.size() - 10; candle++) {
 
@@ -121,9 +122,7 @@ public class ExecuteScriptAP extends AgentProgram {
 			String date = String.valueOf(history.getPriceBar(0).getDate());
 
 			for (int x = 0; x < lsObject.size(); x++) {
-				lsResult.add(strategy.applyScript(lsObject.get(x).getName(),
-						lsObject.get(x).getScript(), date,
-						new CandlestickUtils(history)));
+				lsResult.add(strategy.applyScript(lsObject.get(x).getName(), lsObject.get(x).getScript(), date, new CandlestickUtils(history)));
 			}
 
 			String token = "";
