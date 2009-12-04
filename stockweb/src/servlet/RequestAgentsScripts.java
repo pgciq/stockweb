@@ -63,10 +63,10 @@ public class RequestAgentsScripts extends HttpServlet {
 
 		String agent = request.getParameter("agent");
 
-		if (agent.indexOf("history") >= 0) {
+//		if (agent.indexOf("history") >= 0) {
 			sbResultHistory = formatterResultCandle(object.getResponseAgents("HistoryStocksAgent"), request, response);
 			tkResultHistory = new StringTokenizer(sbResultHistory.toString(), "\n");
-		}
+//		}
 
 		if (agent.indexOf("scripts") >= 0) {
 			sbResultScripts = formatterResultScripts(object.getResponseAgents("ExecuteScriptAgent"), request, response);
@@ -79,9 +79,9 @@ public class RequestAgentsScripts extends HttpServlet {
 					&& tkResultScripts.hasMoreTokens()
 				  ) {
 
-				if (agent.indexOf("history") >= 0) {
+//				if (agent.indexOf("history") >= 0) {
 					out.print(tkResultHistory.nextToken());
-				}
+//				}
 				if (agent.indexOf("scripts") >= 0) {
 					out.print("," + tkResultScripts.nextToken());
 				}
@@ -99,23 +99,30 @@ public class RequestAgentsScripts extends HttpServlet {
 	private StringBuffer formatterResultScripts(String history, HttpServletRequest request, HttpServletResponse response) throws Exception {
 		Map<String,String> mapResult = new HashMap<String,String>();
 		StringBuffer sbResult = new StringBuffer();
-		List<Script> lsObject = new ArrayList<Script>((new ChartSettingEngineDAO()).getListObject());
+//		List<Script> lsObject = new ArrayList<Script>((new ChartSettingEngineDAO()).getListObject());
 		
-		StringTokenizer tokens = new StringTokenizer(history, "|");
 /*		while (tokens.hasMoreTokens()) {
 			String result = (String) tokens.nextToken();
-			JSONObject json = new JSONObject(result);
-			mapResult.put("", json);
+			String date = result.substring(result.indexOf("date:")+5,8);
+			mapResult.put(date, result);
 		}
-*/		
+*/
+		StringTokenizer tokens = new StringTokenizer(history, "|");
 		while (tokens.hasMoreTokens()) {
 			String result = (String) tokens.nextToken();
 			JSONObject json = new JSONObject(result);
-
-			sbResult.append(String.valueOf(json.get("date")));
-			sbResult.append("," + String.valueOf(json.get("upper")));
-			sbResult.append("," + String.valueOf(json.get("middle")));
-			sbResult.append("," + String.valueOf(json.get("lower")));
+			
+			StringTokenizer tkParams = new StringTokenizer(result, ",");
+//			sbResult.append(String.valueOf(json.get("date")));
+			while(tkParams.hasMoreTokens()){
+				String param = tkParams.nextToken().replaceAll("\"","").replace("{",""); 
+				param = param.substring(0,param.indexOf(":"));
+				
+				if(!param.equals("scriptname") && !param.equals("date") && !param.equals("type"))
+					sbResult.append("," + String.valueOf(json.get(param)));
+				
+				
+			}
 			sbResult.append("\n");
 		}
 		return sbResult;
@@ -185,7 +192,7 @@ public class RequestAgentsScripts extends HttpServlet {
 				testAI.executeAgent(
 								request.getParameter("stock"),
 								"d",
-								"20080101",
+								"20091001",
 								"20101213",
 								"HistoryStocksAgent,BollingerAgent,ExecuteScriptAgent");
 			} else {

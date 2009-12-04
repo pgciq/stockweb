@@ -77,7 +77,7 @@
 				<title>_STOCK_</title>
 				<short>_STOCK_</short>
 				<color>7f8da9</color>
-				<file_name>http://localhost:8080/stockweb/RequestAgents?chart=dynamic&strategyname=_STRATEGYNAME_&stock=_STOCK_&agent=_AGENTS_</file_name>
+				<file_name>http://localhost:8080/stockweb/RequestAgentsScripts?chart=dynamic&strategyname=_STRATEGYNAME_&stock=_STOCK_&agent=scripts</file_name>
 				<csv>
 					<reverse>true</reverse>
 					<separator>,</separator>

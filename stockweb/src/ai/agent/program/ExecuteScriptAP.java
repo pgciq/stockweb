@@ -92,13 +92,13 @@ public class ExecuteScriptAP extends AgentProgram {
 				for (int x = 0; x < lsObject.size(); x++) {
 					lsResult.add(strategy.applyScript(lsObject.get(x).getName(), lsObject.get(x).getScript(), date, new CandlestickUtils(history)));
 				}
-
-				String token = "";
-				for (int x = 0; x < lsResult.size(); x++) {
-					result = result + lsResult.get(x) + token;
-					token = "|";
-				}
 			}
+			String token = "";
+			for (int x = 0; x < lsResult.size(); x++) {
+				result = result + token + lsResult.get(x);
+				token = "|";
+			}
+			
 
 		} catch (Exception ex) {
 			ex.printStackTrace();
