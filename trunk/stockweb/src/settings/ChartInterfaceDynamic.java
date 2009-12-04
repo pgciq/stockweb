@@ -144,6 +144,7 @@ public class ChartInterfaceDynamic {
 		
 		xml = xml.replaceAll("_COLUMN_", columns);
 		xml = xml.replaceAll("_STOCK_", mapSetting.get("stock"));
+//		xml = xml.replaceAll("_AGENTS_", mapSetting.get("agents"));
 		
 		return xml;
 	}
@@ -155,7 +156,7 @@ public class ChartInterfaceDynamic {
 	private Document createAmstocksSettings(){
 		List<Script> lsResult = new ArrayList<Script>(chartImpl.list());
 		int totCharts = lsResult.size();
-		String scriptname = "", token = "";
+//		String agentsScriptName = "", token = "";
 		Document doc = null; 
 		try {
 			doc = getDoc(getContentFile("amstock_settings.xml"));
@@ -164,8 +165,8 @@ public class ChartInterfaceDynamic {
 
 			for(int nChart=0; nChart<totCharts; nChart++){
 				Script script = lsResult.get(nChart);	
-				scriptname = token + String.valueOf(lsResult.get(nChart).getId());
-				token = "_";
+				//agentsScriptName += token + String.valueOf(lsResult.get(nChart).getId());
+				//token = "_";
 				
 				String params = script.getParam();
 				String settingChart = script.getSettingchart();
@@ -189,7 +190,7 @@ public class ChartInterfaceDynamic {
 					Element graph = doc.createElement("graph");
 			        graph.setAttribute("id", String.valueOf(nGraph));
 			        graph.setAttribute("filename", "graph.txt");
-			        chart.setAttribute("graphname", tkParams.nextToken());
+			        chart.setAttribute("graphname", graphname);
 			        chart.setAttribute("graphsetting", tkSettingChart.nextToken());
 			        graphs.appendChild(graph);
 
@@ -197,7 +198,9 @@ public class ChartInterfaceDynamic {
 
 			        nGraph++;
 				}
-			}			
+			}
+			
+			//mapSetting.put("agents",agentsScriptName);
 
 		} catch (Exception e) {
 			// TODO Auto-generated catch block

@@ -30,7 +30,7 @@ public class ExecuteScriptAgent extends Agent{
 		if(!result.equals("ok"))
 			return "";
 
-		return null; //((ExecuteScriptAP)super.program).getListResultScript();
+		return ((ExecuteScriptAP)super.program).getListResultScript();
 	}
 	
 	public String valuated(Percept percept, String result){

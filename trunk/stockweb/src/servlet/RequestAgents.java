@@ -315,15 +315,15 @@ public class RequestAgents extends HttpServlet {
 							"d",
 							"20080101",
 							"20101213",
-							"HistoryStocksAgent,CandlestickAgent,BollingerAgent,MaxMinIndexAgent,VariationVolumeAgent,VariationPriceIndexAgent,ExecuteScriptAgent");
+							"HistoryStocksAgent,CandlestickAgent,BollingerAgent,MaxMinIndexAgent,VariationVolumeAgent,VariationPriceIndexAgent");
 		} else {
 			testAI
 					.executeAgents(
 							prop,
 							"d",
-							"20080101",
+							"20090501",
 							"20101213",
-							"HistoryStocksAgent,CandlestickAgent,BollingerAgent,MaxMinIndexAgent,VariationVolumeAgent,VariationPriceIndexAgent,ExecuteScriptAgent");
+							"HistoryStocksAgent,CandlestickAgent,BollingerAgent,MaxMinIndexAgent,VariationVolumeAgent,VariationPriceIndexAgent");
 		}
 
 		// testAI.getResponseAgents(getAgentName(request.getParameter("agent"))

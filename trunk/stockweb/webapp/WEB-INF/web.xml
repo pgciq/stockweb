@@ -20,6 +20,16 @@
     <url-pattern>/RequestAgents</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+    <description></description>
+    <display-name>RequestAgentsScripts</display-name>
+    <servlet-name>RequestAgentsScripts</servlet-name>
+    <servlet-class>servlet.RequestAgentsScripts</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RequestAgentsScripts</servlet-name>
+    <url-pattern>/RequestAgentsScripts</url-pattern>
+  </servlet-mapping>
   
 	<servlet>
 	  <servlet-name>dwr-invoker</servlet-name>
