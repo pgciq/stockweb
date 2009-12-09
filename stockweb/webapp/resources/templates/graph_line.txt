@@ -1,7 +1,8 @@
 
 		<type>line</type>
 		<width>2</width>
-    
+    <axis>right</axis>
+    <period_value>average</period_value>
     <color>black</color>
     <alpha>100</alpha>
     
