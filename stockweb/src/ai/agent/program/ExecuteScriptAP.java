@@ -85,12 +85,12 @@ public class ExecuteScriptAP extends AgentProgram {
 //			List<Script> lsObject = new ArrayList<Script>(engineDAO.getListObject());
 			List<Script> lsObject = new ArrayList<Script>((new ChartSettingEngineDAO()).getListObject());
 
-			for (int candle = 0; candle < history.size() - 10; candle++) {
+			for (int position = 0; position < history.size() - 10; position++) {
 
-				String date = String.valueOf(history.getPriceBar(candle).getDate());
+				String date = String.valueOf(history.getPriceBar(position).getDate());
 
 				for (int x = 0; x < lsObject.size(); x++) {
-					lsResult.add(strategy.applyScript(lsObject.get(x).getName(), lsObject.get(x).getScript(), date, new CandlestickUtils(history)));
+					lsResult.add(strategy.applyScript(lsObject.get(x).getName(), lsObject.get(x).getScript(), date, new CandlestickUtils(history), position));
 				}
 			}
 			String token = "";
@@ -122,7 +122,7 @@ public class ExecuteScriptAP extends AgentProgram {
 			String date = String.valueOf(history.getPriceBar(0).getDate());
 
 			for (int x = 0; x < lsObject.size(); x++) {
-				lsResult.add(strategy.applyScript(lsObject.get(x).getName(), lsObject.get(x).getScript(), date, new CandlestickUtils(history)));
+				lsResult.add(strategy.applyScript(lsObject.get(x).getName(), lsObject.get(x).getScript(), date, new CandlestickUtils(history),x));
 			}
 
 			String token = "";
