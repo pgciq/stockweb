@@ -136,5 +136,9 @@ public class ExecuteScriptAP extends AgentProgram {
 
 		return result;
 	}
-
+	public String getResultScript(String key, String date, int lastbar) throws Exception {
+		ScriptStrategy strategy = new ScriptStrategy();
+		Script script = (Script) (new ScriptEngineDAO()).getObjectByName(key);
+		return strategy.applyScript(script.getName(), script.getScript(), date, new CandlestickUtils(history),lastbar);
+	}
 }
