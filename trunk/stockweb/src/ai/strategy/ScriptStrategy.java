@@ -26,7 +26,7 @@ public class ScriptStrategy {
 		invocableEngine = (Invocable) jsEngine;
 	}
 
-	public String applyScript(String scriptName, String script, String date, CandlestickUtils candles) {
+	public String applyScript(String scriptName, String script, String date, CandlestickUtils candles, int position) {
 		JSONObject jsonResult = new JSONObject();
 		HashMap<String, String> mapResult = new HashMap<String, String>();
 		try {
@@ -34,8 +34,8 @@ public class ScriptStrategy {
 			mapResult.put("type", "scriptengine");
 			mapResult.put("date", date);
 			jsEngine.eval(script);
-			invocableEngine.invokeFunction("applyScript", candles, mapResult);
-			System.out.println(mapResult.toString());
+			invocableEngine.invokeFunction("applyScript", candles, mapResult, position);
+			//System.out.println(mapResult.toString());
 			for (String key : mapResult.keySet()) {
 				jsonResult.put(key, mapResult.get(key));
 			}

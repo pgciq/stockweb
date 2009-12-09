@@ -31,8 +31,15 @@
   </td><td>
   <table>
   	<tr><td class="label">Script:</td></tr>
-  	<tr><td><textarea id="script_script" class="edit2" style="height:220px; width:320px" onkeypress="applyFormatter(event, this.id)">function applyScript(candles, json) {
-    return json;
+  	<tr><td><textarea id="script_script" class="edit2" style="height:220px; width:320px" onkeypress="applyFormatter(event, this.id)">function applyScript(candles,json,lastbar) {
+
+json.put("high", candles.High(lastbar));
+json.put("low", candles.Low(lastbar));
+json.put("close", candles.Close(lastbar));
+json.put("open", candles.Open(lastbar));
+
+return json;
+
 }
 </textarea></td></tr>
   	
