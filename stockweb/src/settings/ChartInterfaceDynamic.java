@@ -89,11 +89,11 @@ public class ChartInterfaceDynamic {
 			content = content.replace("_TITLE_", elem.getAttribute("chartname"));
 		}
 
-		if(elem.getAttribute("filename").equals("graph.txt")){
+		if(elem.getAttribute("filename").indexOf("graph") != -1){
 			String params = elem.getAttribute("graphsetting");
 			
 			content = content.replace("_COLOR_", (params.length()==0) ? "" : params.substring(1,params.indexOf(",")));
-			content = content.replaceAll("_PARAMETER_", elem.getAttribute("graphname"));
+			content = content.replaceAll("_GRAPHNAME_", elem.getAttribute("graphname"));
 		}
 		return content;
 		
@@ -181,23 +181,25 @@ public class ChartInterfaceDynamic {
 		        charts.appendChild(chart);
 		        
 		        Element graphs = doc.createElement("graphs");
-		        chart.appendChild(graphs);
+				StringTokenizer tkSettingChart = new StringTokenizer(settingChart,"|");
 
 				int nGraph=0; 
 				while(tkParams.hasMoreTokens()){
-					StringTokenizer tkSettingChart = new StringTokenizer(settingChart,"|");
+					String paramSettingChart = tkSettingChart.nextToken();
 			        String graphname = tkParams.nextToken(); 
 					Element graph = doc.createElement("graph");
 			        graph.setAttribute("id", String.valueOf(nGraph));
-			        graph.setAttribute("filename", "graph.txt");
-			        chart.setAttribute("graphname", graphname);
-			        chart.setAttribute("graphsetting", tkSettingChart.nextToken());
+			        graph.setAttribute("filename", (paramSettingChart.indexOf("histogram") != -1) ? "graph_histogram.txt":"graph_line.txt");
+			        graph.setAttribute("graphname", graphname);
+			        graph.setAttribute("graphsetting", paramSettingChart);
 			        graphs.appendChild(graph);
 
 			        mapSetting.put("column_setup", mapSetting.get("column_setup") + "," + graphname);
 
 			        nGraph++;
 				}
+		        chart.appendChild(graphs);
+				
 			}
 			
 			//mapSetting.put("agents",agentsScriptName);

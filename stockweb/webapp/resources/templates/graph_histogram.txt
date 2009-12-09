@@ -12,10 +12,10 @@
           <width>8</width>
           
           <data_sources>
-            <close>_PARAMETER_</close>
+            <close>_GRAPHNAME_</close>
           </data_sources>
           <legend>
-            <date title="false" key="false"><![CDATA[_PARAMETER_: <b>{close}</b>]]></date>
-            <period title="false" key="false"><![CDATA[_PARAMETER_: <b>{close}</b>]]></period>
+            <date title="false" key="false"><![CDATA[_GRAPHNAME_: <b>{close}</b>]]></date>
+            <period title="false" key="false"><![CDATA[_GRAPHNAME_: <b>{close}</b>]]></period>
           </legend>
 		

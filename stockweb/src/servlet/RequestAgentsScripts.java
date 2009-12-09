@@ -99,7 +99,8 @@ public class RequestAgentsScripts extends HttpServlet {
 	private StringBuffer formatterResultScripts(String history, HttpServletRequest request, HttpServletResponse response) throws Exception {
 		Map<String,String> mapResult = new HashMap<String,String>();
 		StringBuffer sbResult = new StringBuffer();
-//		List<Script> lsObject = new ArrayList<Script>((new ChartSettingEngineDAO()).getListObject());
+		String token = "";
+		List<Script> lsObject = new ArrayList<Script>((new ChartSettingEngineDAO()).getListObject());
 		
 /*		while (tokens.hasMoreTokens()) {
 			String result = (String) tokens.nextToken();
@@ -111,18 +112,33 @@ public class RequestAgentsScripts extends HttpServlet {
 		while (tokens.hasMoreTokens()) {
 			String result = (String) tokens.nextToken();
 			JSONObject json = new JSONObject(result);
+			token = "";
 			
-			StringTokenizer tkParams = new StringTokenizer(result, ",");
+/*			StringTokenizer tkParams = new StringTokenizer(result, ",");
 //			sbResult.append(String.valueOf(json.get("date")));
 			while(tkParams.hasMoreTokens()){
 				String param = tkParams.nextToken().replaceAll("\"","").replace("{",""); 
 				param = param.substring(0,param.indexOf(":"));
 				
-				if(!param.equals("scriptname") && !param.equals("date") && !param.equals("type"))
-					sbResult.append("," + String.valueOf(json.get(param)));
-				
-				
+				if(!param.equals("scriptname") && !param.equals("date") && !param.equals("type")){
+*/
+					for(Script script : lsObject){
+						if(result.indexOf(script.getName()) == -1) 
+							continue;
+						
+						StringTokenizer tkParams = new StringTokenizer(script.getParam(), ",");
+						while(tkParams.hasMoreTokens()){
+							sbResult.append(token + String.valueOf(json.get(tkParams.nextToken())));
+							token = ",";
+						}
+						break;
+						//if(tkParams.equals(param))
+
+					}
+
+/*				}
 			}
+*/			
 			sbResult.append("\n");
 		}
 		return sbResult;
