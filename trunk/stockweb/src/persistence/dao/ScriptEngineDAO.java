@@ -91,8 +91,7 @@ public class ScriptEngineDAO { // implements PersistenceDAO{
 
 	public Script getObjectByName(String key) throws Exception {
 		conn = DBSession.getIstance().getConnection();
-		String sql = "select id, name, script, descr, param, settingchart from scripts where name like '"
-				+ key + "%'";
+		String sql = "select id, name, script, descr, param, settingchart from scripts where name = '" + key + "'";
 
 		Statement stat = conn.createStatement();
 		ResultSet rs = stat.executeQuery(sql);
@@ -118,7 +117,7 @@ public class ScriptEngineDAO { // implements PersistenceDAO{
 		conn = DBSession.getIstance().getConnection();
 		// String sql =
 		// "insert into t02_accountuser (firstname, lastname, date, email, icon, login, password, reajust, notes, sim, telcontact) values (?,?,?,?,?,?,?,?,?,?,?)";
-		String sql = "insert into scripts (name, script, descr, param) values (?,?,?,?)";
+		String sql = "insert into scripts (name, script, descr, param, settingchart) values (?,?,?,?,?)";
 
 		if (exist(script)) {
 			System.out.println(">>>>>>> LOG: script.getId() = "

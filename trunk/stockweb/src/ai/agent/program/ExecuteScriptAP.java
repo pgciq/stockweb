@@ -2,7 +2,12 @@ package ai.agent.program;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
+import java.util.StringTokenizer;
+
+import org.json.JSONObject;
 
 import persistence.Stock;
 import persistence.dao.ChartSettingEngineDAO;
@@ -90,7 +95,7 @@ public class ExecuteScriptAP extends AgentProgram {
 				String date = String.valueOf(history.getPriceBar(position).getDate());
 
 				for (int x = 0; x < lsObject.size(); x++) {
-					lsResult.add(strategy.applyScript(lsObject.get(x).getName(), lsObject.get(x).getScript(), date, new CandlestickUtils(history), position));
+					lsResult.add(strategy.applyScript(lsObject.get(x).getName(), lsObject.get(x).getScript(), date, new CandlestickUtils(history), position, this, new HashMap<String,String>()));
 				}
 			}
 			String token = "";
@@ -107,38 +112,35 @@ public class ExecuteScriptAP extends AgentProgram {
 		return result;
 	}
 
-	public String getResultScript() {
+	public String getResultScript(String scriptName, int lastbar) {
 		String result = "";
 		Script script = null;
-		ArrayList lsScriptVO = null;
-		ArrayList lsResult = new ArrayList();
 
 		try {
 
 			ScriptStrategy strategy = new ScriptStrategy();
 			ScriptEngineDAO engineDAO = new ScriptEngineDAO();
-			ArrayList<Script> lsObject = (ArrayList) engineDAO.getListObject();
+			script = (Script) engineDAO.getObjectByName(scriptName);
 
 			String date = String.valueOf(history.getPriceBar(0).getDate());
 
-			for (int x = 0; x < lsObject.size(); x++) {
-				lsResult.add(strategy.applyScript(lsObject.get(x).getName(), lsObject.get(x).getScript(), date, new CandlestickUtils(history),x));
-			}
+			result = strategy.applyScript(script.getName(), script.getScript(), date, new CandlestickUtils(history),lastbar, this, null);
 
-			String token = "";
-			for (int x = 0; x < lsResult.size(); x++) {
-				result = lsResult.get(x) + token;
-				token = "|";
-			}
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}
 
 		return result;
 	}
-	public String getResultScript(String key, String date, int lastbar) throws Exception {
+	
+	public String call(String key, int lastbar, HashMap<String,String> input) throws Exception {
 		ScriptStrategy strategy = new ScriptStrategy();
 		Script script = (Script) (new ScriptEngineDAO()).getObjectByName(key);
-		return strategy.applyScript(script.getName(), script.getScript(), date, new CandlestickUtils(history),lastbar);
+		return strategy.applyScript(script.getName(), script.getScript(), "", new CandlestickUtils(history),lastbar, this, input);
+	}
+	
+	public String get(String result, String key){
+		JSONObject json = new JSONObject(result);
+		return json.getString(key);
 	}
 }
