@@ -8,6 +8,8 @@ import javax.script.ScriptEngineManager;
 
 import org.json.JSONObject;
 
+import ai.AgentProgram;
+
 import chart.study.indicator.utils.CandlestickUtils;
 
 /**
@@ -26,7 +28,7 @@ public class ScriptStrategy {
 		invocableEngine = (Invocable) jsEngine;
 	}
 
-	public String applyScript(String scriptName, String script, String date, CandlestickUtils candles, int position) {
+	public String applyScript(String scriptName, String script, String date, CandlestickUtils candles, int position, AgentProgram agent, HashMap<String,String> input) {
 		JSONObject jsonResult = new JSONObject();
 		HashMap<String, String> mapResult = new HashMap<String, String>();
 		try {
@@ -34,7 +36,7 @@ public class ScriptStrategy {
 			mapResult.put("type", "scriptengine");
 			mapResult.put("date", date);
 			jsEngine.eval(script);
-			invocableEngine.invokeFunction("applyScript", candles, mapResult, position);
+			invocableEngine.invokeFunction("applyScript", candles, mapResult, position, agent, input);
 			//System.out.println(mapResult.toString());
 			for (String key : mapResult.keySet()) {
 				jsonResult.put(key, mapResult.get(key));

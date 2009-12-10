@@ -37,7 +37,8 @@ public class ExecuteScriptAgent extends Agent{
 		if(!result.equals("ok"))
 			return "";
 		
-		return ((ExecuteScriptAP)super.program).getResultScript();
+//		return ((ExecuteScriptAP)super.program).getResultScript();
+		return null;
 	}
 
 }

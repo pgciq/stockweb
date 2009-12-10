@@ -61,8 +61,7 @@ public class BandsBollingerAP extends AgentProgram {
 		}
 
 		if (type.equals("StockList")) {
-			ArrayList lsSotck = (ArrayList) percept
-					.getAttribute("ArrayStockObject");
+			ArrayList lsSotck = (ArrayList) percept.getAttribute("ArrayStockObject");
 			for (int i = 0; i < lsSotck.size(); i++) {
 				apply((Stock) lsSotck.get(i));
 			}
@@ -80,16 +79,11 @@ public class BandsBollingerAP extends AgentProgram {
 		BollingerMiddle middle = new BollingerMiddle(history, 21);
 		BollingerLower lower = new BollingerLower(history, 21, 2.0);
 
-		String _upper = String.valueOf(df.format(upper.calculate())).replace(
-				",", ".");
-		String _middle = String.valueOf(df.format(middle.calculate())).replace(
-				",", ".");
-		String _lower = String.valueOf(df.format(lower.calculate())).replace(
-				",", ".");
+		String _upper = String.valueOf(df.format(upper.calculate())).replace(",", ".");
+		String _middle = String.valueOf(df.format(middle.calculate())).replace(",", ".");
+		String _lower = String.valueOf(df.format(lower.calculate())).replace(",", ".");
 
-		return "{type:bandsbollinger, lower:" + _lower + ", middle:" + _middle
-				+ ", upper:" + _upper + ", date:"
-				+ history.getLastPriceBar().getDate() + "}";
+		return "{type:bandsbollinger, lower:" + _lower + ", middle:" + _middle + ", upper:" + _upper + ", date:" + history.getLastPriceBar().getDate() + "}";
 		// return _lower + "|" + _middle + "|" + _upper;
 	}
 
@@ -111,17 +105,12 @@ public class BandsBollingerAP extends AgentProgram {
 			middle.setLimitHistory(i);
 			lower.setLimitHistory(i);
 
-			_upper = String.valueOf(df.format(upper.calculate())).replace(",",
-					".");
-			_middle = String.valueOf(df.format(middle.calculate())).replace(
-					",", ".");
-			_lower = String.valueOf(df.format(lower.calculate())).replace(",",
-					".");
+			_upper = String.valueOf(df.format(upper.calculate())).replace(",",".");
+			_middle = String.valueOf(df.format(middle.calculate())).replace(",", ".");
+			_lower = String.valueOf(df.format(lower.calculate())).replace(",",".");
 
 			priceBar = history.getPriceBar(i - 21);
-			result += token + "{date:" + priceBar.getDate() + "," + " upper:"
-					+ _upper + "," + " middle:" + _middle + "," + " lower:"
-					+ _lower + "}";
+			result += token + "{date:" + priceBar.getDate() + "," + " upper:" + _upper + "," + " middle:" + _middle + "," + " lower:" + _lower + "}";
 			token = "|";
 
 		}

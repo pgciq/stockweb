@@ -50,13 +50,10 @@ public class BearishBeltHold extends Indicator {
 				&& CorpoCandle1 > SombraSup1 + SombraInf1
 				&& candle.Close(0) < candle.Low(0) + range20percCandle2
 				&& (candle.Close(0) > candle.Open(1)
-						&& candle.Close(0) > candle.Open(1)
-								+ range10percCandle2
-						&& candle.Close(1) > candle.Open(1) || candle.Close(0) > candle
-						.Close(1)
-						&& candle.Close(0) > candle.Close(1)
-								+ range10percCandle2
-						&& candle.Close(1) < candle.Open(1))
+				 && candle.Close(0) > candle.Open(1) + range10percCandle2
+				 && candle.Close(1) > candle.Open(1) || candle.Close(0) > candle.Close(1)
+				 && candle.Close(0) > candle.Close(1) + range10percCandle2
+				 && candle.Close(1) < candle.Open(1))
 				&& candle.Close(0) < candle.High(1);
 
 		boolean BearishBeltHold = PrimeiroCandleBaixa && LarguraCandle

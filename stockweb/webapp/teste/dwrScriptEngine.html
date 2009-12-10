@@ -20,30 +20,35 @@
 
 <table>
 	<tr><td>
-  <table  cellspacing="0" cellpadding="0">
+  <table cellspacing="0" cellpadding="0">
   	<tr><td class="label">Name:</td><td>&nbsp;</td></tr>
   	<tr><td><input type="text" id="name_script" name="name" class="edit" value=""/></td></tr>
   	<tr><td class="label">Return:</td><td>&nbsp;</td></tr>
   	<tr><td><input type="text" id="param_script" class="edit" value=""/></td></tr>
-  	<tr><td class="label">Descr:</td><td>&nbsp;</td></tr>
-  	<tr><td><textarea id="descr_script" class="edit2" style="height:140px; width:150px"></textarea></td></tr>
-  </table>
-  </td><td>
-  <table>
   	<tr><td class="label">Script:</td></tr>
-  	<tr><td><textarea id="script_script" class="edit2" style="height:220px; width:320px" onkeypress="applyFormatter(event, this.id)">function applyScript(candles,json,lastbar) {
+  	<tr><td><textarea id="script_script" class="edit2" wrap="off" style="height:185px; width:480px; overflow: visible;" onkeypress="applyFormatter(event, this.id)">function applyScript(candles,json,lastbar,script) {
 
 json.put("high", candles.High(lastbar));
 json.put("low", candles.Low(lastbar));
 json.put("close", candles.Close(lastbar));
 json.put("open", candles.Open(lastbar));
 
+var rs = script.call('script 02', lastbar);
+println(script.get(rs,'result4'));
+    
 return json;
 
 }
 </textarea></td></tr>
-  	
+
   </table>
+  </td><td>
+<div style="position:absolute; left:170px; top:3px">
+  <table>
+  	<tr><td class="label">Descr:</td><td>&nbsp;</td></tr>
+  	<tr><td><textarea id="descr_script" class="edit2" style="height:58px; width:320px"></textarea></td></tr>
+  </table>
+</div>
   </td></tr>
 
   <table>
