@@ -104,8 +104,7 @@ public class CandlestickUtils {
 			}
 		}
 
-		boolean ExistTendencia = QtdeTendenciaBaixa != 0
-				&& QtdeTendenciaAlta != 0;
+		boolean ExistTendencia = (QtdeTendenciaBaixa != 0) && (QtdeTendenciaAlta != 0);
 
 		if (ExistTendencia) {
 			result = -1;
@@ -138,20 +137,14 @@ public class CandlestickUtils {
 			TendenciaCandleAlta = Close(x) > Close(x + 1);
 			TendenciaCandleBaixa = Close(x) < Close(x + 1);
 		} else if (SinalCandle1 && SinalCandle2 == false) {
-			TendenciaCandleAlta = Close(x) > Open(x + 1)
-					|| Close(x) > Close(x + 1);
-			TendenciaCandleBaixa = Close(x) < Open(x + 1)
-					&& Close(x) < Close(x + 1);
+			TendenciaCandleAlta = Close(x) > Open(x + 1) || Close(x) > Close(x + 1);
+			TendenciaCandleBaixa = Close(x) < Open(x + 1) && Close(x) < Close(x + 1);
 		} else if (SinalCandle1 == false && SinalCandle2) {
-			TendenciaCandleAlta = Open(x) > Close(x + 1)
-					&& Close(x) > Open(x + 1);
-			TendenciaCandleBaixa = Open(x) < Close(x + 1)
-					|| Close(x) < Open(x + 1);
+			TendenciaCandleAlta = Open(x) > Close(x + 1) && Close(x) > Open(x + 1);
+			TendenciaCandleBaixa = Open(x) < Close(x + 1) || Close(x) < Open(x + 1);
 		} else if (SinalCandle1 == false && SinalCandle2 == false) {
-			TendenciaCandleAlta = Open(x) > Open(x + 1)
-					&& Close(x) > Open(x + 1);
-			TendenciaCandleBaixa = Open(x) < Open(x + 1)
-					|| Close(x) < Close(x + 1);
+			TendenciaCandleAlta = Open(x) > Open(x + 1) && Close(x) > Open(x + 1);
+			TendenciaCandleBaixa = Open(x) < Open(x + 1) || Close(x) < Close(x + 1);
 		}
 
 		if (TendenciaCandleBaixa) {
@@ -209,17 +202,13 @@ public class CandlestickUtils {
 
 		int TendenciaUltimosCandles = getTendencia(0, candles);
 
-		boolean PrimeiroCandleBaixa = Open(1) > Close(1)
-				&& CorpoCandle1 > (SombraSup1 + SombraInf1) * 1.2;
+		boolean PrimeiroCandleBaixa = (Open(1) > Close(1)) && (CorpoCandle1 > (SombraSup1 + SombraInf1) * 1.2);
 
-		boolean PrimeiroCandleAlta = Open(1) < Close(1)
-				&& CorpoCandle1 > (SombraSup1 + SombraInf1) * 1.2;
+		boolean PrimeiroCandleAlta = (Open(1) < Close(1)) && (CorpoCandle1 > (SombraSup1 + SombraInf1) * 1.2);
 
-		boolean CandleLongDownTrend = TendenciaUltimosCandles == 0
-				&& PrimeiroCandleBaixa;
+		boolean CandleLongDownTrend = (TendenciaUltimosCandles == 0) && (PrimeiroCandleBaixa);
 
-		boolean CandleLongUpTrend = TendenciaUltimosCandles == 1
-				&& PrimeiroCandleAlta;
+		boolean CandleLongUpTrend = (TendenciaUltimosCandles == 1) && (PrimeiroCandleAlta);
 
 		if (CandleLongDownTrend) {
 			result = -1;
@@ -268,6 +257,10 @@ public class CandlestickUtils {
 
 	public double Open(int candle) {
 		return history.getPriceBar(position(candle)).getOpen();
+	}
+
+	public long Date(int candle) {
+		return history.getPriceBar(position(candle)).getDate();
 	}
 
 	private int position(int candle) {
