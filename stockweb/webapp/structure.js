@@ -220,7 +220,7 @@ var jsonScript = {
             "params": [],
             "nodeRifer": "schema",
             "innerHTML": "&nbsp;<div id='contentwindow01'/>",
-            "style": ["top:200px", "width:500px", "height:450px", "left:700px", "position:absolute", "backgroundColor:#f0f2f4"],
+            "style": ["top:200px", "width:500px", "height:510px", "left:700px", "position:absolute", "backgroundColor:#f0f2f4"],
             "events": [{
                 "onmousemove": eventMouseMove
             }]
@@ -257,7 +257,7 @@ var jsonScript = {
             "params": [],
             "nodeRifer": "window01",
             "innerHTML": "",
-            "style": ["top:450px", "left:0px", "height:15px", "width:500px", "backgroundImage:url(img/white-top-bottom.gif)"],
+            "style": ["top:500px", "left:0px", "height:15px", "width:500px", "backgroundImage:url(img/white-top-bottom.gif)"],
             "events": [{
                 "onmousedown": function(){
                     //dragdrop.addEvent(document.getElementById('window0'), 'resize');
@@ -272,7 +272,7 @@ var jsonScript = {
             "params": [],
             "nodeRifer": "window01",
             "innerHTML": "<img id='resize' src='img/resizediv.gif'/>",
-            "style": ["position:absolute", "top:450px", "left:485px"],
+            "style": ["position:absolute", "top:500px", "left:485px"],
             "events": [{}]
         }]
 

@@ -38,8 +38,7 @@ public class CandlestickUtils {
 	public boolean Doji(int candle) {
 		boolean result = false;
 		double range = Math.abs(High(candle) - Low(candle));
-		result = range > Math.abs(Open(candle) - Close(candle) * 5)
-				|| Open(candle) == Close(candle);
+		result = range > Math.abs(Open(candle) - Close(candle) * 5) || Open(candle) == Close(candle);
 		return result;
 	}
 
@@ -77,7 +76,7 @@ public class CandlestickUtils {
 			}
 		}
 
-		if (typeSombra == 3) {
+		if (type == 3) {
 			result = Math.abs(High / Low * 100 - 100);
 		}
 
@@ -222,26 +221,45 @@ public class CandlestickUtils {
 
 	}
 
-	// Verifica se o candle � qualquer tipo de martelo ou enforcado
+	// Verifica se o candle eh qualquer tipo de martelo ou enforcado
 	public boolean isHangingManORHammer(QuoteHistory history) {
+		return isHangingManORHammer(history,-1);
+	}
+	public int isHangingManORHammer(int lastbar) {
+		return (isHangingManORHammer(null, lastbar))?1:0;
+	}
+	public boolean isHangingManORHammer(QuoteHistory history, int lastbar) {
 		boolean result = false;
+		double Open1, Close1, CorpoCandle1, SombraSup1, SombraInf1, LarguraCandle1;
+		
+		if(lastbar != -1){
+			Open1 = this.history.getPriceBar(lastbar+1).getOpen();
+			Close1 = this.history.getPriceBar(lastbar+1).getClose();
+			// Hanging Man OR Hammer
 
-		double Open1 = history.getPriceBar(1).getOpen();
-		double Close1 = history.getPriceBar(1).getClose();
-		// Hanging Man OR Hammer
+			CorpoCandle1 = getCandleSize(lastbar, 1, 0);
+			SombraSup1 = getCandleSize(lastbar, 2, 1);
+			SombraInf1 = getCandleSize(lastbar, 2, 2);
 
-		double CorpoCandle1 = getCandleSize(0, 1, 0);
-		double SombraSup1 = getCandleSize(0, 2, 1);
-		double SombraInf1 = getCandleSize(0, 2, 2);
-
-		double LarguraCandle1 = getCandleSize(0, 3, 0);
-
-		double percLargCandle1 = 100 - Math.abs(CorpoCandle1 / LarguraCandle1
-				* 100 - 100);
+			LarguraCandle1 = getCandleSize(lastbar, 3, 0);
+			
+		}else{
+			Open1 = history.getPriceBar(1).getOpen();
+			Close1 = history.getPriceBar(1).getClose();
+			// Hanging Man OR Hammer
+	
+			CorpoCandle1 = getCandleSize(0, 1, 0);
+			SombraSup1 = getCandleSize(0, 2, 1);
+			SombraInf1 = getCandleSize(0, 2, 2);
+	
+			LarguraCandle1 = getCandleSize(0, 3, 0);
+		}
+		
+		double percLargCandle1 = 100 - Math.abs(CorpoCandle1 / LarguraCandle1 * 100 - 100);
 
 		boolean HangingMan = Open1 != Close1 && percLargCandle1 > 10
-				&& percLargCandle1 <= 30 && SombraInf1 > CorpoCandle1 * 2
-				&& SombraSup1 / (SombraInf1 + CorpoCandle1) < 0.10;
+ 						  && percLargCandle1 <= 30 && SombraInf1 > CorpoCandle1 * 2
+						  && SombraSup1 / (SombraInf1 + CorpoCandle1) < 0.10;
 
 		if (HangingMan) {
 			result = true;
