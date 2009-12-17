@@ -188,22 +188,34 @@ public class CandlestickUtils {
 		return MediaMin;
 	}
 
+	// Retorna o valor medio do volume, utilizado pelos scripts
+	public double getVolumeMedioMinimo(int candleposition, int ncandles) {
+
+		double MediaVolume = 0;
+		for (int x = candleposition+1; x < candleposition+ncandles; x++) {
+			MediaVolume = MediaVolume + Volume(x);
+		}
+		double MediaMin = MediaVolume / ncandles / 2.55 * 2;
+		return MediaMin;
+	}
+
 	public double High(int candle) {
 		return history.getPriceBar(position(candle)).getHigh();
 	}
 
-	public int isCandleLongTrend(int candles) {
+	public int isCandleLongTrend(int lastbar, int candles) {
+
 		int result = 0;
 
-		double CorpoCandle1 = getCandleSize(0, 1, 0);
-		double SombraSup1 = getCandleSize(0, 2, 1);
-		double SombraInf1 = getCandleSize(0, 2, 2);
+		double CorpoCandle1 = getCandleSize(lastbar, 1, 0);
+		double SombraSup1 = getCandleSize(lastbar, 2, 1);
+		double SombraInf1 = getCandleSize(lastbar, 2, 2);
 
-		int TendenciaUltimosCandles = getTendencia(0, candles);
+		int TendenciaUltimosCandles = getTendencia(lastbar, lastbar+candles);
 
-		boolean PrimeiroCandleBaixa = (Open(1) > Close(1)) && (CorpoCandle1 > (SombraSup1 + SombraInf1) * 1.2);
+		boolean PrimeiroCandleBaixa = (Open(lastbar+1) > Close(lastbar+1)) && (CorpoCandle1 > (SombraSup1 + SombraInf1) * 1.2);
 
-		boolean PrimeiroCandleAlta = (Open(1) < Close(1)) && (CorpoCandle1 > (SombraSup1 + SombraInf1) * 1.2);
+		boolean PrimeiroCandleAlta = (Open(lastbar+1) < Close(lastbar+1)) && (CorpoCandle1 > (SombraSup1 + SombraInf1) * 1.2);
 
 		boolean CandleLongDownTrend = (TendenciaUltimosCandles == 0) && (PrimeiroCandleBaixa);
 

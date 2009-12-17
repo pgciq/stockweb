@@ -89,9 +89,12 @@ public class ExecuteScriptAP extends AgentProgram {
 //			ScriptEngineDAO engineDAO = new ScriptEngineDAO();
 //			List<Script> lsObject = new ArrayList<Script>(engineDAO.getListObject());
 			List<Script> lsObject = new ArrayList<Script>((new ChartSettingEngineDAO()).getListObject());
-
+			int index = history.size() / 5;
+			
 			for (int position = 0; position < history.size() - 10; position++) {
-
+				if(position%index==0){
+					System.out.println("# process " + position + " days completed");
+				}
 				String date = String.valueOf(history.getPriceBar(position).getDate());
 
 				for (int x = 0; x < lsObject.size(); x++) {
@@ -139,7 +142,7 @@ public class ExecuteScriptAP extends AgentProgram {
 		return strategy.applyScript(script.getName(), script.getScript(), "", new CandlestickUtils(history),lastbar, this, input);
 	}
 	
-	public String get(String result, String key){
+	public String get(String key, String result){
 		JSONObject json = new JSONObject(result);
 		return json.getString(key);
 	}
