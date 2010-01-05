@@ -100,7 +100,7 @@ public class RequestAgentsScripts extends HttpServlet {
 		Map<String,String> mapResult = new HashMap<String,String>();
 		StringBuffer sbResult = new StringBuffer();
 		String token = "";
-		List<Script> lsObject = new ArrayList<Script>((new ChartSettingEngineDAO()).getListObject());
+		List<Script> lsObject = (new ChartSettingEngineDAO()).getListObject();
 		
 /*		while (tokens.hasMoreTokens()) {
 			String result = (String) tokens.nextToken();
@@ -108,6 +108,7 @@ public class RequestAgentsScripts extends HttpServlet {
 			mapResult.put(date, result);
 		}
 */
+		String lastDate = null;
 		StringTokenizer tokens = new StringTokenizer(history, "|");
 		while (tokens.hasMoreTokens()) {
 			String result = (String) tokens.nextToken();
@@ -122,7 +123,15 @@ public class RequestAgentsScripts extends HttpServlet {
 				
 				if(!param.equals("scriptname") && !param.equals("date") && !param.equals("type")){
 */
-					for(Script script : lsObject){
+			try{
+				if(result.equals("{}"))
+					continue;
+				if((lastDate!=null) && (!lastDate.equals(json.getString("date"))))
+					sbResult.append("\n");
+				
+				lastDate = json.getString("date");
+
+				for(Script script : lsObject){
 						if(result.indexOf(script.getName()) == -1) 
 							continue;
 						
@@ -135,12 +144,11 @@ public class RequestAgentsScripts extends HttpServlet {
 						//if(tkParams.equals(param))
 
 					}
-
-/*				}
+			}catch(Exception ex){
+				ex.printStackTrace();
 			}
-*/			
-			sbResult.append("\n");
 		}
+		sbResult.append("\n");
 		return sbResult;
 
 	}
@@ -208,14 +216,14 @@ public class RequestAgentsScripts extends HttpServlet {
 				testAI.executeAgent(
 								request.getParameter("stock"),
 								"d",
-								"20090101",
+								"20091001",
 								"20101213",
 								"HistoryStocksAgent,BollingerAgent,ExecuteScriptAgent");
 			} else {
 				testAI.executeAgents(
 								prop,
 								"d",
-								"20090101",
+								"20091001",
 								"20101213",
 								"HistoryStocksAgent,BollingerAgent,ExecuteScriptAgent");
 			}

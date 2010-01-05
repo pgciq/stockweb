@@ -20,7 +20,7 @@ public class ChartSettingEngineSession {
         }
 
         public Set<Script> list() throws Exception{
-        	return chartSettingEngineDAO.getListObject();
+        	return chartSettingEngineDAO.getList();
         }
 
         public Script get(String key) throws Exception{
