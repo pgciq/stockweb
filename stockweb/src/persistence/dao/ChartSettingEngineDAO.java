@@ -5,7 +5,9 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 import persistence.DBSession;
@@ -62,8 +64,29 @@ public class ChartSettingEngineDAO { // implements PersistenceDAO{
 		return exist;
 	}
 
-	public Set<Script> getListObject() throws Exception {
+	public Set<Script> getList() throws Exception {
 		Set<Script> list = new HashSet();
+		conn = DBSession.getIstance().getConnection();
+		String sql = " SELECT s.id, s.name, s.script, s.descr, s.param, s.settingchart " +
+					 " FROM chartsetting ch, scripts s" +
+					 " WHERE " +
+					 "		s.id = ch.idscript " +
+					 " ORDER BY s.name, ch.id";
+
+		stat = conn.createStatement();
+		rs = stat.executeQuery(sql);
+		while (rs.next()) {
+			list.add(getObjectValue(rs));
+		}
+
+		rs.close();
+		stat.close();
+
+		return list;
+	}
+
+	public List<Script> getListObject() throws Exception {
+		List<Script> list = new ArrayList();
 		conn = DBSession.getIstance().getConnection();
 		String sql = " SELECT s.id, s.name, s.script, s.descr, s.param, s.settingchart " +
 					 " FROM chartsetting ch, scripts s" +

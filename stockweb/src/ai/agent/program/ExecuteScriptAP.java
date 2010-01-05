@@ -88,7 +88,7 @@ public class ExecuteScriptAP extends AgentProgram {
 			ScriptStrategy strategy = new ScriptStrategy();
 //			ScriptEngineDAO engineDAO = new ScriptEngineDAO();
 //			List<Script> lsObject = new ArrayList<Script>(engineDAO.getListObject());
-			List<Script> lsObject = new ArrayList<Script>((new ChartSettingEngineDAO()).getListObject());
+			List<Script> lsObject = (new ChartSettingEngineDAO()).getListObject();
 			int index = history.size() / 5;
 			
 			for (int position = 0; position < history.size() - 10; position++) {
