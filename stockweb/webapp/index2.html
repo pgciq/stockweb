@@ -154,17 +154,33 @@
 					  
 		}
 */
+	  var ITALY = "A2A.MI,ACE.MI,ACO.MI,ACP.MI,ACS.MI,ACT.MI,AE.MI,AEF.MI,AEG.MI,AFI.MI,AGL.MI,AIC.MI,AKM.MI,AL.MI,AMP.MI,AP.MI,APP.MI,ARE.MI,ARN.MI,ASC.MI,AST.MI,AT.MI,ATL.MI,AUTME.MI,AZM.MI,STS.MI,B.MI,BAN.MI,BCM.MI,BDB.MI,BDBR.MI,BE.MI,BEC.MI,BEN.MI,BF.MI,BFE.MI,BGN.MI,BIE.MI,BIL.MI,BIM.MI,BLZ.MI,BMPS.MI,BNG.MI,BNS.MI,BO.MI,BOE.MI,BOR.MI,BP.MI,BPE.MI,BPSO.MI,BRE.MI,BRI.MI,BSRP.MI,BSS.MI,BEST.MI,BTY.MI,BUL.MI,BZU.MI,BZUR.MI,CRG.MI,CRGR.MI,IF.MI,PMI.MI,PRO.MI,SANT.MI,SPO.MI,CAD.MI,CAI.MI,CALT.MI,CARR.MI,CASS.MI,CB.MI,CC.MI,CDC.MI,CE.MI,CED.MI,CEM.MI,CHL.MI,CIA.MI,CIR.MI,CLE.MI,CLF.MI,CLT.MI,CMB.MI,CMF.MI,CNP.MI,COB.MI,COF.MI,COG.MI,CPR.MI,CRA.MI,CRE.MI,CSP.MI,CTIC.MI,CVAL.MI,DA.MI,DAL.MI,DAN.MI,DANR.MI,DEA.MI,DIA.MI,DIB.MI,DIS.MI,DLG.MI,DMA.MI,DMN.MI,DMT.MI,EDN.MI,EDNR.MI,EEMS.MI,EEZ.MI,EGR.MI,ELC.MI,ELN.MI,EM.MI,EN.MI,ENEL.MI,ENG.MI,ENI.MI,ERG.MI,ES.MI,ETH.MI,EUT.MI,EXO.MI,PRT.MI,XPR.MI,F.MI,FCD.MI,FDA.MI,FDP.MI,FM.MI,FMR.MI,FNC.MI,FNM.MI,FP.MI,FR.MI,FSA.MI,FSAR.MI,FUL.MI,FWB.MI,G.MI,GAB.MI,GCN.MI,GE.MI,GEM.MI,GEMR.MI,GEO.MI,GEW.MI,GRF.MI,GSP.MI,HER.MI,IGV.MI,VIS.MI,IES.MI,IGD.MI,IMA.MI,IMS.MI,IND.MI,INDR.MI,IP.MI,IPG.MI,IPGR.MI,IPI.MI,IRC.MI,IRD.MI,ISG.MI,ISP.MI,ISPR.MI,IT.MI,ITK.MI,ITM.MI,ITMR.MI,ITR.MI,ITW.MI,IW.MI,JUVE.MI,KME.MI,KMER.MI,KNX.MI,KRE.MI,KRS.MI,LD.MI,LR.MI,LTO.MI,LUX.MI,SSL.MI,MARR.MI,MB.MI,MBFG.MI,MCH.MI,MCL.MI,MEA.MI,MEC.MI,MED.MI,MF.MI,MFNC.MI,MHE.MI,MLM.MI,MN.MI,MOL.MI,MON.MI,MRT.MI,MS.MI,MSA.MI,MT.MI,MTV.MI,NICE.MI,NOE.MI,OLI.MI,PAN.MI,PC.MI,PCP.MI,PF.MI,PFG.MI,PIA.MI,PINF.MI,PLT.MI,PMS.MI,POL.MI,PQ.MI,PR.MI,PRA.MI,PRI.MI,PRL.MI,PRS.MI,PRY.MI,PSF.MI,ASR.MI,LIT.MI,RAT.MI,RCS.MI,RCSR.MI,RDB.MI,REC.MI,REY.MI,RGI.MI,RIC.MI,RLT.MI,RM.MI,RN.MI,PG.MI,PGR.MI,S24.MI,SAB.MI,SAT.MI,SAVE.MI,SCT.MI,SFL.MI,SG.MI,SGR.MI,SIS.MI,SN.MI,SNA.MI,SO.MI,SOL.MI,SPF.MI,SPM.MI,SPMR.MI,SRG.MI,SRI.MI,SRN.MI,SRS.MI,SSB.MI,SSI.MI,STEF.MI,STM.MI,TAS.MI,TEN.MI,TF.MI,TFI.MI,TIP.MI,TIS.MI,TIT.MI,TITR.MI,TME.MI,TMER.MI,TOD.MI,TRN.MI,TXT.MI,UBI.MI,UCG.MI,UCGR.MI,UNI.MI,UNIP.MI,UNL.MI,VAS.MI,VIN.MI,VLA.MI,VLS.MI,VVE.MI,BY.MI,ZUC.MI,ZUCR.MI,ZV.MI";
+
 	  function changeChart(object){
 		  document.getElementById(object).src= object + '.html?stock=' + document.getElementById('stock').value;
 	  }
-	  
+
+		var position = 0; 
+		function nextChart(object){
+			if(position<ITALY.split(",").length)
+			   position++;	
+			document.getElementById("stockSetting").value = ITALY.split(",")[position];   
+			document.getElementById(object).src = object + '.html?stock=' + ITALY.split(",")[position];
+		}
+
+		function prevChart(object){
+			if(position>0)
+				position--;	
+			document.getElementById("stockSetting").value = ITALY.split(",")[position];   
+			document.getElementById(object).src= object + '.html?stock=' + ITALY.split(",")[position];
+		}
 		function init(){
 				createWindow();
 				document.getElementById("contentwindow0").innerHTML = "&nbsp;&nbsp;<input type='text' id='stock' name='stock' value='F.MI'/>	<input type='button' value='click' onclick='changeChart(\"frameChartStock\")'/><iframe id='frameChartStock' style=' border: 0px; width: 620px; height: 620px;' scrolling='no' src='frameChartStock.html?stock=F.MI'></iframe>";
 				document.getElementById("contentwindow01").innerHTML = "<iframe name='frameScriptEngine' style=' border: 0px; width: 500px; height: 510px;' scrolling='no' src='teste/dwrScriptEngine.html'></iframe>";
 				document.getElementById("contentwindow02").innerHTML = "<iframe name='frameColor' src='widget/selectcolor.htm' width='370' height='260' scrolling='no' frameborder='0'></iframe>";
 				document.getElementById("contentwindow03").innerHTML = "<iframe name='frameSetupChart' src='teste/setupchart.html' width='320' height='320' scrolling='no' frameborder='0'></iframe>";
-				document.getElementById("contentwindow04").innerHTML = "&nbsp;&nbsp;<input type='text' id='stock' name='stock' value='F.MI'/>	<input type='button' value='click' onclick='changeChart(\"frameChartSetting\")'/><iframe id='frameChartSetting' style=' border: 0px; width: 620px; height: 620px;' scrolling='no' src='frameChartSetting.html?stock=F.MI'></iframe>";
+				document.getElementById("contentwindow04").innerHTML = "&nbsp;&nbsp;<input type='text' id='stockSetting' name='stock' value='F.MI'/>	<input type='button' value='click' onclick='changeChart(\"frameChartSetting\")'/> <input type='button' value='<<' onclick='prevChart(\"frameChartSetting\")'/>  <input type='button' value='>>' onclick='nextChart(\"frameChartSetting\")'/><iframe id='frameChartSetting' style=' border: 0px; width: 620px; height: 620px;' scrolling='no' src='frameChartSetting.html?stock=F.MI'></iframe>";
 			
 				document.getElementById("window0").style.visibility = "hidden"; 
 				document.getElementById("window01").style.visibility = "hidden"; 
