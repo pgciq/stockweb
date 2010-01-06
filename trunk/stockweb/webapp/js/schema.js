@@ -3,7 +3,6 @@
 // @author: Humberto Rocha Loureiro (humbertorocha@gmail.com)
 // @modify: 
 // ----------------------------------------------------------
-
 // --------------------  ScriptEngine --------------------
 var $script = {
   id:0,

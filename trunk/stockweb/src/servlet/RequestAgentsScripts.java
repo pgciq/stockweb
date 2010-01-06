@@ -113,21 +113,14 @@ public class RequestAgentsScripts extends HttpServlet {
 		while (tokens.hasMoreTokens()) {
 			String result = (String) tokens.nextToken();
 			JSONObject json = new JSONObject(result);
-			token = "";
 			
-/*			StringTokenizer tkParams = new StringTokenizer(result, ",");
-//			sbResult.append(String.valueOf(json.get("date")));
-			while(tkParams.hasMoreTokens()){
-				String param = tkParams.nextToken().replaceAll("\"","").replace("{",""); 
-				param = param.substring(0,param.indexOf(":"));
-				
-				if(!param.equals("scriptname") && !param.equals("date") && !param.equals("type")){
-*/
 			try{
 				if(result.equals("{}"))
 					continue;
-				if((lastDate!=null) && (!lastDate.equals(json.getString("date"))))
+				if((lastDate!=null) && (!lastDate.equals(json.getString("date")))){
 					sbResult.append("\n");
+					token = "";
+				}
 				
 				lastDate = json.getString("date");
 
@@ -140,8 +133,6 @@ public class RequestAgentsScripts extends HttpServlet {
 							sbResult.append(token + String.valueOf(json.get(tkParams.nextToken())));
 							token = ",";
 						}
-						break;
-						//if(tkParams.equals(param))
 
 					}
 			}catch(Exception ex){
@@ -216,14 +207,14 @@ public class RequestAgentsScripts extends HttpServlet {
 				testAI.executeAgent(
 								request.getParameter("stock"),
 								"d",
-								"20091001",
+								"20090701",
 								"20101213",
 								"HistoryStocksAgent,BollingerAgent,ExecuteScriptAgent");
 			} else {
 				testAI.executeAgents(
 								prop,
 								"d",
-								"20091001",
+								"20090701",
 								"20101213",
 								"HistoryStocksAgent,BollingerAgent,ExecuteScriptAgent");
 			}
