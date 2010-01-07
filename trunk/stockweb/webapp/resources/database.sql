@@ -1,7 +1,7 @@
 -- MySQL Administrator dump 1.4
 --
 -- ------------------------------------------------------
--- Server version	5.4.3-beta-community
+-- Server version	5.0.67-community-nt
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -27,11 +27,11 @@ USE stockweb;
 
 DROP TABLE IF EXISTS `chartsetting`;
 CREATE TABLE `chartsetting` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `id` int(10) unsigned NOT NULL auto_increment,
   `idscript` int(10) unsigned NOT NULL,
   `name` varchar(45) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+  PRIMARY KEY  (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `chartsetting`
@@ -39,8 +39,8 @@ CREATE TABLE `chartsetting` (
 
 /*!40000 ALTER TABLE `chartsetting` DISABLE KEYS */;
 INSERT INTO `chartsetting` (`id`,`idscript`,`name`) VALUES 
- (1,76,'example'),
- (2,17,'example');
+ (2,76,'example'),
+ (3,17,'example');
 /*!40000 ALTER TABLE `chartsetting` ENABLE KEYS */;
 
 
@@ -50,10 +50,10 @@ INSERT INTO `chartsetting` (`id`,`idscript`,`name`) VALUES
 
 DROP TABLE IF EXISTS `indicator`;
 CREATE TABLE `indicator` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `id` int(10) unsigned NOT NULL auto_increment,
   `name` varchar(45) NOT NULL,
   `descr` varchar(255) NOT NULL,
-  PRIMARY KEY (`id`)
+  PRIMARY KEY  (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -70,13 +70,13 @@ CREATE TABLE `indicator` (
 
 DROP TABLE IF EXISTS `scripts`;
 CREATE TABLE `scripts` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `id` int(10) unsigned NOT NULL auto_increment,
   `script` text NOT NULL,
   `name` varchar(45) NOT NULL,
   `descr` text,
   `param` varchar(255) NOT NULL,
-  `settingchart` varchar(255) DEFAULT ' ',
-  PRIMARY KEY (`id`)
+  `settingchart` varchar(255) default ' ',
+  PRIMARY KEY  (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=78 DEFAULT CHARSET=latin1;
 
 --
@@ -127,7 +127,7 @@ INSERT INTO `scripts` (`id`,`script`,`name`,`descr`,`param`,`settingchart`) VALU
  (68,'function applyScript(candle, json, lastbar, script, input) {\n\n    var ncandles = parseInt(input.get(\"ncandles\"));\n    var ema = candle.Close(lastbar);\n    var T = 2 / (ncandles + 1);\n\n    for (var x = lastbar; x < (lastbar + ncandles); x++) {\n        var barClose = candle.Close(x);\n        ema += (barClose - ema) * T;\n    }\n    json.put(\"result\", ema);\n    return json;\n}\n','$MME','Media Moveis Exponenciais(nperiodos)','result','#FE0101,#FE0101,line,0,result|undefined'),
  (69,'function applyScript(candle, json, lastbar, script, input) {\n\n    input.put(\"ncandles\", \"6\");\n    var HiLo = script.get(\"result\", script.call(\"@HiLo\", lastbar, input));\n    var HiLo_1 = script.get(\"result\", script.call(\"@HiLo\", lastbar + 1, input));\n    var HiLo_2 = script.get(\"result\", script.call(\"@HiLo\", lastbar + 2, input));\n\n    input.put(\"ncandles\", \"5\");\n    var MME_5 = script.get(\"result\", script.call(\"$MME\", lastbar, input));\n\n    input.put(\"ncandles\", \"10\");\n    var MME_10 = script.get(\"result\", script.call(\"$MME\", lastbar, input));\n\n    input.put(\"ncandles\", \"21\");\n    var MME_21 = script.get(\"result\", script.call(\"$MME\", lastbar, input));\n\n    var Long = (HiLo < candle.Close(lastbar)) && (candle.Close(lastbar) > MME_21) && (MME_5 > MME_10);\n\n    var Short = (HiLo > candle.Close(lastbar)) && (candle.Close(lastbar) < MME_21) && (MME_10 > MME_5);\n\n    var Stop_Gain = 0;\n    var Stop_Loss = 0;\n    var Stop_Inicial = 0;\n    var buy = input.get(\"buy\");\n\n    if (buy != null) {\n        Stop_Gain = (candle.Close(lastbar) > (buy * 1.10));\n\n        if (((HiLo < HiLo_1) && (HiLo_1 > HiLo_2)) || ((HiLo > HiLo_1) && (HiLo_1 < HiLo_2))) {\n            Stop_Loss = candle.Close(lastbar);\n        }\n\n        if (HiLo == buy) {\n            Stop_Inicial = candle.Close(lastbar);\n        }\n    }\n\n    json.put(\"input_long\", (Long) ? candle.Close(lastbar) : 0);\n    json.put(\"input_short\", (Short) ? candle.Close(lastbar) : 0);\n    json.put(\"stop_gain\", Stop_Gain);\n    json.put(\"stop_loss\", Stop_Loss);\n    json.put(\"stop_inicial\", Stop_Inicial);\n    return json;\n}\n','@Setup Pedrina','','input_long,input_short,stop_gain,stop_loss,stop_inicial','#FE0101,#FE0101,line,0,result|undefined'),
  (72,'function applyScript(candle, json, lastbar, script, input) {\n\n    var totSMA = 0;\n\n    var ncandles = parseInt(input.get(\"ncandles\"));\n\n//    input.put(\"ncandles\", \"6\");\n\n    for (var x = lastbar; x < (lastbar + ncandles); x++) {\n        //MMS é igual a SMA\n        totSMA += parseFloat(script.get(\"result\",script.call(\"$MMS\", x, input)));\n    }\n\n    TMA = totSMA / parseFloat(ncandles);\n\n    json.put(\"result\", TMA);\n    return json;\n\n}\n','$TMA','Triangular Moving Average (TMA)\nDescription: \n\nThe triangular moving average (TMA) is a weighted average of the last n prices (P), whose result is equivalent to a double smoothed simple moving average (i.e. calculated twice).\nCalculation:\n    SMA = (P1 + P2 + P3 + P4 + ... + Pn) / n\n\n    TMA = (SMA1 + SMA2 + SMA3 + SMA4 + ... SMAn) / n\nTrading Use\n\nAs with other moving averages, the triangular moving average can be used to identify a trend by using the slope of the average (or lack of slope in a ranging market). However, due to the additional smoothing, triangular moving averages tend to be smoother, and have more waves, than standard moving averages. Interestingly, triangular moving averages often appear more responsive to direction changes, even though the additional smoothing actually moves the domainant input value to the middle of the input series (which would decrease responsiveness).','result',''),
- (73,'function applyScript(candle, json, lastbar, script, input) {\n\n    input.put(\"ncandles\", \"21\"); //Modifiquei de 8 para 21 periodos \n\n    var TMA = parseFloat(script.get(\"result\", script.call(\"$TMA\", lastbar, input)));\n\n    json.put(\"TMAp\", (TMA*1.12));\n    json.put(\"TMA\", TMA);\n    json.put(\"TMAm\", (TMA/1.1));\n    return json;\n\n}\n','@Bandando','DESCRIÇÃO DO SETUP \n\nUtiliza Bandas High Low com saída na banda média. As Bandas High Low consistem em uma média móvel triangular calculada a partir do preço, substituíndo a variação por uma porcentagem fixa e incluindo um valor médio. Quando os preços sobem acima da banda superior ou cai abaixo da banda inferior, uma mudança de direção pode ocorrer quando o preço penetrar novamente a banda após uma pequena reversão na direção oposta.\n• O cálculo deve ser feito utilizando um período de 8 dias.\n• Opera-se tanto na compra quanto na venda. \nA operação é feita na abertura do mercado.\n• O indicador deve ser aplicado simultaneamente ao papel e ao índice Bovespa. A ordem é enviada apenas quando houver concordância nos sinais de compra ou venda.\n• A operação é mantida por no máximo 10 dias.\n• O stop-loss é fixado em 30% de perda, tanto na compra quanto na venda.\nENTRADA\n\nSe o preço de fechamento for maior que a banda superior, venda.\nSe o preço de fechamento é menor que a banda inferior, compra.\nUma média móvel simples é utilizada para fazer os cálculos iniciais.\nSAÍDA\n\nSe o preço de fechamento for maior que a banda superior, venda.\nSe o preço de fechamento é menor que a banda inferior, compra.\nUma média móvel simples é utilizada para fazer os cálculos iniciais.\nTAMANHO DA POSIÇÃO\n\nPerda no máximo de 9% do total em uma operação.','TMAp,TMA,TMAm',''),
+ (73,'function applyScript(candle, json, lastbar, script, input) {\n\n    input.put(\"ncandles\", \"21\"); //Modifiquei de 8 para 21 periodos \n    try {\n        var TMA = parseFloat(script.get(\"result\", script.call(\"$TMA\", lastbar, input)));\n\n        json.put(\"TMAp\", (TMA * 1.12));\n        json.put(\"TMA\", TMA);\n        json.put(\"TMAm\", (TMA / 1.1));\n    } catch(err) {\n        json.put(\"TMAp\", 0);\n        json.put(\"TMA\", 0);\n        json.put(\"TMAm\", 0);\n}\n    return json;\n\n}\n','@Bandando','DESCRIÇÃO DO SETUP \n\nUtiliza Bandas High Low com saída na banda média. As Bandas High Low consistem em uma média móvel triangular calculada a partir do preço, substituíndo a variação por uma porcentagem fixa e incluindo um valor médio. Quando os preços sobem acima da banda superior ou cai abaixo da banda inferior, uma mudança de direção pode ocorrer quando o preço penetrar novamente a banda após uma pequena reversão na direção oposta.\n• O cálculo deve ser feito utilizando um período de 8 dias.\n• Opera-se tanto na compra quanto na venda. \nA operação é feita na abertura do mercado.\n• O indicador deve ser aplicado simultaneamente ao papel e ao índice Bovespa. A ordem é enviada apenas quando houver concordância nos sinais de compra ou venda.\n• A operação é mantida por no máximo 10 dias.\n• O stop-loss é fixado em 30% de perda, tanto na compra quanto na venda.\nENTRADA\n\nSe o preço de fechamento for maior que a banda superior, venda.\nSe o preço de fechamento é menor que a banda inferior, compra.\nUma média móvel simples é utilizada para fazer os cálculos iniciais.\nSAÍDA\n\nSe o preço de fechamento for maior que a banda superior, venda.\nSe o preço de fechamento é menor que a banda inferior, compra.\nUma média móvel simples é utilizada para fazer os cálculos iniciais.\nTAMANHO DA POSIÇÃO\n\nPerda no máximo de 9% do total em uma operação.','TMAp,TMA,TMAm',''),
  (75,'function applyScript(candle, json, position, script, input) {\n\n    // WMA - Weighted Moving Average\n    var wma = 0;\n    var ncandles = parseInt(script.get(\"ncandles\"));\n    for (var bar = lastbar; bar <= ncandles; bar++) {\n        wma += candle.Close(bar) * (bar + 1);\n    }\n\n    var value = wma / (ncandles * (ncandles + 1) / 2);\n    json.put(\"result\", value)\n    return json;\n}\n','$WMA','WMA - Weighted Moving Average','result',''),
  (76,'function applyScript(candles, json, position, script, input) {\n    var lastbar = parseInt(position);\n\n    var rs = script.call(\"@Setup Pedrina\", lastbar, input);\n\n    json.put(\"close2\", candles.Close(lastbar));\n\n    json.put(\"input_long\", script.get(\"input_long\",rs));\n    json.put(\"input_short\", script.get(\"input_short\",rs));\n\n/*\n    json.put(\"stop_gain\", script.get(\"stop_gain\",rs));\n    json.put(\"stop_loss\", script.get(\"stop_loss\",rs));\n    json.put(\"stop_inicial\", script.get(\"stop_inicial\",rs));\n*/\n    return json;\n}\n','script 02','','close2,input_long,input_short','#000000,#FE0101,line,0,close2|#93B0C1,#FE0101,histograma,0,input_long|#100078,#100078,histograma,0,input_short'),
  (77,'function applyScript(candles, json, position, script, input) {\n    var lastbar = parseInt(position);\n\n//    var rs = script.call(\"@Setup Pedrina\", lastbar, input);\n\n    json.put(\"a3\", 4);\n    json.put(\"b3\", 5);\n/*\n    json.put(\"input_short\", script.get(\"input_short\",rs));\n    json.put(\"stop_gain\", script.get(\"stop_gain\",rs));\n    json.put(\"stop_loss\", script.get(\"stop_loss\",rs));\n    json.put(\"stop_inicial\", script.get(\"stop_inicial\",rs));\n*/\n    return json;\n}\n','script 03','','a3,b3','#000000,#FE0101,histograma,0,close|#93B0C1,#FE0101,line,0,TMAp|undefined,undefined,line,0,TMA|#FE0101,#FE0101,line,0,TMAm');
