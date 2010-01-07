@@ -109,7 +109,7 @@ public class ExecuteScriptAP extends AgentProgram {
 			
 
 		} catch (Exception ex) {
-			ex.printStackTrace();
+			//ex.printStackTrace();
 		}
 
 		return result;

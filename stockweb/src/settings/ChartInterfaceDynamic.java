@@ -28,6 +28,7 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.InputSource;
 
+import persistence.dao.ChartSettingEngineDAO;
 import persistence.impl.ChartSettingEngineImpl;
 import persistence.session.ChartSettingEngineSession;
 import persistence.vo.Script;
@@ -45,14 +46,14 @@ public class ChartInterfaceDynamic {
 	private Map<String, String> mapSetting = new HashMap<String, String>();
 	private StringBuffer sb = new StringBuffer("<?xml version=\"1.0\" encoding=\"UTF-8\"?>");
 	
-	private ChartSettingEngineImpl chartImpl = null;
+	private ChartSettingEngineDAO chartDAO = null;
 	
 
 	public ChartInterfaceDynamic(String pathname, String chartName, Map<String, String> mapParameters) {
 		this.pathname = pathname;
 		this.mapSetting = mapParameters;
 		this.chartName = chartName;
-		chartImpl = new ChartSettingEngineImpl();
+		chartDAO = new ChartSettingEngineDAO();
 		mapSetting.put("column_setup", "date,open,high,low,close,volume");
 
 	}
@@ -153,8 +154,8 @@ public class ChartInterfaceDynamic {
 
 	}
 	
-	private Document createAmstocksSettings(){
-		List<Script> lsResult = new ArrayList<Script>(chartImpl.list());
+	private Document createAmstocksSettings() throws Exception{
+		List<Script> lsResult = chartDAO.getListObject();
 		int totCharts = lsResult.size();
 //		String agentsScriptName = "", token = "";
 		Document doc = null; 
