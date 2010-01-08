@@ -1,7 +1,7 @@
 -- MySQL Administrator dump 1.4
 --
 -- ------------------------------------------------------
--- Server version	5.4.3-beta-community
+-- Server version	5.0.67-community-nt
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -27,10 +27,10 @@ USE stockweb;
 
 DROP TABLE IF EXISTS `chartsetting`;
 CREATE TABLE `chartsetting` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `id` int(10) unsigned NOT NULL auto_increment,
   `idscript` int(10) unsigned NOT NULL,
   `name` varchar(45) NOT NULL,
-  PRIMARY KEY (`id`)
+  PRIMARY KEY  (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 
 --
@@ -51,10 +51,10 @@ INSERT INTO `chartsetting` (`id`,`idscript`,`name`) VALUES
 
 DROP TABLE IF EXISTS `indicator`;
 CREATE TABLE `indicator` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `id` int(10) unsigned NOT NULL auto_increment,
   `name` varchar(45) NOT NULL,
   `descr` varchar(255) NOT NULL,
-  PRIMARY KEY (`id`)
+  PRIMARY KEY  (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -71,14 +71,14 @@ CREATE TABLE `indicator` (
 
 DROP TABLE IF EXISTS `scripts`;
 CREATE TABLE `scripts` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `id` int(10) unsigned NOT NULL auto_increment,
   `script` text NOT NULL,
   `name` varchar(45) NOT NULL,
   `descr` text,
   `param` varchar(255) NOT NULL,
-  `settingchart` varchar(255) DEFAULT ' ',
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=78 DEFAULT CHARSET=latin1;
+  `settingchart` varchar(255) default ' ',
+  PRIMARY KEY  (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=83 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `scripts`
@@ -131,7 +131,12 @@ INSERT INTO `scripts` (`id`,`script`,`name`,`descr`,`param`,`settingchart`) VALU
  (73,'function applyScript(candle, json, lastbar, script, input) {\n\n    input.put(\"ncandles\", \"21\"); //Modifiquei de 8 para 21 periodos \n    try {\n        var TMA = parseFloat(script.get(\"result\", script.call(\"$TMA\", lastbar, input)));\n\n        json.put(\"TMAp\", (TMA * 1.12));\n        json.put(\"TMA\", TMA);\n        json.put(\"TMAm\", (TMA / 1.1));\n    } catch(err) {\n        json.put(\"TMAp\", 0);\n        json.put(\"TMA\", 0);\n        json.put(\"TMAm\", 0);\n}\n    return json;\n\n}\n','@Bandando','DESCRIÇÃO DO SETUP \n\nUtiliza Bandas High Low com saída na banda média. As Bandas High Low consistem em uma média móvel triangular calculada a partir do preço, substituíndo a variação por uma porcentagem fixa e incluindo um valor médio. Quando os preços sobem acima da banda superior ou cai abaixo da banda inferior, uma mudança de direção pode ocorrer quando o preço penetrar novamente a banda após uma pequena reversão na direção oposta.\n• O cálculo deve ser feito utilizando um período de 8 dias.\n• Opera-se tanto na compra quanto na venda. \nA operação é feita na abertura do mercado.\n• O indicador deve ser aplicado simultaneamente ao papel e ao índice Bovespa. A ordem é enviada apenas quando houver concordância nos sinais de compra ou venda.\n• A operação é mantida por no máximo 10 dias.\n• O stop-loss é fixado em 30% de perda, tanto na compra quanto na venda.\nENTRADA\n\nSe o preço de fechamento for maior que a banda superior, venda.\nSe o preço de fechamento é menor que a banda inferior, compra.\nUma média móvel simples é utilizada para fazer os cálculos iniciais.\nSAÍDA\n\nSe o preço de fechamento for maior que a banda superior, venda.\nSe o preço de fechamento é menor que a banda inferior, compra.\nUma média móvel simples é utilizada para fazer os cálculos iniciais.\nTAMANHO DA POSIÇÃO\n\nPerda no máximo de 9% do total em uma operação.','TMAp,TMA,TMAm',''),
  (75,'function applyScript(candle, json, position, script, input) {\n\n    // WMA - Weighted Moving Average\n    var wma = 0;\n    var ncandles = parseInt(script.get(\"ncandles\"));\n    for (var bar = lastbar; bar <= ncandles; bar++) {\n        wma += candle.Close(bar) * (bar + 1);\n    }\n\n    var value = wma / (ncandles * (ncandles + 1) / 2);\n    json.put(\"result\", value)\n    return json;\n}\n','$WMA','WMA - Weighted Moving Average','result',''),
  (76,'function applyScript(candles, json, position, script, input) {\n    var lastbar = parseInt(position);\n\n    var rs = script.call(\"@Setup Pedrina\", lastbar, input);\n\n    json.put(\"close2\", candles.Close(lastbar));\n\n    json.put(\"input_long\", script.get(\"input_long\",rs));\n    json.put(\"input_short\", script.get(\"input_short\",rs));\n\n/*\n    json.put(\"stop_gain\", script.get(\"stop_gain\",rs));\n    json.put(\"stop_loss\", script.get(\"stop_loss\",rs));\n    json.put(\"stop_inicial\", script.get(\"stop_inicial\",rs));\n*/\n    return json;\n}\n','script 02','','close2,input_long,input_short','#000000,#FE0101,line,0,close2|#93B0C1,#FE0101,histograma,0,input_long|#100078,#100078,histograma,0,input_short'),
- (77,'function applyScript(candles, json, position, script, input) {\n    var lastbar = parseInt(position);\n\ninput.put(\"ncandles\",\"14\");\n    var rs = script.call(\"$IFR\", lastbar, input); \n\n    json.put(\"result\", script.get(\"result\",rs));\n\n    return json;\n}\n','script 03','','result','#000000,#FE0101,line,0,result|undefined');
+ (77,'function applyScript(candles, json, position, script, input) {\n    var lastbar = parseInt(position);\n\ninput.put(\"ncandles\",\"14\");\n    var rs = script.call(\"$IFR\", lastbar, input); \n\n    json.put(\"result\", script.get(\"result\",rs));\n\n    return json;\n}\n','script 03','','result','#000000,#FE0101,line,0,result|undefined'),
+ (78,'function applyScript(candle, json, position, script, input) {\n    try {\n        var squareSum = 0;\n        var sum = 0;\n        var lastbar = parseInt(position);\n        var ncandles = parseFloat(input.get(\"ncandles\"));\n        var deviations = input.get(\"deviations\");\n        for (var bar = lastbar; bar < (lastbar + ncandles); bar++) {\n            var barClose = candle.Close(bar);\n            sum += barClose;\n            squareSum += barClose * barClose;\n        }\n\n        var stDev = ncandles * squareSum - sum * sum;\n        stDev /= (ncandles * (ncandles - 1)) ;\n        stDev = Math.sqrt(stDev);\n\n        var value = sum / ncandles + deviations * stDev;\n        json.put(\"result\", value);\n    } catch(err) {\n        json.put(\"result\", 0);\n    }\n    return json;\n}\n','$BollingerUpper','Upper Bollinger Band','result',''),
+ (79,'function applyScript(candles, json, position, script, input) {\n    var lastbar = parseInt(position);\n    input.put(\"ncandles\",21);\n    input.put(\"deviations\",2.0);\n\n    var upper = script.get(\"result\",script.call(\"$BollingerUpper\", lastbar, input));\n    var middle = script.get(\"result\",script.call(\"$BollingerMiddle\", lastbar, input));\n    var lower = script.get(\"result\",script.call(\"$BollingerLower\", lastbar, input));\n\n    json.put(\"upper\", upper);\n    json.put(\"middle\", middle);\n    json.put(\"lower\", lower);\n    json.put(\"closeX\", candles.Close(lastbar));\n    return json;\n}\n','$BandsBollinger','','closeX,upper,lower,middle','#CBCBCB,#CBCBCB,histograma,0,closeX|#1241FE,#FE0101,line,0,upper|#0D873A,#0D873A,line,0,lower|#BC2525,#BC2525,line,0,middle'),
+ (80,'function applyScript(candle, json, position, script, input) {\n    try {\n        var squareSum = 0;\n        var sum = 0;\n        var lastbar = parseInt(position);\n        var ncandles = parseFloat(input.get(\"ncandles\"));\n        var deviations = input.get(\"deviations\");\n        for (var bar = lastbar; bar < (lastbar + ncandles); bar++) {\n            var barClose = candle.Close(bar);\n            sum += barClose;\n            squareSum += barClose * barClose;\n        }\n\n        var stDev = ncandles * squareSum - sum * sum;\n        stDev /= (ncandles * (ncandles - 1)) ;\n        stDev = Math.sqrt(stDev);\n\n        var value = sum / ncandles - deviations * stDev;\n        json.put(\"result\", value);\n    } catch(err) {\n        json.put(\"result\", 0);\n    }\n    return json;\n}\n','$BollingerLower','Lower Bollinger Band','result',''),
+ (81,'function applyScript(candle, json, position, script, input) {\n    try {\nvar sum = 0;\n        var lastbar = parseInt(position);\n        var ncandles = parseFloat(input.get(\"ncandles\"));\n        for (var bar = lastbar; bar < (lastbar + ncandles); bar++) {\n            sum += candle.Close(bar);\n        }\n\n        var value = sum / ncandles;\n        json.put(\"result\", value);\n    } catch(err) {\n        json.put(\"result\", 0);\n    }\n    return json;\n}\n','$BollingerMiddle','Middle Bollinger Band','result',''),
+ (82,'function applyScript(candles, json, position, script, input) {\n    var lastbar = parseInt(position);\n    input.put(\"ncandles\",20);\n    input.put(\"deviations\",2.0);\n\n    var range50percCandle = ((Math.abs(candles.Open(lastbar) - candles.Close(lastbar)) / 100) * 50); //Retorna o valor do preço que representa 50%\n    var range25percHighCandle = ((Math.abs(candles.High(lastbar) - candles.Low(lastbar)) / 100) * 50); //Retorna o valor do preço que representa 50%\n\n    var upper = script.get(\"result\",script.call(\"$BollingerUpper\", lastbar, input));\n    var middle = script.get(\"result\",script.call(\"$BollingerMiddle\", lastbar, input));\n    var lower = script.get(\"result\",script.call(\"$BollingerLower\", lastbar, input));\n\n    var criterio1 = range50percCandle < lower;\n    var criterio2 = range25percHighCandle < candle.Close(lastbar);\n\n\n    json.put(\"long\", upper);\n    json.put(\"stoploss\", middle);\n    json.put(\"lower\", lower);\n    json.put(\"closeX\", candles.Close(lastbar));\n    return json;\n}\n','@Jump',' DESCRIÇÃO DO SETUP\n\n• Setup contra a tendência, tanto para compra como para venda (long ou short);\n• Utiliza apenas gráficos diários;\n• Atua na tentativa de identificar região sobre-comprada (sobre-vendida), força atuante no mercado (compradores ou vendedores), um sinal claro de mudança da tendência, além de aproveitar-se também da propriedade de retorno a média vigente nas variações de preços. Traça targets (alvos) de acordo com a volatilidade do ativo no momento;\n• Simples de se identificar visualmente, não é preciso mais do que 10 minutos diários para acompanhar mais de 30 ativos;\n• Estratégia rara. Ocorre de uma a duas vezes por ativo por ano. É uma estratégia complementar, utilizada em combinação com alguma outra que seja freqüente. Pode ser aplicado em qualquer ativo, com eficiência parecida;\n• Serão apresentados somente os resultados das operações Long;\n\nENTRADA\n\nLong (Short): os seguintes critérios devem ser satisfeitos, simultaneamente:\nA. Pelo menos 50% do candle abaixo (acima) da Banda de Bollinger Inferior (Superior), aritmética, com 20 períodos e 2 desvios; (PARA DETECTAR MERCADO SOBRE-VENDIDO OU SOBRE-COMPRADO)\nB. O Fechamento a, no máximo (mínimo), 25% (75%) da máxima do dia; (PARA DETECTAR FORÇA ATUANTE E SINAL CLARO DE REVERSÃO DA TENDÊNCIA)\nEntrada sempre nos fechamentos;\nNão entrar se o objetivo for menor que 3%;\n\nSAÍDA\n\n• Stop loss: abaixo (acima) da mínima (máxima) do candle que gerou a entrada, ou abaixo (acima) da mínima (máxima) do fundo (topo) imeditato a que o candle que gerou a entrada pertence. (GARANTIA DE CONTINUAÇÃO DO MOVIMENTO E FALHA NAS EXPECTATIVAS DE REVERSÃO DE TENDÊNCIA. EVITA AS FAMOSAS VIOLINADAS)\n• Target: no primeiro negócio realizado acima (abaixo) da Banda de Bollinger Inferior (Superior), aritmética, de 17 períodos e 0,5 desvios. (PARA DETECTAR QUANDO O PREÇO NÃO ESTÁ MAIS SOBRE-VENDIDO OU SOBRE-COMPRADO, E APROVEITA O POTENCIAL DE VOLATILIDADE DO ATIVO, IDENTIFICANDO SAÍDAS ÓTIMAS).\n\nTAMANHO DA POSIÇÃO\n\nVisando uma perda aceitável de no máximo 6% ao mês, e dado que este setup ocorre entre uma e duas vezes ao ano, podemos admitir uma perda de até 30% do capital, para entrar com todo o capital na operação, sem alavancagem.\nSe o trader for aplicar este setup em vários ativos, pode entrar com posições menores, afim de respeitar a regra dos 6%, aumentando muito a rentabilidade.','result','#CBCBCB,#CBCBCB,histograma,0,closeX|#1241FE,#FE0101,line,0,upper|#0D873A,#0D873A,line,0,lower|#BC2525,#BC2525,line,0,middle');
 /*!40000 ALTER TABLE `scripts` ENABLE KEYS */;
 
 
