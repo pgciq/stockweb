@@ -1,7 +1,7 @@
 -- MySQL Administrator dump 1.4
 --
 -- ------------------------------------------------------
--- Server version	5.0.67-community-nt
+-- Server version	5.4.3-beta-community
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -27,11 +27,11 @@ USE stockweb;
 
 DROP TABLE IF EXISTS `chartsetting`;
 CREATE TABLE `chartsetting` (
-  `id` int(10) unsigned NOT NULL auto_increment,
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `idscript` int(10) unsigned NOT NULL,
   `name` varchar(45) NOT NULL,
-  PRIMARY KEY  (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `chartsetting`
@@ -40,7 +40,8 @@ CREATE TABLE `chartsetting` (
 /*!40000 ALTER TABLE `chartsetting` DISABLE KEYS */;
 INSERT INTO `chartsetting` (`id`,`idscript`,`name`) VALUES 
  (2,76,'example'),
- (3,17,'example');
+ (3,17,'example'),
+ (4,77,'example');
 /*!40000 ALTER TABLE `chartsetting` ENABLE KEYS */;
 
 
@@ -50,10 +51,10 @@ INSERT INTO `chartsetting` (`id`,`idscript`,`name`) VALUES
 
 DROP TABLE IF EXISTS `indicator`;
 CREATE TABLE `indicator` (
-  `id` int(10) unsigned NOT NULL auto_increment,
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(45) NOT NULL,
   `descr` varchar(255) NOT NULL,
-  PRIMARY KEY  (`id`)
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -70,13 +71,13 @@ CREATE TABLE `indicator` (
 
 DROP TABLE IF EXISTS `scripts`;
 CREATE TABLE `scripts` (
-  `id` int(10) unsigned NOT NULL auto_increment,
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `script` text NOT NULL,
   `name` varchar(45) NOT NULL,
   `descr` text,
   `param` varchar(255) NOT NULL,
-  `settingchart` varchar(255) default ' ',
-  PRIMARY KEY  (`id`)
+  `settingchart` varchar(255) DEFAULT ' ',
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=78 DEFAULT CHARSET=latin1;
 
 --
@@ -130,7 +131,7 @@ INSERT INTO `scripts` (`id`,`script`,`name`,`descr`,`param`,`settingchart`) VALU
  (73,'function applyScript(candle, json, lastbar, script, input) {\n\n    input.put(\"ncandles\", \"21\"); //Modifiquei de 8 para 21 periodos \n    try {\n        var TMA = parseFloat(script.get(\"result\", script.call(\"$TMA\", lastbar, input)));\n\n        json.put(\"TMAp\", (TMA * 1.12));\n        json.put(\"TMA\", TMA);\n        json.put(\"TMAm\", (TMA / 1.1));\n    } catch(err) {\n        json.put(\"TMAp\", 0);\n        json.put(\"TMA\", 0);\n        json.put(\"TMAm\", 0);\n}\n    return json;\n\n}\n','@Bandando','DESCRIÇÃO DO SETUP \n\nUtiliza Bandas High Low com saída na banda média. As Bandas High Low consistem em uma média móvel triangular calculada a partir do preço, substituíndo a variação por uma porcentagem fixa e incluindo um valor médio. Quando os preços sobem acima da banda superior ou cai abaixo da banda inferior, uma mudança de direção pode ocorrer quando o preço penetrar novamente a banda após uma pequena reversão na direção oposta.\n• O cálculo deve ser feito utilizando um período de 8 dias.\n• Opera-se tanto na compra quanto na venda. \nA operação é feita na abertura do mercado.\n• O indicador deve ser aplicado simultaneamente ao papel e ao índice Bovespa. A ordem é enviada apenas quando houver concordância nos sinais de compra ou venda.\n• A operação é mantida por no máximo 10 dias.\n• O stop-loss é fixado em 30% de perda, tanto na compra quanto na venda.\nENTRADA\n\nSe o preço de fechamento for maior que a banda superior, venda.\nSe o preço de fechamento é menor que a banda inferior, compra.\nUma média móvel simples é utilizada para fazer os cálculos iniciais.\nSAÍDA\n\nSe o preço de fechamento for maior que a banda superior, venda.\nSe o preço de fechamento é menor que a banda inferior, compra.\nUma média móvel simples é utilizada para fazer os cálculos iniciais.\nTAMANHO DA POSIÇÃO\n\nPerda no máximo de 9% do total em uma operação.','TMAp,TMA,TMAm',''),
  (75,'function applyScript(candle, json, position, script, input) {\n\n    // WMA - Weighted Moving Average\n    var wma = 0;\n    var ncandles = parseInt(script.get(\"ncandles\"));\n    for (var bar = lastbar; bar <= ncandles; bar++) {\n        wma += candle.Close(bar) * (bar + 1);\n    }\n\n    var value = wma / (ncandles * (ncandles + 1) / 2);\n    json.put(\"result\", value)\n    return json;\n}\n','$WMA','WMA - Weighted Moving Average','result',''),
  (76,'function applyScript(candles, json, position, script, input) {\n    var lastbar = parseInt(position);\n\n    var rs = script.call(\"@Setup Pedrina\", lastbar, input);\n\n    json.put(\"close2\", candles.Close(lastbar));\n\n    json.put(\"input_long\", script.get(\"input_long\",rs));\n    json.put(\"input_short\", script.get(\"input_short\",rs));\n\n/*\n    json.put(\"stop_gain\", script.get(\"stop_gain\",rs));\n    json.put(\"stop_loss\", script.get(\"stop_loss\",rs));\n    json.put(\"stop_inicial\", script.get(\"stop_inicial\",rs));\n*/\n    return json;\n}\n','script 02','','close2,input_long,input_short','#000000,#FE0101,line,0,close2|#93B0C1,#FE0101,histograma,0,input_long|#100078,#100078,histograma,0,input_short'),
- (77,'function applyScript(candles, json, position, script, input) {\n    var lastbar = parseInt(position);\n\n//    var rs = script.call(\"@Setup Pedrina\", lastbar, input);\n\n    json.put(\"a3\", 4);\n    json.put(\"b3\", 5);\n/*\n    json.put(\"input_short\", script.get(\"input_short\",rs));\n    json.put(\"stop_gain\", script.get(\"stop_gain\",rs));\n    json.put(\"stop_loss\", script.get(\"stop_loss\",rs));\n    json.put(\"stop_inicial\", script.get(\"stop_inicial\",rs));\n*/\n    return json;\n}\n','script 03','','a3,b3','#000000,#FE0101,histograma,0,close|#93B0C1,#FE0101,line,0,TMAp|undefined,undefined,line,0,TMA|#FE0101,#FE0101,line,0,TMAm');
+ (77,'function applyScript(candles, json, position, script, input) {\n    var lastbar = parseInt(position);\n\ninput.put(\"ncandles\",\"14\");\n    var rs = script.call(\"$IFR\", lastbar, input); \n\n    json.put(\"result\", script.get(\"result\",rs));\n\n    return json;\n}\n','script 03','','result','#000000,#FE0101,line,0,result|undefined');
 /*!40000 ALTER TABLE `scripts` ENABLE KEYS */;
 
 
