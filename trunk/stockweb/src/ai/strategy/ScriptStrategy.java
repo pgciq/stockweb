@@ -42,7 +42,7 @@ public class ScriptStrategy {
 				jsonResult.put(key, mapResult.get(key));
 			}
 		} catch (Exception e) {
-			e.printStackTrace();
+			System.out.println(e.getMessage());
 		}
 		return jsonResult.toString();
 	}

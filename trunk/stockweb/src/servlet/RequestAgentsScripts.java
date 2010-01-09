@@ -19,6 +19,8 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.json.JSONObject;
 
+import chart.study.History;
+
 import persistence.dao.ChartSettingEngineDAO;
 import persistence.vo.Script;
 
@@ -221,7 +223,7 @@ public class RequestAgentsScripts extends HttpServlet {
 	
 			// testAI.getResponseAgents(getAgentName(request.getParameter("agent")) + "Agent")
 			formatterResult(testAI, request, response);
-	
+			History.clearStock("all");
 			// formatterResultCandle(testAI.getResponseAgents("BollingerAgent"),request,response);
 	
 			System.out.println(">>>>>>> " + testAI.getResponseAgents("HistoryStocksAgent"));
