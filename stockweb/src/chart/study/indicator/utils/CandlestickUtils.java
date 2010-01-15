@@ -281,6 +281,10 @@ public class CandlestickUtils {
 
 	}
 
+	public int size() {
+		return history.getSize();
+	}
+
 	public double Low(int candle) {
 		return history.getPriceBar(position(candle)).getLow();
 	}
