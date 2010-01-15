@@ -198,9 +198,9 @@ public class RequestAgentsScripts extends HttpServlet {
 			System.setProperty("http.proxyPort", "80");
 			System.setProperty("http.proxyUsername", "rocha");
 			System.setProperty("http.proxyPassword", "9876543210");
-	
+
 			loadStockName();
-	
+
 			String pathname = this.getServletContext().getRealPath("/") + "resources\\";
 			TestAI testAI = new TestAI(pathname);
 			// interval = d(diario), w(semanal), m(mensal)
@@ -209,14 +209,14 @@ public class RequestAgentsScripts extends HttpServlet {
 				testAI.executeAgent(
 								request.getParameter("stock"),
 								"d",
-								"20090101",
+								"20050101",
 								"20101213",
 								"HistoryStocksAgent,ExecuteScriptAgent");
 			} else {
 				testAI.executeAgents(
 								prop,
 								"d",
-								"20090101",
+								"20050101",
 								"20101213",
 								"HistoryStocksAgent,ExecuteScriptAgent");
 			}
