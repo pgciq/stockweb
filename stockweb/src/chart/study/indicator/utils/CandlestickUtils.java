@@ -304,5 +304,118 @@ public class CandlestickUtils {
 	public double Volume(int candle) {
 		return history.getPriceBar(position(candle)).getVolume();
 	}
+	
+	/*
+		if(type.equals("L"))
+		value = Low(x);
+	if(type.equals("O"))
+		value = Open(x);
+	if(type.equals("C"))
+		value = Close(x);
 
+*/
+	public double Peak(int lastbar, int ncandles, String type, double perc){
+		double value = 0;
+		double lastValue = 0;
+		double diffPerc = 0;
+		for(int x=lastbar; x<lastbar+ncandles; x++){
+			if(type.equals("H")){
+				diffPerc = Math.abs(((High(x)/High(x+1))*100)-100);
+				if(diffPerc >= perc)
+					value = (High(x) > High(x+1)) ? High(x) : High(x+1); 
+			}
+			if(type.equals("L")){
+				diffPerc = Math.abs(((Low(x)/Low(x+1))*100)-100);
+				if(diffPerc >= perc)
+					value = (Low(x) > Low(x+1)) ? Low(x) : Low(x+1); 
+			}
+			
+			value = (value > lastValue)?value:lastValue;
+			
+			lastValue = value;
+			
+		}
+		return value;
+	}
+
+	
+	public double Trough(int lastbar, int ncandles, String type, double perc){
+		double value = 0;
+		double lastValue = 0;
+		double diffPerc = 0;
+		for(int x=lastbar; x<lastbar+ncandles; x++){
+			if(type.equals("H")){
+				diffPerc = Math.abs(((High(x)/High(x+1))*100)-100);
+				if(diffPerc <= perc)
+					value = (High(x) > High(x+1)) ? High(x) : High(x+1); 
+			}
+			if(type.equals("L")){
+				diffPerc = Math.abs(((Low(x)/Low(x+1))*100)-100);
+				if(diffPerc <= perc)
+					value = (Low(x) > Low(x+1)) ? Low(x) : Low(x+1); 
+			}
+			
+			value = (value < lastValue)?value:lastValue;
+			
+			lastValue = value;
+			
+		}
+		return value;
+	}
+
+	private double LLV(int lastbar, int ncandles) {
+
+	    if ((lastbar + ncandles) > size()) {
+	        return 0;
+	    }
+	    double LLV = 0;
+	    for (int x = lastbar; x < lastbar + ncandles; x++) {
+	        if (LLV > Low(x)) {
+	            LLV = Low(x);
+	        }
+	    }
+	    return LLV;
+	}
+
+	private boolean isLLV(int lastbar, int ncandles) {
+
+	    if ((lastbar + ncandles) > size()) {
+	        return false;
+	    }
+	    double LLV = 0;
+	    for (int x = lastbar; x < lastbar + ncandles; x++) {
+	        if (LLV > Low(x)) {
+	            LLV = Low(x);
+	        }
+	    }
+	    
+	    return (Low(lastbar) < LLV) ? true:false;
+	}
+
+	private double HHV(int lastbar, int ncandles) {
+	    if ((lastbar + ncandles) > size()) {
+	        return 0;
+	    }
+	    double HHV = 0;
+	    for (int x = lastbar; x < lastbar + ncandles; x++) {
+	        if (HHV < High(x)) {
+	            HHV = High(x);
+	        }
+	    }
+	    return HHV;
+	}	
+	
+	private boolean isHHV(int lastbar, int ncandles) {
+	    if ((lastbar + ncandles) > size()) {
+	        return false;
+	    }
+	    double HHV = 0;
+	    for (int x = lastbar; x < lastbar + ncandles; x++) {
+	        if (HHV < High(x)) {
+	            HHV = High(x);
+	        }
+	    }
+	    return (High(lastbar) > HHV) ? true : false;
+	}	
+	
 }

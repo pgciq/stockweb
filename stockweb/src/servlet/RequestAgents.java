@@ -313,7 +313,7 @@ public class RequestAgents extends HttpServlet {
 					.executeAgent(
 							request.getParameter("stock"),
 							"d",
-							"20090101",
+							"20080101",
 							"20101213",
 							"HistoryStocksAgent,CandlestickAgent,BollingerAgent,MaxMinIndexAgent,VariationVolumeAgent,VariationPriceIndexAgent");
 		} else {
@@ -321,7 +321,7 @@ public class RequestAgents extends HttpServlet {
 					.executeAgents(
 							prop,
 							"d",
-							"20090101",
+							"20080101",
 							"20101213",
 							"HistoryStocksAgent,CandlestickAgent,BollingerAgent,MaxMinIndexAgent,VariationVolumeAgent,VariationPriceIndexAgent");
 		}
