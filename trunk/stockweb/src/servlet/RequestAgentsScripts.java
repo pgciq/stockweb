@@ -209,14 +209,14 @@ public class RequestAgentsScripts extends HttpServlet {
 				testAI.executeAgent(
 								request.getParameter("stock"),
 								"d",
-								"20050101",
+								"20080101",
 								"20101213",
 								"HistoryStocksAgent,ExecuteScriptAgent");
 			} else {
 				testAI.executeAgents(
 								prop,
 								"d",
-								"20050101",
+								"20080101",
 								"20101213",
 								"HistoryStocksAgent,ExecuteScriptAgent");
 			}
