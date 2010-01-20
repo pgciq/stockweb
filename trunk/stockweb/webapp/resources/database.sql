@@ -1,7 +1,7 @@
 -- MySQL Administrator dump 1.4
 --
 -- ------------------------------------------------------
--- Server version	5.0.67-community-nt
+-- Server version	5.4.3-beta-community
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -27,10 +27,10 @@ USE stockweb;
 
 DROP TABLE IF EXISTS `chartsetting`;
 CREATE TABLE `chartsetting` (
-  `id` int(10) unsigned NOT NULL auto_increment,
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `idscript` int(10) unsigned NOT NULL,
   `name` varchar(45) NOT NULL,
-  PRIMARY KEY  (`id`)
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
 
 --
@@ -49,10 +49,10 @@ INSERT INTO `chartsetting` (`id`,`idscript`,`name`) VALUES
 
 DROP TABLE IF EXISTS `indicator`;
 CREATE TABLE `indicator` (
-  `id` int(10) unsigned NOT NULL auto_increment,
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(45) NOT NULL,
   `descr` varchar(255) NOT NULL,
-  PRIMARY KEY  (`id`)
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -69,14 +69,14 @@ CREATE TABLE `indicator` (
 
 DROP TABLE IF EXISTS `scripts`;
 CREATE TABLE `scripts` (
-  `id` int(10) unsigned NOT NULL auto_increment,
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `script` text NOT NULL,
   `name` varchar(45) NOT NULL,
   `descr` text,
   `param` varchar(255) NOT NULL,
-  `settingchart` varchar(255) default ' ',
-  PRIMARY KEY  (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=108 DEFAULT CHARSET=latin1;
+  `settingchart` varchar(255) DEFAULT ' ',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=110 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `scripts`
@@ -156,7 +156,10 @@ INSERT INTO `scripts` (`id`,`script`,`name`,`descr`,`param`,`settingchart`) VALU
  (104,'function applyScript(candles, json, position, script, input) {\n    var lastbar = parseInt(position);\n\n    // var ncandles = parseInt(input.get(\"ncandles\"));\n    var perc = parseFloat(input.get(\"perc\"));\n    var result = Math.abs(((candles.Close(lastbar + 1) / candles.Close(lastbar)) * 100) - 100);\n\n    json.put(\"result\", (result > perc) ? result : candles.Close(lastbar));\n    return json;\n}\n','@ZigZag','ZigZag imcompleto, falta entender que tipo de valor ele retorna.','result',''),
  (105,'function applyScript(candles, json, lastbar, script, input) {\n\n    var ncandles = 14; //parseInt(input.get(\"ncandles\"));\n\n    if ((lastbar + ncandles) > candles.size()) {\n        json.put(\"result\", 0);\n        return json;\n    }\n\n    var gains = 0;\n    var losses = 0;\n\n    for (var bar = lastbar; bar < lastbar + ncandles; bar++) {\n        var change = candles.Close(bar) - candles.Close(bar + 1);\n        gains += Math.max(0, change);\n        losses += Math.max(0, -change);\n    }\n\n    var change = gains + losses;\n    var result = (change == 0) ? 50 : 100 * gains / change;\n    json.put(\"result\", result);\n\n    return json;\n\n}','$RSI','RSI - Relative Strenght Index\n--------------------------------------------','result',''),
  (106,'function applyScript(candles, json, lastbar, script, input) {\n\n    input.put(\"ncandles\", 14);\n    var RSI_14 = script.get(\"result\", script.call(\"$RSI\", lastbar, input));\n\n    var rsHigh = false;\n    var rsLow = false;\n    rsHigh = High(candles, script, lastbar, input, RSI_14);\n    rsLow  = Low(candles, script, lastbar, input, RSI_14);\n\n    json.put(\"top\", ((rsHigh) ? 1 : 0));   //resistencia\n    json.put(\"bottom\", ((rsLow) ? 1 : 0)); //top\n\n    return json;\n}\n\nfunction High(candles, script, lastbar, input, RSI_14) {\n    input.put(\"ncandles\", 4);\n    input.put(\"tipo\", \"High\");\n    var Mx = script.get(\"result\", script.call(\"$MMS\", lastbar, input));\n    var Mx_1 = script.get(\"result\", script.call(\"$MMS\", lastbar + 1, input));\n\n    var criterio1 = (candles.High(lastbar) > candles.High(lastbar + 1));\n    var criterio2 = (candles.High(lastbar) < Mx);\n    var criterio3 = (candles.High(lastbar + 1) > Mx_1);\n    var criterio4 = (HHV(candles,lastbar,4) < HHV(candles,lastbar,10));\n    var criterio5 = (RSI_14 > 50);\n\n    return criterio1 && criterio2 && criterio3 && criterio4 && criterio5;\n}\n\nfunction Low(candles, script, lastbar, input, RSI_14) {\n\n    input.put(\"ncandles\", 4);\n    input.put(\"tipo\", \"Low\");\n    var Mx = script.get(\"result\", script.call(\"$MMS\", lastbar, input));\n    var Mx_1 = script.get(\"result\", script.call(\"$MMS\", lastbar + 1, input));\n\n    return (candles.Low(lastbar) > candles.Low(lastbar + 1)) && (candles.Low(lastbar) > Mx) && (candles.Low(lastbar + 1) < Mx_1) && (LLV(candles, lastbar, 4) > LLV(candles, lastbar, 10)) && (RSI_14 < 50);\n}\n\nfunction LLV(candles, lastbar, ncandles) {\n\n    if ((lastbar + ncandles) > candles.size()) {\n        return 0;\n    }\n    var LLV = 0;\n    for (var x = lastbar; x < lastbar + ncandles; x++) {\n        if (LLV > candles.Low(x)) {\n            LLV = candles.Low(x);\n        }\n    }\n    return LLV;\n}\n\nfunction HHV(candles, lastbar, ncandles) {\n    if ((lastbar + ncandles) > candles.size()) {\n        return 0;\n    }\n    var HHV = 0;\n    for (var x = lastbar; x < lastbar + ncandles; x++) {\n        if (HHV < candles.High(x)) {\n            HHV = candles.High(x);\n        }\n    }\n    return HHV;\n}','@123_High_Low','1-2-3 High or Low\n----------------------\nInforma o suporte e a resistencia.\nE\' raro ocorrer, mas com os testes feitos para a resistencia deu bons sinais para vender.','top,bottom',''),
- (107,'function applyScript(candles, json, lastbar, script, input) {\n\n    var ncandles = input.get(\"ncandles\");\n    var role1 = candles.Peak(lastbar,1, \"H\", 10) <= 1.1 * candles.Peak(lastbar,2, \"H\", 10);\n    var role2 = candles.Peak(lastbar,1, \"H\", 10) >= 0.9 * candles.Peak(lastbar,2, \"H\", 10);\n    var role3 = candles.Trough(lastbar,1, \"L\", 10) >= 1.1 * candles.Trough(lastbar,2, \"H\", 10);\n    var role4 = candles.Trough(lastbar,1, \"L\", 10) <= 0.9 * candles.Trough(lastbar,2, \"H\", 10) && candles.isLLV(lastbar, 25);\n    var colA = role1 && role2 && role3 && role4;\n\n    var role5 = candles.Peak(lastbar,1, \"H\", 5) <= 1.1 * candles.Peak(lastbar,2, \"H\", 5);\n    var role6 = candles.Peak(lastbar,1, \"H\", 5) >= 0.9 * candles.Peak(lastbar,2, \"H\", 5);\n    var role7 = candles.Trough(lastbar,1, \"L\", 5) >= 1.1 * candles.Trough(lastbar,2, \"H\", 5);\n    var role8 = candles.Trough(lastbar,1, \"L\", 5) <= 0.9 * candles.Trough(lastbar,2, \"H\", 5) && candles.isLLV(lastbar, 25);\n    var colB = role5 && role6 && role7 && role8;\n\n    var role9 = candles.Peak(lastbar,1, \"H\", 1) <= 1.1 * candles.Peak(lastbar,2, \"H\", 1);\n    var role10 = candles.Peak(lastbar,1, \"H\", 1) >= 0.9 * candles.Peak(lastbar,2, \"H\", 1);\n    var role11 = candles.Trough(lastbar,1, \"L\", 1) >= 1.1 * candles.Trough(lastbar,2, \"H\", 1);\n    var role12 = candles.Trough(lastbar,1, \"L\", 1) <= 0.9 * candles.Trough(lastbar,2, \"H\", 1) && candles.isLLV(lastbar, 25);\n    var colC = role9 && role10 && role11 && role12;\n\n    var result = colA || colB || colC;\n\n    json.put(\"result\", (result)?0:1);\n\n    return json;\n}\n','@123_Ross_Hook','1 2 3 Ross Hook\n-----------------------------------------\n','result','#000000,#000000,Histograma,0');
+ (107,'function applyScript(candles, json, lastbar, script, input) {\n\n    var ncandles = input.get(\"ncandles\");\n    var role1 = candles.Peak(lastbar,1, \"H\", 10) <= 1.1 * candles.Peak(lastbar,2, \"H\", 10);\n    var role2 = candles.Peak(lastbar,1, \"H\", 10) >= 0.9 * candles.Peak(lastbar,2, \"H\", 10);\n    var role3 = candles.Trough(lastbar,1, \"L\", 10) >= 1.1 * candles.Trough(lastbar,2, \"H\", 10);\n    var role4 = candles.Trough(lastbar,1, \"L\", 10) <= 0.9 * candles.Trough(lastbar,2, \"H\", 10) && candles.isLLV(lastbar, 25);\n    var colA = role1 && role2 && role3 && role4;\n\n    var role5 = candles.Peak(lastbar,1, \"H\", 5) <= 1.1 * candles.Peak(lastbar,2, \"H\", 5);\n    var role6 = candles.Peak(lastbar,1, \"H\", 5) >= 0.9 * candles.Peak(lastbar,2, \"H\", 5);\n    var role7 = candles.Trough(lastbar,1, \"L\", 5) >= 1.1 * candles.Trough(lastbar,2, \"H\", 5);\n    var role8 = candles.Trough(lastbar,1, \"L\", 5) <= 0.9 * candles.Trough(lastbar,2, \"H\", 5) && candles.isLLV(lastbar, 25);\n    var colB = role5 && role6 && role7 && role8;\n\n    var role9 = candles.Peak(lastbar,1, \"H\", 1) <= 1.1 * candles.Peak(lastbar,2, \"H\", 1);\n    var role10 = candles.Peak(lastbar,1, \"H\", 1) >= 0.9 * candles.Peak(lastbar,2, \"H\", 1);\n    var role11 = candles.Trough(lastbar,1, \"L\", 1) >= 1.1 * candles.Trough(lastbar,2, \"H\", 1);\n    var role12 = candles.Trough(lastbar,1, \"L\", 1) <= 0.9 * candles.Trough(lastbar,2, \"H\", 1) && candles.isLLV(lastbar, 25);\n    var colC = role9 && role10 && role11 && role12;\n\n    var result = colA || colB || colC;\n\n    json.put(\"result\", (result)?0:1);\n\n    return json;\n}\n','@123_Ross_Hook','1 2 3 Ross Hook\n-----------------------------------------\n','result','#000000,#000000,Histograma,0'),
+ (108,'function applyScript(candles, json, lastbar, script, input) {\n\n    var ncandles = input.get(\"ncandles\");\n    var TR = 0;\n    for (var x = lastbar; x < lastbar + ncandles; x++) {\n        TR += Math.max(Math.abs(candles.High(x) - candles.Low(x)), Math.abs(candles.High(x) - candles.Close(x + 1)), Math.abs(candles.Low(x) - candles.Close(x + 1)));\n    }\n    var result = TR / ncandles;\n\n    json.put(\"result\", result);\n\n    return json;\n}\n','$ATR','Average True Range (ATR)\n-----------------------------------------\nhttp://www.prosticks.com/education/indicators/loadContent.php?sid=69a00482c2cdb3143b81404c6258f316&page=atr','result','#000000,#000000,Histograma,0');
+INSERT INTO `scripts` (`id`,`script`,`name`,`descr`,`param`,`settingchart`) VALUES 
+ (109,'function applyScript(candles, json, lastbar, script, input) {\n\n    var ncandles = input.get(\"ncandles\");\n\nvar role1 = (candles.High(lastbar) > candles.High(lastbar+1));\nvar role2 = (candles.Low(lastbar) >= candles.Low(lastbar+1));\nvar PlusDM = (role1 && role2) ? HIGH-Ref(HIGH,-1) : 0;\n\nvar role3 = (candles.High(lastbar) - candles.High(lastbar+1)) > (candles.Low(lastbar+1) - candles.Low(lastbar));\nAND HIGH-Ref(HIGH,-1)>Ref(LOW,-1)-LOW\nHIGH-Ref(HIGH,-1), 0));\nDIPlus:= 100 * Wilders(PlusDM,Periods) /\nATR(Periods);\n\nMinusDM:= If(LOW<Ref(LOW,-1) AND\nHIGH<=Ref(HIGH,-1), Ref(LOW,-1)-LOW,\nIf(HIGH>Ref(HIGH,-1) AND LOW<Ref(LOW,-1)\nAND HIGH-Ref(HIGH,-1)<Ref(LOW,-1)-LOW,\nRef(LOW,-1)-LOW, 0));\nDIMinus:= 100 * Wilders(MinusDM,Periods) /\nATR(Periods);\n\nDIDif:= Abs(DIPlus - DIMinus);\nDISum:= DIPlus + DIMinus;\nADXRaw:= 100 * Wilders(DIDif/DISum, Periods);\n\n    json.put(\"result\", result);\n\n    return json;\n}\n','$ADX','ADX\n-----------------------------------------\nhttp://www.prosticks.com/education/indicators/loadContent.php?sid=69a00482c2cdb3143b81404c6258f316&page=atr','result','#000000,#000000,Histograma,0');
 /*!40000 ALTER TABLE `scripts` ENABLE KEYS */;
 
 
