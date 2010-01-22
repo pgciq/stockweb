@@ -1,5 +1,7 @@
 package chart.study.indicator.utils;
 
+import java.text.DecimalFormat;
+
 import chart.study.QuoteHistory;
 
 /**
@@ -363,7 +365,7 @@ public class CandlestickUtils {
 		return value;
 	}
 
-	private double LLV(int lastbar, int ncandles) {
+	public double LLV(int lastbar, int ncandles) {
 
 	    if ((lastbar + ncandles) > size()) {
 	        return 0;
@@ -377,7 +379,7 @@ public class CandlestickUtils {
 	    return LLV;
 	}
 
-	private boolean isLLV(int lastbar, int ncandles) {
+	public boolean isLLV(int lastbar, int ncandles) {
 
 	    if ((lastbar + ncandles) > size()) {
 	        return false;
@@ -392,7 +394,7 @@ public class CandlestickUtils {
 	    return (Low(lastbar) < LLV) ? true:false;
 	}
 
-	private double HHV(int lastbar, int ncandles) {
+	public double HHV(int lastbar, int ncandles) {
 	    if ((lastbar + ncandles) > size()) {
 	        return 0;
 	    }
@@ -405,7 +407,7 @@ public class CandlestickUtils {
 	    return HHV;
 	}	
 	
-	private boolean isHHV(int lastbar, int ncandles) {
+	public boolean isHHV(int lastbar, int ncandles) {
 	    if ((lastbar + ncandles) > size()) {
 	        return false;
 	    }
@@ -418,4 +420,29 @@ public class CandlestickUtils {
 	    return (High(lastbar) > HHV) ? true : false;
 	}	
 	
+	// Truncate decimale
+    public double trunc(double value, int dec)
+    {
+    	String strDec = "0.";
+    	for(int x=0; x<dec; x++)
+    		strDec += "0";
+        DecimalFormat df = new  DecimalFormat ("0.000");
+        String d = df.format (value);
+        d = d.replaceAll (",", ".");
+        Double dbl = new Double (d);
+        return dbl.doubleValue();
+    }
+    
+    public double Wilders(int lastbar, int ncandles){
+    	double sumC = 0;
+    	double sumP = 0;
+    	for(int x=lastbar;x<lastbar+ncandles;x++){
+    		sumC += Close(x);
+    		sumP += Close(x+1);
+    	}
+    	double MA_curr = sumC/ncandles;
+    	double MA_prec = sumP/ncandles;
+    	return MA_curr + 1/ncandles*(Close(lastbar) - MA_prec);    	
+    }
+    
 }

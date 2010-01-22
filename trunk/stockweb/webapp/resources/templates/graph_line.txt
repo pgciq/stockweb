@@ -3,7 +3,7 @@
 		<width>2</width>
     <axis>right</axis>
     <period_value>average</period_value>
-    <color>black</color>
+    <color>_COLOR_</color>
     <alpha>100</alpha>
     
     <fill_alpha>0</fill_alpha>
