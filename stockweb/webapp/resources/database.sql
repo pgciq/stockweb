@@ -1,7 +1,7 @@
 -- MySQL Administrator dump 1.4
 --
 -- ------------------------------------------------------
--- Server version	5.0.67-community-nt
+-- Server version	5.4.3-beta-community
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -27,11 +27,11 @@ USE stockweb;
 
 DROP TABLE IF EXISTS `chartsetting`;
 CREATE TABLE `chartsetting` (
-  `id` int(10) unsigned NOT NULL auto_increment,
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `idscript` int(10) unsigned NOT NULL,
   `name` varchar(45) NOT NULL,
-  PRIMARY KEY  (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `chartsetting`
@@ -50,10 +50,10 @@ INSERT INTO `chartsetting` (`id`,`idscript`,`name`) VALUES
 
 DROP TABLE IF EXISTS `indicator`;
 CREATE TABLE `indicator` (
-  `id` int(10) unsigned NOT NULL auto_increment,
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(45) NOT NULL,
   `descr` varchar(255) NOT NULL,
-  PRIMARY KEY  (`id`)
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -70,13 +70,13 @@ CREATE TABLE `indicator` (
 
 DROP TABLE IF EXISTS `scripts`;
 CREATE TABLE `scripts` (
-  `id` int(10) unsigned NOT NULL auto_increment,
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `script` text NOT NULL,
   `name` varchar(45) NOT NULL,
   `descr` text,
   `param` varchar(255) NOT NULL,
-  `settingchart` varchar(255) default ' ',
-  PRIMARY KEY  (`id`)
+  `settingchart` varchar(255) DEFAULT ' ',
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=119 DEFAULT CHARSET=latin1;
 
 --
