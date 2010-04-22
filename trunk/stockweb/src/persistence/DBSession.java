@@ -25,14 +25,14 @@ public class DBSession {
 	}
 
 	public DBSession() {
-		connect("root", "root");
+		connect("spymenow", "concha");
 	}
 
 	/*
 	 * CONNECT mysql
 	 */
 	synchronized public Connection connect(String login, String pws) {
-		String dbURL = "jdbc:mysql://localhost:3306/stockweb?useServerPrepStmts=true";
+		String dbURL = "jdbc:mysql://hostingjava.it:3306/test?useServerPrepStmts=true";
 		try {
 			Class.forName(JDBC_driver);
 			conn = DriverManager.getConnection(dbURL, login, pws);

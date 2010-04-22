@@ -6,6 +6,7 @@ import java.util.Properties;
 import java.util.StringTokenizer;
 
 import ai.agent.*;
+import ai.environment.DBEnvironmentView;
 import ai.environment.ReadFileEnvironmentView;
 import ai.environment.YahooEnvironmentView;
 
@@ -48,7 +49,8 @@ public class TestAI {
 		
 		try{
 			String stocks = propStocks.getProperty("ITALY");
-			env.registerView(new YahooEnvironmentView());
+			env.registerView(new DBEnvironmentView());
+//			env.registerView(new YahooEnvironmentView());
 //			env.registerView(new ReadFileEnvironmentView(this.pathname));ù
 
 			StringTokenizer tokenAgents = new StringTokenizer(agents, ",");
@@ -91,7 +93,8 @@ public class TestAI {
 		//System.out.println("##### " + (new Date()));
 		
 		try{
-			env.registerView(new YahooEnvironmentView());
+			env.registerView(new DBEnvironmentView());
+//			env.registerView(new YahooEnvironmentView());
 //			env.registerView(new ReadFileEnvironmentView(this.pathname));ù
 
 			StringTokenizer tokenAgents = new StringTokenizer(agents, ",");
