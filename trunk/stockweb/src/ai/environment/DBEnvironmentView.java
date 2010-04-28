@@ -54,6 +54,7 @@ public class DBEnvironmentView implements EnvironmentView {
 			List<QuoteVO> quoteVO = applyParameters(json);
 
 			for (int x = 0; x < quoteVO.size(); x++) {
+				stock = new Stock();
 				stock.setCodneg((String) json.get("symbol"));
 				stock.setDataPregao(quoteVO.get(x).getDate());
 				stock.setPreabe(quoteVO.get(x).getOpen());
