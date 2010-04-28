@@ -30,11 +30,13 @@ public class QuoteEngineDAO { // implements PersistenceDAO{
 	public List<QuoteVO> getQuote(String stockName, String dateI, String dateF) {
 		List<QuoteVO> result = new ArrayList<QuoteVO>();
 		conn = DBSession.getIstance().getConnection();
+		PreparedStatement pstat = null;
 		try {
-			String sql = " select date, high, low, open, close " +
+			String sql = " select date, high, low, open, close, volume " +
 						 " from quote " +
-						 " where date > ? and date < ? and stock = ? ";
-			PreparedStatement pstat = conn.prepareStatement(sql);
+						 " where date > ? and date < ? and stock = ? " +
+						 " order by date desc";
+			pstat = conn.prepareStatement(sql);
 			pstat.setString(1, dateI);
 			pstat.setString(2, dateF);
 			pstat.setString(3, stockName);
@@ -48,6 +50,7 @@ public class QuoteEngineDAO { // implements PersistenceDAO{
 				quote.setLow(rs.getString("low"));
 				quote.setOpen(rs.getString("open"));
 				quote.setClose(rs.getString("close"));
+				quote.setVolume(rs.getString("volume"));
 				result.add(quote);
 			}
 
@@ -56,7 +59,7 @@ public class QuoteEngineDAO { // implements PersistenceDAO{
 		} finally {
 			try {
 				rs.close();
-				stat.close();
+				pstat.close();
 			} catch (SQLException e) {
 				e.printStackTrace();
 			}
