@@ -1,0 +1,25 @@
+<project name="Stockweb" default="compile" basedir=".">
+	<property name="int.lib" value="${basedir}/webapp/WEB-INF/lib"/>
+	<property name="war.name" value="stockweb.war"/>		
+	<property name="classes.dir" value="${basedir}/build/classes"/>
+	<property name="ext.lib" value="C:/Programmi/Apache Software Foundation/Tomcat 5.5/common/lib"></property>		
+	<path id="class.path">		
+		<fileset dir="${ext.lib}">
+			<include name="*.jar"/>
+		</fileset>
+	</path>
+	
+	<target name="compile">			
+		<javac srcdir="${basedir}/src" destdir="build/classes">
+			<classpath refid="class.path"/>
+		</javac>
+	</target>
+
+	<target name="war" depends="" description="Build War">
+		<war destfile="build/${war.name}" webxml="webapp/WEB-INF/web.xml">
+			<fileset dir="${basedir}/webapp" excludes="**/CVS,**/web.xml"/>
+			<classes dir="${classes.dir}" includes="**/*.class"/>							
+		</war>
+	</target>
+	
+</project>

@@ -29,6 +29,7 @@ import org.w3c.dom.NodeList;
 import org.xml.sax.InputSource;
 
 import persistence.dao.ChartSettingEngineDAO;
+import persistence.dao.ResourcesEngineDAO;
 import persistence.impl.ChartSettingEngineImpl;
 import persistence.session.ChartSettingEngineSession;
 import persistence.vo.Script;
@@ -78,19 +79,20 @@ public class ChartInterfaceDynamic {
 	}
 
 	private String applySettings(String filename, Element elem) throws Exception{
-		String content = getContentFile(filename);
-		if(elem.getAttribute("filename").equals("settings.txt")){
+
+		String content = (new ResourcesEngineDAO()).getObjectByName(filename);
+		if(elem.getAttribute("filename").equals("settings")){
 			//_STRATEGYNAME_&stock=_STOCK_&agent=_AGENTS_
 			content = content.replace("_STRATEGYNAME_", elem.getAttribute("strategyname"));
 //			content = content.replace("_STOCK_", elem.getAttribute("stock"));
 //			content = content.replace("_AGENTS_", elem.getAttribute("chartname"));
 		}
 
-		if(elem.getAttribute("filename").equals("chart.txt")){
+		if(elem.getAttribute("filename").equals("templates_chart")){
 			content = content.replace("_TITLE_", elem.getAttribute("chartname"));
 		}
 
-		if(elem.getAttribute("filename").indexOf("graph") != -1){
+		if(elem.getAttribute("filename").indexOf("templates_graph") != -1){
 			String params = elem.getAttribute("graphsetting");
 			
 			content = content.replace("_COLOR_", (params.length()==0) ? "" : params.substring(1,params.indexOf(",")));
@@ -160,7 +162,8 @@ public class ChartInterfaceDynamic {
 //		String agentsScriptName = "", token = "";
 		Document doc = null; 
 		try {
-			doc = getDoc(getContentFile("amstock_settings.xml"));
+//			doc = getDoc(getContentFile("amstock_settings.xml"));
+			doc = getDoc((new ResourcesEngineDAO()).getObjectByName("templates_amstock_settings"));
 
 			Node charts = XPathAPI.selectSingleNode(doc, "//charts");
 
@@ -176,7 +179,7 @@ public class ChartInterfaceDynamic {
 				
 		        Element chart = doc.createElement("chart");
 		        chart.setAttribute("id", String.valueOf(nChart));
-		        chart.setAttribute("filename", "chart.txt");
+		        chart.setAttribute("filename", "templates_chart");
 		        chart.setAttribute("type", "");
 		        chart.setAttribute("chartname", script.getName());
 		        charts.appendChild(chart);
@@ -190,7 +193,7 @@ public class ChartInterfaceDynamic {
 			        String graphname = tkParams.nextToken(); 
 					Element graph = doc.createElement("graph");
 			        graph.setAttribute("id", String.valueOf(nGraph));
-			        graph.setAttribute("filename", (paramSettingChart.indexOf("histogram") != -1) ? "graph_histogram.txt":"graph_line.txt");
+			        graph.setAttribute("filename", (paramSettingChart.indexOf("histogram") != -1) ? "templates_graph_histogram":"templates_graph_line");
 			        graph.setAttribute("graphname", graphname);
 			        graph.setAttribute("graphsetting", paramSettingChart);
 			        graphs.appendChild(graph);
@@ -254,7 +257,7 @@ public class ChartInterfaceDynamic {
 				</graphs>
 			</chart>
 
- */	
+	
 	
 
 	private String getContentFile(String filename) throws Exception {
@@ -267,7 +270,7 @@ public class ChartInterfaceDynamic {
 		buffer.close();
 		return xml;
 	}
-
+*/
 	private Document getDoc(String xml) throws Exception {
 		String xmlString;
 		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();

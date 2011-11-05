@@ -210,14 +210,14 @@ public class RequestAgentsScripts extends HttpServlet {
 								request.getParameter("stock"),
 								"d",
 								"20100101",
-								"20101213",
+								"20200101",
 								"HistoryStocksAgent,ExecuteScriptAgent");
 			} else {
 				testAI.executeAgents(
 								prop,
 								"d",
-								"20101201",
-								"20101213",
+								"20100101",
+								"20200101",
 								"HistoryStocksAgent,ExecuteScriptAgent");
 			}
 	
@@ -226,11 +226,10 @@ public class RequestAgentsScripts extends HttpServlet {
 			History.clearStock("all");
 			// formatterResultCandle(testAI.getResponseAgents("BollingerAgent"),request,response);
 	
-			System.out.println(">>>>>>> " + testAI.getResponseAgents("HistoryStocksAgent"));
-//			System.out.println(">>>>>>> " + testAI.getResponseAgents("BollingerAgent"));
+/*			System.out.println(">>>>>>> " + testAI.getResponseAgents("HistoryStocksAgent"));
 			System.out.println(">>>>>>> " + testAI.getResponseAgents("ExecuteScriptAgent"));
 			System.out.println("Pathname = " + pathname);
-		}catch(Exception ex){
+*/		}catch(Exception ex){
 			ex.printStackTrace();
 		}
 	}

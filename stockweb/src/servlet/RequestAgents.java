@@ -175,7 +175,7 @@ public class RequestAgents extends HttpServlet {
 
 				if (tmp.equals("")) {
 					tmp = String.valueOf(json.get("close"));
-					System.out.println(">>>>>>> "+ getLastData(String.valueOf(json.get("date"))));
+					//System.out.println(">>>>>>> "+ getLastData(String.valueOf(json.get("date"))));
 					out.print(getLastData(String.valueOf(json.get("date"))));
 					out.print("," + tmp);
 					out.print("," + tmp);
@@ -296,11 +296,11 @@ public class RequestAgents extends HttpServlet {
 	private void processRequest(HttpServletRequest request,
 			HttpServletResponse response) {
 
-		System.setProperty("http.proxyHost", "proxypac.sisal.it");
+/*		System.setProperty("http.proxyHost", "proxypac.xxx.it");
 		System.setProperty("http.proxyPort", "80");
 		System.setProperty("http.proxyUsername", "rocha");
-		System.setProperty("http.proxyPassword", "9876543210");
-
+		System.setProperty("http.proxyPassword", "123456789");
+*/
 		loadStockName();
 
 		String pathname = this.getServletContext().getRealPath("/")
@@ -313,16 +313,16 @@ public class RequestAgents extends HttpServlet {
 					.executeAgent(
 							request.getParameter("stock"),
 							"d",
-							"20100101",
-							"20101213",
+							"20090101",
+							"20200101",
 							"HistoryStocksAgent,CandlestickAgent,BollingerAgent,MaxMinIndexAgent,VariationVolumeAgent,VariationPriceIndexAgent");
 		} else {
 			testAI
 					.executeAgents(
 							prop,
 							"d",
-							"20100101",
-							"20101213",
+							"20090101",
+							"20200101",
 							"HistoryStocksAgent,CandlestickAgent,BollingerAgent,MaxMinIndexAgent,VariationVolumeAgent,VariationPriceIndexAgent");
 		}
 
@@ -332,12 +332,13 @@ public class RequestAgents extends HttpServlet {
 
 		// formatterResultCandle(testAI.getResponseAgents("BollingerAgent"),request,response);
 
-		System.out.println(">>>>>>> " + testAI.getResponseAgents("HistoryStocksAgent"));
+/*		System.out.println(">>>>>>> " + testAI.getResponseAgents("HistoryStocksAgent"));
 		System.out.println(">>>>>>> " + testAI.getResponseAgents("BollingerAgent"));
 		System.out.println(">>>>>>> " + testAI.getResponseAgents("MaxMinIndexAgent"));
 		System.out.println(">>>>>>> " + testAI.getResponseAgents("VariationVolumeAgent"));
 		System.out.println(">>>>>>> " + testAI.getResponseAgents("VariationPriceIndexAgent"));
 		System.out.println(">>>>>>> " + testAI.getResponseAgents("ExecuteScriptAgent"));
 		System.out.println("Pathname = " + pathname);
+*/
 	}
 }

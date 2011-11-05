@@ -2,12 +2,11 @@
  @author: Humberto Rocha Loureiro (humbertorocha@gmail.com)
  @modify: 
  -->
- 
+
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
   <head>
     <base href="">
-    
     <title>My JSP 'index.jsp' starting page</title>
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -18,19 +17,18 @@
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	-->
   </head>
-  
-  
+
          <style>
             .treeview li.submenu { /* Style for LI that contains sub lists (other ULs). */
                 cursor: hand !important;
                 cursor: pointer !important;
             }
-            
+
             .treeview ul {
                 margin: 0;
                 padding: 0;
             }
-            
+
             .treeview li {
                 list-style-type: none;
                 padding-left: 10px;
@@ -41,7 +39,7 @@
                 line-height: 16px;
                 font-size: 13px;
             }
-            
+
             .title-blue {
                 color: #466F93;
                 font-weight: bold;
@@ -49,15 +47,15 @@
                 line-height: 16px;
                 font-size: 12px;
             }
-            
+
             div {
                 position: absolute;
             }
-            
+
             .itemselect {
                 cursor: pointer;
             }
-            
+
             .toolbox-item {
                 color: #466F93;
                 font-weight: bold;
@@ -67,7 +65,7 @@
                 width: 180px;
                 cursor: pointer;
             }
-            
+
             .caption {
                 color: #466F93;
                 font-weight: bold;
@@ -75,28 +73,23 @@
                 line-height: 16px;
                 font-size: 11px;
             }
-            
+
         </style>
-		
-		
+
         <div id="schema">
             <span id="result"></span>
 	      </div>
 
-  
 	<script type="text/javascript" src="lib/utils.js"></script>
 	<script type="text/javascript" src="lib/observer.js"></script>
 	<script type="text/javascript" src="lib/dragdrop.js"></script>
 	<script type="text/javascript" src="lib/framework.js"></script>
 	<script type="text/javascript" src="structure.js"> </script>
 
-
   <body style="background-color: gray">&nbsp;&nbsp;&nbsp; <map id="mapareaimg" name="imgmap" ></map>
-			
 			<div id="contentStockDetail" style="visibility: hidden;">
 			<div style="background-color: #76BBDE; top:-10px; width:270px"><center><b><span id="stockcaption">PETR4</span></b></center></div>
 			<br>
-			
 			<div style="width:270px"><center>
 			<font style="font-size:12px; font-family: Courier New;">Selecione um tipo de Candler</font>
 			<br>
@@ -120,13 +113,11 @@
 			</font>
 			</div>
 			
-			
 			</div>
 
   </body>
-  
+
   <script>
-  
   	function createWindow(){
   		buildDesign.create(eval(jsonMenuDesktop));
   		buildDesign.create(eval(jsonStock));
@@ -134,7 +125,12 @@
   		buildDesign.create(eval(jsonWidgetColor));
   		buildDesign.create(eval(jsonSetupChart));
   		buildDesign.create(eval(jsonChartSetting));
+  		buildDesign.create(eval(jsonQuoteIndicatorAlert));
+  		buildDesign.create(eval(jsonPerformance));
+  		buildDesign.create(eval(jsonPerformanceTicket));
+  		buildDesign.create(eval(jsonNotes));
   	}
+
 /*		
 		function handleGetDataCandleType(result) {
 		    mapCandle = new Map();
@@ -154,11 +150,20 @@
 					  
 		}
 */
-	  var ITALY = "A2A.MI,ACE.MI,ACO.MI,ACP.MI,ACS.MI,ACT.MI,AE.MI,AEF.MI,AEG.MI,AFI.MI,AGL.MI,AIC.MI,AKM.MI,AL.MI,AMP.MI,AP.MI,APP.MI,ARE.MI,ARN.MI,ASC.MI,AST.MI,AT.MI,ATL.MI,AUTME.MI,AZM.MI,STS.MI,B.MI,BAN.MI,BCM.MI,BDB.MI,BDBR.MI,BE.MI,BEC.MI,BEN.MI,BF.MI,BFE.MI,BGN.MI,BIE.MI,BIL.MI,BIM.MI,BLZ.MI,BMPS.MI,BNG.MI,BNS.MI,BO.MI,BOE.MI,BOR.MI,BP.MI,BPE.MI,BPSO.MI,BRE.MI,BRI.MI,BSRP.MI,BSS.MI,BEST.MI,BTY.MI,BUL.MI,BZU.MI,BZUR.MI,CRG.MI,CRGR.MI,IF.MI,PMI.MI,PRO.MI,SANT.MI,SPO.MI,CAD.MI,CAI.MI,CALT.MI,CARR.MI,CASS.MI,CB.MI,CC.MI,CDC.MI,CE.MI,CED.MI,CEM.MI,CHL.MI,CIA.MI,CIR.MI,CLE.MI,CLF.MI,CLT.MI,CMB.MI,CMF.MI,CNP.MI,COB.MI,COF.MI,COG.MI,CPR.MI,CRA.MI,CRE.MI,CSP.MI,CTIC.MI,CVAL.MI,DA.MI,DAL.MI,DAN.MI,DANR.MI,DEA.MI,DIA.MI,DIB.MI,DIS.MI,DLG.MI,DMA.MI,DMN.MI,DMT.MI,EDN.MI,EDNR.MI,EEMS.MI,EEZ.MI,EGR.MI,ELC.MI,ELN.MI,EM.MI,EN.MI,ENEL.MI,ENG.MI,ENI.MI,ERG.MI,ES.MI,ETH.MI,EUT.MI,EXO.MI,PRT.MI,XPR.MI,F.MI,FCD.MI,FDA.MI,FDP.MI,FM.MI,FMR.MI,FNC.MI,FNM.MI,FP.MI,FR.MI,FSA.MI,FSAR.MI,FUL.MI,FWB.MI,G.MI,GAB.MI,GCN.MI,GE.MI,GEM.MI,GEMR.MI,GEO.MI,GEW.MI,GRF.MI,GSP.MI,HER.MI,IGV.MI,VIS.MI,IES.MI,IGD.MI,IMA.MI,IMS.MI,IND.MI,INDR.MI,IP.MI,IPG.MI,IPGR.MI,IPI.MI,IRC.MI,IRD.MI,ISG.MI,ISP.MI,ISPR.MI,IT.MI,ITK.MI,ITM.MI,ITMR.MI,ITR.MI,ITW.MI,IW.MI,JUVE.MI,KME.MI,KMER.MI,KNX.MI,KRE.MI,KRS.MI,LD.MI,LR.MI,LTO.MI,LUX.MI,SSL.MI,MARR.MI,MB.MI,MBFG.MI,MCH.MI,MCL.MI,MEA.MI,MEC.MI,MED.MI,MF.MI,MFNC.MI,MHE.MI,MLM.MI,MN.MI,MOL.MI,MON.MI,MRT.MI,MS.MI,MSA.MI,MT.MI,MTV.MI,NICE.MI,NOE.MI,OLI.MI,PAN.MI,PC.MI,PCP.MI,PF.MI,PFG.MI,PIA.MI,PINF.MI,PLT.MI,PMS.MI,POL.MI,PQ.MI,PR.MI,PRA.MI,PRI.MI,PRL.MI,PRS.MI,PRY.MI,PSF.MI,ASR.MI,LIT.MI,RAT.MI,RCS.MI,RCSR.MI,RDB.MI,REC.MI,REY.MI,RGI.MI,RIC.MI,RLT.MI,RM.MI,RN.MI,PG.MI,PGR.MI,S24.MI,SAB.MI,SAT.MI,SAVE.MI,SCT.MI,SFL.MI,SG.MI,SGR.MI,SIS.MI,SN.MI,SNA.MI,SO.MI,SOL.MI,SPF.MI,SPM.MI,SPMR.MI,SRG.MI,SRI.MI,SRN.MI,SRS.MI,SSB.MI,SSI.MI,STEF.MI,STM.MI,TAS.MI,TEN.MI,TF.MI,TFI.MI,TIP.MI,TIS.MI,TIT.MI,TITR.MI,TME.MI,TMER.MI,TOD.MI,TRN.MI,TXT.MI,UBI.MI,UCG.MI,UCGR.MI,UNI.MI,UNIP.MI,UNL.MI,VAS.MI,VIN.MI,VLA.MI,VLS.MI,VVE.MI,BY.MI,ZUC.MI,ZUCR.MI,ZV.MI";
+	    var ITALY = "A2A_IM,ACE_IM,ACO_IM,ACP_IM,ACS_IM,ACT_IM,AE_IM,AEF_IM,AEG_IM,AFI_IM,AGL_IM,AIC_IM,AKM_IM,AL_IM,AMP_IM,AP_IM,APP_IM,ARE_IM,ARN_IM,ASC_IM,AST_IM,AT_IM,ATL_IM,AUTME_IM,AZM_IM,STS_IM,B_IM,BAN_IM,BCM_IM,BDB_IM,BDBR_IM,BE_IM,BEC_IM,BEN_IM,BF_IM,BFE_IM,BGN_IM,BIE_IM,BIL_IM,BIM_IM,BLZ_IM,BMPS_IM,BNG_IM,BNS_IM,BO_IM,BOE_IM,BOR_IM,BP_IM,BPE_IM,BPSO_IM,BRE_IM,BRI_IM,BSRP_IM,BSS_IM,BEST_IM,BTY_IM,BUL_IM,BZU_IM,BZUR_IM,CRG_IM,CRGR_IM,IF_IM,PMI_IM,PRO_IM,SANT_IM,SPO_IM,CAD_IM,CAI_IM,CALT_IM,CARR_IM,CASS_IM,CB_IM,CC_IM,CDC_IM,CE_IM,CED_IM,CEM_IM,CHL_IM,CIA_IM,CIR_IM,CLE_IM,CLF_IM,CLT_IM,CMB_IM,CMF_IM,CNP_IM,COB_IM,COF_IM,COG_IM,CPR_IM,CRA_IM,CRE_IM,CSP_IM,CTIC_IM,CVAL_IM,DA_IM,DAL_IM,DAN_IM,DANR_IM,DEA_IM,DIA_IM,DIB_IM,DIS_IM,DLG_IM,DMA_IM,DMN_IM,DMT_IM,EDN_IM,EDNR_IM,EEMS_IM,EEZ_IM,EGR_IM,ELC_IM,ELN_IM,EM_IM,EN_IM,ENEL_IM,ENG_IM,ENI_IM,ERG_IM,ES_IM,ETH_IM,EUT_IM,EXO_IM,PRT_IM,XPR_IM,F_IM,FCD_IM,FDA_IM,FDP_IM,FM_IM,FMR_IM,FNC_IM,FNM_IM,FP_IM,FR_IM,FSA_IM,FSAR_IM,FUL_IM,FWB_IM,G_IM,GAB_IM,GCN_IM,GE_IM,GEM_IM,GEMR_IM,GEO_IM,GEW_IM,GRF_IM,GSP_IM,HER_IM,IGV_IM,VIS_IM,IES_IM,IGD_IM,IMA_IM,IMS_IM,IND_IM,INDR_IM,IP_IM,IPG_IM,IPGR_IM,IPI_IM,IRC_IM,IRD_IM,ISG_IM,ISP_IM,ISPR_IM,IT_IM,ITK_IM,ITM_IM,ITMR_IM,ITR_IM,ITW_IM,IW_IM,JUVE_IM,KME_IM,KMER_IM,KNX_IM,KRE_IM,KRS_IM,LD_IM,LR_IM,LTO_IM,LUX_IM,SSL_IM,MARR_IM,MB_IM,MBFG_IM,MCH_IM,MCL_IM,MEA_IM,MEC_IM,MED_IM,MF_IM,MFNC_IM,MHE_IM,MLM_IM,MN_IM,MOL_IM,MON_IM,MRT_IM,MS_IM,MSA_IM,MT_IM,MTV_IM,NICE_IM,NOE_IM,OLI_IM,PAN_IM,PC_IM,PCP_IM,PF_IM,PFG_IM,PIA_IM,PINF_IM,PLT_IM,PMS_IM,POL_IM,PQ_IM,PR_IM,PRA_IM,PRI_IM,PRL_IM,PRS_IM,PRY_IM,PSF_IM,ASR_IM,LIT_IM,RAT_IM,RCS_IM,RCSR_IM,RDB_IM,REC_IM,REY_IM,RGI_IM,RIC_IM,RLT_IM,RM_IM,RN_IM,PG_IM,PGR_IM,S24_IM,SAB_IM,SAT_IM,SAVE_IM,SCT_IM,SFL_IM,SG_IM,SGR_IM,SIS_IM,SN_IM,SNA_IM,SO_IM,SOL_IM,SPF_IM,SPM_IM,SPMR_IM,SRG_IM,SRI_IM,SRN_IM,SRS_IM,SSB_IM,SSI_IM,STEF_IM,STM_IM,TAS_IM,TEN_IM,TF_IM,TFI_IM,TIP_IM,TIS_IM,TIT_IM,TITR_IM,TME_IM,TMER_IM,TOD_IM,TRN_IM,TXT_IM,UBI_IM,UCG_IM,UCGR_IM,UNI_IM,UNIP_IM,UNL_IM,VAS_IM,VIN_IM,VLA_IM,VLS_IM,VVE_IM,BY_IM,ZUC_IM,ZUCR_IM,ZV_IM";
 
-	  function changeChart(object,stockName){
-		  document.getElementById(object).src= object + '.html?stock=' + document.getElementById(stockName).value;
-	  }
+			function showChartStock(object,stockName,stock){
+	        document.getElementById(stockName).value = stock;
+			    document.getElementById(object).src= object + '.html?stock=' + document.getElementById(stockName).value;
+	    }
+
+	    function changeChart(object,stockName){
+		   document.getElementById(object).src= object + '.html?stock=' + document.getElementById(stockName).value;
+	    }
+
+	    function changeFrame(object,objName){
+			  document.getElementById(object).src= "/stockblog/pages/" + objName + '.jsp?date=' + document.getElementById(objName).value;
+	    }
 
 		var position = 0; 
 		function nextChart(object,editName){
@@ -174,40 +179,76 @@
 			document.getElementById(editName).value = ITALY.split(",")[position];   
 			document.getElementById(object).src= object + '.html?stock=' + ITALY.split(",")[position];
 		}
-		function init(){
-				createWindow();
-				document.getElementById("contentwindow0").innerHTML = "&nbsp;&nbsp;<input type='text' id='stockChart' name='stock' value='F.MI'/>	<input type='button' value='click' onclick='changeChart(\"frameChartStock\",\"stockChart\")'/>	<input type='button' value='<<' onclick='prevChart(\"frameChartStock\",\"stockChart\")'/>  <input type='button' value='>>' onclick='nextChart(\"frameChartStock\",\"stockChart\")'/><iframe id='frameChartStock' style=' border: 0px; width: 620px; height: 620px;' scrolling='no' src='frameChartStock.html?stock=F.MI'></iframe>";
+
+		function init(){ 
+				createWindow(); 
+				document.getElementById("contentwindow0").innerHTML = "&nbsp;&nbsp;<div style='top:-3px; left:5px'><input type='text' id='stockChart' name='stock' value='F_IM'/></div><div style='top:-3px; left:160px;'><img title='chart stock' src='img/chart_stock.png' width='28px' heigth='28px' style='cursor:pointer;' onclick='changeChart(\"frameChartStock\",\"stockChart\")'/>&nbsp;&nbsp;&nbsp;<img title='analyzed stock' src='img/chart_analyzed.png' width='28px' heigth='28px' style='cursor:pointer;' onclick='showChartStock(\"frameChartSetting\",\"stockSetting\",document.all.stockChart.value)'/>&nbsp;&nbsp;<img src='/stockblog/pages/appunti.png' width='30px' heigth='30px' style='cursor:pointer;' onclick='showPerformanceTicket();'/>&nbsp;&nbsp;<img src='img/set_date.png' width='28px' heigth='28px' style='cursor:pointer;' onclick='chartStockSimulated.zoom();chartStockChartSimulated.zoom();'/>&nbsp;&nbsp;&nbsp;&nbsp;<img src='img/back.png' width='26px' heigth='26px' style='cursor:pointer;' onclick='chartStockSimulated.prevDay();chartStockChartSimulated.prevDay();'/>&nbsp;&nbsp;<img src='img/next.png' width='26px' heigth='26px' style='cursor:pointer;' onclick='chartStockSimulated.nextDay();chartStockChartSimulated.nextDay();showNextPerformance();'/></div><iframe id='frameChartStock' name='frameChartStock' style=' border: 0px; width: 620px; height: 620px;' scrolling='no' src='frameChartStock.html?stock=F.IM'></iframe>";
 				document.getElementById("contentwindow01").innerHTML = "<iframe name='frameScriptEngine' style=' border: 0px; width: 500px; height: 510px;' scrolling='no' src='teste/dwrScriptEngine.html'></iframe>";
 				document.getElementById("contentwindow02").innerHTML = "<iframe name='frameColor' src='widget/selectcolor.htm' width='370' height='260' scrolling='no' frameborder='0'></iframe>";
 				document.getElementById("contentwindow03").innerHTML = "<iframe name='frameSetupChart' src='teste/setupchart.html' width='320' height='320' scrolling='no' frameborder='0'></iframe>";
-				document.getElementById("contentwindow04").innerHTML = "&nbsp;&nbsp;<input type='text' id='stockSetting' name='stock' value='F.MI'/>	<input type='button' value='click' onclick='changeChart(\"frameChartSetting\",\"stockSetting\")'/> <input type='button' value='<<' onclick='prevChart(\"frameChartSetting\",\"stockSetting\")'/>  <input type='button' value='>>' onclick='nextChart(\"frameChartSetting\",\"stockSetting\")'/><iframe id='frameChartSetting' style=' border: 0px; width: 620px; height: 620px;' scrolling='no' src='frameChartSetting.html?stock=F.MI'></iframe>";
-			
+				//document.getElementById("contentwindow04").innerHTML = "&nbsp;&nbsp;<div style='top:-3px; left:5px'><input type='text' id='stockSetting' name='stock' value='F_IM'/></div><div style='top:-3px; left:160px;'><img title='analyzed stock' src='img/chart_analyzed.png' width='28px' heigth='28px' style='cursor:pointer;' onclick='showChartStock(\"frameChartSetting\",\"stockSetting\",document.all.stockSetting.value)'/>&nbsp;&nbsp;&nbsp;<img title='chart stock' src='img/chart_stock.png' width='28px' heigth='28px' style='cursor:pointer;' onclick='changeChart(\"frameChartStock\",\"stockChart\")'/></div><iframe id='frameChartSetting' style=' border: 0px; width: 620px; height: 620px;' scrolling='no' src='frameChartSetting.html?stock=F.IM'></iframe>";
+				document.getElementById("contentwindow04").innerHTML = "&nbsp;&nbsp;<div style='top:-3px; left:5px'><input type='text' id='stockSetting' name='stock' value='F_IM'/></div><div style='top:-3px; left:160px;'><img title='analyzed stock' src='img/chart_analyzed.png' width='28px' heigth='28px' style='cursor:pointer;' onclick='changeChart(\"frameChartSetting\",\"stockSetting\")'/>&nbsp;&nbsp;&nbsp;<img title='chart stock' src='img/chart_stock.png' width='28px' heigth='28px' style='cursor:pointer;' onclick='showChartStock(\"frameChartStock\",\"stockChart\",document.all.stockSetting.value)'/>&nbsp;<img src='img/set_date.png' width='28px' heigth='28px' style='cursor:pointer;' onclick='chartStockChartSimulated.zoom();chartStockSimulated.zoom();'/>&nbsp;&nbsp;&nbsp;&nbsp;<img src='img/back.png' width='26px' heigth='26px' style='cursor:pointer;' onclick='chartStockChartSimulated.prevDay();chartStockSimulated.prevDay();'/>&nbsp;&nbsp;<img src='img/next.png' width='26px' heigth='26px' style='cursor:pointer;' onclick='chartStockChartSimulated.nextDay();chartStockSimulated.nextDay();showNextPerformance();'/></div><iframe id='frameChartSetting' name='frameChartSetting' style=' border: 0px; width: 620px; height: 620px;' scrolling='no' src='frameChartSetting.html?stock=F.IM'></iframe>";
+				document.getElementById("contentwindow05").innerHTML = "&nbsp;&nbsp;<img src='img/performance.png' width='32px' height='32px' style='position:absolute; cursor:pointer; top:-10px;' onclick='changeFrame(\"frameMenuMain\",\"menuMain\")'/><input type='text' id='menuMain' name='menuMain' style='position:absolute; width:75px; top:-6px; left:50px'/>	<img src='img/ical.png' width='30px' height='30px' style='position:absolute; cursor:pointer; top:-12px; left:130px;' onclick='setAddDate(\"menuMain\",\"labelMenuMain\"); changeFrame(\"frameMenuMain\",\"menuMain\")'/>  <span id='labelMenuMain' style='position:absolute; left:170px; top:-6px '></span><iframe id='frameMenuMain' style=' border: 0px; width: 725px; height: 620px;' scrolling='no' src='/stockblog/pages/menuMain.jsp?date=20100904'></iframe>";
+				document.getElementById("contentwindow06").innerHTML = "&nbsp;&nbsp;<img src='img/performance.png' width='32px' height='32px' style='position:absolute; cursor:pointer; top:-10px;' onclick='changeFrame(\"frameMenuPerformance\",\"menuPerformance\")'/><input type='text' id='menuPerformance' name='menuPerformance' style='position:absolute; width:75px; top:-6px; left:50px' value='20100904'/>	<img src='img/ical.png' width='30px' height='30px' style='position:absolute; cursor:pointer; top:-12px; left:130px;' onclick='setAddDate(\"menuPerformance\",\"labelMenuPerformance\"); changeFrame(\"frameMenuPerformance\",\"menuPerformance\");'/> <span id='labelMenuPerformance' style='position:absolute; left:170px; top:-6px '></span><iframe id='frameMenuPerformance' style=' border: 0px; width: 725px; height: 620px;' scrolling='no' src='/stockblog/pages/menuPerformance.jsp?date=20100904'></iframe>";
+				document.getElementById("contentwindow07").innerHTML = "<iframe name='framePerformanceTicket' style=' border: 0px; width: 344px; height: 300px;' scrolling='no' src='/stockblog/pages/performanceTicket.jsp'></iframe>";
+				document.getElementById("contentwindow08").innerHTML = "<iframe name='frameMenuNotes' style=' border: 0px; width: 725px; height: 620px;' scrolling='no' src='/stockblog/pages/menuNotes.jsp'></iframe>";
+
 				document.getElementById("window0").style.visibility = "hidden"; 
 				document.getElementById("window01").style.visibility = "hidden"; 
 				document.getElementById("window02").style.visibility = "hidden"; 
 				document.getElementById("window03").style.visibility = "hidden"; 
 				document.getElementById("window04").style.visibility = "hidden"; 
-				//CandleTypeBean.getListData(handleGetDataCandleType); 	
+				document.getElementById("window05").style.visibility = "hidden"; 
+				document.getElementById("window06").style.visibility = "hidden"; 
+				document.getElementById("window07").style.visibility = "hidden"; 
+				document.getElementById("window08").style.visibility = "hidden"; 
 
+				//CandleTypeBean.getListData(handleGetDataCandleType); 	
+				setCurrDate("menuMain","labelMenuMain");
+				setCurrDate("menuPerformance","labelMenuPerformance");
+		}
+
+		function showNextPerformance(){
+	    document.getElementById("menuPerformance").value = chartStockSimulated.getDate();
+	    document.getElementById("labelMenuPerformance").innerHTML = utils.descrDayWeek(chartStockSimulated.getDate());
+			changeFrame("frameMenuPerformance","menuPerformance");
 		}
 		
-		
-// -------------------- TEST ----------------------		
-		function show(){
-			alert("OBAAAA !!!!");
+		function showPerformanceTicket(){
+				top.document.getElementById('window07').style.visibility = 'visible';
+		  	top.frames.framePerformanceTicket.addResult(document.getElementById("stockChart").value,chartStockSimulated.getDate(),"1000","","","");
 		}
+
+		function setAddDate(object,label){
+		  var data = document.getElementById(object).value;
+		   var newdate = utils.addDay(data);
+		   while(utils.isDayWeekend(newdate)==true){
+					newdate = utils.addDay(newdate);
+		   }
+		   document.getElementById(object).value = newdate;
+		   document.getElementById(label).innerHTML = utils.descrDayWeek(newdate);
+		}
+
+		function setCurrDate(object,label){
+			   var newdate = utils.currDate();
+			   while(utils.isDayWeekend(newdate)==true){
+						newdate = utils.rmDay(newdate);
+			   }
+			   document.getElementById(object).value = newdate;
+			   document.getElementById(label).innerHTML = utils.descrDayWeek(newdate);
+		}
+
 		var Desktop = function(){
-		
 				this.setVisibleWindow = function(object){
 					document.getElementById(object).style.visibility = "visible"; 
 				}
-		
 		}
-		
+
 		desktop = new Desktop();
+
 	  init();
-				
-				
-				
+
   </script>
+
 </html>
+

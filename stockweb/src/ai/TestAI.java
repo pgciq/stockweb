@@ -23,9 +23,9 @@ public class TestAI {
 	
 /*	public static void main(String args[]){
 		System.getProperties().put("proxyPort","80");
-	    System.getProperties().put("proxyHost","proxypac.sisal.it");
+	    System.getProperties().put("proxyHost","proxypac.xxxx.it");
 	    System.getProperties().put("username","rocha");
-	    System.getProperties().put("password","humberto12");
+	    System.getProperties().put("password","12345678");
 		
 		TestAI ai = new TestAI();
 	}
@@ -63,10 +63,10 @@ public class TestAI {
 				env.updateViews("{symbol:"+tokenStock.nextToken()+", filename:COTAHIST_A2009.TXT, interval:"+interval+", filterDI:"+filterDI+", filterDF:"+filterDF+"}");
 
 				env.step("web");
-				System.out.println("Stock = " + propStocks.getProperty(stock) + " | " + env.getResponseAgents("CandlestickAgent"));
+/*				System.out.println("Stock = " + propStocks.getProperty(stock) + " | " + env.getResponseAgents("CandlestickAgent"));
 				System.out.println(">>>>>>> " + getResponseAgents("HistoryStocksAgent"));
 				System.out.println(">>>>>>> BollingerAgent = " + getResponseAgents("BollingerAgent"));
-
+*/
 			}
 			
 			
@@ -83,7 +83,7 @@ public class TestAI {
 			ex.printStackTrace();
 			System.out.println("ERROR : " + ex.getMessage());
 		}
-		System.out.println("##### " + (new Date()));
+//		System.out.println("##### " + (new Date()));
 		
 	}
 
@@ -108,7 +108,7 @@ public class TestAI {
 			ex.printStackTrace();
 			System.out.println("ERROR : " + ex.getMessage());
 		}
-		System.out.println("##### " + (new Date()));
+		//System.out.println("##### " + (new Date()));
 		
 	}
 

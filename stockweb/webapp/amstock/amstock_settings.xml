@@ -54,7 +54,14 @@
   
   <!-- [150] (Number) Width of a legend in case it is positioned to the left or right -->
   <legend_width></legend_width>
+    
+  <!-- [false] (true / false) Whether hand and resize cusrsors should be used. -->
+  <disable_custom_cursors></disable_custom_cursors>
   
+  <!-- [false] (true / false) This setting affects the chart only if your data contains minutes or seconds.
+  If this is set to false, the chart will try to group data to 10 and 30 sec or min intervals. Otherwise 
+  the chart will group to full perios only (seconds -> minutes -> hours...) -->
+  <group_to_full_periods_only></group_to_full_periods_only>
   
   <data_reloading>
     <!-- [0] (Number) In case you want chart's data to be reloaded at some interval, set number
@@ -143,6 +150,11 @@
        You can also include the events directly to this settings file. If you do this, the events
        from the file will not be loaded. -->
        <events_file_name></events_file_name>
+       
+       <!-- [] (file name) Name of file with trend lines xml. You can also include the trend lines
+       directly to this settings file. If you do this, the trend lines from the file will not be 
+       loaded. Check trend_lines.xml file for the trend line xml structure -->
+       <trend_lines_file_name></trend_lines_file_name>       
       
        <!-- [true] (true / false) if you have more then one data set, the user can switch between
        them using drop down for selecting data sets. If you don;t want this data set to appear in 
@@ -170,6 +182,11 @@
          <!-- [0] (Number) In case you have some header in your csv file, or you have some rows
          which shouldn't be included, you can set how many rows should be skipped -->
          <skip_first_rows></skip_first_rows>
+         
+         <!-- [] some csv files contains double quotes, or numbers are exported with thousands separators.
+         The data parser of stock chart can't parse such numbers. This setting will help you to get rid
+         of unnecessary symbols. Simply add them (do not separate in any way) here. -->
+         <strip_symbols></strip_symbols>         
          
          <!-- [0] (Number) You can set how many rows from the bottom of data csv should be skipped -->         
          <skip_last_rows></skip_last_rows>
@@ -204,6 +221,11 @@
        <!-- EVENTS can be included here or loaded form a separate XML file. To check events syntax,
        open events.xml file -->
        <events></events>
+       
+       <!-- TREND LINES can be included here or loaded form a separate XML file. To check trend lines 
+       XML syntax, open trend_lines.xml file -->
+       <trend_lines></trend_lines> 
+             
     </data_set>
     <!-- end of first data set-->
     
@@ -379,6 +401,11 @@
           values in data file represents seconds, set "ss" here.-->
           <duration></duration>  
           
+          <!-- [false] (true / false) specifies whether this value axis should use logarithmic scale.
+          Note, your data can't contain values less or equal to zero if you use logarithmic scale. 
+          When data sets are compared and values are recalculated to percents, logarithmic scale is not used-->
+          <logarithmic></logarithmic>            
+          
         </y_left>
         
         <!-- y_right settings are identical to y_left -->        
@@ -400,7 +427,8 @@
       	     <data></data>      	  
       	     <percents></percents>
           </digits_after_decimal>
-          <duration></duration>                 
+          <duration></duration> 
+          <logarithmic></logarithmic>                
         </y_right>
       </values>
       <!-- END OF VALUES -->
@@ -451,6 +479,10 @@
         <!-- [100] (0 - 100) When the user rolls-over a legend entry key, the other graphs will
         fade to this setting so that the rolled over graph would be more visible. 10-20 is recommended  -->
         <fade_others_to></fade_others_to>
+        
+        <!-- [false] (true / false) Specifies if the balloon with data set title will be shown when user
+        rolls-over the legend entry -->
+        <show_balloon></show_balloon>
       </legend>
       <!-- END OF LEGEND -->
        	
@@ -503,6 +535,9 @@
         <!-- [true] (true / false) Whether to show balloon with description on roll-over the flag or not.  -->
         <show_balloon></show_balloon>
         
+        <!-- [true] (true / false) Whether to show date of the event in the balloon.  -->
+        <show_date></show_date>        
+        
         <!-- [false] (true / false) Whether to change mouse cursor to hand on roll-over or not. -->
         <use_hand_cursor>true</use_hand_cursor>
         
@@ -540,6 +575,33 @@
         <hide_period></hide_period>
       </events>      
        	
+      <!-- Chart users can have a possibility to draw trend lines on a chart. -->
+      <trend_lines>
+        <!-- [false] (true / false) If drawing trend lines is enabled, user will see two icons - 
+        a pencil and eraser on top right corner of a chart. -->
+        <drawing_enabled></drawing_enabled>
+        
+        <!-- [#000000] (hex code) color of mouse pointer which is visible when pencil icon is pressed -->
+        <pointer_color></pointer_color>
+        
+        <!-- [#CC0000] (hex code) color of a line while drawing it -->
+        <active_line_color></active_line_color>
+        
+        <!-- [#00CC00] (hex code) color of trend lines -->
+        <line_color></line_color>
+        
+        <!-- [100] (0 - 100) opacity of trend lines -->
+        <line_alpha></line_alpha>
+        
+        <!-- [0] (Number) trend line thickness -->
+        <line_width></line_width>
+        
+        <!-- [0] (Number) the length of a dash -->
+        <dash_length></dash_length>
+        
+        <!-- [left] (left / right) axis of the chart to which trend lines will be assigned -->
+        <axis></axis>
+      </trend_lines>
       
       <!-- [90] (0 - 100) if you have "column", "candlestick" or "ohlc" graphs, you should set 
       relative width of a column. If your setting <equal_spacing> is set to false, it would be
@@ -613,7 +675,10 @@
   				<fill_alpha></fill_alpha>
   				
           <!-- [false] (true / false) whether the graph should be dashed -->
-          <dashed></dashed>  				
+          <dashed></dashed>  	
+          
+          <!-- [0] (Number, Number%) corner radius of the columns -->
+          <corner_radius></corner_radius>			
   				
   				<!-- [] (round / square / round_outline / square_outline / round_outlined / square_outlined 
           only "line" and "step" graph types can have bullets -->
@@ -664,8 +729,14 @@
            If you want to show percent change of a value use the following syntax:
            {close.percents}
            
-           If you want to show value change, use:
+           If you want to show percent change of a value comparing to a previous value, use:
+           {close.percents.single}           
+           
+           If you want to show value change since the beginning of selection, use:
            {close.change}
+           
+           If you want to show value change comparing with previous value, use:
+           {close.change.single}           
            
            Note, that the legend is not wrapped, so you should think about the length of your legend       
            -->  				
@@ -690,7 +761,7 @@
             </digits_after_decimal>                 
           </legend>
   			</graph>  			
-  		</graphs>
+  		</graphs>  
   	</chart>  
     <!-- end of first chart -->
     
@@ -718,6 +789,7 @@
           <dashed></dashed>
           <dash_length></dash_length>
           <approx_count>3</approx_count>
+          <logarithmic></logarithmic>
         </y_left>
 
         <y_right>
@@ -726,7 +798,8 @@
           <alpha></alpha>
           <dashed></dashed>    
           <dash_length></dash_length>  
-          <approx_count></approx_count>    
+          <approx_count></approx_count>
+          <logarithmic></logarithmic>    
         </y_right>    
       </grid>	
 
@@ -774,7 +847,33 @@
         <recalculate></recalculate>
         <width></width>
         <alpha></alpha>
-      </comparing>
+      </comparing>  
+      
+      <events>
+        <show_balloon></show_balloon>
+        <show_date></show_date>        
+        <use_hand_cursor></use_hand_cursor>
+        <url_target></url_target>
+        <bullet></bullet>
+        <color></color>
+        <color_hover></color_hover>        
+        <border_color></border_color>
+        <border_alpha></border_alpha>        
+        <text_color></text_color>
+        <size></size>
+        <hide_period></hide_period>
+      </events>      
+       	
+      <trend_lines>
+        <drawing_enabled></drawing_enabled>
+        <pointer_color></pointer_color>
+        <active_line_color></active_line_color>
+        <line_color></line_color>
+        <line_alpha></line_alpha>
+        <line_width></line_width>
+        <dash_length></dash_length>
+        <axis></axis>
+      </trend_lines>      
        	
       <column_width>0</column_width>
   		<graphs>
@@ -823,6 +922,10 @@
   so you will be able to display milliseconds like: 55.1 instead of 55.100 -->
   
   <date_formats>
+  
+    <!-- [1] (0 - 6) the day when week starts. 0 - Sunday, 1 - Monday, 2 - Tuesday.... -->
+    <first_week_day></first_week_day>
+  
     <!-- [24] (12 / 24) The time in the legend and x axis might be displayed using 12 or 24 hour format -->
     <hour_format></hour_format>        
     
@@ -891,6 +994,11 @@
     <!-- [text_color] (hex code) -->
     <text_color></text_color>
     
+    <!-- [] ({title} {short} {description}) Sometimes data set title doesn't fit in the dropdown. If you set a
+    value like {title} here, the roll-over balloon will display full title so users could read it. You can also
+    display short title and description in this balloon -->
+    <balloon_text></balloon_text>
+        
     <!-- [3] (Number) in order to avoid mess, you can limit max number of data 
     sets selected for comparing at a time -->
     <max_comparing_count></max_comparing_count>
@@ -964,11 +1072,17 @@
     <text_size></text_size>
     
     <!-- [text_color] (hex code) -->
-    <text_color></text_color>   
+    <text_color></text_color>
+    
+    <!-- [true] (true / false) whether to hide predefined periods if there is no data for such period -->
+    <hide_longer_periods></hide_longer_periods>   
     
     <button>
       <!-- [#FFFFFF] (hex code) -->
       <bg_color></bg_color>
+      
+      <!-- [100] (0 - 100) opacity of background -->
+      <bg_alpha></bg_alpha>      
       
       <!-- [#ABABAB] (hex code) -->
       <bg_color_hover></bg_color_hover>
@@ -1039,7 +1153,8 @@
       <period type="DD" count="10">10D</period>
     	<period type="MM" count="1">1M</period>
     	<period type="MM" count="3">3M</period>
-    	<period selected="true" type="YYYY" count="1">1Y</period>
+    	<period selected="true" type="MM" count="6">6M</period>
+    	<period type="YYYY" count="1">1Y</period>
     	<period type="YYYY" count="3">3Y</period>
     	<period type="YTD" count="0">YTD</period>
     	<period type="MAX">MAX</period>
@@ -1241,7 +1356,12 @@
     <resize_button_color></resize_button_color>
     
     <!-- [#000000] (hex code) -->
-    <resize_pointer_color></resize_pointer_color>    
+    <resize_pointer_color></resize_pointer_color> 
+    
+    <!-- [false] (true / false) If you set it to true, the chart will not update while dragging or resizing 
+    scrollbar, but do this only when you release mouse button. This is useful if you work with large data 
+    sets and want to make your chart work faster.  -->
+    <update_on_release_only></update_on_release_only>   
     
     <grid>
       <!-- [true] (true / false) -->
@@ -1360,7 +1480,9 @@
     <!-- [Collecting data] (text) -->    
     <collecting_data></collecting_data>
     <!-- [No data] (text) -->  
-    <no_data></no_data>        
+    <no_data></no_data>  
+    <!-- [Logarithmic axis can't display values less or equal zero] (text) -->  
+    <logarithm_scale_error></logarithm_scale_error>            
     
     <!-- In case your axis values display duration instead of numbers, these units
     will be used to format duration -->
@@ -1414,6 +1536,6 @@
     <text_color></text_color>
     <!-- [text_size] (Number)-->       
     <text_size></text_size>       
-  </error_messages>  
+  </error_messages>   
   
 </settings>

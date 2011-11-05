@@ -53,6 +53,20 @@ public class DBEnvironmentView implements EnvironmentView {
 
 			List<QuoteVO> quoteVO = applyParameters(json);
 
+			if (firstRecord) {
+				stock = new Stock();
+				stock.setCodneg((String) json.get("symbol"));
+				stock.setDataPregao(getLastData(quoteVO.get(0).getDate()));
+				stock.setPreabe(quoteVO.get(0).getClose());
+				stock.setPremax(quoteVO.get(0).getClose());
+				stock.setPremin(quoteVO.get(0).getClose());
+				stock.setPreult(quoteVO.get(0).getClose());
+				stock.setVoltot(quoteVO.get(0).getVolume());
+				lsStocks.add(stock);
+				stock = new Stock();
+				firstRecord = false;
+			}
+
 			for (int x = 0; x < quoteVO.size(); x++) {
 				stock = new Stock();
 				stock.setCodneg((String) json.get("symbol"));
