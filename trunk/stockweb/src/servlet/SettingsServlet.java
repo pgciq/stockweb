@@ -10,6 +10,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import persistence.dao.ResourcesEngineDAO;
+
 import settings.ChartInterface;
 import settings.ChartInterfaceDynamic;
 
@@ -44,17 +46,17 @@ public class SettingsServlet extends HttpServlet {
 	public void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
 		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
-
+		
 		Map<String, String> mapParameters = new HashMap<String, String>();
 		mapParameters.put("stock", request.getParameter("stock"));
 		if((request.getParameter("chart") != null) && (request.getParameter("chart").equals("dynamic"))){
 			String strategyName = request.getParameter("strategyname");
-			String pathname = this.getServletContext().getRealPath("/") + "resources\\templates\\";
-			ChartInterfaceDynamic chartInterface = new ChartInterfaceDynamic(pathname, strategyName, mapParameters);
+//			String pathname = this.getServletContext().getRealPath("/") + "resources\\templates\\";
+			ChartInterfaceDynamic chartInterface = new ChartInterfaceDynamic("templates_", strategyName, mapParameters);
 			out.println(chartInterface.loadSettings());
 		}else{			
-			String pathname = this.getServletContext().getRealPath("/") + "resources\\";
-			ChartInterface chartInterface = new ChartInterface(pathname, mapParameters);
+//			String pathname = this.getServletContext().getRealPath("/") + "resources\\";
+			ChartInterface chartInterface = new ChartInterface("", mapParameters);
 			out.println(chartInterface.loadSettings());
 		}
 		

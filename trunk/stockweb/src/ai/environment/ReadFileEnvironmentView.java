@@ -26,7 +26,7 @@ public class ReadFileEnvironmentView implements EnvironmentView {
 	}
 
 	public Percept envChanged(String command) {
-		System.out.println("Class: " + this.getClass() + " - param: " + command);
+//		System.out.println("Class: " + this.getClass() + " - param: " + command);
 		int index = 0;
 		boolean register = false;
 		ArrayList<Stock> lsStocks = new ArrayList();

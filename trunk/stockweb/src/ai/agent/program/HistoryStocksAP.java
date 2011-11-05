@@ -74,6 +74,7 @@ public class HistoryStocksAP extends AgentProgram {
 		String token = "";
 		// Devo converter o resultado do history em json, mas possui mais de um
 		// record.
+//		history = History.getQuoteHistory(stockcod);
 		for (int i = 0; i < history.getSize(); i++) {
 			priceBar = history.getPriceBar(i);
 			result += token + "{open:" + priceBar.getOpen() + "," + " close:"

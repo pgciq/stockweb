@@ -51,8 +51,8 @@ public class BollingerAgent extends Agent{
 		middle = Double.parseDouble(token.nextToken());
 		upper = Double.parseDouble(token.nextToken());
 */
-		System.out.println("upper = " + upper + "\n" + "lower = " + lower);
-		System.out.println("\n Percentual : " + (((upper / lower) * 100) - 100) + " %");
+//		System.out.println("upper = " + upper + "\n" + "lower = " + lower);
+//		System.out.println("\n Percentual : " + (((upper / lower) * 100) - 100) + " %");
 		
 		double premin = ((BandsBollingerAP)super.program).history.getLastPriceBar().getLow();
 		double premax = ((BandsBollingerAP)super.program).history.getLastPriceBar().getHigh();

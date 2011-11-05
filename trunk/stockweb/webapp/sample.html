@@ -1,0 +1,241 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml2/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+    <head>
+		<!--script type="text/javascript" src="../lib/framework.js"></script-->
+
+        <style type="text/css">
+            
+            .menuitems {
+                margin: 5px 0;
+                padding: 0;
+                width: 705px; /*width of menu*/
+                border: 1px solid #9A9A9A;
+                border-bottom-width: 0;
+            }
+            
+            .menuitems a.item {
+                background: black url(img/glossyback.gif) repeat-x bottom left;
+                font: bold 11px Verdana, "Lucida Grande", "Trebuchet MS", Helvetica, sans-serif;
+                color: white;
+                display: block;
+                position: relative; /*To help in the anchoring of the ".statusicon" icon image*/
+                width: auto;
+                padding: 5px 0;
+                padding-left: 10px;
+                text-decoration: none;
+            }
+            
+            .menuitems a.item:visited, .menuitems .item:active {
+                color: white;
+            }
+            
+            .menuitems a.item .statusicon { /*CSS for icon image that gets dynamically added to headers*/
+                position: absolute;
+                top: 4px;
+                right: 5px;
+                border: none;
+            }
+            
+            .menuitems a.item:hover {
+                background-image: url(img/glossyback2.gif);
+            }
+            
+            .menuitems div.submenu { /*DIV that contains each sub menu*/
+                background: white;
+            }
+            
+            .menuitems div.submenu ul { /*UL of each sub menu*/
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+            
+            .menuitems div.submenu ul li {
+                border-bottom: 1px solid blue;
+            }
+            
+            .menuitems div.submenu ul li a {
+                display: block;
+                font: normal 10px Verdana, Helvetica, sans-serif;
+                color: black;
+                text-decoration: none;
+                padding: 2px 0;
+                padding-left: 10px;
+            }
+            
+            .menuitems div.submenu ul li a:hover {
+                background: #DFDCCB;
+                color: white;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="menuitems">
+            <a id="menuitem0" class="item submenuheader">Ordine di apertura</a>
+            <div id="submenuitem0" style="height:300px; width:500px; status:'close'; diffHeight:0;" class="submenu">
+                <ul>
+                    <li>
+
+					</li>
+                </ul>
+            </div>
+            <a id="menuitem1" class="item submenuheader">Posizioni aperte</a>
+            <div id="submenuitem1" style="height:300px; width:500px; status:'close'; diffHeight:0;" class="submenu">
+                <ul>
+                    <li>
+                        <a href="http://www.cssdrive.com">CSS Gallery</a>
+                    </li>
+                </ul>
+            </div>
+            <a id="menuitem2" class="item submenuheader">Operazioni</a>
+            <div id="submenuitem2" style="height:300px; width:500px; status:'close'; diffHeight:0;" class="submenu">
+                <ul>
+                    <li>
+                        <a href="http://www.cssdrive.com">CSS Gallery</a>
+                    </li>
+                </ul>
+            </div>
+            <a id="menuitem3" class="item submenuheader">Ticker</a>
+            <div id="submenuitem3" style="height:300px; width:500px; status:'close'; diffHeight:0;" class="submenu">
+                <ul>
+                    <li>
+                        <a href="http://www.cssdrive.com">Ticker</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+		<br>
+		<div style="position:absolute; top:200px; left:200px">
+		<span id="log"/>
+		</div>
+		
+<script>
+			
+Map = function(){
+    var keys = new Array();
+    var values = new Array();
+    this.get = function(key){
+        return values[keys.indexOf(key)];
+    }
+    this.elementAt = function(index){
+        return values[index];
+    }
+    this.listKeys = function(){
+        return keys;
+    }
+    this.put = function(key, value){
+        var index = keys.indexOf(key);
+        
+        if (index >= 0) {
+            values[index] = value;
+            return;
+        }
+        keys[keys.length] = key;
+        values[values.length] = value;
+    }
+    this.size = function(){
+        return keys.length;
+    }
+    
+    // tipo de formato: "str/str", "str/obj"
+    this.toString = function(format){
+        var delim = "";
+        var txt = "";
+        for (var i = 0; i < keys.length; i++) {
+            if (format == "str/obj") 
+                txt += delim + "\"" + keys[i] + "\":" + values[i];
+            else 
+                txt += delim + "\"" + keys[i] + ":" + values[i] + "\"";
+            
+            delim = ",";
+        }
+        return txt;
+    }
+    //bugfix - only IE not support indexOf
+}			
+
+			
+			this.properties = function(){
+				this.id = "";
+				this.task = null;
+				this.heightFix = 0;
+				this.diffHeight = 0;
+				this.status = "";
+				this.count = 0;
+			}
+
+			this.Effect = function(){
+				var item, differHeight, count;
+				var mapSubMenu = new Map();
+
+				this.addListener = function(element, event){
+					object = document.getElementById("sub"+element);
+					prop = new properties();
+					prop.id = "sub" + element; 
+					prop.heightFix = object.style["height"];
+					prop.diffHeight = (object.style["height"].replace("px","")) / 10;
+					mapSubMenu.put(object.id, prop);
+
+					document.getElementById(element)["onclick"] = function(){
+						var prop = mapSubMenu.get("sub" + this.id);
+						prop.status = (prop.status == "open")?"close": "open";
+						scroller(prop.id, prop.status);
+					};
+				}
+
+				function scroller(id, status){
+					var prop = mapSubMenu.get(id);
+					prop.diffHeight = document.getElementById(id).style.height.replace("px","") / 10;
+					item = document.getElementById(id).getElementsByTagName("li");
+					var func = "";
+					if (status == "open") {
+						prop.count = item.length;
+						func = "effect.scrollUp('"+id+"')";
+						prop.task = setInterval(func,30);						
+						return;
+					}
+					
+					prop.count = -1;
+					func = "effect.scrollDown('"+id+"')";
+					prop.task = setInterval(func,30);
+				}				
+				
+				this.scrollUp = function(id){
+					try{
+						var object = document.getElementById(id);
+						var prop = mapSubMenu.get(id);
+						prop.count--;
+						object.style.height = (object.style.height.replace("px","") - prop.diffHeight) + "px";
+						if (object.style.height.replace("px","") <= 0) {
+							clearInterval(prop.task);
+						}
+						item[prop.count].style.visibility = "hidden";
+					}catch(e){}
+				}
+
+				this.scrollDown = function(id){
+					try{
+						var object = document.getElementById(id);
+						var prop = mapSubMenu.get(id);
+						prop.count++;
+						object.style.height = (parseInt(object.style.height.replace("px","")) + 20) + "px";
+						if (object.style.height.replace("px","") >= 200) {
+							clearInterval(prop.task);
+						}
+						item[prop.count].style.visibility = "visible";
+					}catch(e){}
+				}
+			}
+
+
+			var effect = new Effect();			
+			effect.addListener("menuitem0", "onclick", "scroller()");
+			effect.addListener("menuitem1", "onclick", "scroller()");
+			effect.addListener("menuitem2", "onclick", "scroller()");
+			effect.addListener("menuitem3", "onclick", "scroller()");
+
+			
+		</script>
+    </body>
+</html>

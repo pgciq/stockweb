@@ -1,0 +1,5389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<palinsesto>
+	<ippica conc="2" cod="12776">
+		<ippodromi>
+			<ippodromo cod="7" tempo="VARIO" terreno="PESANTE">
+				<descrizione>WBG CURRAGH</descrizione>
+				<corse>
+					<corsa cod="53" numero="4" tipo="1" stato="2"
+						distanza="1400" montepremi="1050000" abilitaz="66117"
+						orario="03/05/2010 16:45">
+						<descrizione>CORSA 4</descrizione>
+						<premio>P.G.DUFFY &amp; SONS</premio>
+						<cavalli dichiarati="30" partenti="30">
+							<cavallo cod="23" stato="2" misure="5600"
+								rappscud=" " steccato="5" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>GRACCHUS</descrizione>
+								<fantino>F M BERRY</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="25" stato="2" misure="5600"
+								rappscud=" " steccato="27" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									COLLEGE SCHOLAR
+								</descrizione>
+								<fantino>J A HEFFERNAN</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="3" stato="2" misure="6000"
+								rappscud=" " steccato="20" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>RICHELIEU</descrizione>
+								<fantino>M HARLEY</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="7" stato="2" misure="6100"
+								rappscud=" " steccato="17" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									LORD RATHVINDEN
+								</descrizione>
+								<fantino>P SHANAHAN</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="2" stato="2" misure="6200"
+								rappscud=" " steccato="19" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>ANAM CHARA</descrizione>
+								<fantino>D MCDONOGH</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="16" stato="2" misure="5750"
+								rappscud=" " steccato="13" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									HERE NOW AND WHY
+								</descrizione>
+								<fantino>N G MCCULLAGH</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="17" stato="2" misure="5600"
+								rappscud=" " steccato="3" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									PARC AUX BOULES
+								</descrizione>
+								<fantino>S FOLEY</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="18" stato="2" misure="5650"
+								rappscud=" " steccato="9" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									BOOK OF NUMBERS
+								</descrizione>
+								<fantino>K J MANNING</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="4" stato="2" misure="6000"
+								rappscud=" " steccato="7" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>ZHUKHOV</descrizione>
+								<fantino>B A CURTIS</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="26" stato="2" misure="5100"
+								rappscud=" " steccato="21" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MUSICAL RAIN</descrizione>
+								<fantino>D E EGAN</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="10" stato="2" misure="6000"
+								rappscud=" " steccato="15" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									DAISY BUCHANAN
+								</descrizione>
+								<fantino>W J SUPPLE</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="22" stato="2" misure="5600"
+								rappscud=" " steccato="30" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>FANTASTIC DAY</descrizione>
+								<fantino>R P CLEARY</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="1" stato="2" misure="6200"
+								rappscud=" " steccato="10" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>SASSY GAL</descrizione>
+								<fantino>S M GOREY</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="20" stato="2" misure="5600"
+								rappscud=" " steccato="11" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>COOL STAR</descrizione>
+								<fantino>C O'DONOGHUE</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="12" stato="2" misure="6000"
+								rappscud=" " steccato="8" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									LIBERTY TO ROCK
+								</descrizione>
+								<fantino>C D HAYES</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="27" stato="2" misure="5550"
+								rappscud=" " steccato="2" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>AOIBHINN</descrizione>
+								<fantino>D M GRANT</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="15" stato="2" misure="5450"
+								rappscud=" " steccato="6" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									FLAMBOYANT ROUGE
+								</descrizione>
+								<fantino>K T O'NEILL</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="9" stato="2" misure="6100"
+								rappscud=" " steccato="14" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MISS EZE</descrizione>
+								<fantino>M C HUSSEY</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="13" stato="2" misure="5600"
+								rappscud=" " steccato="12" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									HE'S GOT RHYTHM
+								</descrizione>
+								<fantino>S JAMES</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="14" stato="2" misure="5800"
+								rappscud=" " steccato="26" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									WEALDMORE WAVE
+								</descrizione>
+								<fantino>J P MURTAGH</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="24" stato="2" misure="5500"
+								rappscud=" " steccato="16" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>SLAPPER</descrizione>
+								<fantino>P B BEGGY</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="6" stato="2" misure="5800"
+								rappscud=" " steccato="28" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									KING'S BASTION
+								</descrizione>
+								<fantino>T C CARROLL</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="19" stato="2" misure="5550"
+								rappscud=" " steccato="18" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>LITTLE BUG</descrizione>
+								<fantino>E J MCNAMARA</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="30" stato="2" misure="5400"
+								rappscud=" " steccato="24" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>KING OF ARAN</descrizione>
+								<fantino>K LATHAM</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="29" stato="2" misure="5400"
+								rappscud=" " steccato="23" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>CAMIRA</descrizione>
+								<fantino>D J MORAN</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="5" stato="2" misure="5800"
+								rappscud=" " steccato="29" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>KARDYLS HOPE</descrizione>
+								<fantino>L F ROCHE</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="8" stato="2" misure="5950"
+								rappscud=" " steccato="1" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									DESERT ROMANCE
+								</descrizione>
+								<fantino>G F CARROLL</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="11" stato="2" misure="5650"
+								rappscud=" " steccato="4" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>KILMANNIN</descrizione>
+								<fantino>D C BYRNE</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="21" stato="2" misure="5300"
+								rappscud=" " steccato="22" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>DAINTY STEPS</descrizione>
+								<fantino>R D EGAN</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="28" stato="2" misure="5450"
+								rappscud=" " steccato="25" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									MAJESTIC PEARL
+								</descrizione>
+								<fantino>P J SMULLEN</fantino>
+								<note></note>
+							</cavallo>
+						</cavalli>
+					</corsa>
+					<corsa cod="56" numero="7" tipo="1" stato="2"
+						distanza="3200" montepremi="2800000" abilitaz="66117"
+						orario="03/05/2010 18:15">
+						<descrizione>CORSA 7</descrizione>
+						<premio>ROCKVIEW</premio>
+						<cavalli dichiarati="15" partenti="14">
+							<cavallo cod="15" stato="2" misure="6600"
+								rappscud=" " steccato="0" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>VALLEYMOUNT</descrizione>
+								<fantino>MR P ROCHE</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="7" stato="2" misure="7000"
+								rappscud=" " steccato="0" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									BETWEEN ME AND YOU
+								</descrizione>
+								<fantino>MR P MAGEE</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="6" stato="2" misure="7500"
+								rappscud=" " steccato="0" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									PRINCE OF PIRATES
+								</descrizione>
+								<fantino>MR J P MAGNIER</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="13" stato="2" misure="6600"
+								rappscud=" " steccato="0" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>MASSYOUN</descrizione>
+								<fantino>MR PAUL J MCMAHON</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="14" stato="3" misure="6600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MAYTIDE</descrizione>
+								<fantino>MISS E DONNELLY</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="1" stato="2" misure="7600"
+								rappscud=" " steccato="0" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									ENDLESS INTRIGUE
+								</descrizione>
+								<fantino>MR R P MCNAMARA</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="12" stato="2" misure="6600"
+								rappscud=" " steccato="0" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>GUN BARRELL</descrizione>
+								<fantino>MR P T FOLEY</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="2" stato="2" misure="7150"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									DIAMOND'S RETURN
+								</descrizione>
+								<fantino>MR C FAHY</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="3" stato="2" misure="7150"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>FOILDUBH</descrizione>
+								<fantino>MISS G RYAN</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="8" stato="2" misure="7000"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									FAMOUS LAST WORDS
+								</descrizione>
+								<fantino>MR T J BEATTIE</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="4" stato="2" misure="7500"
+								rappscud=" " steccato="0" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									NOT FOR CONVERTING
+								</descrizione>
+								<fantino>MR P W MULLINS</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="10" stato="2" misure="7050"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>SHOP DJ</descrizione>
+								<fantino>MR M FAHEY</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="5" stato="2" misure="7350"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>OLD MCDONALD</descrizione>
+								<fantino>MR A T DUFF</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="11" stato="2" misure="6750"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									POINT THE TOES
+								</descrizione>
+								<fantino>MISS C L FAHEY</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="9" stato="2" misure="7000"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>SHEER GENIUS</descrizione>
+								<fantino>MR D SKEHAN</fantino>
+								<note></note>
+							</cavallo>
+						</cavalli>
+					</corsa>
+					<corsa cod="52" numero="3" tipo="1" stato="2"
+						distanza="1400" montepremi="7500000" abilitaz="66117"
+						orario="03/05/2010 16:15">
+						<descrizione>CORSA 3</descrizione>
+						<premio>ORATORIO</premio>
+						<cavalli dichiarati="12" partenti="12">
+							<cavallo cod="10" stato="2" misure="5600"
+								rappscud=" " steccato="9" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									LOLLY FOR DOLLY
+								</descrizione>
+								<fantino>W M LORDAN</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="5" stato="2" misure="5600"
+								rappscud=" " steccato="5" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									DUCHESS OF FOXLAND
+								</descrizione>
+								<fantino>E J MCNAMARA</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="11" stato="2" misure="5600"
+								rappscud=" " steccato="10" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									MISS LAA DI DA
+								</descrizione>
+								<fantino>P J SMULLEN</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="6" stato="2" misure="5600"
+								rappscud=" " steccato="7" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>FAMOUS</descrizione>
+								<fantino>J P MURTAGH</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="12" stato="2" misure="5600"
+								rappscud=" " steccato="3" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>QUEEN OF TROY</descrizione>
+								<fantino>J A HEFFERNAN</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="1" stato="2" misure="6250"
+								rappscud=" " steccato="6" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>POLLEN</descrizione>
+								<fantino>W J LEE</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="2" stato="2" misure="6100"
+								rappscud=" " steccato="1" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>HARRIERS CALL</descrizione>
+								<fantino>K LATHAM</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="9" stato="2" misure="5600"
+								rappscud=" " steccato="11" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>JAMAAYEL</descrizione>
+								<fantino>D MCDONOGH</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="7" stato="2" misure="5600"
+								rappscud=" " steccato="12" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>FULL OF HOPE</descrizione>
+								<fantino>C O'DONOGHUE</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="3" stato="2" misure="6100"
+								rappscud=" " steccato="4" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>LATIN LOVE</descrizione>
+								<fantino>F M BERRY</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="8" stato="2" misure="5600"
+								rappscud=" " steccato="2" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>GOLD BUBBLES</descrizione>
+								<fantino>K J MANNING</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="4" stato="2" misure="6100"
+								rappscud=" " steccato="8" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MONIVEA</descrizione>
+								<fantino>C D HAYES</fantino>
+								<note></note>
+							</cavallo>
+						</cavalli>
+					</corsa>
+					<corsa cod="57" numero="8" tipo="1" stato="2"
+						distanza="1400" montepremi="1250000" abilitaz="66117"
+						orario="03/05/2010 18:45">
+						<descrizione>CORSA 8</descrizione>
+						<premio>KEADEEN HOTEL</premio>
+						<cavalli dichiarati="30" partenti="30">
+							<cavallo cod="10" stato="2" misure="5600"
+								rappscud=" " steccato="28" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>CAVE ARTIST</descrizione>
+								<fantino>S M MCGUINNESS</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="19" stato="2" misure="5700"
+								rappscud=" " steccato="5" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>DERVAL</descrizione>
+								<fantino>R P CLEARY</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="13" stato="2" misure="5800"
+								rappscud=" " steccato="2" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MUTUAL BOND</descrizione>
+								<fantino>G F CARROLL</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="4" stato="2" misure="5950"
+								rappscud=" " steccato="9" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>BROCKOVICH</descrizione>
+								<fantino>S JAMES</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="15" stato="2" misure="5950"
+								rappscud=" " steccato="23" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>ROMAN FORT</descrizione>
+								<fantino>P J SMULLEN</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="14" stato="2" misure="5950"
+								rappscud=" " steccato="12" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>ROCK MEDLEY</descrizione>
+								<fantino>K J MANNING</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="5" stato="2" misure="5950"
+								rappscud=" " steccato="7" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>RED RIDDLE</descrizione>
+								<fantino>K T O'NEILL</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="6" stato="2" misure="6250"
+								rappscud=" " steccato="29" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>VIA BRANCA</descrizione>
+								<fantino>M C HUSSEY</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="28" stato="2" misure="5700"
+								rappscud=" " steccato="27" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>PERFECT PEARL</descrizione>
+								<fantino>N G MCCULLAGH</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="27" stato="2" misure="5400"
+								rappscud=" " steccato="15" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									MIRANDASSISTER
+								</descrizione>
+								<fantino>L F ROCHE</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="22" stato="2" misure="5700"
+								rappscud=" " steccato="30" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									GORGEOUS ANNIE
+								</descrizione>
+								<fantino>D J MORAN</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="29" stato="2" misure="5700"
+								rappscud=" " steccato="24" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>PERINO</descrizione>
+								<fantino>D MCDONOGH</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="30" stato="2" misure="5700"
+								rappscud=" " steccato="20" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>SHONGAREM</descrizione>
+								<fantino>W J SUPPLE</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="24" stato="2" misure="5700"
+								rappscud=" " steccato="11" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>JUST RIO</descrizione>
+								<fantino>W J LEE</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="11" stato="2" misure="5800"
+								rappscud=" " steccato="16" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									ENDLESS DEBATE
+								</descrizione>
+								<fantino>S FOLEY</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="1" stato="2" misure="6250"
+								rappscud=" " steccato="18" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>AISTEOIR</descrizione>
+								<fantino>B A CURTIS</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="8" stato="2" misure="5950"
+								rappscud=" " steccato="10" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>BENVENUTO</descrizione>
+								<fantino>J P MURTAGH</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="3" stato="2" misure="6500"
+								rappscud=" " steccato="25" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>WHISKEY TALK</descrizione>
+								<fantino>C O'DONOGHUE</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="2" stato="2" misure="6250"
+								rappscud=" " steccato="6" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									APOLLO SPRINGS
+								</descrizione>
+								<fantino>M HARLEY</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="7" stato="2" misure="5800"
+								rappscud=" " steccato="14" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									ACCIDENTAL OUTLAW
+								</descrizione>
+								<fantino>E J MCNAMARA</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="26" stato="2" misure="5400"
+								rappscud=" " steccato="4" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									MEMORIES OF YOU
+								</descrizione>
+								<fantino>M A ENRIGHT</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="18" stato="2" misure="5700"
+								rappscud=" " steccato="22" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>CNOCANDANCER</descrizione>
+								<fantino>W M LORDAN</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="23" stato="2" misure="5500"
+								rappscud=" " steccato="8" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>INDICATIVE</descrizione>
+								<fantino>M A CLEERE</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="20" stato="2" misure="5600"
+								rappscud=" " steccato="13" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>FEIS CEOIL</descrizione>
+								<fantino>P B BEGGY</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="21" stato="2" misure="5700"
+								rappscud=" " steccato="21" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>FINALSTAR</descrizione>
+								<fantino>K LATHAM</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="17" stato="2" misure="5950"
+								rappscud=" " steccato="26" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>WATERHOUSE</descrizione>
+								<fantino>C D HAYES</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="9" stato="2" misure="5950"
+								rappscud=" " steccato="3" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>BOOGANHAGEN</descrizione>
+								<fantino>D M GRANT</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="12" stato="2" misure="5950"
+								rappscud=" " steccato="17" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>LANDSDOWNE</descrizione>
+								<fantino>P SHANAHAN</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="16" stato="2" misure="5950"
+								rappscud=" " steccato="1" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>SLADE</descrizione>
+								<fantino>J A HEFFERNAN</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="25" stato="2" misure="5700"
+								rappscud=" " steccato="19" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>LISIANTHUS</descrizione>
+								<fantino>F M BERRY</fantino>
+								<note></note>
+							</cavallo>
+						</cavalli>
+					</corsa>
+					<corsa cod="55" numero="6" tipo="1" stato="2"
+						distanza="2000" montepremi="850000" abilitaz="66117"
+						orario="03/05/2010 17:45">
+						<descrizione>CORSA 6</descrizione>
+						<premio>NEWBRIDGE CREDIT</premio>
+						<cavalli dichiarati="29" partenti="25">
+							<cavallo cod="29" stato="12" misure="9900"
+								rappscud=" " steccato="99" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									ANDALUCIA LADY
+								</descrizione>
+								<fantino>R I S E R V A</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="17" stato="2" misure="5950"
+								rappscud=" " steccato="6" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>GAGNANT</descrizione>
+								<fantino>D MCDONOGH</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="5" stato="2" misure="6250"
+								rappscud=" " steccato="17" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>PREMIER ROUGE</descrizione>
+								<fantino>C O'DONOGHUE</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="8" stato="2" misure="6150"
+								rappscud=" " steccato="19" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>BALLADIENE</descrizione>
+								<fantino>W J SUPPLE</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="4" stato="2" misure="6050"
+								rappscud=" " steccato="2" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>KEY DECISION</descrizione>
+								<fantino>M HARLEY</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="27" stato="12" misure="9900"
+								rappscud=" " steccato="99" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MILL MOSS</descrizione>
+								<fantino>R I S E R V A</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="21" stato="2" misure="5750"
+								rappscud=" " steccato="4" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>HOLLY HILL</descrizione>
+								<fantino>N G MCCULLAGH</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="12" stato="2" misure="6100"
+								rappscud=" " steccato="1" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									STRATEGIC ALLIANCE
+								</descrizione>
+								<fantino>J A HEFFERNAN</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="9" stato="2" misure="6150"
+								rappscud=" " steccato="11" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>PAINTMAKER</descrizione>
+								<fantino>F M BERRY</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="14" stato="2" misure="6050"
+								rappscud=" " steccato="13" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									SANDYMOUNT LADY
+								</descrizione>
+								<fantino>K J MANNING</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="1" stato="3" misure="6000"
+								rappscud=" " steccato="14" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>HIGH QUEEN</descrizione>
+								<fantino>R D EGAN</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="15" stato="2" misure="5650"
+								rappscud=" " steccato="12" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>LAC A DANCER</descrizione>
+								<fantino>K T O'NEILL</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="19" stato="2" misure="5600"
+								rappscud=" " steccato="5" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>GIANT SLALOM</descrizione>
+								<fantino>B A CURTIS</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="3" stato="2" misure="6000"
+								rappscud=" " steccato="10" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>TRIKIRK</descrizione>
+								<fantino>J P O'BRIEN</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="16" stato="2" misure="6000"
+								rappscud=" " steccato="7" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>MAZARIS</descrizione>
+								<fantino>K LATHAM</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="7" stato="2" misure="6000"
+								rappscud=" " steccato="24" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>JACKS LAW</descrizione>
+								<fantino>M A CLEERE</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="26" stato="2" misure="5300"
+								rappscud=" " steccato="26" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>PHOENICIAN</descrizione>
+								<fantino>D J MORAN</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="18" stato="2" misure="5700"
+								rappscud=" " steccato="18" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>CHAMPION BOY</descrizione>
+								<fantino>G F CARROLL</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="23" stato="2" misure="5500"
+								rappscud=" " steccato="21" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>SOVENTO</descrizione>
+								<fantino>S M LEVEY</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="6" stato="2" misure="6200"
+								rappscud=" " steccato="25" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									IMPRUDENT MISS
+								</descrizione>
+								<fantino>C D HAYES</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="28" stato="12" misure="9900"
+								rappscud=" " steccato="99" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									AMERICAN PRINCESS
+								</descrizione>
+								<fantino>R I S E R V A</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="20" stato="2" misure="5750"
+								rappscud=" " steccato="22" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>DANZA NERA</descrizione>
+								<fantino>M C HUSSEY</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="10" stato="2" misure="6100"
+								rappscud=" " steccato="23" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									LIZZIE BENNETT
+								</descrizione>
+								<fantino>R P CLEARY</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="11" stato="2" misure="6100"
+								rappscud=" " steccato="8" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>LUNDGREN</descrizione>
+								<fantino>P J SMULLEN</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="25" stato="2" misure="5650"
+								rappscud=" " steccato="9" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>QUARTON</descrizione>
+								<fantino>W J LEE</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="22" stato="2" misure="5750"
+								rappscud=" " steccato="20" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>LEAH CLAIRE</descrizione>
+								<fantino>D M GRANT</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="13" stato="2" misure="6100"
+								rappscud=" " steccato="16" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>TAJWEED</descrizione>
+								<fantino>J P MURTAGH</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="24" stato="2" misure="5650"
+								rappscud=" " steccato="15" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>COOLNAHARAN</descrizione>
+								<fantino>P SHANAHAN</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="2" stato="2" misure="6150"
+								rappscud=" " steccato="3" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>HIGH TREASON</descrizione>
+								<fantino>S FOLEY</fantino>
+								<note></note>
+							</cavallo>
+						</cavalli>
+					</corsa>
+					<corsa cod="51" numero="2" tipo="1" stato="3"
+						distanza="1400" montepremi="6000000" abilitaz="579"
+						orario="03/05/2010 15:45">
+						<descrizione>CORSA 2</descrizione>
+						<premio>DYLAN THOMAS</premio>
+						<cavalli dichiarati="7" partenti="7">
+							<cavallo cod="7" stato="2" misure="5600"
+								rappscud=" " steccato="1" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									FOOLISH AMBITION
+								</descrizione>
+								<fantino>W M LORDAN</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="3" stato="2" misure="5750"
+								rappscud=" " steccato="6" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>ELUSIVE AWARD</descrizione>
+								<fantino>P J SMULLEN</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="6" stato="2" misure="5750"
+								rappscud=" " steccato="7" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>ZAYAAN</descrizione>
+								<fantino>D MCDONOGH</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="5" stato="2" misure="5750"
+								rappscud=" " steccato="4" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>HACIENDA</descrizione>
+								<fantino>R FFRENCH</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="4" stato="2" misure="5750"
+								rappscud=" " steccato="5" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									FREE JUDGEMENT
+								</descrizione>
+								<fantino>K J MANNING</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="1" stato="2" misure="5750"
+								rappscud=" " steccato="2" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>AZNAVOUR</descrizione>
+								<fantino>F M BERRY</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="2" stato="2" misure="5750"
+								rappscud=" " steccato="3" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>DYNASTY</descrizione>
+								<fantino>J P MURTAGH</fantino>
+								<note></note>
+							</cavallo>
+						</cavalli>
+					</corsa>
+					<corsa cod="50" numero="1" tipo="1" stato="4"
+						distanza="1200" montepremi="1750000" abilitaz="66117"
+						orario="03/05/2010 15:15">
+						<descrizione>CORSA 1</descrizione>
+						<premio>AUSSIE RULES</premio>
+						<cavalli dichiarati="11" partenti="11">
+							<cavallo cod="6" stato="2" misure="5850"
+								rappscud=" " steccato="4" paraocchi="0" cmbmonta="0"
+								posiz="3">
+								<descrizione>MASTER MELODY</descrizione>
+								<fantino>D MCDONOGH</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="4" stato="2" misure="5850"
+								rappscud=" " steccato="1" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>FUTURE IMPACT</descrizione>
+								<fantino>F M BERRY</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="3" stato="2" misure="5850"
+								rappscud=" " steccato="5" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>FOOLPROOF</descrizione>
+								<fantino>D M GRANT</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="9" stato="2" misure="5850"
+								rappscud=" " steccato="10" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>TRIPLE EIGHT</descrizione>
+								<fantino>P J SMULLEN</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="5" stato="2" misure="5850"
+								rappscud=" " steccato="3" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									MADEIRA CLASSIC
+								</descrizione>
+								<fantino>N G MCCULLAGH</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="1" stato="2" misure="5850"
+								rappscud=" " steccato="2" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>BIG TEX</descrizione>
+								<fantino>R P CLEARY</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="2" stato="2" misure="5850"
+								rappscud=" " steccato="7" paraocchi="0" cmbmonta="0"
+								posiz="1">
+								<descrizione>CLONDINNERY</descrizione>
+								<fantino>K LATHAM</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="10" stato="2" misure="5600"
+								rappscud=" " steccato="8" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>LAKE WANAKA</descrizione>
+								<fantino>W J LEE</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="8" stato="2" misure="5850"
+								rappscud=" " steccato="9" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>SNOW MOUNTAIN</descrizione>
+								<fantino>J A HEFFERNAN</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="11" stato="2" misure="5600"
+								rappscud=" " steccato="11" paraocchi="0" cmbmonta="0"
+								posiz="2">
+								<descrizione>
+									RADHARCNAFARRAIGE
+								</descrizione>
+								<fantino>K J MANNING</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="7" stato="2" misure="5850"
+								rappscud=" " steccato="6" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>PARK AVENUE</descrizione>
+								<fantino>J P MURTAGH</fantino>
+								<note></note>
+							</cavallo>
+						</cavalli>
+					</corsa>
+					<corsa cod="54" numero="5" tipo="1" stato="2"
+						distanza="2000" montepremi="7500000" abilitaz="131"
+						orario="03/05/2010 17:15">
+						<descrizione>CORSA 5</descrizione>
+						<premio>HIGH CHAPARRAL</premio>
+						<cavalli dichiarati="5" partenti="5">
+							<cavallo cod="3" stato="2" misure="5750"
+								rappscud=" " steccato="1" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									GALILEO'S CHOICE
+								</descrizione>
+								<fantino>P J SMULLEN</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="2" stato="2" misure="5750"
+								rappscud=" " steccato="5" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>DIXIE MUSIC</descrizione>
+								<fantino>J A HEFFERNAN</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="5" stato="2" misure="5750"
+								rappscud=" " steccato="2" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>RECHARGE</descrizione>
+								<fantino>C D HAYES</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="4" stato="2" misure="5750"
+								rappscud=" " steccato="3" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>POPMURPHY</descrizione>
+								<fantino>W J SUPPLE</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="1" stato="2" misure="6000"
+								rappscud=" " steccato="4" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									FAME AND GLORY
+								</descrizione>
+								<fantino>J P MURTAGH</fantino>
+								<note></note>
+							</cavallo>
+						</cavalli>
+					</corsa>
+				</corse>
+			</ippodromo>
+			<ippodromo cod="3" tempo="VARIO" terreno="BUONO">
+				<descrizione>MGT MONTEGIORGIO TR/PM</descrizione>
+				<corse>
+					<corsa cod="18" numero="2" tipo="2" stato="2"
+						distanza="1600" montepremi="638000" abilitaz="579"
+						orario="03/05/2010 16:40">
+						<descrizione>CORSA 2</descrizione>
+						<premio>PAULINE</premio>
+						<cavalli dichiarati="7" partenti="7">
+							<cavallo cod="6" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									MORELLINO GADD
+								</descrizione>
+								<fantino>G.MORELLI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="3" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MISTRAL DEI</descrizione>
+								<fantino>R.MARINANGELI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="5" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									MAGIC DEI BESSI
+								</descrizione>
+								<fantino>LUCIO CURATO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="4" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MAGISTER</descrizione>
+								<fantino>MIRKO MARINI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="1" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MILLY REK</descrizione>
+								<fantino>L.VASTANO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="7" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MARKOS MAC</descrizione>
+								<fantino>M.CAPONETTI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="2" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									MADISON AVENUE
+								</descrizione>
+								<fantino>M.ZACCHERINI</fantino>
+								<note></note>
+							</cavallo>
+						</cavalli>
+					</corsa>
+					<corsa cod="20" numero="4" tipo="2" stato="2"
+						distanza="1600" montepremi="583000" abilitaz="581"
+						orario="03/05/2010 17:40">
+						<descrizione>CORSA 4</descrizione>
+						<premio>BUGRINO</premio>
+						<cavalli dichiarati="8" partenti="8">
+							<cavallo cod="8" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>IBIZA OM</descrizione>
+								<fantino>G.CIAMBECHINI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="6" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>LEOPOLDA CLA</descrizione>
+								<fantino>LUCIO CURATO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="5" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>GORKY EXXO'</descrizione>
+								<fantino>L.VASTANO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="2" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>GAVI</descrizione>
+								<fantino>G.COLANTONIO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="4" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>INEQUA MO</descrizione>
+								<fantino>L.COSTANTINI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="1" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>LOTARIUSS</descrizione>
+								<fantino>A.MAROZZI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="7" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>FIORINDOZAR</descrizione>
+								<fantino>M.SEDIARI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="3" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>LESTER MAC</descrizione>
+								<fantino>M.CAPONETTI</fantino>
+								<note></note>
+							</cavallo>
+						</cavalli>
+					</corsa>
+					<corsa cod="21" numero="5" tipo="2" stato="2"
+						distanza="2100" montepremi="1210000" abilitaz="579"
+						orario="03/05/2010 18:15">
+						<descrizione>CORSA 5</descrizione>
+						<premio>R.PISTILLI</premio>
+						<cavalli dichiarati="7" partenti="7">
+							<cavallo cod="4" stato="2" misure="2100"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>GERUS ROB</descrizione>
+								<fantino>M.ZACCHERINI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="5" stato="2" misure="2100"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>GABRIEL ZS</descrizione>
+								<fantino>L.VASTANO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="2" stato="2" misure="2100"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>LARRY MAC</descrizione>
+								<fantino>M.CAPONETTI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="1" stato="2" misure="2100"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>DUCCIO CU</descrizione>
+								<fantino>LUCIO CURATO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="6" stato="2" misure="2100"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>ESTORIL GAR</descrizione>
+								<fantino>L.COSTANTINI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="3" stato="2" misure="2100"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>LAURENT OM</descrizione>
+								<fantino>MIRKO MARINI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="7" stato="2" misure="2130"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>LACOSTE OM</descrizione>
+								<fantino>A.MAROZZI</fantino>
+								<note></note>
+							</cavallo>
+						</cavalli>
+					</corsa>
+					<corsa cod="19" numero="3" tipo="2" stato="2"
+						distanza="1660" montepremi="550000" abilitaz="66117"
+						orario="03/05/2010 17:10">
+						<descrizione>CORSA 3</descrizione>
+						<premio>COLTIZ</premio>
+						<cavalli dichiarati="9" partenti="9">
+							<cavallo cod="1" stato="2" misure="1660"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>DONO DI DIOS</descrizione>
+								<fantino>M.SEDIARI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="3" stato="2" misure="1660"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									GILBERT GIANFI
+								</descrizione>
+								<fantino>A.MAROZZI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="2" stato="2" misure="1660"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									DUE MINUTI BLUE
+								</descrizione>
+								<fantino>G.PROPERZI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="6" stato="2" misure="1660"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>ILARY MAC</descrizione>
+								<fantino>M.CAPONETTI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="5" stato="2" misure="1660"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>LIGHT MOON</descrizione>
+								<fantino>G.MORELLI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="9" stato="2" misure="1660"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>GARNET LB</descrizione>
+								<fantino>L.VASTANO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="4" stato="2" misure="1660"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>GENERAL ATC</descrizione>
+								<fantino>FAB.MARTINELLI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="7" stato="2" misure="1660"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>FROZEN</descrizione>
+								<fantino>L.COSTANTINI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="8" stato="2" misure="1660"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>INGRID EFFE</descrizione>
+								<fantino>MIRKO MARINI</fantino>
+								<note></note>
+							</cavallo>
+						</cavalli>
+					</corsa>
+					<corsa cod="23" numero="7" tipo="2" stato="2"
+						distanza="1600" montepremi="704000" abilitaz="581"
+						orario="03/05/2010 19:15">
+						<descrizione>CORSA 7</descrizione>
+						<premio>RUBY DI RE</premio>
+						<cavalli dichiarati="9" partenti="8">
+							<cavallo cod="4" stato="2" misure="1600"
+								rappscud="A" steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>INCA DL</descrizione>
+								<fantino>L.VASTANO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="8" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>FILO'</descrizione>
+								<fantino>G.MORELLI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="7" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>DOCTOR MAC</descrizione>
+								<fantino>M.CAPONETTI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="2" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>LIGABUE OK</descrizione>
+								<fantino>L.COSTANTINI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="6" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>GHILAN CAR</descrizione>
+								<fantino>LUCIO CURATO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="5" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>GAMBIT BI</descrizione>
+								<fantino>A.MAROZZI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="9" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>IMPRESSIVE OK</descrizione>
+								<fantino>R.PARIOLI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="1" stato="2" misure="1600"
+								rappscud="A" steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>LA ROCHELLE</descrizione>
+								<fantino>G.COLANTONIO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="3" stato="12" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>IMAGINATION</descrizione>
+								<fantino>NON PARTENTE</fantino>
+								<note></note>
+							</cavallo>
+						</cavalli>
+					</corsa>
+					<corsa cod="24" numero="8" tipo="2" stato="2"
+						distanza="1600" montepremi="495000" abilitaz="66117"
+						orario="03/05/2010 19:45">
+						<descrizione>CORSA 8</descrizione>
+						<premio>BABYBIRBA</premio>
+						<cavalli dichiarati="13" partenti="12">
+							<cavallo cod="12" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>GALIBIA RAB</descrizione>
+								<fantino>G.PROPERZI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="7" stato="12" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>INES GIANFI</descrizione>
+								<fantino>NON PARTENTE</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="13" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>IRINA VL</descrizione>
+								<fantino>R.MARINANGELI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="1" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									IMPOSSIBLE BALOO
+								</descrizione>
+								<fantino>M.SEDIARI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="6" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>EUSEBIO LOD</descrizione>
+								<fantino>R.MONTELPARE</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="4" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>LEMON STAF</descrizione>
+								<fantino>L.COSTANTINI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="3" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>IVA DEIMONT</descrizione>
+								<fantino>G.MORELLI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="8" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>LEINES HBD</descrizione>
+								<fantino>R.EMIDI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="10" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									LUCKYLUCIANO BARB
+								</descrizione>
+								<fantino>F.DEL PAPA</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="2" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>GORO PV</descrizione>
+								<fantino>FAB.MARTINELLI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="9" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									GALLINELLA JET
+								</descrizione>
+								<fantino>L.VASTANO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="11" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									FURIA DI FALCO
+								</descrizione>
+								<fantino>LUCIO CURATO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="5" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>INCOGNITO ATC</descrizione>
+								<fantino>R.PARIOLI</fantino>
+								<note></note>
+							</cavallo>
+						</cavalli>
+					</corsa>
+					<corsa cod="22" numero="6" tipo="2" stato="2"
+						distanza="1660" montepremi="550000" abilitaz="65540"
+						orario="03/05/2010 18:45">
+						<descrizione>CORSA 6</descrizione>
+						<premio>FUMOSO C.N.1533</premio>
+						<cavalli dichiarati="11" partenti="10">
+							<cavallo cod="6" stato="2" misure="1660"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MEDEA BIGI</descrizione>
+								<fantino>LUCIO CURATO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="5" stato="2" misure="1660"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MADAM ELSA</descrizione>
+								<fantino>M.SEDIARI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="10" stato="2" misure="1660"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MYKONOS LJ</descrizione>
+								<fantino>R.EMIDI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="3" stato="2" misure="1660"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MEXICO CITY</descrizione>
+								<fantino>G.COLANTONIO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="7" stato="2" misure="1660"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MELODIASS</descrizione>
+								<fantino>A.MAROZZI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="2" stato="2" misure="1660"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MY YANKEE BSM</descrizione>
+								<fantino>G.PROPERZI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="8" stato="2" misure="1660"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MEDUSA EGRAL</descrizione>
+								<fantino>G.MORELLI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="4" stato="2" misure="1660"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MANDORLAMARA</descrizione>
+								<fantino>R.MONTELPARE</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="1" stato="2" misure="1660"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									MITO DEI SANTI
+								</descrizione>
+								<fantino>FAB.MARTINELLI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="9" stato="2" misure="1660"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MALVA</descrizione>
+								<fantino>F.DEL PAPA</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="11" stato="3" misure="1660"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									MARCO POLO MAC
+								</descrizione>
+								<fantino>M.CAPONETTI</fantino>
+								<note></note>
+							</cavallo>
+						</cavalli>
+					</corsa>
+					<corsa cod="17" numero="1" tipo="2" stato="2"
+						distanza="1660" montepremi="528000" abilitaz="66117"
+						orario="03/05/2010 16:10">
+						<descrizione>CORSA 1</descrizione>
+						<premio>POLEPOLE</premio>
+						<cavalli dichiarati="11" partenti="11">
+							<cavallo cod="9" stato="2" misure="1660"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>NELINDA NG</descrizione>
+								<fantino>G.PROPERZI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="4" stato="2" misure="1660"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>NEUTRALE MS</descrizione>
+								<fantino>R.MARINANGELI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="7" stato="2" misure="1660"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>NOTTOLA JET</descrizione>
+								<fantino>R.EMIDI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="1" stato="2" misure="1660"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>NIRYO</descrizione>
+								<fantino>FAB.MARTINELLI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="2" stato="2" misure="1660"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>NIELA COS</descrizione>
+								<fantino>L.COSTANTINI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="10" stato="2" misure="1660"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>NINETTA NG</descrizione>
+								<fantino>E.SATTA</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="6" stato="2" misure="1660"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>NOCE ALATA</descrizione>
+								<fantino>M.ZACCHERINI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="3" stato="2" misure="1660"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									NANNARELLA JES
+								</descrizione>
+								<fantino>G.MORELLI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="11" stato="2" misure="1660"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>NADIR BIGI</descrizione>
+								<fantino>L.VASTANO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="5" stato="2" misure="1660"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="1"
+								posiz="0">
+								<descrizione>NINA HAM</descrizione>
+								<fantino>M.CAPONETTI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="8" stato="2" misure="1660"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									NICK STARLIGHT
+								</descrizione>
+								<fantino>R.PARIOLI</fantino>
+								<note></note>
+							</cavallo>
+						</cavalli>
+					</corsa>
+				</corse>
+			</ippodromo>
+			<ippodromo cod="2" tempo="VARIO" terreno="MOLTO PESANTE">
+				<descrizione>FIG FIRENZE GL/PM</descrizione>
+				<corse>
+					<corsa cod="9" numero="1" tipo="1" stato="4"
+						distanza="1500" montepremi="990000" abilitaz="65540"
+						orario="03/05/2010 14:00">
+						<descrizione>CORSA 1</descrizione>
+						<premio>VAREDO TR.A1521</premio>
+						<cavalli dichiarati="14" partenti="11">
+							<cavallo cod="9" stato="2" misure="5100"
+								rappscud=" " steccato="2" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>VALEDICTION</descrizione>
+								<fantino>SANNA G. (A)</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="4" stato="2" misure="5700"
+								rappscud=" " steccato="10" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>KEYOFMYHEART</descrizione>
+								<fantino>RISPOLI U. (A</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="12" stato="12" misure="5000"
+								rappscud=" " steccato="8" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>CHIFFON</descrizione>
+								<fantino>ERCEGOVIC G.</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="11" stato="2" misure="5100"
+								rappscud=" " steccato="9" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									FUNNY LONG TONGUE
+								</descrizione>
+								<fantino>ROSSI I.</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="5" stato="2" misure="5650"
+								rappscud=" " steccato="14" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>FRENCH CANCAN</descrizione>
+								<fantino>PINNA N. (A)</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="8" stato="2" misure="5300"
+								rappscud=" " steccato="4" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MIA FIAMMA</descrizione>
+								<fantino>URRU S.</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="6" stato="12" misure="5550"
+								rappscud=" " steccato="5" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>BARINCA</descrizione>
+								<fantino>SULAS S.</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="1" stato="2" misure="6100"
+								rappscud=" " steccato="3" paraocchi="1" cmbmonta="0"
+								posiz="3">
+								<descrizione>GOLDEN FONG</descrizione>
+								<fantino>CONVERTINO P.</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="2" stato="2" misure="6050"
+								rappscud=" " steccato="11" paraocchi="0" cmbmonta="0"
+								posiz="2">
+								<descrizione>SEUL GLOW</descrizione>
+								<fantino>MANIEZZI L.</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="10" stato="2" misure="5100"
+								rappscud=" " steccato="1" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>NALSE</descrizione>
+								<fantino>ROSSINI M. (A)</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="3" stato="2" misure="5700"
+								rappscud=" " steccato="7" paraocchi="0" cmbmonta="0"
+								posiz="1">
+								<descrizione>
+									ARBIA DI RENACCIO
+								</descrizione>
+								<fantino>COLOMBI C.</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="13" stato="2" misure="5000"
+								rappscud=" " steccato="13" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>QUISTELLO</descrizione>
+								<fantino>MARRAS F.</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="14" stato="2" misure="5200"
+								rappscud=" " steccato="12" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>STORMIN PARK</descrizione>
+								<fantino>SANNA A.</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="7" stato="3" misure="5450"
+								rappscud=" " steccato="6" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>TIKO LAND</descrizione>
+								<fantino>BRANCA F.</fantino>
+								<note></note>
+							</cavallo>
+						</cavalli>
+					</corsa>
+					<corsa cod="14" numero="6" tipo="1" stato="2"
+						distanza="1200" montepremi="550000" abilitaz="581"
+						orario="03/05/2010 16:50">
+						<descrizione>CORSA 6</descrizione>
+						<premio>GIMME PLEASURE</premio>
+						<cavalli dichiarati="9" partenti="8">
+							<cavallo cod="7" stato="2" misure="5550"
+								rappscud=" " steccato="5" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MAYA NERA</descrizione>
+								<fantino>FADDA A.</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="2" stato="2" misure="4900"
+								rappscud=" " steccato="7" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>CHAPEL NIGHT</descrizione>
+								<fantino>MACIS M. (A)</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="8" stato="2" misure="5450"
+								rappscud=" " steccato="4" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>STAR WARS</descrizione>
+								<fantino>MAIORINO M.</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="6" stato="2" misure="5100"
+								rappscud=" " steccato="3" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MARY MARY</descrizione>
+								<fantino>GULISANO A. (A)</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="5" stato="2" misure="5600"
+								rappscud=" " steccato="6" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>MARISA</descrizione>
+								<fantino>RISPOLI U. (A</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="4" stato="2" misure="5100"
+								rappscud=" " steccato="1" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>INTIPAPA</descrizione>
+								<fantino>MANCA M. (A)</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="1" stato="2" misure="5150"
+								rappscud=" " steccato="8" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>BABY CHEROKEE</descrizione>
+								<fantino>ROSSI I.</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="9" stato="2" misure="5450"
+								rappscud=" " steccato="2" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>ZURIMARO</descrizione>
+								<fantino>BIAGIOTTI M.</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="3" stato="12" misure="5300"
+								rappscud=" " steccato="9" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									DOCTOR VASQUEZ
+								</descrizione>
+								<fantino>SULAS S.</fantino>
+								<note></note>
+							</cavallo>
+						</cavalli>
+					</corsa>
+					<corsa cod="16" numero="8" tipo="1" stato="2"
+						distanza="2000" montepremi="880000" abilitaz="579"
+						orario="03/05/2010 17:50">
+						<descrizione>CORSA 8</descrizione>
+						<premio>U.N.P.C.P.S.</premio>
+						<cavalli dichiarati="8" partenti="7">
+							<cavallo cod="3" stato="2" misure="5650"
+								rappscud=" " steccato="3" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>MR DIVOT</descrizione>
+								<fantino>RISPOLI U. (A)</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="5" stato="2" misure="5400"
+								rappscud=" " steccato="4" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>SPEED ROYAL</descrizione>
+								<fantino>MANIEZZI L.</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="6" stato="2" misure="5300"
+								rappscud=" " steccato="2" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>TOKIO</descrizione>
+								<fantino>SANNA A.</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="2" stato="2" misure="5900"
+								rappscud=" " steccato="5" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									POWERFULL GIRL
+								</descrizione>
+								<fantino>FADDA A.</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="1" stato="2" misure="6300"
+								rappscud=" " steccato="1" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>MONVILLE</descrizione>
+								<fantino>PINNA N. (A)</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="8" stato="2" misure="5200"
+								rappscud=" " steccato="8" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>KAMMAMURI</descrizione>
+								<fantino>SULAS S.</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="4" stato="12" misure="5600"
+								rappscud=" " steccato="6" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>GIULIUS</descrizione>
+								<fantino>ESPOSITO M.</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="7" stato="2" misure="5300"
+								rappscud=" " steccato="7" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>ZEMLINSKY</descrizione>
+								<fantino>BRANCA F.</fantino>
+								<note></note>
+							</cavallo>
+						</cavalli>
+					</corsa>
+					<corsa cod="15" numero="7" tipo="1" stato="2"
+						distanza="1500" montepremi="550000" abilitaz="65540"
+						orario="03/05/2010 17:20">
+						<descrizione>CORSA 7</descrizione>
+						<premio>PRAJAPATI C.N.1529</premio>
+						<cavalli dichiarati="11" partenti="9">
+							<cavallo cod="8" stato="2" misure="5000"
+								rappscud=" " steccato="9" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MADAMA DORE</descrizione>
+								<fantino>MARRAS F.</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="9" stato="2" misure="5000"
+								rappscud=" " steccato="10" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									ROCCA BORROMEA
+								</descrizione>
+								<fantino>DEMURO C. (A)</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="7" stato="2" misure="5250"
+								rappscud=" " steccato="8" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>SENORITA BEST</descrizione>
+								<fantino>RISPOLI U. (A</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="5" stato="2" misure="5250"
+								rappscud=" " steccato="7" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>GIOCASTA</descrizione>
+								<fantino>LOBINA S. SR</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="10" stato="12" misure="5150"
+								rappscud=" " steccato="5" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>LA GALLINELLA</descrizione>
+								<fantino>ESPOSITO M.</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="3" stato="2" misure="5600"
+								rappscud=" " steccato="4" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									BALLO SUL MONDO
+								</descrizione>
+								<fantino>BIAGIOTTI M.</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="11" stato="2" misure="5000"
+								rappscud=" " steccato="11" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>TITUS ROOS</descrizione>
+								<fantino>MEREU S.</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="1" stato="2" misure="6300"
+								rappscud=" " steccato="3" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>REVOKE KING</descrizione>
+								<fantino>SANNA A.</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="4" stato="2" misure="5300"
+								rappscud=" " steccato="2" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>TAVOTAL</descrizione>
+								<fantino>FUMI E. (A)</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="6" stato="3" misure="5250"
+								rappscud=" " steccato="6" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>POMBIA</descrizione>
+								<fantino>DIAZ M.</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="2" stato="2" misure="5800"
+								rappscud=" " steccato="1" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>BULLO DEL MAR</descrizione>
+								<fantino>SANNA G. (A)</fantino>
+								<note></note>
+							</cavallo>
+						</cavalli>
+					</corsa>
+					<corsa cod="10" numero="2" tipo="1" stato="4"
+						distanza="2000" montepremi="1100000" abilitaz="131"
+						orario="03/05/2010 14:40">
+						<descrizione>CORSA 2</descrizione>
+						<premio>CAPO NORD</premio>
+						<cavalli dichiarati="4" partenti="4">
+							<cavallo cod="2" stato="2" misure="5150"
+								rappscud=" " steccato="1" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>GRAZIOSA</descrizione>
+								<fantino>DEMURO C. (A)</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="1" stato="2" misure="5500"
+								rappscud=" " steccato="4" paraocchi="0" cmbmonta="0"
+								posiz="1">
+								<descrizione>
+									FANTASTIC SHIFT
+								</descrizione>
+								<fantino>COLOMBI C.</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="4" stato="2" misure="5100"
+								rappscud=" " steccato="3" paraocchi="0" cmbmonta="0"
+								posiz="2">
+								<descrizione>MINNESOTA FAT</descrizione>
+								<fantino>GULISANO A. (A)</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="3" stato="2" misure="5500"
+								rappscud=" " steccato="2" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>KOSAKKO</descrizione>
+								<fantino>BRANCA F.</fantino>
+								<note></note>
+							</cavallo>
+						</cavalli>
+					</corsa>
+					<corsa cod="12" numero="4" tipo="1" stato="2"
+						distanza="1000" montepremi="1320000" abilitaz="66117"
+						orario="03/05/2010 15:50">
+						<descrizione>CORSA 4</descrizione>
+						<premio>PIETRO TONIAZZI</premio>
+						<cavalli dichiarati="10" partenti="9">
+							<cavallo cod="7" stato="2" misure="5700"
+								rappscud=" " steccato="2" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>LIE TO ME</descrizione>
+								<fantino>RISPOLI U. (A</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="3" stato="2" misure="5700"
+								rappscud=" " steccato="4" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>DALY</descrizione>
+								<fantino>FUMI E. (A)</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="8" stato="2" misure="5700"
+								rappscud=" " steccato="6" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MONDANESPOLE</descrizione>
+								<fantino>SULAS S.</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="4" stato="2" misure="5700"
+								rappscud=" " steccato="7" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>ISLA VALDEZ</descrizione>
+								<fantino>MAIORINO M.</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="1" stato="3" misure="5700"
+								rappscud=" " steccato="3" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>BABY OLMO</descrizione>
+								<fantino>MANIEZZI L.</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="2" stato="2" misure="5700"
+								rappscud=" " steccato="1" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									CHEER FOR LADY
+								</descrizione>
+								<fantino>LOBINA S. SR</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="10" stato="2" misure="5700"
+								rappscud=" " steccato="5" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>PRAIALONGA</descrizione>
+								<fantino>PINNA N. (A</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="9" stato="2" misure="5700"
+								rappscud=" " steccato="10" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>NON PIU' DIVA</descrizione>
+								<fantino>URRU S.</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="6" stato="2" misure="5700"
+								rappscud=" " steccato="8" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>KESBALLO</descrizione>
+								<fantino>MARCELLI G.</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="5" stato="2" misure="5700"
+								rappscud=" " steccato="9" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>KALMIA</descrizione>
+								<fantino>DEMURO C. (A)</fantino>
+								<note></note>
+							</cavallo>
+						</cavalli>
+					</corsa>
+					<corsa cod="13" numero="5" tipo="1" stato="2"
+						distanza="1200" montepremi="550000" abilitaz="131"
+						orario="03/05/2010 16:20">
+						<descrizione>CORSA 5</descrizione>
+						<premio>PEVERIL</premio>
+						<cavalli dichiarati="6" partenti="4">
+							<cavallo cod="3" stato="2" misure="5950"
+								rappscud=" " steccato="1" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>MENNABILLY</descrizione>
+								<fantino>SULAS S.</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="6" stato="12" misure="5150"
+								rappscud=" " steccato="3" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>DEYADA</descrizione>
+								<fantino>DEMURO C. (A)</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="2" stato="2" misure="6000"
+								rappscud=" " steccato="2" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>PEPPONE</descrizione>
+								<fantino>MANIEZZI L.</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="1" stato="2" misure="6300"
+								rappscud=" " steccato="5" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									COME D'INCANTO
+								</descrizione>
+								<fantino>CONVERTINO P.</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="5" stato="2" misure="5200"
+								rappscud=" " steccato="4" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>SOPRAN BIRZI</descrizione>
+								<fantino>RISPOLI U. (A</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="4" stato="12" misure="5500"
+								rappscud=" " steccato="6" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									EXCUSE FLUTTER
+								</descrizione>
+								<fantino>SANNA A.</fantino>
+								<note></note>
+							</cavallo>
+						</cavalli>
+					</corsa>
+					<corsa cod="11" numero="3" tipo="1" stato="4"
+						distanza="1000" montepremi="1320000" abilitaz="581"
+						orario="03/05/2010 15:20">
+						<descrizione>CORSA 3</descrizione>
+						<premio>GIANNI RAIA</premio>
+						<cavalli dichiarati="9" partenti="8">
+							<cavallo cod="4" stato="2" misure="5700"
+								rappscud="A" steccato="1" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MING DINASTY</descrizione>
+								<fantino>MAIORINO M.</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="9" stato="2" misure="5700"
+								rappscud=" " steccato="7" paraocchi="0" cmbmonta="0"
+								posiz="2">
+								<descrizione>TODDLER</descrizione>
+								<fantino>DIANA S.</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="6" stato="2" misure="5700"
+								rappscud=" " steccato="3" paraocchi="0" cmbmonta="0"
+								posiz="1">
+								<descrizione>PALAZZO REALE</descrizione>
+								<fantino>LOBINA S. SR</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="5" stato="2" misure="5700"
+								rappscud=" " steccato="5" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									OLMO DI RENACCIO
+								</descrizione>
+								<fantino>MANIEZZI L.</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="7" stato="2" misure="5700"
+								rappscud=" " steccato="6" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>SCARAFFONE</descrizione>
+								<fantino>ROSSI I.</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="8" stato="2" misure="5700"
+								rappscud=" " steccato="4" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>STAR KERR</descrizione>
+								<fantino>BIAGIOTTI M.</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="3" stato="12" misure="5700"
+								rappscud=" " steccato="2" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MARCO L'AVARO</descrizione>
+								<fantino>RUSSO G.</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="2" stato="2" misure="5700"
+								rappscud=" " steccato="9" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>GIOLITTI</descrizione>
+								<fantino>RISPOLI U. (A</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="1" stato="2" misure="5700"
+								rappscud="A" steccato="8" paraocchi="0" cmbmonta="0"
+								posiz="3">
+								<descrizione>DIVODOCK</descrizione>
+								<fantino>SULAS S.</fantino>
+								<note></note>
+							</cavallo>
+						</cavalli>
+					</corsa>
+				</corse>
+			</ippodromo>
+			<ippodromo cod="1" tempo="BELLO" terreno="BUONO">
+				<descrizione>FGT FOGGIA TR/PM</descrizione>
+				<corse>
+					<corsa cod="5" numero="5" tipo="2" stato="2"
+						distanza="2020" montepremi="462000" abilitaz="66117"
+						orario="03/05/2010 17:05">
+						<descrizione>CORSA 5</descrizione>
+						<premio>TERME DI CARACALLA</premio>
+						<cavalli dichiarati="13" partenti="12">
+							<cavallo cod="12" stato="2" misure="2020"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>IMPRINTING</descrizione>
+								<fantino>V.D'ALESSANDRO JR.</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="13" stato="3" misure="2020"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>FIRE OP</descrizione>
+								<fantino>G.SCHERILLO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="6" stato="2" misure="2020"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>GHINEASS</descrizione>
+								<fantino>F.CASTELLUCCIO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="5" stato="2" misure="2020"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>GUAGLIONE PAR</descrizione>
+								<fantino>M.FORMICA</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="7" stato="2" misure="2020"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>LAVERYZ</descrizione>
+								<fantino>G.DI NARDO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="8" stato="2" misure="2020"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>LEON ZS</descrizione>
+								<fantino>S.DI VINCENZO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="10" stato="2" misure="2020"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>LIVORNINO</descrizione>
+								<fantino>VP.DELL'ANNUNZIATA</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="3" stato="2" misure="2020"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>IDYLL OF MARI</descrizione>
+								<fantino>M.PIGNATELLI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="11" stato="2" misure="2020"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									EASY GOING WISE
+								</descrizione>
+								<fantino>F.CINCINNATO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="4" stato="2" misure="2020"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>LEPETIT RL</descrizione>
+								<fantino>A.MARUCCI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="9" stato="2" misure="2020"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>LICIA DI RE</descrizione>
+								<fantino>M.ANNUNZIATA</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="1" stato="2" misure="2020"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>GRANITUSS</descrizione>
+								<fantino>GR.D'ALESSANDRO JR</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="2" stato="2" misure="2020"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>LUICCHIO KTM</descrizione>
+								<fantino>A.GOLIA</fantino>
+								<note></note>
+							</cavallo>
+						</cavalli>
+					</corsa>
+					<corsa cod="7" numero="7" tipo="2" stato="2"
+						distanza="1600" montepremi="506000" abilitaz="65540"
+						orario="03/05/2010 18:05">
+						<descrizione>CORSA 7</descrizione>
+						<premio>NFITEATRO FLAVIO C.N.1531</premio>
+						<cavalli dichiarati="15" partenti="14">
+							<cavallo cod="14" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MATEO MABEL</descrizione>
+								<fantino>GR.D'ALESSANDRO JR</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="13" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									MORO DEL RONCO
+								</descrizione>
+								<fantino>S.VIOLA</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="6" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MOKAMBO ATC</descrizione>
+								<fantino>VP.DELL'ANNUNZIATA</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="8" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MAYOR RAB</descrizione>
+								<fantino>L.PALOMBA</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="10" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MANILA</descrizione>
+								<fantino>P.CARTA</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="3" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MR MAX GAR</descrizione>
+								<fantino>G.P.MAISTO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="4" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									MARGHERITA MODEL
+								</descrizione>
+								<fantino>G.DI NARDO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="2" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MERIEM</descrizione>
+								<fantino>F.CINCINNATO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="15" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									MELCHIORRE DVS
+								</descrizione>
+								<fantino>G.VESSICHELLI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="9" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MIRCO NG</descrizione>
+								<fantino>G.SCHERILLO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="1" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MIMOSA PETRAL</descrizione>
+								<fantino>S.BEVILACQUA</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="12" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MAGIA REGAL</descrizione>
+								<fantino>F.DE CRISTOFARO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="11" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									MILLEMIGLIA FONT
+								</descrizione>
+								<fantino>V.D'ALESSANDRO JR.</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="7" stato="12" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MEDEA BI</descrizione>
+								<fantino>L.FIERRO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="5" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MOINA GRIF</descrizione>
+								<fantino>A.MARUCCI</fantino>
+								<note></note>
+							</cavallo>
+						</cavalli>
+					</corsa>
+					<corsa cod="1" numero="1" tipo="2" stato="4"
+						distanza="2020" montepremi="407000" abilitaz="66117"
+						orario="03/05/2010 15:05">
+						<descrizione>CORSA 1</descrizione>
+						<premio>PERISTILIO</premio>
+						<cavalli dichiarati="14" partenti="13">
+							<cavallo cod="3" stato="2" misure="2020"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="2">
+								<descrizione>NITROST</descrizione>
+								<fantino>S.VIOLA</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="13" stato="2" misure="2020"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>NEFER TEAM</descrizione>
+								<fantino>A.MARUCCI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="8" stato="2" misure="2020"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									NEWMAN DI CUMA
+								</descrizione>
+								<fantino>F.CASTELLUCCIO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="11" stato="2" misure="2020"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="3">
+								<descrizione>NIOBE BI</descrizione>
+								<fantino>G.CUSIMANO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="9" stato="2" misure="2020"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>NINFEA RON</descrizione>
+								<fantino>P.CARTA</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="4" stato="3" misure="2020"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>NELSON DOC</descrizione>
+								<fantino>M.VECCHIONE</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="12" stato="2" misure="2020"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									NEAPOLIS D'ETE
+								</descrizione>
+								<fantino>VP.DELL'ANNUNZIATA</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="2" stato="2" misure="2020"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									NAPA VALLEY DVM
+								</descrizione>
+								<fantino>G.DI NARDO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="5" stato="2" misure="2020"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									NUEVA SANSALVADOR
+								</descrizione>
+								<fantino>V.D'ALESSANDRO JR.</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="10" stato="2" misure="2020"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									NINJA DEGLI ULIVI
+								</descrizione>
+								<fantino>G.SCHERILLO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="6" stato="2" misure="2020"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>NEGUS</descrizione>
+								<fantino>M.PIGNATELLI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="14" stato="2" misure="2020"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									NAVARRETTE BIP
+								</descrizione>
+								<fantino>GR.D'ALESSANDRO JR</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="7" stato="2" misure="2020"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="1">
+								<descrizione>NOCCIOLA NG</descrizione>
+								<fantino>G.P.MAISTO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="1" stato="2" misure="2020"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>NIKITA VALLEY</descrizione>
+								<fantino>D.LUONGO</fantino>
+								<note></note>
+							</cavallo>
+						</cavalli>
+					</corsa>
+					<corsa cod="6" numero="6" tipo="2" stato="2"
+						distanza="1600" montepremi="1100000" abilitaz="579"
+						orario="03/05/2010 17:35">
+						<descrizione>CORSA 6</descrizione>
+						<premio>DOMUS AUREA</premio>
+						<cavalli dichiarati="7" partenti="7">
+							<cavallo cod="2" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MORRISON</descrizione>
+								<fantino>F.CASTELLUCCIO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="4" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MITICO MODEL</descrizione>
+								<fantino>G.DI NARDO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="6" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MAYOR FLYING</descrizione>
+								<fantino>P.CARTA</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="5" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MASKMAR</descrizione>
+								<fantino>M.PIGNATELLI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="1" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MARLIN STARS</descrizione>
+								<fantino>V.D'ALESSANDRO JR.</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="3" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MIRO' LJ</descrizione>
+								<fantino>F.DE CRISROFARO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="7" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MARCEL GRIF</descrizione>
+								<fantino>VP.DELL'ANNUNZIATA</fantino>
+								<note></note>
+							</cavallo>
+						</cavalli>
+					</corsa>
+					<corsa cod="3" numero="3" tipo="2" stato="2"
+						distanza="1600" montepremi="407000" abilitaz="65540"
+						orario="03/05/2010 16:05">
+						<descrizione>CORSA 3</descrizione>
+						<premio>COLOSSEO C.N.1526</premio>
+						<cavalli dichiarati="16" partenti="15">
+							<cavallo cod="5" stato="3" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									IMPERIAL YANKEE
+								</descrizione>
+								<fantino>M.PIGNATELLI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="2" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>IONE ROB</descrizione>
+								<fantino>VP.DELL'ANNUNZIATA</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="6" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="1"
+								posiz="0">
+								<descrizione>ISLYSEL</descrizione>
+								<fantino>G.PERFETTO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="10" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>LEADERSHIP</descrizione>
+								<fantino>M.ROTUNDI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="7" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									IOVINO MICHELE
+								</descrizione>
+								<fantino>G.P.MAISTO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="15" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>LARRY GIO'</descrizione>
+								<fantino>G.SCHERILLO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="1" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>GET OUT</descrizione>
+								<fantino>G.MONACO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="3" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>EQUI</descrizione>
+								<fantino>V.DE MARTINO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="14" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>GHERSON AS</descrizione>
+								<fantino>G.CUSIMANO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="16" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>LADYFORZ</descrizione>
+								<fantino>M.FORMICA</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="4" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									DONJAK DU LOUVRE
+								</descrizione>
+								<fantino>S.VIOLA</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="8" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>LUCIO ALOR</descrizione>
+								<fantino>G.CARANO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="9" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>LUCKY BUGS</descrizione>
+								<fantino>F.CINCINNATO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="13" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>GIUSEPPE</descrizione>
+								<fantino>GR.D'ALESSANDRO JR</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="12" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>LAUREN GAL</descrizione>
+								<fantino>S.DI VINCENZO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="11" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>IGOR KRIS</descrizione>
+								<fantino>N.IANNACO</fantino>
+								<note></note>
+							</cavallo>
+						</cavalli>
+					</corsa>
+					<corsa cod="2" numero="2" tipo="2" stato="4"
+						distanza="1600" montepremi="440000" abilitaz="65540"
+						orario="03/05/2010 15:35">
+						<descrizione>CORSA 2</descrizione>
+						<premio>ARCO DI TITO C.N.1525</premio>
+						<cavalli dichiarati="13" partenti="13">
+							<cavallo cod="1" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="2">
+								<descrizione>MIZAR TAU</descrizione>
+								<fantino>B.BEVILACQUA</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="10" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MIAMI STIFT</descrizione>
+								<fantino>ANT.MELISSA</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="3" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MORENUSS</descrizione>
+								<fantino>V.D'ALESSANDRO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="6" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MILTON</descrizione>
+								<fantino>V.CAVALIERE</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="9" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="1">
+								<descrizione>
+									MINERVA BARGAL
+								</descrizione>
+								<fantino>ANNA LUONGO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="4" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="3">
+								<descrizione>MAGIC THOR</descrizione>
+								<fantino>F.RUSSO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="13" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									MAGNIFIKO ANTONY
+								</descrizione>
+								<fantino>B.ARBORE</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="12" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									MAREA DEGLI ULIVI
+								</descrizione>
+								<fantino>M.MINICHINO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="7" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MAIBLUME HBD</descrizione>
+								<fantino>F.ESPOSITO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="2" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MENELAO</descrizione>
+								<fantino>G.DE SIMONE</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="5" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MARGAUX</descrizione>
+								<fantino>ALB.ORSINI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="11" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									MICCIA DEL CIGNO
+								</descrizione>
+								<fantino>I.IANNACO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="8" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MAGRITTE FONT</descrizione>
+								<fantino>V.IACCARINO</fantino>
+								<note></note>
+							</cavallo>
+						</cavalli>
+					</corsa>
+					<corsa cod="4" numero="4" tipo="2" stato="2"
+						distanza="1600" montepremi="605000" abilitaz="66117"
+						orario="03/05/2010 16:35">
+						<descrizione>CORSA 4</descrizione>
+						<premio>PANTHEON</premio>
+						<cavalli dichiarati="13" partenti="13">
+							<cavallo cod="4" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>NOVIA SPIN</descrizione>
+								<fantino>V.D'ALESSANDRO JR.</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="3" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>NAIOBIS</descrizione>
+								<fantino>V.DE MARTINO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="8" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>NADIA JET</descrizione>
+								<fantino>G.CARANO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="10" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									NOTORIUS SERGIO
+								</descrizione>
+								<fantino>G.SCHERILLO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="5" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>NASDAQ</descrizione>
+								<fantino>C.VELARDI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="11" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>NADIA COF</descrizione>
+								<fantino>F.CASTELLUCCIO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="12" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>NICKEL BI</descrizione>
+								<fantino>F.DE CRISTOFARO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="1" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>NORBIOSS</descrizione>
+								<fantino>G.DI NARDO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="9" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>NASTRO BRIDON</descrizione>
+								<fantino>A.GOLIA</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="13" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>NIGRO MTT</descrizione>
+								<fantino>GR.D'ALESSANDRO JR</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="6" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									NOBILDONNA PAR
+								</descrizione>
+								<fantino>L.PALOMBA</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="2" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>NICOLE DANY</descrizione>
+								<fantino>VP.DEL'ANNUNZIATA</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="7" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>NORI</descrizione>
+								<fantino>F.CINCINNATO</fantino>
+								<note></note>
+							</cavallo>
+						</cavalli>
+					</corsa>
+					<corsa cod="8" numero="8" tipo="2" stato="2"
+						distanza="1600" montepremi="605000" abilitaz="66117"
+						orario="03/05/2010 18:35">
+						<descrizione>CORSA 8</descrizione>
+						<premio>DEA VESTA</premio>
+						<cavalli dichiarati="9" partenti="8">
+							<cavallo cod="2" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									LOTHAR RIVARCO
+								</descrizione>
+								<fantino>M.DE VIVO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="7" stato="3" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>ISCHIA OM</descrizione>
+								<fantino>M.PIGNATELLI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="8" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>FLORIO GIFAR</descrizione>
+								<fantino>F.CINCINNATO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="9" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>DADAMUS</descrizione>
+								<fantino>VP.DELL'ANNUNZIATA</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="5" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									LALMA DEI LADY
+								</descrizione>
+								<fantino>G.DI NARDO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="6" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>ISTRIANO JET</descrizione>
+								<fantino>A.MARUCCI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="1" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>FITZGERALD BI</descrizione>
+								<fantino>GR.D'ALESSANDRO JR</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="4" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>LOREDANA PAR</descrizione>
+								<fantino>V.D'ALESSANDRO JR.</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="3" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>GANYBEST FONT</descrizione>
+								<fantino>V.CIOTOLA</fantino>
+								<note></note>
+							</cavallo>
+						</cavalli>
+					</corsa>
+				</corse>
+			</ippodromo>
+			<ippodromo cod="5" tempo="VARIO" terreno="BUONO">
+				<descrizione>RMT ROMA TR/PM</descrizione>
+				<corse>
+					<corsa cod="34" numero="2" tipo="2" stato="2"
+						distanza="1600" montepremi="1650000" abilitaz="579"
+						orario="03/05/2010 15:55">
+						<descrizione>CORSA 2</descrizione>
+						<premio>FIAMES C.INT.</premio>
+						<cavalli dichiarati="7" partenti="7">
+							<cavallo cod="7" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>NICODEMO</descrizione>
+								<fantino>N.MEROLA</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="6" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									NAXOS DEL RONCO
+								</descrizione>
+								<fantino>M.MINOPOLI JR</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="3" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>NEREIDESS</descrizione>
+								<fantino>R.MUSCOLINI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="5" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>NICOLO' VOLO</descrizione>
+								<fantino>M.ANGELETTI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="4" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									NETTUNO SIRIAL
+								</descrizione>
+								<fantino>R.OSSANI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="2" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>NIVEAU DE VIE</descrizione>
+								<fantino>E.BELLEI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="1" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>NEVADA OK</descrizione>
+								<fantino>GP.MINNUCCI</fantino>
+								<note></note>
+							</cavallo>
+						</cavalli>
+					</corsa>
+					<corsa cod="38" numero="6" tipo="2" stato="2"
+						distanza="1600" montepremi="1100000" abilitaz="66117"
+						orario="03/05/2010 17:55">
+						<descrizione>CORSA 6</descrizione>
+						<premio>BAYARD</premio>
+						<cavalli dichiarati="9" partenti="9">
+							<cavallo cod="8" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>GRECOSS</descrizione>
+								<fantino>E.BELLEI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="4" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>LE ROI GAS</descrizione>
+								<fantino>G.CARPENTIERI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="9" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>LONDON DANY</descrizione>
+								<fantino>D.BATTISTINI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="1" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>IMPERO SPIN</descrizione>
+								<fantino>FR.FACCI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="6" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>LUELLE</descrizione>
+								<fantino>G.CICOGNANI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="5" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>DIDIMOZ</descrizione>
+								<fantino>M.MINOPOLI JR</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="3" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>LOTAR</descrizione>
+								<fantino>GP.MINNUCCI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="2" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>GUIDA ITAL</descrizione>
+								<fantino>MZ.PIEVE</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="7" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>IMPERO EK</descrizione>
+								<fantino>M.ANGELETTI</fantino>
+								<note></note>
+							</cavallo>
+						</cavalli>
+					</corsa>
+					<corsa cod="37" numero="5" tipo="2" stato="2"
+						distanza="2040" montepremi="1045000" abilitaz="66117"
+						orario="03/05/2010 17:25">
+						<descrizione>CORSA 5</descrizione>
+						<premio>MISTRAL</premio>
+						<cavalli dichiarati="9" partenti="9">
+							<cavallo cod="6" stato="2" misure="2040"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>NELSON FALU</descrizione>
+								<fantino>E.H.SCHWARMA</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="1" stato="2" misure="2040"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>NILEMA</descrizione>
+								<fantino>G.POGGIANI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="3" stato="2" misure="2040"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>NON PLUS SM</descrizione>
+								<fantino>R.OSSANI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="7" stato="2" misure="2040"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									NAVY OF CLOUDLET
+								</descrizione>
+								<fantino>GP.MINNUCCI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="2" stato="2" misure="2040"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									NOWORNEVER NIGHT
+								</descrizione>
+								<fantino>M.ANGELETTI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="4" stato="2" misure="2040"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									NEPAL DI NINFA
+								</descrizione>
+								<fantino>S.KRUGER</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="5" stato="2" misure="2040"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>NARNIZ</descrizione>
+								<fantino>E.BELLEI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="8" stato="2" misure="2040"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>NOSOTROS</descrizione>
+								<fantino>P.ESPOSITO JR</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="9" stato="2" misure="2040"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>NACARAT DANY</descrizione>
+								<fantino>E.BOT</fantino>
+								<note></note>
+							</cavallo>
+						</cavalli>
+					</corsa>
+					<corsa cod="36" numero="4" tipo="2" stato="2"
+						distanza="1600" montepremi="715000" abilitaz="65540"
+						orario="03/05/2010 16:55">
+						<descrizione>CORSA 4</descrizione>
+						<premio>AGRIO C.N.1528</premio>
+						<cavalli dichiarati="15" partenti="15">
+							<cavallo cod="13" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MACAB</descrizione>
+								<fantino>E.H.SCHWARMA</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="15" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MAX D'ETE</descrizione>
+								<fantino>P.ESPOSITO JR</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="4" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MR STROKE</descrizione>
+								<fantino>G.POGGIANI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="7" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									MAIRA DEGLI ULIVI
+								</descrizione>
+								<fantino>G.RUOCCO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="3" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									MARESCIA' PLAY
+								</descrizione>
+								<fantino>F.ZEDDA</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="5" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									MADISON SQUARE
+								</descrizione>
+								<fantino>M.MINOPOLI JR</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="10" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MANTIDE JET</descrizione>
+								<fantino>M.ALTOBELLI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="11" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MIKY</descrizione>
+								<fantino>G.SCHETTINO JR</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="12" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									MEMON BY FONT SM
+								</descrizione>
+								<fantino>GP.MINNUCCI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="9" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									MISTERO DEL GELSO
+								</descrizione>
+								<fantino>WAR.MARTELLINI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="8" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									MISTRAL MAGIQUE
+								</descrizione>
+								<fantino>A.VALENTINI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="14" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MOUSE EFFEM</descrizione>
+								<fantino>E.BELLEI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="6" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MADDY</descrizione>
+								<fantino>M.ANGELETTI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="2" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									MEICHOL DEL ROSSO
+								</descrizione>
+								<fantino>D.BATTISTINI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="1" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MYTHOS</descrizione>
+								<fantino>N.GAVAZZI</fantino>
+								<note></note>
+							</cavallo>
+						</cavalli>
+					</corsa>
+					<corsa cod="40" numero="8" tipo="2" stato="2"
+						distanza="2040" montepremi="2266000" abilitaz="65540"
+						orario="03/05/2010 19:00">
+						<descrizione>CORSA 8</descrizione>
+						<premio>BIRBONE TR.B1534</premio>
+						<cavalli dichiarati="16" partenti="16">
+							<cavallo cod="7" stato="2" misure="2040"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MIKE</descrizione>
+								<fantino>S.MATTERA JR</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="6" stato="2" misure="2040"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MIO AXE</descrizione>
+								<fantino>R.OSSANI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="11" stato="2" misure="2040"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MILTON DANTE</descrizione>
+								<fantino>FR.FACCI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="12" stato="2" misure="2040"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MIX DI COSTA</descrizione>
+								<fantino>A.BAVERESI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="15" stato="2" misure="2040"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MEFISTO FALU</descrizione>
+								<fantino>M.BARBINI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="4" stato="2" misure="2040"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MENKAR ETOILE</descrizione>
+								<fantino>G.CARPENTIERI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="10" stato="2" misure="2040"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MAX ROD</descrizione>
+								<fantino>D.BATTISTINI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="5" stato="2" misure="2040"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MIRA AXE</descrizione>
+								<fantino>P.LAURIA</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="9" stato="2" misure="2040"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									MAY GHIL FONT SM
+								</descrizione>
+								<fantino>M.ANGELETTI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="13" stato="2" misure="2040"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MASTRO LOLLO</descrizione>
+								<fantino>MZ.PIEVE</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="1" stato="2" misure="2040"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MY DEMON RUN</descrizione>
+								<fantino>R.ODORICI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="2" stato="2" misure="2040"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									MASCALZONE LATINO
+								</descrizione>
+								<fantino>L.BECCHETTI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="8" stato="2" misure="2040"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MARSEL</descrizione>
+								<fantino>GP.MINNUCCI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="3" stato="2" misure="2040"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MALVITO</descrizione>
+								<fantino>L.LORETO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="14" stato="2" misure="2040"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									MAGIC VISION LF
+								</descrizione>
+								<fantino>M.MINOPOLI JR</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="16" stato="2" misure="2040"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MENELAO DEI</descrizione>
+								<fantino>F.PETTINARI</fantino>
+								<note></note>
+							</cavallo>
+						</cavalli>
+					</corsa>
+					<corsa cod="33" numero="1" tipo="2" stato="4"
+						distanza="1600" montepremi="770000" abilitaz="581"
+						orario="03/05/2010 15:25">
+						<descrizione>CORSA 1</descrizione>
+						<premio>HIT SONG</premio>
+						<cavalli dichiarati="8" partenti="7">
+							<cavallo cod="6" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="3">
+								<descrizione>LOVELINOTTE</descrizione>
+								<fantino>PF.MAURO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="3" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="1">
+								<descrizione>LULA D'ETE</descrizione>
+								<fantino>A.VITIELLO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="1" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									DUBAI DI JESOLO
+								</descrizione>
+								<fantino>S.LO SAPIO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="5" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>LUCE OK</descrizione>
+								<fantino>A.GUADAGNO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="8" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>IMOTHEP BD</descrizione>
+								<fantino>RIN.ANGELETTI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="4" stato="3" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									INTREPIDO GRIF
+								</descrizione>
+								<fantino>L.MIGLIACCIO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="7" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="2">
+								<descrizione>GEMSBOK</descrizione>
+								<fantino>F.PEPE</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="2" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>GRIFONE JET</descrizione>
+								<fantino>P.CORRADO</fantino>
+								<note></note>
+							</cavallo>
+						</cavalli>
+					</corsa>
+					<corsa cod="35" numero="3" tipo="2" stato="2"
+						distanza="1600" montepremi="770000" abilitaz="65540"
+						orario="03/05/2010 16:25">
+						<descrizione>CORSA 3</descrizione>
+						<premio>ALIDORO C.N.1527</premio>
+						<cavalli dichiarati="14" partenti="14">
+							<cavallo cod="10" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									NINJA SELVAREALE
+								</descrizione>
+								<fantino>D.BATTISTINI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="6" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>NEW YORK FEZ</descrizione>
+								<fantino>L.MAZZA</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="5" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>NUHAR ANS</descrizione>
+								<fantino>M.MANZONE</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="2" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>NUCLEO DVM</descrizione>
+								<fantino>F.PETTINARI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="7" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>NAT RAY HORSE</descrizione>
+								<fantino>M.ANGELETTI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="1" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>NEREINA CAF</descrizione>
+								<fantino>R.FORINO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="8" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>NOSTOP WISE</descrizione>
+								<fantino>FR.FACCI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="3" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>NAUSICA MONT</descrizione>
+								<fantino>M.MINOPOLI JR</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="14" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>NADIR BARB</descrizione>
+								<fantino>E.H.SCHWARMA</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="4" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>NANA RIZ</descrizione>
+								<fantino>G.POGGIANI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="9" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>NORITA</descrizione>
+								<fantino>G.CERRONE</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="12" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>NAVIDAD</descrizione>
+								<fantino>P.ESPOSITO JR</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="13" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									NANDRELAY LIKE
+								</descrizione>
+								<fantino>E.BELLEI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="11" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>NALILA SM</descrizione>
+								<fantino>R.OSSANI</fantino>
+								<note></note>
+							</cavallo>
+						</cavalli>
+					</corsa>
+					<corsa cod="41" numero="9" tipo="2" stato="2"
+						distanza="1600" montepremi="715000" abilitaz="65540"
+						orario="03/05/2010 19:30">
+						<descrizione>CORSA 9</descrizione>
+						<premio>ZIMA C.N.1535</premio>
+						<cavalli dichiarati="11" partenti="11">
+							<cavallo cod="1" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>LARION FERM</descrizione>
+								<fantino>G.CARPENTIERI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="4" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>INDIOS BI</descrizione>
+								<fantino>M.ANGELETTI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="9" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>LICOMEDE</descrizione>
+								<fantino>P.LAURIA</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="8" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>GIOCOSO RO</descrizione>
+								<fantino>WAR.MARTELLINI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="2" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>IPPY GO</descrizione>
+								<fantino>R.ODORICI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="10" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>INTHANON</descrizione>
+								<fantino>F.PETTINARI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="3" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>LAISSEZ FAIRE</descrizione>
+								<fantino>G.RUOCCO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="7" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>IMPERATOS</descrizione>
+								<fantino>S.ANGELETTI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="5" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									ISABO' DEI VELTRI
+								</descrizione>
+								<fantino>N.GAVAZZI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="11" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>LARISSA GAS</descrizione>
+								<fantino>ROM.PEDRAZZI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="6" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>IL PANTA</descrizione>
+								<fantino>GP.MINNUCCI</fantino>
+								<note></note>
+							</cavallo>
+						</cavalli>
+					</corsa>
+					<corsa cod="39" numero="7" tipo="2" stato="2"
+						distanza="1600" montepremi="550000" abilitaz="65540"
+						orario="03/05/2010 18:25">
+						<descrizione>CORSA 7</descrizione>
+						<premio>MIGHTY FINE C.N.1532</premio>
+						<cavalli dichiarati="14" partenti="14">
+							<cavallo cod="14" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									MY ZAFRA RIVARCO
+								</descrizione>
+								<fantino>L.BECCHETTI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="3" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MISSILE RON</descrizione>
+								<fantino>R.PALOMBA</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="2" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MONTOYA GRIF</descrizione>
+								<fantino>D.BATTISTINI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="10" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									MONEY FOR NOTHING
+								</descrizione>
+								<fantino>PP.CICOGNANI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="4" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MIRO' GRIF</descrizione>
+								<fantino>GP.MINNUCCI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="9" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MAOMY US</descrizione>
+								<fantino>AUG.CERRONE</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="12" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MAGIC JOHNSON</descrizione>
+								<fantino>A.COLASANTI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="13" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MANOLO ZS</descrizione>
+								<fantino>F.PETTINARI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="7" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									MY LITTLE BOSS
+								</descrizione>
+								<fantino>M.MINOPOLI JR</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="8" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									MARCELLO SK ING
+								</descrizione>
+								<fantino>E.BELLEI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="5" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MAGIC FLOWER</descrizione>
+								<fantino>P.GIORGI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="6" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MARITA VINCI</descrizione>
+								<fantino>G.CICOGNANI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="11" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MIRAELLE</descrizione>
+								<fantino>M.ANGELETTI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="1" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MIGUEL TRIO</descrizione>
+								<fantino>S.MATTERA SR</fantino>
+								<note></note>
+							</cavallo>
+						</cavalli>
+					</corsa>
+				</corse>
+			</ippodromo>
+			<ippodromo cod="4" tempo="COPERTO" terreno="BUONO">
+				<descrizione>MIT MILANO TR/PM</descrizione>
+				<corse>
+					<corsa cod="28" numero="4" tipo="2" stato="3"
+						distanza="1600" montepremi="704000" abilitaz="581"
+						orario="03/05/2010 15:45">
+						<descrizione>CORSA 4</descrizione>
+						<premio>ANT</premio>
+						<cavalli dichiarati="8" partenti="8">
+							<cavallo cod="1" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MERIDIANA SEM</descrizione>
+								<fantino>D.VIGANO'</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="8" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MARABELLA</descrizione>
+								<fantino>MAR.CASTALDO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="6" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MAKEBA</descrizione>
+								<fantino>GC MORETTI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="5" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MAMBO DJ</descrizione>
+								<fantino>MZ.PIZZOLI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="3" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MAGGIO D'ESTE</descrizione>
+								<fantino>M.PROLI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="4" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									MISTER FRANCIS
+								</descrizione>
+								<fantino>W.BARBIERI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="7" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MELIA</descrizione>
+								<fantino>A.FUGAZZOLA</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="2" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									MIKIMAIER SERIZZA
+								</descrizione>
+								<fantino>E.D.DI LUZIO</fantino>
+								<note></note>
+							</cavallo>
+						</cavalli>
+					</corsa>
+					<corsa cod="29" numero="5" tipo="2" stato="2"
+						distanza="2000" montepremi="704000" abilitaz="66117"
+						orario="03/05/2010 16:15">
+						<descrizione>CORSA 5</descrizione>
+						<premio>FRIOLERO</premio>
+						<cavalli dichiarati="9" partenti="8">
+							<cavallo cod="5" stato="3" misure="2000"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>LEDFORD LB</descrizione>
+								<fantino>MASS.CASTALDO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="2" stato="2" misure="2000"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									LOGAN DEL RONCO
+								</descrizione>
+								<fantino>M.FANTI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="7" stato="2" misure="2020"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>INATTACCABILE</descrizione>
+								<fantino>R.ANDREGHETTI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="4" stato="2" misure="2000"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>IL CAPO DJ</descrizione>
+								<fantino>B.HOLM</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="3" stato="2" misure="2000"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="1"
+								posiz="0">
+								<descrizione>LIGHT FOOT</descrizione>
+								<fantino>SANTO MOLLO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="8" stato="2" misure="2020"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>LAVAL</descrizione>
+								<fantino>A.GREPPI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="9" stato="2" misure="2020"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>ISEO DEL PRI</descrizione>
+								<fantino>P.BOJINO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="6" stato="2" misure="2020"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>IARDA</descrizione>
+								<fantino>A.GUZZINATI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="1" stato="2" misure="2000"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									LOLLIPOP CRISTAL
+								</descrizione>
+								<fantino>A.DE CHIRICO</fantino>
+								<note></note>
+							</cavallo>
+						</cavalli>
+					</corsa>
+					<corsa cod="26" numero="2" tipo="2" stato="4"
+						distanza="1600" montepremi="550000" abilitaz="65540"
+						orario="03/05/2010 14:50">
+						<descrizione>CORSA 2</descrizione>
+						<premio>ZARDI C.N.1523</premio>
+						<cavalli dichiarati="12" partenti="11">
+							<cavallo cod="4" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>NAMEY</descrizione>
+								<fantino>SANTO MOLLO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="1" stato="3" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>NOVELLA CLA</descrizione>
+								<fantino>U.FRANCISCI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="9" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									NEW ORLEANS BI
+								</descrizione>
+								<fantino>G.LONGOBARDO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="8" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>NISVA CAR</descrizione>
+								<fantino>L.MINOPOLI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="6" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									NEPUNEMEN COBRA
+								</descrizione>
+								<fantino>G.CARRO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="12" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>NORTHAMPTON</descrizione>
+								<fantino>S.MILANI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="3" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="2">
+								<descrizione>NUCLEAR ROC</descrizione>
+								<fantino>R.ANDREGHETTI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="5" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>NOMINATIONDAY</descrizione>
+								<fantino>F.MARTINELLI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="10" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="1"
+								posiz="1">
+								<descrizione>
+									NEVICATA D'ESI
+								</descrizione>
+								<fantino>D.NUTI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="7" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>NICOLAS PREST</descrizione>
+								<fantino>P.GUBELLINI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="2" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="3">
+								<descrizione>NEMO BOL WISE</descrizione>
+								<fantino>E.PARENTI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="11" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>NENA DIAMOND</descrizione>
+								<fantino>GIO.FULICI</fantino>
+								<note></note>
+							</cavallo>
+						</cavalli>
+					</corsa>
+					<corsa cod="32" numero="8" tipo="2" stato="2"
+						distanza="1600" montepremi="1540000" abilitaz="65540"
+						orario="03/05/2010 17:45">
+						<descrizione>CORSA 8</descrizione>
+						<premio>BETHANY BE FAST C.N.1530</premio>
+						<cavalli dichiarati="12" partenti="11">
+							<cavallo cod="8" stato="3" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MAIGRET BI</descrizione>
+								<fantino>M.BARONCINI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="1" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MARCELLO</descrizione>
+								<fantino>GIO.FULICI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="7" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MAGIA SF</descrizione>
+								<fantino>F.RESTELLI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="6" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MAJERMEC</descrizione>
+								<fantino>E.VESSICHELLI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="3" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MALEO AS</descrizione>
+								<fantino>MASS.CASTALDO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="5" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MARISTELLA OM</descrizione>
+								<fantino>T.DI LORENZO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="10" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MARE ALAN</descrizione>
+								<fantino>M.RESTELLI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="12" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MORANGO OAKS</descrizione>
+								<fantino>A.GREPPI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="2" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MANUEL DVM</descrizione>
+								<fantino>E.PARENTI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="11" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MELANDRI KYU</descrizione>
+								<fantino>SANTO MOLLO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="9" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MARLON OM</descrizione>
+								<fantino>P.GUBELLINI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="4" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MARLIN JET</descrizione>
+								<fantino>R.ANDREGHETTI</fantino>
+								<note></note>
+							</cavallo>
+						</cavalli>
+					</corsa>
+					<corsa cod="30" numero="6" tipo="2" stato="2"
+						distanza="1600" montepremi="704000" abilitaz="581"
+						orario="03/05/2010 16:45">
+						<descrizione>CORSA 6</descrizione>
+						<premio>ALARICO OM</premio>
+						<cavalli dichiarati="8" partenti="8">
+							<cavallo cod="1" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>NOI HOLZ</descrizione>
+								<fantino>G.CARRO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="3" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>NOTTOLA</descrizione>
+								<fantino>B.VENDITTO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="7" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>NAOMI ROSS</descrizione>
+								<fantino>A.GREPPI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="2" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									NAVRATILOVA KYU
+								</descrizione>
+								<fantino>F.MARTINELLI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="6" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>NKONO</descrizione>
+								<fantino>M.RESTELLI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="8" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>NORD EST</descrizione>
+								<fantino>D.NUTI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="5" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>NEVORINE</descrizione>
+								<fantino>SANTO MOLLO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="4" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									NO LIMIT TEXAS
+								</descrizione>
+								<fantino>MASS.CASTALDO</fantino>
+								<note></note>
+							</cavallo>
+						</cavalli>
+					</corsa>
+					<corsa cod="25" numero="1" tipo="2" stato="4"
+						distanza="1600" montepremi="484000" abilitaz="65540"
+						orario="03/05/2010 14:25">
+						<descrizione>CORSA 1</descrizione>
+						<premio>MALIZIA C.N.1522</premio>
+						<cavalli dichiarati="10" partenti="10">
+							<cavallo cod="7" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="2">
+								<descrizione>GUN</descrizione>
+								<fantino>F.G.FULICI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="5" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="1">
+								<descrizione>LIONEL OM</descrizione>
+								<fantino>GIO.FULICI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="6" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>DISNEY DREAM</descrizione>
+								<fantino>A.DE CHIRICO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="1" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="3">
+								<descrizione>FOLLETTO SEM</descrizione>
+								<fantino>M.GUZZINATI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="2" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>FLYING ALLMAR</descrizione>
+								<fantino>MAURIZIO MONTE</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="8" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>DEEP BI</descrizione>
+								<fantino>M.FANTI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="9" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>LIOLA' CAR</descrizione>
+								<fantino>V.SCIARRILLO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="4" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>IMANN VOL</descrizione>
+								<fantino>G.SCHETTINO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="10" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>GRUNDGRISSE</descrizione>
+								<fantino>S.MILANI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="3" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>LOWELL NOF</descrizione>
+								<fantino>F.NOGARA</fantino>
+								<note></note>
+							</cavallo>
+						</cavalli>
+					</corsa>
+					<corsa cod="27" numero="3" tipo="2" stato="4"
+						distanza="1600" montepremi="1100000" abilitaz="65540"
+						orario="03/05/2010 15:15">
+						<descrizione>CORSA 3</descrizione>
+						<premio>APUB C.N.1524</premio>
+						<cavalli dichiarati="10" partenti="10">
+							<cavallo cod="7" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="2">
+								<descrizione>FUNK AGAIN</descrizione>
+								<fantino>MASS.CASTALDO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="3" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="1">
+								<descrizione>GONDRAN</descrizione>
+								<fantino>M.GUZZINATI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="2" stato="2" misure="1600"
+								rappscud="A" steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>FAN CAST</descrizione>
+								<fantino>L.FAROLFI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="9" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>GENGIS FANS</descrizione>
+								<fantino>T.DI LORENZO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="4" stato="2" misure="1600"
+								rappscud="B" steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>GAMINETTE</descrizione>
+								<fantino>A.GUZZINATI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="1" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>FORTE K JET</descrizione>
+								<fantino>R.ANDREGHETTI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="10" stato="2" misure="1600"
+								rappscud="A" steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>ESPRESSO CAST</descrizione>
+								<fantino>SANTO MOLLO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="8" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="3">
+								<descrizione>GARUDA CAR</descrizione>
+								<fantino>L.MINOPOLI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="6" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									FORNAREIN ROSS
+								</descrizione>
+								<fantino>A.GREPPI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="5" stato="2" misure="1600"
+								rappscud="B" steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>GENERALE ORS</descrizione>
+								<fantino>F.VITALI</fantino>
+								<note></note>
+							</cavallo>
+						</cavalli>
+					</corsa>
+					<corsa cod="31" numero="7" tipo="2" stato="2"
+						distanza="1600" montepremi="803000" abilitaz="581"
+						orario="03/05/2010 17:15">
+						<descrizione>CORSA 7</descrizione>
+						<premio>TELESIO - CL.6</premio>
+						<cavalli dichiarati="8" partenti="8">
+							<cavallo cod="5" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>GABBIANO</descrizione>
+								<fantino>IVAN BERARDI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="6" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>GIUDITTA WISE</descrizione>
+								<fantino>GIO.FULICI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="4" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>LALLA AXE</descrizione>
+								<fantino>R.ANDREGHETTI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="8" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>IPER FLYING</descrizione>
+								<fantino>A.GUZZINATI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="2" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>IGEA</descrizione>
+								<fantino>C.BESANA</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="1" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									LINDOMABILE VOL
+								</descrizione>
+								<fantino>E.PARENTI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="7" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>LA GRIFFE BI</descrizione>
+								<fantino>P.GUBELLINI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="3" stato="2" misure="1600"
+								rappscud=" " steccato="0" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>FOGAR CAF</descrizione>
+								<fantino>V.ROMA</fantino>
+								<note></note>
+							</cavallo>
+						</cavalli>
+					</corsa>
+				</corse>
+			</ippodromo>
+			<ippodromo cod="6" tempo="VARIO" terreno="BUONO">
+				<descrizione>WAG CHANTILLY</descrizione>
+				<corse>
+					<corsa cod="42" numero="1" tipo="1" stato="4"
+						distanza="2400" montepremi="4800000" abilitaz="66117"
+						orario="03/05/2010 13:35">
+						<descrizione>CORSA 1</descrizione>
+						<premio>CHATEAU DE CHANTILLY</premio>
+						<cavalli dichiarati="16" partenti="16">
+							<cavallo cod="5" stato="2" misure="5600"
+								rappscud=" " steccato="6" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>NELSON</descrizione>
+								<fantino>C.SOUMILLON</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="7" stato="2" misure="5500"
+								rappscud=" " steccato="16" paraocchi="1" cmbmonta="0"
+								posiz="3">
+								<descrizione>MISS STREAM</descrizione>
+								<fantino>A.CRASTUS</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="10" stato="2" misure="5300"
+								rappscud=" " steccato="8" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>MOLITOR</descrizione>
+								<fantino>S.MAILLOT</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="13" stato="2" misure="5100"
+								rappscud=" " steccato="7" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									BUTTES CHAUMONT
+								</descrizione>
+								<fantino>S.RUIS</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="2" stato="2" misure="5850"
+								rappscud=" " steccato="10" paraocchi="0" cmbmonta="0"
+								posiz="1">
+								<descrizione>REFIK</descrizione>
+								<fantino>D.BOEUF</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="14" stato="2" misure="5100"
+								rappscud="A" steccato="12" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>HENRY MORGANN</descrizione>
+								<fantino>A.BADEL</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="1" stato="2" misure="6200"
+								rappscud=" " steccato="13" paraocchi="1" cmbmonta="0"
+								posiz="2">
+								<descrizione>GENTOO</descrizione>
+								<fantino>G.MOSSE</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="16" stato="2" misure="5100"
+								rappscud="A" steccato="11" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									BERENICE PANCRISIA
+								</descrizione>
+								<fantino>M.DELALANDE</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="8" stato="2" misure="5500"
+								rappscud=" " steccato="2" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>APOPHIS</descrizione>
+								<fantino>M.GUYON</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="3" stato="2" misure="5800"
+								rappscud=" " steccato="15" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>TAVERNY</descrizione>
+								<fantino>R.MARCHELLI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="11" stato="2" misure="5200"
+								rappscud=" " steccato="5" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>PERSPICACE</descrizione>
+								<fantino>M.BARZALONA</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="9" stato="2" misure="5450"
+								rappscud=" " steccato="9" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>RUNTIL BERE</descrizione>
+								<fantino>J.VICTOIRE</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="6" stato="2" misure="5550"
+								rappscud=" " steccato="3" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>BRONCOLI</descrizione>
+								<fantino>T.THULLIEZ</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="12" stato="2" misure="5200"
+								rappscud=" " steccato="4" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>CRUZ DEL SUR</descrizione>
+								<fantino>S.PASQUIER</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="4" stato="2" misure="5650"
+								rappscud="A" steccato="1" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>LAST STORM</descrizione>
+								<fantino>T.JARNET</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="15" stato="2" misure="5100"
+								rappscud=" " steccato="14" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>RABAHHLA</descrizione>
+								<fantino>F.PRAT</fantino>
+								<note></note>
+							</cavallo>
+						</cavalli>
+					</corsa>
+					<corsa cod="49" numero="8" tipo="1" stato="2"
+						distanza="2400" montepremi="2300000" abilitaz="66117"
+						orario="03/05/2010 17:10">
+						<descrizione>CORSA 8</descrizione>
+						<premio>DU MUSEE CONDE</premio>
+						<cavalli dichiarati="11" partenti="11">
+							<cavallo cod="8" stato="2" misure="5700"
+								rappscud=" " steccato="11" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>EKLEKTOS</descrizione>
+								<fantino>S.RUIS</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="9" stato="2" misure="5650"
+								rappscud=" " steccato="10" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>DOUKANANE</descrizione>
+								<fantino>T.JARNET</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="7" stato="2" misure="5850"
+								rappscud=" " steccato="1" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>IRISHIA</descrizione>
+								<fantino>A.CRASTUS</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="4" stato="2" misure="5900"
+								rappscud=" " steccato="4" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>HARD WAY</descrizione>
+								<fantino>R.MARCHELLI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="2" stato="2" misure="5950"
+								rappscud=" " steccato="2" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>SPIDELLO</descrizione>
+								<fantino>T.THULLIEZ</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="3" stato="2" misure="5950"
+								rappscud=" " steccato="5" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>PRALIN</descrizione>
+								<fantino>G.MASURE</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="11" stato="2" misure="5100"
+								rappscud=" " steccato="9" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>CHICHIKONANGO</descrizione>
+								<fantino>D.SANTIAGO</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="6" stato="2" misure="5900"
+								rappscud=" " steccato="6" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>SINGAPORE GUS</descrizione>
+								<fantino>M.GUYON</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="1" stato="2" misure="6000"
+								rappscud=" " steccato="3" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									GREENWICH MEANTIME
+								</descrizione>
+								<fantino>Y.LERNER</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="10" stato="2" misure="5350"
+								rappscud="A" steccato="8" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>BARHILL</descrizione>
+								<fantino>S.MAILLOT</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="5" stato="2" misure="5900"
+								rappscud="A" steccato="7" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>ORACLE</descrizione>
+								<fantino>O.PESLIER</fantino>
+								<note></note>
+							</cavallo>
+						</cavalli>
+					</corsa>
+					<corsa cod="47" numero="6" tipo="1" stato="2"
+						distanza="2000" montepremi="8000000" abilitaz="66117"
+						orario="03/05/2010 16:10">
+						<descrizione>CORSA 6</descrizione>
+						<premio>ALLEZ FRANCE</premio>
+						<cavalli dichiarati="12" partenti="12">
+							<cavallo cod="8" stato="2" misure="5500"
+								rappscud=" " steccato="10" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>PLUMANIA</descrizione>
+								<fantino>O.PESLIER</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="9" stato="2" misure="5400"
+								rappscud=" " steccato="9" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>EIRE</descrizione>
+								<fantino>L.HUART</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="1" stato="2" misure="5700"
+								rappscud="A" steccato="1" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>WILSIDE</descrizione>
+								<fantino>C.SOUMILLON</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="7" stato="2" misure="5500"
+								rappscud=" " steccato="5" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>LA BOUM</descrizione>
+								<fantino>T.JARNET</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="3" stato="2" misure="5500"
+								rappscud=" " steccato="4" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>PEINTURE RARE</descrizione>
+								<fantino>A.CRASTUS</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="5" stato="2" misure="5500"
+								rappscud=" " steccato="2" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>CAVALIERE</descrizione>
+								<fantino>I.MENDIZABAL</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="4" stato="2" misure="5500"
+								rappscud=" " steccato="11" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>SOBERANIA</descrizione>
+								<fantino>J.VICTOIRE</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="11" stato="2" misure="5400"
+								rappscud=" " steccato="12" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>SUPERSTITION</descrizione>
+								<fantino>G.MOSSE</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="6" stato="2" misure="5500"
+								rappscud=" " steccato="3" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>SANS CHICHI</descrizione>
+								<fantino>M.FOULON</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="2" stato="2" misure="5500"
+								rappscud=" " steccato="6" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>SHEMIYLA</descrizione>
+								<fantino>CP.LEMAIRE</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="10" stato="2" misure="5400"
+								rappscud="A" steccato="7" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>BIASED</descrizione>
+								<fantino>M.GUYON</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="12" stato="2" misure="5400"
+								rappscud=" " steccato="8" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									FLEUR ENCHANTEE
+								</descrizione>
+								<fantino>D.BONILLA</fantino>
+								<note></note>
+							</cavallo>
+						</cavalli>
+					</corsa>
+					<corsa cod="44" numero="3" tipo="1" stato="4"
+						distanza="1000" montepremi="3400000" abilitaz="131"
+						orario="03/05/2010 14:35">
+						<descrizione>CORSA 3</descrizione>
+						<premio>CARAVELLE</premio>
+						<cavalli dichiarati="6" partenti="5">
+							<cavallo cod="6" stato="2" misure="5500"
+								rappscud=" " steccato="3" paraocchi="1" cmbmonta="0"
+								posiz="1">
+								<descrizione>LONE CAT</descrizione>
+								<fantino>S.PASQUIER</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="4" stato="2" misure="5650"
+								rappscud=" " steccato="6" paraocchi="0" cmbmonta="0"
+								posiz="2">
+								<descrizione>TANGAMANI</descrizione>
+								<fantino>J.VICTOIRE</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="3" stato="2" misure="5800"
+								rappscud=" " steccato="1" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>CLARA MOLESNE</descrizione>
+								<fantino>FX.BERTRAS</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="2" stato="2" misure="5650"
+								rappscud=" " steccato="2" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									HONNEUR SUPREME
+								</descrizione>
+								<fantino>M.DELALANDE</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="1" stato="2" misure="5800"
+								rappscud=" " steccato="4" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>ULIVATE</descrizione>
+								<fantino>D.BONILLA</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="5" stato="12" misure="9900"
+								rappscud=" " steccato="5" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									TAKE THIS WALTZ
+								</descrizione>
+								<fantino>N O N PARTENTE</fantino>
+								<note></note>
+							</cavallo>
+						</cavalli>
+					</corsa>
+					<corsa cod="43" numero="2" tipo="1" stato="4"
+						distanza="1000" montepremi="3400000" abilitaz="131"
+						orario="03/05/2010 14:05">
+						<descrizione>CORSA 2</descrizione>
+						<premio>PENSBURY</premio>
+						<cavalli dichiarati="5" partenti="5">
+							<cavallo cod="4" stato="2" misure="5500"
+								rappscud="A" steccato="2" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>KING DAMDAM</descrizione>
+								<fantino>I.MENDIZABAL</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="2" stato="2" misure="5650"
+								rappscud=" " steccato="3" paraocchi="0" cmbmonta="0"
+								posiz="2">
+								<descrizione>DREAM</descrizione>
+								<fantino>D.BONILLA</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="1" stato="2" misure="5800"
+								rappscud="A" steccato="4" paraocchi="1" cmbmonta="0"
+								posiz="1">
+								<descrizione>CAPTAIN CHOP</descrizione>
+								<fantino>F.PRAT</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="5" stato="2" misure="5500"
+								rappscud=" " steccato="5" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>POKERA</descrizione>
+								<fantino>O.PESLIER</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="3" stato="2" misure="5500"
+								rappscud=" " steccato="1" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>ZEMIRO</descrizione>
+								<fantino>A.BADEL</fantino>
+								<note></note>
+							</cavallo>
+						</cavalli>
+					</corsa>
+					<corsa cod="45" numero="4" tipo="1" stato="4"
+						distanza="1600" montepremi="2400000" abilitaz="66117"
+						orario="03/05/2010 15:05">
+						<descrizione>CORSA 4</descrizione>
+						<premio>DES FONTAINES</premio>
+						<cavalli dichiarati="13" partenti="12">
+							<cavallo cod="2" stato="2" misure="5800"
+								rappscud="A" steccato="3" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>IRON AGE</descrizione>
+								<fantino>M.BARZALONA</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="9" stato="2" misure="5800"
+								rappscud=" " steccato="7" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>GREY LEGEND</descrizione>
+								<fantino>G.MOSSE</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="1" stato="2" misure="5800"
+								rappscud=" " steccato="8" paraocchi="1" cmbmonta="0"
+								posiz="3">
+								<descrizione>STRAIGHT SIX</descrizione>
+								<fantino>S.PASQUIER</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="4" stato="2" misure="5800"
+								rappscud=" " steccato="9" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>LITTLE JONES</descrizione>
+								<fantino>T.JARNET</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="6" stato="2" misure="5800"
+								rappscud=" " steccato="6" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>SKY SKIPPER</descrizione>
+								<fantino>R.LE DREN DOLEUZE</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="13" stato="2" misure="5800"
+								rappscud=" " steccato="1" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>FLAMENKO</descrizione>
+								<fantino>O.PESLIER</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="10" stato="2" misure="5800"
+								rappscud=" " steccato="5" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>DURANBAH</descrizione>
+								<fantino>S.RUIS</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="3" stato="2" misure="5800"
+								rappscud="A" steccato="13" paraocchi="0" cmbmonta="0"
+								posiz="2">
+								<descrizione>PRINCE BISHOP</descrizione>
+								<fantino>M.GUYON</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="8" stato="12" misure="9900"
+								rappscud=" " steccato="4" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>DYNAMIT JOE</descrizione>
+								<fantino>N ON PARTENTE</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="11" stato="2" misure="5650"
+								rappscud=" " steccato="10" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>DE VINCI</descrizione>
+								<fantino>T.MESSINA</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="12" stato="2" misure="5800"
+								rappscud=" " steccato="11" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>BLUE BOOK</descrizione>
+								<fantino>D.BOEUF</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="5" stato="2" misure="5800"
+								rappscud=" " steccato="12" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>FRENCHLISH</descrizione>
+								<fantino>CP.LEMAIRE</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="7" stato="2" misure="5550"
+								rappscud=" " steccato="2" paraocchi="0" cmbmonta="0"
+								posiz="1">
+								<descrizione>
+									MELLON MARTINI
+								</descrizione>
+								<fantino>M.DELALANDE</fantino>
+								<note></note>
+							</cavallo>
+						</cavalli>
+					</corsa>
+					<corsa cod="48" numero="7" tipo="1" stato="2"
+						distanza="3000" montepremi="1500000" abilitaz="66117"
+						orario="03/05/2010 16:40">
+						<descrizione>CORSA 7</descrizione>
+						<premio>DE LA GRANDE REMISE</premio>
+						<cavalli dichiarati="15" partenti="13">
+							<cavallo cod="3" stato="2" misure="5550"
+								rappscud=" " steccato="11" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									ELEGANT DANCER
+								</descrizione>
+								<fantino>R.PERRUCHOT</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="11" stato="2" misure="5450"
+								rappscud=" " steccato="6" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>URBAN TIGER</descrizione>
+								<fantino>A.LEMAITRE</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="13" stato="3" misure="5600"
+								rappscud="B" steccato="12" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>MIRLEFT</descrizione>
+								<fantino>B.FAYOS MARTIN</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="14" stato="2" misure="5600"
+								rappscud=" " steccato="3" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>KALIYAN</descrizione>
+								<fantino>S.HOFER</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="8" stato="2" misure="5800"
+								rappscud=" " steccato="13" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>SHADE OF PALE</descrizione>
+								<fantino>J.VICTOIRE</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="9" stato="12" misure="5800"
+								rappscud=" " steccato="7" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									ANDREI ROUBLEV
+								</descrizione>
+								<fantino>S.MAILLOT</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="5" stato="2" misure="5800"
+								rappscud=" " steccato="2" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>FREE MINDED</descrizione>
+								<fantino>S.RUIS</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="6" stato="2" misure="5800"
+								rappscud=" " steccato="15" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>DIARIUS</descrizione>
+								<fantino>S.FRANCOIS</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="12" stato="2" misure="5350"
+								rappscud="B" steccato="9" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>BASSO</descrizione>
+								<fantino>A.CARAMANOLIS</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="10" stato="2" misure="5450"
+								rappscud="A" steccato="14" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>GAVARNY</descrizione>
+								<fantino>M. DELALANDE</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="1" stato="2" misure="6000"
+								rappscud="A" steccato="4" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>ICY RIVER</descrizione>
+								<fantino>M.GUYON</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="7" stato="2" misure="5450"
+								rappscud=" " steccato="1" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>LE XENAKIS</descrizione>
+								<fantino>M.TAVARES DA SILVA</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="4" stato="2" misure="5800"
+								rappscud=" " steccato="10" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>KUBITUB</descrizione>
+								<fantino>R.MARCHELLI</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="15" stato="2" misure="5450"
+								rappscud=" " steccato="5" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>OSTELLA</descrizione>
+								<fantino>E.FRANK</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="2" stato="2" misure="5750"
+								rappscud=" " steccato="8" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>FIGO</descrizione>
+								<fantino>E.HARDOUIN</fantino>
+								<note></note>
+							</cavallo>
+						</cavalli>
+					</corsa>
+					<corsa cod="46" numero="5" tipo="1" stato="3"
+						distanza="1600" montepremi="2400000" abilitaz="66117"
+						orario="03/05/2010 15:40">
+						<descrizione>CORSA 5</descrizione>
+						<premio>DES GRES</premio>
+						<cavalli dichiarati="18" partenti="18">
+							<cavallo cod="10" stato="2" misure="5700"
+								rappscud=" " steccato="16" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>KALISIA</descrizione>
+								<fantino>O.PESLIER</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="2" stato="2" misure="5700"
+								rappscud="A" steccato="3" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>SARAFINA</descrizione>
+								<fantino>CP.LEMAIRE</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="6" stato="2" misure="5700"
+								rappscud=" " steccato="5" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>ON EARTH</descrizione>
+								<fantino>F.PRAT</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="7" stato="2" misure="5700"
+								rappscud=" " steccato="17" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>IZADIA</descrizione>
+								<fantino>S.MAILLOT</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="12" stato="2" misure="5700"
+								rappscud=" " steccato="12" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>
+									LUMIERE DU SOIR
+								</descrizione>
+								<fantino>G.BENOIST</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="17" stato="2" misure="5700"
+								rappscud=" " steccato="9" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>WISTERYA</descrizione>
+								<fantino>T.JARNET</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="5" stato="2" misure="5700"
+								rappscud=" " steccato="6" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>ISOBEL ARCHER</descrizione>
+								<fantino>M.GUYON</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="1" stato="2" misure="5700"
+								rappscud="A" steccato="4" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>ASHIYLA</descrizione>
+								<fantino>G.MOSSE</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="8" stato="2" misure="5700"
+								rappscud="B" steccato="18" paraocchi="1" cmbmonta="0"
+								posiz="0">
+								<descrizione>DALLIA</descrizione>
+								<fantino>T.PICCONE</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="18" stato="2" misure="5700"
+								rappscud=" " steccato="15" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>NEXT BEST</descrizione>
+								<fantino>F.LEFEBVRE</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="4" stato="2" misure="5700"
+								rappscud="B" steccato="14" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MUDALALAH</descrizione>
+								<fantino>C.SOUMILLON</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="13" stato="2" misure="5700"
+								rappscud=" " steccato="8" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MEDUSE BLEU</descrizione>
+								<fantino>Y.LETONDEUR</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="14" stato="2" misure="5700"
+								rappscud=" " steccato="11" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MALASPINA</descrizione>
+								<fantino>I.MENDIZABAL</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="11" stato="2" misure="5700"
+								rappscud=" " steccato="2" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>TIMEPECKER</descrizione>
+								<fantino>M.SAUTJEAU</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="9" stato="2" misure="5700"
+								rappscud="B" steccato="10" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>HELLY</descrizione>
+								<fantino>J.VICTOIRE</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="3" stato="2" misure="5700"
+								rappscud="B" steccato="13" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>MARAH DUBAI</descrizione>
+								<fantino>D.BONILLA</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="15" stato="2" misure="5700"
+								rappscud=" " steccato="7" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>TY GREEN</descrizione>
+								<fantino>S.RUIS</fantino>
+								<note></note>
+							</cavallo>
+							<cavallo cod="16" stato="2" misure="5700"
+								rappscud=" " steccato="1" paraocchi="0" cmbmonta="0"
+								posiz="0">
+								<descrizione>ZALIA</descrizione>
+								<fantino>G.MASURE</fantino>
+								<note></note>
+							</cavallo>
+						</cavalli>
+					</corsa>
+				</corse>
+			</ippodromo>
+		</ippodromi>
+	</ippica>
+</palinsesto>

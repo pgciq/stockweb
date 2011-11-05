@@ -17,11 +17,14 @@ import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 
+import org.apache.naming.resources.Resource;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.InputSource;
+
+import persistence.dao.ResourcesEngineDAO;
 
 import com.sun.org.apache.xpath.internal.XPathAPI;
 
@@ -34,6 +37,7 @@ public class ChartInterface {
 	private String pathname = "";
 	private Map<String, String> mapSetting = new HashMap<String, String>();
 	private StringBuffer sb = new StringBuffer("<?xml version=\"1.0\" encoding=\"UTF-8\"?>");
+    private ResourcesEngineDAO dao = new ResourcesEngineDAO();
 
 	public ChartInterface(String pathname, Map<String, String> mapParameters) {
 		this.pathname = pathname;
@@ -51,14 +55,14 @@ public class ChartInterface {
 			String paramId = !((Element) node).getAttribute("id").equals("") ? " id='" + ((Element) node).getAttribute("id") + "' " : "";
 			sb.append("<" + node.getNodeName() + paramId + ">");
 			if (!((Element) node).getAttribute("filename").equals("")) {
-				sb.append(getContentFile(((Element) node).getAttribute("filename")));
+				sb.append(dao.getObjectByName(((Element) node).getAttribute("filename")));
 			}
 			checkNodes(node);
 			sb.append("</" + node.getNodeName() + ">");
 		}
 
 	}
-
+/*
 	private String getContentFile(String filename) throws Exception {
 		String xml = "";
 		FileReader file = new FileReader(new File(this.pathname + filename));
@@ -69,7 +73,7 @@ public class ChartInterface {
 		buffer.close();
 		return xml;
 	}
-
+*/
 	private Document getDoc(String xml) throws Exception {
 		String xmlString;
 		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
@@ -90,11 +94,10 @@ public class ChartInterface {
 	public String getXmlSettings() {
 
 		try {
-
-			Document doc = getDoc(getContentFile("amstock_settings.xml"));
+			Document doc = getDoc(dao.getObjectByName("amstock_settings"));
 			Element elem = (Element) XPathAPI.selectSingleNode(doc,"//settings");
 			sb.append("<" + elem.getNodeName() + ">");
-			sb.append(getContentFile(elem.getAttribute("filename")));
+			sb.append(dao.getObjectByName(elem.getAttribute("filename")));
 
 			NodeList nodeList = elem.getChildNodes();
 			for (int i = 0; i < nodeList.getLength(); i++) {
@@ -106,7 +109,7 @@ public class ChartInterface {
 				String paramId = !((Element) node).getAttribute("id").equals("") ? " id='" + ((Element) node).getAttribute("id") + "' " : "";
 				sb.append("<" + node.getNodeName() + paramId + ">");
 				if (!((Element) node).getAttribute("filename").equals("")) {
-					sb.append(getContentFile(((Element) node).getAttribute("filename")));
+					sb.append(dao.getObjectByName(((Element) node).getAttribute("filename")));
 				}
 
 				checkNodes(node);
